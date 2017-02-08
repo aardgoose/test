@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #endif  
-/*LXDEPCHECK - standart libraries*/
+/*LXDEPCHECK - standard libraries*/
 
 #include "lxR2P.h"
 
@@ -33,10 +33,8 @@ void R2Pmake_context(R2PContext * r2pc)
                             GLX_DOUBLEBUFFER,
                             None };
    int scrnum;
-   Window root;
    scrnum = DefaultScreen( r2pc->dpy );
-   root = RootWindow( r2pc->dpy, scrnum );
-   
+
    r2pc->visinfo = glXChooseVisual( r2pc->dpy, scrnum, (int *) sbAttrib );
    if (!r2pc->visinfo) {
       r2pc->visinfo = glXChooseVisual( r2pc->dpy, scrnum, (int *) dbAttrib );

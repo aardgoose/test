@@ -88,7 +88,7 @@ enum {
  
 static const thstok thtt_dataleg_comp[] = {
   {"altitude", TT_DATALEG_ALTITUDE},
-  {"assistent", TT_DATALEG_ASSISTANT},
+  {"assistant", TT_DATALEG_ASSISTANT},
   {"backbearing", TT_DATALEG_BACKBEARING},
   {"backclino", TT_DATALEG_BACKGRADIENT},
   {"backcompass", TT_DATALEG_BACKBEARING},
@@ -449,11 +449,11 @@ class thdataleg {
   void calc_total_stds();
 
 
-	/**
-	 * Export station attributes to metapost.
-	 */
+  /**
+   * Export station attributes to metapost.
+   */
 
-	void export_mp_flags(FILE * out);
+  void export_mp_flags(FILE * out);
 
   
 };

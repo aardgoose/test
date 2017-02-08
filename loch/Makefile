@@ -16,6 +16,9 @@ CMNOBJECTS = \
   lxGUI.o lxGLC.o lxOptDlg.o lxAboutDlg.o lxPres.o \
   img.o
 
+CROSS =
+EXT =
+
 VTKVERSION = $(shell tclsh ./getvtkver.tcl version)
 VTKPATH = $(shell tclsh ./getvtkver.tcl incpath)
 VTKLIBPATH = $(shell tclsh ./getvtkver.tcl libpath)
@@ -45,7 +48,7 @@ STRIPFLAG = -s
 ##CXXPFLAGS = -DLXLINUX $(shell wx-config --cxxflags) -Wno-deprecated $(shell freetype-config --cflags) -I$(VTKPATH)
 ##CCPFLAGS = -DLXLINUX  $(shell wx-config --cflags)
 ##LXLIBDIR = linux
-##PLIBS = $(shell wx-config --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS) -lGLU -lGL -lpthread -lX11 -lz 
+##PLIBS = $(shell wx-config --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS) -lGLU -lGL -lpthread -lX11 -lz
 ##LXPLATFORM = LINUX
 
 # PLATFORM DEBIAN
@@ -60,7 +63,7 @@ endif
 CXXPFLAGS = -DLXLINUX $(shell wx-config --cxxflags) -Wno-deprecated $(shell freetype-config --cflags) -I$(VTKPATH)
 CCPFLAGS = -DLXLINUX  $(shell wx-config --cflags)
 LXLIBDIR = linux
-PLIBS = $(shell wx-config --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS) -lGLU -lGL -lpthread -lX11 -lz 
+PLIBS = $(shell wx-config --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS) -lGLU -lGL -lpthread -lX11 -lz
 LXPLATFORM = LINUX
 
 # PLATFORM WIN32
@@ -74,14 +77,29 @@ LXPLATFORM = LINUX
 ##LXPLATFORM = WIN32
 ##STRIPFLAG = -static-libgcc -static -s
 
+# PLATFORM WIN32CROSS
+##CROSS= i686-w64-mingw32.static-
+##EXT = .exe
+##VTKPATH = /usr/lib/mxe/usr/i686-w64-mingw32.static/include/vtk-5.8
+##VTKLIBPATH = /usr/lib/mxe/usr/i686-w64-mingw32.static/lib/vtk-5.8
+##VTKLIBS = -lvtkHybrid -lvtkImaging -lvtkIO -lvtkGraphics -lvtkFiltering -lvtkCommon -lvtksys -lharfbuzz -lbz2 -lglib-2.0 -lintl -liconv -lws2_32 -lwinmm
+##CXX = $(CROSS)c++
+##CC = $(CROSS)gcc
+##POBJECTS = loch.res lxR2D.o getline.o
+##CXXPFLAGS = -W -Wall -std=gnu++11 -DLXWIN32 $(shell $(CROSS)wx-config --static --cxxflags) $(shell $(CROSS)freetype-config --cflags) -I$(VTKPATH) -Wno-deprecated
+##CCPFLAGS = -W -Wall -DLXWIN32 $(shell $(CROSS)wx-config --static --cflags)
+##LXLIBDIR =
+##PLIBS = $(shell $(CROSS)freetype-config --libs) $(shell $(CROSS)wx-config --static --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS)
+##LXPLATFORM = WIN32
+##STRIPFLAG = -static-libgcc -static -s
 
 # PLATFORM MACOSX
 ##CXX = c++
 ##CC = cc
-##POBJECTS = 
+##POBJECTS =
 ##CXXPFLAGS = -W -Wall -DLXMACOSX $(shell wx-config --cxxflags) $(shell freetype-config --cflags) -I$(VTKPATH) -Wno-deprecated -I/usr/X11R6/include -I/usr/X11R6/include/freetype2
 ##CCPFLAGS = -W -Wall -DLXMACOSX $(shell wx-config --cflags) -I/usr/X11R6/include
-##LXLIBDIR = 
+##LXLIBDIR =
 ##PLIBS = -lz -L/usr/X11R6/lib $(shell wx-config --libs --gl-libs) -L$(VTKLIBPATH) $(VTKLIBS)
 ##POSTMAKE = cp -f ./loch ./loch.app/Contents/MacOS
 ##STRIPFLAG =
@@ -102,14 +120,14 @@ CXXBFLAGS = -O2
 LDBFLAGS = $(STRIPFLAG)
 
 # BUILD RELEASE
-##CCBFLAGS = 
-##CXXBFLAGS = 
+##CCBFLAGS =
+##CXXBFLAGS =
 ##LDBFLAGS = $(STRIPFLAG)
 
 # BUILD DEBUG
 ##CCBFLAGS = -ggdb
 ##CXXBFLAGS = -ggdb -DLXDEBUG
-##LDBFLAGS = 
+##LDBFLAGS =
 
 # BUILD ENDCONFIG
 
@@ -141,13 +159,13 @@ hlp:
 	make -C ./help
 
 $(LOUTDIR)/loch: $(OBJECTS)
-	$(CXX) -o $(LOUTDIR)/loch -Wall $(OBJECTS) $(LIBS) $(LDFLAGS)
+	$(CXX) -o $(LOUTDIR)/loch$(EXT) -Wall $(OBJECTS) $(LIBS) $(LDFLAGS)
 	$(POSTMAKE)
 
 $(LOUTDIR)/loch.res: loch.rc loch.ico
-	windres -i loch.rc -I ../../wxMSW-2.8.10/include -I rc -o $(LOUTDIR)/loch.res -O coff
+	$(CROSS)windres -i loch.rc $(shell $(CROSS)wx-config --cflags | tr ' ' '\n' | grep "^-I" | tr '\n' ' ') -J rc -o $(LOUTDIR)/loch.res -O coff
 
-graphs: 
+graphs:
 	dot -Tps graph-vispipe.dot -o graph-vispipe.ps
 
 
@@ -155,40 +173,43 @@ depend:
 	perl makedepend.pl > Makefile.dep
 	perl maketest.pl Makefile.dep
 	perl makefile.pl mv Makefile.dep Makefile
-	$(CXX) -DLXDEPCHECK -DLOCH -MM *.cxx >> Makefile
+	$(CXX) -DLXDEPCHECK -DLOCH -D'wxCHECK_VERSION(X,Y,Z)=1' -MM *.cxx >> Makefile
 	$(CC) -DLXDEPCHECK -DLOCH -MM *.c >> Makefile
 	perl makedepend2.pl
-  
+
 
 config-debug:
 	perl makeconfig.pl BUILD DEBUG
 
 test-release:
 	zip -9 loch.zip loch.exe test.th test.jpg thconfig
-  
+
 config-release:
 	perl makeconfig.pl BUILD RELEASE
 
 config-oxygen:
 	perl makeconfig.pl BUILD OXYGEN
-  
+
 config-ozone:
 	perl makeconfig.pl BUILD OZONE
-  
+
 config-linux:
 	perl makeconfig.pl PLATFORM LINUX
 
 config-debian:
 	perl makeconfig.pl PLATFORM DEBIAN
-  
+
 config-win32:
 	perl makeconfig.pl PLATFORM WIN32
-  
+
+config-win32cross:
+	perl makeconfig.pl PLATFORM WIN32CROSS
+
 config-macosx:
 	perl makeconfig.pl PLATFORM MACOSX
 
 clean:
-	perl makefile.pl rm -q *~     
+	perl makefile.pl rm -q *~
 	perl makefile.pl rm -q help/*/*~
 	perl makefile.pl rm -q loch.exe
 	perl makefile.pl rm -q loch
@@ -202,13 +223,13 @@ clean:
 	perl makefile.pl rm -q *.zip
 	perl makefile.pl rm -q *.pdf
 	perl makefile.pl rm -q *.png
-  
+
 
 
 # DEPENDENCIES
 $(LOUTDIR)/lxAboutDlg.o: lxAboutDlg.cxx lxWX.h icons/about.xpm ../thversion.h
 $(LOUTDIR)/lxData.o: lxData.cxx lxData.h lxMath.h lxImgIO.h lxFile.h lxLRUD.h
-$(LOUTDIR)/lxFile.o: lxFile.cxx lxFile.h lxMath.h img.h
+$(LOUTDIR)/lxFile.o: lxFile.cxx lxFile.h lxMath.h img.h ../extern/img.h
 $(LOUTDIR)/lxGLC.o: lxGLC.cxx lxGLC.h lxMath.h lxGUI.h lxData.h lxImgIO.h lxFile.h \
  lxSetup.h lxSView.h lxWX.h lxFNT6x13_bdf.h lxFNT10x20_bdf.h \
  lxFNTFreeSans_ttf.h lxRender.h lxTR.h
@@ -239,7 +260,7 @@ $(LOUTDIR)/lxSView.o: lxSView.cxx lxSView.h lxWX.h lxGUI.h lxGLC.h lxMath.h \
 $(LOUTDIR)/lxSetup.o: lxSetup.cxx lxSetup.h lxData.h lxMath.h lxImgIO.h lxFile.h
 $(LOUTDIR)/lxWX.o: lxWX.cxx lxWX.h
 $(LOUTDIR)/getline.o: getline.c
-$(LOUTDIR)/img.o: img.c img.h
+$(LOUTDIR)/img.o: img.c ../extern/img.c ../extern/img.h
 $(LOUTDIR)/lxR2D.o: lxR2D.c lxR2D.h
 $(LOUTDIR)/lxR2P.o: lxR2P.c lxR2P.h
 $(LOUTDIR)/lxTR.o: lxTR.c lxTR.h

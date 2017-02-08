@@ -6,14 +6,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #endif  
-//LXDEPCHECK - standart libraries
+//LXDEPCHECK - standard libraries
 
 #ifndef UCHAR
 #define UCHAR
 typedef unsigned char uchar;
 #endif
 
-extern char * lxImgIOError;
+extern const char * lxImgIOError;
 
 // struct for handling images
 struct lxImageRGB {

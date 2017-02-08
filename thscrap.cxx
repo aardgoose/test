@@ -65,8 +65,8 @@ thscrap::thscrap()
   this->G = 1.0;
   this->B = 1.0;
   
-	this->z = 0.0;
-	this->a = 0.0;
+  this->z = thnan;
+  this->a = thnan;
 
   this->flip = TT_SCRAP_FLIP_NONE;
   
@@ -872,12 +872,12 @@ void thscrap::calc_z()
 {
   thdb2dcp * cp = this->fcpp;
   this->z = 0.0;
-	this->a = 0.0;
+  this->a = 0.0;
   unsigned long numcp = 0;
   while(cp != NULL) {
     if (cp->st != NULL) {
       this->z += cp->tz;
-			this->a += cp->ta;
+      this->a += cp->ta;
       numcp++;
     }
     cp = cp->nextcp;

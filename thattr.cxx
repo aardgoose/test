@@ -583,12 +583,10 @@ void thattr::export_txt(const char * fname, int encoding)
 
 
 
-void thattr::export_kml(const char * fname, const char * name_field)
+void thattr::export_kml(const char * fname, const char * name_field, const char * title)
 {
   // Create file.
   FILE * f;
-  thattr_attr * ca;
-  thattr_field * cf;
   thattr_obj_list::iterator oi, oinext;
   thattr_id2attr_map::iterator ai;
   thattr_field_list::iterator fli;
@@ -613,12 +611,10 @@ void thattr::export_kml(const char * fname, const char * name_field)
   }
 
   fprintf(f,"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<kml xmlns=\"http://earth.google.com/kml/2.0\">\n<Document>\n");
-  fprintf(f,"<name>Therion KML export</name>\n<description>Therion KML export.</description>\n");
+  fprintf(f, "<name><![CDATA[%s]]></name>\n", title);
 
   
   // Insert objects and write fields.
-  const char * value;
-  bool hasone;
   int clevel, nlevel;
   clevel = 0;
   for(oi = this->m_obj_list.begin(); oi != this->m_obj_list.end();) {
@@ -626,7 +622,7 @@ void thattr::export_kml(const char * fname, const char * name_field)
     oinext ++;
     if ((oinext != this->m_obj_list.end()) && (oinext->m_tree_level > oi->m_tree_level)) {
         ai = oi->m_attributes.find(namef->m_id);
-        fprintf(f,"<Folder>\n<name>%s</name>\n",ai->second.m_val_string.c_str());
+        fprintf(f,"<Folder>\n<name><![CDATA[%s]]></name>\n",ai->second.m_val_string.c_str());
         clevel++;
     } else {      
       ai = oi->m_attributes.find(lat->m_id);
@@ -637,7 +633,7 @@ void thattr::export_kml(const char * fname, const char * name_field)
       dalt = ai->second.m_val_double;
 			if (namef != NULL) 
 				ai = oi->m_attributes.find(namef->m_id);
-      fprintf(f,"<Placemark>\n<name>%s</name>\n<Point>\n<coordinates>%.14f,%.14f,%.14f</coordinates>\n</Point>\n</Placemark>\n",
+      fprintf(f,"<Placemark>\n<name><![CDATA[%s]]></name>\n<Point>\n<coordinates>%.14f,%.14f,%.14f</coordinates>\n</Point>\n</Placemark>\n",
 				(namef != NULL) ? ai->second.m_val_string.c_str() : "", dlon, dlat, dalt);
     }
 
@@ -668,7 +664,7 @@ void thattr::export_kml(const char * fname, const char * name_field)
 
 
 
-void thattr::export_html(const char * fname, int encoding)
+void thattr::export_html(const char * fname, const char * title, int encoding)
 {
   // Create file.
   FILE * f;
@@ -689,8 +685,8 @@ void thattr::export_html(const char * fname, int encoding)
   }
 
   // Create fields.
-  fprintf(f,"<html>\n<head>\n<title>therion table output</title>\n"
-    "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n"
+  fprintf(f,"<html>\n<head>\n<title>%s</title>\n", title);
+  fprintf(f, "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n"
     "<script language=\"javascript\">\n"
     "function xTree(node)\n"
     "{\n"
@@ -764,7 +760,7 @@ void thattr::export_html(const char * fname, int encoding)
       }
       fprintf(f,"<td align=\"%s\"", alstr);
       if (m_tree && header_value) {
-        fprintf(f," style=\"padding-left:+%u\"", 12 * oi->m_tree_level);
+        fprintf(f," style=\"padding-left:+%u\"", 12 * (unsigned)oi->m_tree_level);
         oinext = oi;
         oinext++;
         if ((oinext != this->m_obj_list.end()) && (oinext->m_tree_level > oi->m_tree_level)) {

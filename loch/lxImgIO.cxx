@@ -16,7 +16,7 @@
 #endif
 
 #endif  
-//LXDEPCHECK - standart libraries
+//LXDEPCHECK - standard libraries
 
 
 /******************** JPEG COMPRESSION SAMPLE INTERFACE *******************/
@@ -446,6 +446,6 @@ void lxImageRGBFree(lxImageRGB & img)
 }
 
 
-char * lxImgIOError = "unknown";
+const char * lxImgIOError = "unknown";
 
 

@@ -827,7 +827,6 @@ void thdb2d::postprocess_map_references(thmap * mptr)
     }
     
     thmap * mapp;
-    thscrap * scrapp;
     switch (optr->get_class_id()) {
       case TT_MAP_CMD:
         mapp = (thmap *) optr;
@@ -845,7 +844,6 @@ void thdb2d::postprocess_map_references(thmap * mptr)
         break;
 
       case TT_SCRAP_CMD:
-        scrapp = (thscrap *) optr;
         if (citem->name.survey != NULL)
           ththrow(("%s [%d] -- not a map reference -- %s@%s",
             citem->source.name, citem->source.line, 
@@ -880,7 +878,6 @@ void thdb2d::process_join_references(thjoin * jptr)
   thdb2dji * citem = jptr->first_item, * prev_item;
   thpoint * pointp;
   thline * linep;
-  thscrap * scrapp;
   thdb2dprj * cprj;
   int otype;
   while (citem != NULL) {
@@ -921,7 +918,6 @@ void thdb2d::process_join_references(thjoin * jptr)
     
     switch (otype) {
       case TT_SCRAP_CMD:
-        scrapp = (thscrap*) optr;
         prev_item = citem->prev_item;
         if (prev_item != NULL) {
           if (!(prev_item->object->is(TT_SCRAP_CMD))) {
@@ -1227,6 +1223,8 @@ void thdb2d::process_projection(thdb2dprj * prj)
   this->pp_calc_distortion(prj);
   
 #ifdef THDEBUG
+  // Suppress "unused variable" warning.
+  (void)old_thtext_inline;
 #else
   thprintf("done\n");
   thtext_inline = old_thtext_inline;
@@ -3649,7 +3647,7 @@ void thdb2d::process_areas_in_projection(thdb2dprj * prj)
     }
   }
 
-  if (cln != NULL) delete cln;
+  delete cln;
 
   chdir(wdir.get_buffer());
 

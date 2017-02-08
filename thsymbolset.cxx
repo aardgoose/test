@@ -807,10 +807,8 @@ void thsymbolset::export_pdf(class thlayout * layout, FILE * mpf, unsigned & sfi
   thbuffer texb;
   texb.guarantee(128);
   unsigned symn = 0;
-  bool isin[thsymbolset_size];
   
   for(int i = 0; i < thsymbolset_size; i++)
-    isin[i] = true;
 	if (layout->legend == TT_LAYOUT_LEGEND_ALL) {
 		this->export_symbol_show_group(mpf, SYMX_POINT_FLAG);
 	}
@@ -832,7 +830,6 @@ void thsymbolset::export_pdf(class thlayout * layout, FILE * mpf, unsigned & sfi
 // vlozi figure do metapostu
 #define insfig(mid,txt) \
   if (((mid == 0) || (isused(mid))) && (strlen(txt) > 0)) {\
-    isin[mid] = false;\
     LEGENDITEM = LEGENDLIST.insert(LEGENDLIST.end(),dummlr); \
     fprintf(mpf,"beginfig(%d);\n",sfig); \
     fprintf(mpf,"clean_legend_box;\n"); \
@@ -1325,13 +1322,18 @@ void thsymbolset::export_pdf(class thlayout * layout, FILE * mpf, unsigned & sfi
   legend_point(SYMP_NOEQUIPMENT,thT("point no-equipment",layout->lang));
   legend_point(SYMP_ANCHOR,thT("point anchor",layout->lang));
   legend_point(SYMP_ROPE,thT("point rope",layout->lang));
-  legend_eqline(SYML_ROPE,thT("line rope",layout->lang));
   legend_point(SYMP_ROPELADDER,thT("point rope-ladder",layout->lang));
   legend_eqline(SYML_ROPELADDER,thT("line rope-ladder",layout->lang));
   legend_point(SYMP_FIXEDLADDER,thT("point fixed-ladder",layout->lang));
   legend_eqline(SYML_FIXEDLADDER,thT("line fixed-ladder",layout->lang));
   legend_point(SYMP_STEPS,thT("point steps",layout->lang));
-	
+
+  insfig(SYML_ROPE,thT("line rope",layout->lang));
+  this->export_mp_symbol_options(mpf, SYML_ROPE);
+  fprintf(mpf,"%s(((0.1,0.85) -- (0.25,0.6) -- (0.5,0.1)) inscale, false, true);\n",thsymbolset__mp[SYML_ROPE]);
+  fprintf(mpf,"%s(((0.6,0.8) -- (0.8,0.2)) inscale, true, false);\n",thsymbolset__mp[SYML_ROPE]);
+  endfig;
+
 	insfig(SYML_STEPS,thT("line steps",layout->lang));
   this->export_mp_symbol_options(mpf, SYML_STEPS);
   fprintf(mpf,"%s(((0.1,0.3) -- (0.9,.3) -- (0.9,0.7) -- (0.1,0.7) -- cycle) inscale);\n",thsymbolset__mp[SYML_STEPS]);
@@ -1417,10 +1419,10 @@ void export_all_symbols()
   else
     fprintf(mpf,"%s\n",thmpost_library);
   fprintf(mpf,"lang:=\"%s\";\n",thlang_getid(tmplayout.lang));
-if (ENC_NEW.NFSS==0)
-  fprintf(mpf,"defaultfont:=\"%s\";\n",FONTS.begin()->ss.c_str());
-else
-  fprintf(mpf,"defaultfont:=\"thss00\";\n");
+  if (ENC_NEW.NFSS==0)
+    fprintf(mpf,"defaultfont:=\"%s\";\n",FONTS.begin()->ss.c_str());
+  else
+    fprintf(mpf,"defaultfont:=\"thss00\";\n");
   
   tmplayout.export_mpost(mpf);
   fprintf(mpf,"background:=white;\n");

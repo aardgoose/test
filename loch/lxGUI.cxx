@@ -27,7 +27,7 @@
 #include <vtkObject.h>
 
 #endif  
-//LXDEPCHECK - standart libraries
+//LXDEPCHECK - standard libraries
 
 #include "lxGUI.h"
 #include "lxData.h"
@@ -673,7 +673,7 @@ void lxFrame::OnAll(wxCommandEvent& event)
           } else {
             this->m_fileName = dialog.GetPath();
             this->m_fileDir  = dialog.GetDirectory();
-						this->m_fileType = 0;
+            this->m_fileType = 0;
             this->DetectFileType();
             this->ReloadData();
             this->setup->ResetCamera();
@@ -1055,7 +1055,6 @@ void lxFrame::ToggleViewpointSetup()
 
 void lxFrame::SetupUpdate()
 {
-  if (this == NULL) return;
   if (this->m_viewpointSetupDlgOn)
     this->m_viewpointSetupDlg->LoadSetup();
   if (this->m_modelSetupDlgOn)
@@ -1076,6 +1075,7 @@ void lxFrame::ImportFile(wxString fName, int fType)
 
 
 void lxFrame::LoadData(wxString fName, int fType) {
+  {
 #if wxCHECK_VERSION(3,0,0)
   wxWindowDisabler disableAll;
 #endif
@@ -1109,14 +1109,6 @@ void lxFrame::LoadData(wxString fName, int fType) {
       this->data->m_input.InterpolateMissingLRUD();
       break;
   }
-#if wxCHECK_VERSION(3,0,0)
-  wxTheApp->Yield();
-#endif
-  if (this->data->m_input.m_error.length() > 0) {
-    wxMessageBox(_("Error reading input file"), _("Error"), wxICON_ERROR | wxOK);
-  } else {
-    this->m_fileHistory->AddFileToHistory(this->m_fileName);
-  }
   this->data->Rebuild();
 #if wxCHECK_VERSION(3,0,0)
   wxTheApp->Yield();
@@ -1126,6 +1118,14 @@ void lxFrame::LoadData(wxString fName, int fType) {
   wxTheApp->Yield();
 #endif
   this->canvas->UpdateRenderList();
+  }
+  // We need to have disengaged the wxWindowDisabler here or else we get an
+  // assertion failure for the wxMessageBox.
+  if (this->data->m_input.m_error.length() > 0) {
+    wxMessageBox(_("Error reading input file"), _("Error"), wxICON_ERROR | wxOK);
+  } else {
+    this->m_fileHistory->AddFileToHistory(this->m_fileName);
+  }
 }
 
 
@@ -1172,7 +1172,6 @@ bool lxApp::OnInit()
     wxFileSystem::AddHandler(new wxZipFSHandler);
     // Use a double-buffered visual if available, as it will give much smoother
     // animation.
-    bool double_buffered = true;
     int wx_gl_attribs[] = { WX_GL_RGBA, WX_GL_DOUBLEBUFFER, 0 };
     if (!InitGLVisual(wx_gl_attribs)) {
 	int wx_gl_attribs_no_db[] = { WX_GL_RGBA, 0 };
@@ -1182,10 +1181,7 @@ bool lxApp::OnInit()
 	    wxMessageBox(m,_T("Loch") , wxOK | wxCENTRE | wxICON_EXCLAMATION);
 	    exit(1);
 	}
-	double_buffered = false;
     }
-
-
 
 #if wxUSE_DISPLAY
     this->frame = new lxFrame(this, _T("Loch"),

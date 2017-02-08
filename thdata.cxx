@@ -1037,7 +1037,7 @@ void thdata::set_data_sd(int nargs, char ** args)
 
 void thdata::set_data_data(int nargs, char ** args)
 {
-  // OK, finish the data previosly specified
+  // OK, finish the data previously specified
   this->complete_interleaved_data();
   // first let's detect data type
   this->reset_data();
@@ -1629,10 +1629,6 @@ void thdata::insert_data_leg(int nargs, char ** args)
   thdataleg dumm;
   thstdims * cdims = NULL;
   
-#ifdef THDEBUG
-  thdataleg * cdleg;
-#endif
-
   int carg;
   
   if ((this->d_current == 0) && (this->d_type != TT_DATATYPE_DIMS)) {
@@ -1641,10 +1637,6 @@ void thdata::insert_data_leg(int nargs, char ** args)
     this->pd_leg_def = this->cd_leg_def;
     this->cd_leg = this->leg_list.insert(this->leg_list.end(),dumm);
 
-#ifdef THDEBUG
-    cdleg = &(*this->cd_leg);
-#endif
-    
     // set all the data
     this->cd_leg->srcf = this->db->csrc;
     this->cd_leg->is_valid = !(this->di_interleaved);
@@ -2424,7 +2416,7 @@ void thdata::set_data_station(int nargs, char ** args, int argenc)
               ththrow(("too few flags - missing attribute name"));
             ai++;
             if (strlen(args[ai]) == 0)
-              ththrow(("epmty attribute name not allowed"))
+              ththrow(("empty attribute name not allowed"))
             if (args[ai][0] == '_')
               ththrow(("attribute name starting with '_' not allowed -- %s", args[ai]))
             if (!th_is_attr_name(args[ai]))

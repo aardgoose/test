@@ -73,7 +73,7 @@ thdb1d::thdb1d()
 
 void thdb1ds::export_mp_flags(FILE * out)
 {
-	fprintf(out, "ATTR__stationflag_splay := %s;\n", (this->is_temporary() ? "true" : "false"));
+  fprintf(out, "ATTR__stationflag_splay := %s;\n", (this->is_temporary() ? "true" : "false"));
 }
 
 void thdb1ds::set_temporary(const char * name)
@@ -94,12 +94,9 @@ void thdb1ds::set_temporary(const char * name)
 
 thdb1d::~thdb1d()
 {
-  if (this->tree_legs != NULL)
-    delete [] this->tree_legs;
-  if (this->tree_arrows != NULL)
-    delete [] this->tree_arrows;
-  if (this->tree_nodes != NULL)
-    delete [] this->tree_nodes;
+  delete [] this->tree_legs;
+  delete [] this->tree_arrows;
+  delete [] this->tree_nodes;
 }
 
 
@@ -123,7 +120,7 @@ void thdb1d::scan_data()
   int lastleggridmccs = TTCS_LOCAL;
   thdata * dp;
   unsigned used_declination = 0;
-	unsigned long prevlsid;
+  unsigned long prevlsid;
   double dcc, sindecl, cosdecl, tmpx, tmpy;
   thdb1ds * tsp1, * tsp2;  // Temporary stations.
   this->min_year = thnan;
@@ -428,7 +425,7 @@ void thdb1d::scan_data()
     obi++;
   }
 
-	// process equates separately
+  // process equates separately
   obi = this->db->object_list.begin();
   while (obi != this->db->object_list.end()) {
     if ((*obi)->get_class_id() == TT_DATA_CMD) {
@@ -437,10 +434,10 @@ void thdb1d::scan_data()
       eqi = dp->equate_list.begin();
       try {
         while(eqi != dp->equate_list.end()) {
-					prevlsid = this->lsid;
+          prevlsid = this->lsid;
           eqi->station.id = this->insert_station(eqi->station, eqi->psurvey, dp, 1);
-					if ((prevlsid < eqi->station.id) && (eqi->station.survey != NULL))
-						thwarning(("%s [%d] -- equate used to define new station (%s@%s)", eqi->srcf.name, eqi->srcf.line, eqi->station.name, eqi->station.survey));
+          if ((prevlsid < eqi->station.id) && (eqi->station.survey != NULL))
+            thwarning(("%s [%d] -- equate used to define new station (%s@%s)", eqi->srcf.name, eqi->srcf.line, eqi->station.name, eqi->station.survey));
           eqi++;
         }
       }
@@ -2034,14 +2031,10 @@ void thdb1d::find_loops()
   
   LC_COORD_CALC:
   
-  if (crossst != NULL)
-    delete [] crossst;
-  if (lclegs != NULL)
-    delete [] lclegs;
-  if (lccrosses != NULL)
-    delete [] lccrosses;
-  if (lccrossarrows != NULL)
-    delete [] lccrossarrows;
+  delete [] crossst;
+  delete [] lclegs;
+  delete [] lccrosses;
+  delete [] lccrossarrows;
 
 #ifdef THDEBUG    
   thprintf("\nEND OF LOOP CLOSURE DEBUG\n");
@@ -2505,7 +2498,7 @@ void thdb1d::print_loops() {
   thdb1d_loop_leg * ll;
   thsurvey * ss;   
 	int totlen = 6 - strlen(thdeflocale.format_length_units()) + 1;
-  thdb1ds * ps, * prev_ps, * first_ps;
+  thdb1ds * ps;
   unsigned long psid, prev_psid, first_psid;
   
   thlog.printf("\n\n######################### loop errors ##########################\n");
@@ -2527,14 +2520,12 @@ void thdb1d::print_loops() {
     else
       psid = ll->leg->from.id;
     ps = &(this->station_vec[psid - 1]);
-    first_ps = ps;
     first_psid = psid;
     thlog.printf("%s", ps->name);
     if ((ss == NULL) || (ss->id != ps->survey->id)) {
       ss = ps->survey;
       thlog.printf("@%s", ss->get_full_name());
     }
-    prev_ps = ps;
     prev_psid = psid;
     while (ll != NULL) {
     
@@ -2575,7 +2566,6 @@ void thdb1d::print_loops() {
         }
       }
 
-      prev_ps = ps;
       prev_psid = psid;
       ll = ll->next_leg;
     }

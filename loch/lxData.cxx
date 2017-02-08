@@ -51,7 +51,7 @@
 
 #include <map>
 #endif  
-//LXDEPCHECK - standart libraries
+//LXDEPCHECK - standard libraries
 
 #include "lxData.h"
 #include "lxLRUD.h"
@@ -178,10 +178,10 @@ bool lxDataTexture::InitCalibNormal(double idx, double idy, double ixx, double i
 void lxDataTexture::ClearTexImages()
 {
 #define lxDataTextureClear(i) \
-  if (this->i != NULL) { \
+  do { \
     delete [] this->i; \
     this->i = NULL; \
-  }
+  } while (false)
   lxDataTextureClear(texS);
   lxDataTextureClear(texSbw);
   lxDataTextureClear(texO);
@@ -256,9 +256,8 @@ void lxData::Rebuild()
 {
 
   wxString inpln, flags, filename;
-  wxUint32 id1, id2, nid, lnNum, scrapWallsNpt, currentXpt = 0,
+  wxUint32 id1, id2, nid, scrapWallsNpt, currentXpt = 0,
 		surfaceNpt;
-  wxInt32 xMode;
   double fpos[3], norm[3];
 
   lxLRUD lrud;
@@ -266,7 +265,6 @@ void lxData::Rebuild()
   lxDataStation st;
   lxDataShot sh;
   lxDataSurvey sv;
-  bool err;
 
   this->Clear();
 
@@ -279,9 +277,6 @@ void lxData::Rebuild()
   //vtkVoidArray * cldata_array = vtkVoidArray::New();
   vtkIntArray * cldata_array = vtkIntArray::New();
   cldata_array->SetName("Temp");
-  err = false;
-  lnNum = 0;
-  xMode = -1;
 	surfaceNpt = 0;
   lxVec tmpVec;
   
@@ -498,14 +493,14 @@ void lxData::Rebuild()
     y3 = this->m_textureSurface.yx * bnds[0] + this->m_textureSurface.yy * bnds[3] + this->m_textureSurface.dy;
     y4 = this->m_textureSurface.yx * bnds[1] + this->m_textureSurface.yy * bnds[3] + this->m_textureSurface.dy;
     tmp1 = x1; tmp2 = x1;
-    if (x2 < tmp1) tmp1 = x2; if (x2 > tmp2) tmp2 = x2;
-    if (x3 < tmp1) tmp1 = x3; if (x3 > tmp2) tmp2 = x3;
-    if (x4 < tmp1) tmp1 = x4; if (x4 > tmp2) tmp2 = x4;
+    if (x2 < tmp1) tmp1 = x2; else if (x2 > tmp2) tmp2 = x2;
+    if (x3 < tmp1) tmp1 = x3; else if (x3 > tmp2) tmp2 = x3;
+    if (x4 < tmp1) tmp1 = x4; else if (x4 > tmp2) tmp2 = x4;
     x1 = tmp1; x2 = tmp2;
     tmp1 = y1; tmp2 = y1;
-    if (y2 < tmp1) tmp1 = y2; if (y2 > tmp2) tmp2 = y2;
-    if (y3 < tmp1) tmp1 = y3; if (y3 > tmp2) tmp2 = y3;
-    if (y4 < tmp1) tmp1 = y4; if (y4 > tmp2) tmp2 = y4;
+    if (y2 < tmp1) tmp1 = y2; else if (y2 > tmp2) tmp2 = y2;
+    if (y3 < tmp1) tmp1 = y3; else if (y3 > tmp2) tmp2 = y3;
+    if (y4 < tmp1) tmp1 = y4; else if (y4 > tmp2) tmp2 = y4;
     y1 = tmp1; y2 = tmp2;
     ix1 = int(floor(x1)) - 1; if (ix1 < 0) ix1 = 0;
     iy1 = int(floor(y1)) - 1; if (iy1 < 0) iy1 = 0;

@@ -63,8 +63,7 @@ thpoint::~thpoint()
 {
   if (this->type == TT_POINT_TYPE_DATE) {
     thdate * dp = (thdate *) this->text;
-    if (dp != NULL)
-      delete dp;
+    delete dp;
     this->text = NULL;
   }
 }
@@ -1144,7 +1143,7 @@ void thpoint::parse_value(char * ss) {
   int npar = this->db->db2d.mbf.get_size();
   char ** pars = this->db->db2d.mbf.get_buffer();
   int sv, ux, vx, sv2;
-  bool parsev, quest, quest2;
+  bool quest, quest2;
   double dv, dv2;
   int sign, sign2;
   thtflength lentf;
@@ -1154,7 +1153,6 @@ void thpoint::parse_value(char * ss) {
 
     case TT_POINT_TYPE_EXTRA:
       ux = 0;
-      parsev = false;
       switch (npar) {
         case 1:
           break;
@@ -1182,7 +1180,6 @@ void thpoint::parse_value(char * ss) {
       
     case TT_POINT_TYPE_HEIGHT:
       ux = 0;
-      parsev = false;
       switch (npar) {
         case 1:
           break;
@@ -1249,7 +1246,6 @@ void thpoint::parse_value(char * ss) {
     case TT_POINT_TYPE_PASSAGE_HEIGHT:
       ux = 0;
       vx = 0;
-      parsev = false;
       switch (npar) {
         case 1:
           break;

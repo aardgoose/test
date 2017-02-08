@@ -50,6 +50,40 @@ vardef thdir (expr p,t) =    % 1 * epsilon caused problems in scales < 1:1000
   fi
 enddef;
 
+vardef polyline_offset(expr p, amount, direction) =
+  % direction should be 90 or -90
+  save P;
+  path P,R;
+  P = punked p;   % convert to polyline
+  pair za, zb;
+  for i=0 upto length P:
+    if i > 0:
+      za := unitvector(point i of P - point i-1 of P);      % direction of the previous segment
+    else:                       % the first segment
+      if cycle P:
+        za := unitvector(point length P of P - point (length P)-1 of P);
+      else:
+        za := unitvector(point 1 of P - point 0 of P);    % za == zb 
+      fi;
+    fi;
+    if i < length P:
+      zb := unitvector(point i+1 of P - point i of P);    % direction of the next segment
+    else:                       % the last segment
+      if cycle P:
+        % zb is unused as the path is closed by "-- cycle"
+      else:
+        zb := za;
+      fi;
+    fi;
+    A := 180-(angle(za)-angle(zb));
+    R := if i>0: R -- fi 
+         if (i=length P) and cycle P: cycle else:
+         point i of P + amount*unitvector(((za+zb)/2) rotated direction)/abs(sind(A/2)) fi;
+  endfor;
+  R
+enddef;
+
+
 % walls:
 
 def l_wall_bedrock_UIS (expr P) = 
@@ -976,10 +1010,10 @@ def l_gradient_BCRA (expr P) =
 enddef;
 
 
-def l_rope_SKBB (expr P,exact) =
+def l_rope_SKBB (expr P, show_anchors, show_rebelays) =
   T:=identity;
   pickup PenC;
-  if exact:
+  if not show_rebelays:
     draw P;
   else:
     d:=0.5u;
@@ -1007,14 +1041,15 @@ def l_rope_SKBB (expr P,exact) =
       endfor;
     endfor;
     pair x;
-    x = point (length P)-1 of P + whatewer * down;
+    x = point (length P)-1 of P + whatever * down;
     x = point (length P) of P + whatever * right;
     draw point (length P)-1 of P -- x;
-%    thdraw point length P of P withpen pencircle scaled 0.3u withcolor red;
   fi;
-  for i:=0 upto length P if not exact: -1 fi:
-    thdraw point i of P withpen pencircle scaled 0.3u;
-  endfor;
+  if show_anchors:
+    for i:=0 upto length P if show_rebelays: -1 fi:
+      thdraw point i of P withpen pencircle scaled 0.25u;
+    endfor;
+  fi;
 enddef;
 
 def l_border_presumed_SKBB (expr Path) =
@@ -1101,12 +1136,15 @@ def l_handrail_SKBB (expr P) =
     else:
       T:=identity;
       cas := 0;
+      pair coord;
+      sq_size:=0.12u;
       dlzka := arclength P;
       mojkrok:=adjust_step(dlzka, u);
       pickup PenD;  
       forever:
         t := arctime cas of P;
-        thdraw point t of P withpen pencircle scaled .25u;
+        coord := point t of P;
+        thfill coord+(-sq_size,-sq_size)--coord+(sq_size,-sq_size)--coord+(sq_size,sq_size)--coord+(-sq_size,sq_size)--cycle;
         cas := cas + mojkrok;
         exitif cas > dlzka + (mojkrok / 3); % for rounding errors
       endfor;
@@ -1115,9 +1153,27 @@ def l_handrail_SKBB (expr P) =
     fi;
 enddef;
 
-def l_fixedladder_SKBB (expr P) = 
-  pickup PenD;
-  draw P withcolor red;
+def l_fixedladder_SKBB (expr Q) = 
+  % TODO: support side view in elevation (front view could be the same as in the plan view)
+  T:=identity;
+  path P, P_left, P_right;
+  P := punked Q;     % ensure that there is no bezier curve
+  pair p_tmp, za, zb;
+  len := arclength P;
+  dt:=adjust_step(len, 0.3u);
+  t := dt/2;
+  wdth := 0.25u;     % half-width of the ladder
+  pickup PenC;
+  % draw the steps
+  forever:
+    p_tmp := point arctime t of P of P;
+    draw p_tmp+wdth*unitvector(thdir(P,arctime t of P) rotated -90) --
+         p_tmp+wdth*unitvector(thdir(P,arctime t of P) rotated  90);
+    t := t + dt;
+    exitif t > len + 10*epsilon;
+  endfor;
+  draw polyline_offset(P,wdth, 90);
+  draw polyline_offset(P,wdth,-90);
 enddef;
 
 def l_ropeladder_SKBB (expr P) = 

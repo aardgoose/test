@@ -16,7 +16,7 @@ endif
 all: $(LOUTDIR)/$(TARGET)
 
 $(LOUTDIR)/$(TARGET): *.tcl
-	tclsh mkall.tcl
+	tclsh mkall.tcl $(THPLATFORM)
 ifneq ($(OUTDIR),.)
 	perl ../makefile.pl mv ./$(TARGET) $(LOUTDIR)
 endif
@@ -33,6 +33,7 @@ clean:
 	perl ../makefile.pl rm -q svxedit
 	perl ../makefile.pl rm -q xtherion.tar.gz
 	perl ../makefile.pl rm -q svxedit.tar.gz
+	perl ../makefile.pl rm -q err.log
 
 update:
 	make -C ./lang update

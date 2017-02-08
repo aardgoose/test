@@ -1,28 +1,37 @@
-.TH "THERION" "1" "2003/07/15"
+.TH "THERION" "1" "2017/01/25"
 .SH "NAME" 
 Therion \(em program to draw cave surveys 
 .SH "SYNOPSIS" 
 .PP 
-\fBtherion\fP [\fB-q\fP] [\fB-L\fP] [\fB-l \fIlog-file\fR]  
-        [\fB-s \fIsource file\fR] [\fB-p \fIsearch path\fR]  
-        [\fB-g\fP|\fB-u\fP] [\fB-i\fP] [\fB-d\fP] [\fB-x\fP] [config-file]
+\fBtherion\fP [\fB-q\fP] [\fB-L\fP] [\fB-l \fIlog-file\fR]
+        [\fB-s \fIsource-file\fR] [\fB-p \fIsearch-path\fR]
+        [\fB-b\fP|\fB--bezier\fP] [\fB--use-extern-libs\fP]
+        [\fB-g\fP|\fB-u\fP] [\fB-i\fP]
+        [\fB-d\fP] [\fB-x\fP] [\fB--use-extern-libs\fP] [config-file]
 .PP
 \fBtherion\fP [\fB-h\fP|\fB--help\fP]
         [\fB-v\fP|\fB--version\fP]
-        [\fB--print-encodings\fP]  
-        [\fB--print-tex-encodings\fP]  
-        [\fB--print-init-file\fP]  
+        [\fB--print-encodings\fP]
+        [\fB--print-environment\fP]
+        [\fB--print-init-file\fP]
+        [\fB--print-library-src\fP]
+        [\fB--print-symbols\fP]
+        [\fB--print-tex-encodings\fP]
+        [\fB--print-xtherion-src\fP]
 .SH "DESCRIPTION" 
 .PP 
 This manual page briefly documents \fBTherion\fP and provides an overview of 
 the package. 
 .PP 
 \fBTherion\fP is a program that processes Therion data files to produce cave 
-surveys. The data files are usually .th files which contain survey  
-data, largely equivalent to survex .svx files, .th2 files which contain drawing  
-data and thconfig files which control the data files to be used and the maps to 
-be output.  
-.PP 
+surveys. The data files are usually .th files which contain survey
+data (largely equivalent to Survex .svx files), .th2 files which contain drawing
+data, and thconfig files which control the data files to be used and the maps to
+be output.
+.PP
+\fBTherion\fP outputs PDF and SVG files for drawings, Survex .3d files,
+Compass .PLT files and VRML files for 3D models.
+.PP
 \fBTherion\fP uses a number of helper programs to do its  
 job. \fBSurvex\fP is used to process the centreline data,  
 \fBMetaPost\fP is used to draw cave symbols, and  
@@ -91,11 +100,14 @@ temporary directory named \fBthTMPDIR\fP (in your system temporary
 directory) and does not delete any temporary files. 
 .SH "SEE ALSO" 
 .PP 
-xtherion (1)
+loch(1), xtherion(1)
 .PP 
 For full information see The Therion Book which describes Therion and its use 
 in detail. 
 .SH "AUTHORS" 
 .PP 
-Stacho Mudrak and Martin Budaj. This manual page was written by Wookey 
-wookey@debian.org for the \fBDebian\fP system. Modified by MB.
+Stacho Mudrak and Martin Budaj. This manual page was originally written by
+Wookey wookey@debian.org for the \fBDebian\fP system. Modified by MB.
+.PP
+Copyright Wookey 2003, Martin Budaj 2003.
+This file is licensed under the GNU General Public Licence.

@@ -1,6 +1,6 @@
 /* img.h
  * Header file for routines to read and write Survex ".3d" image files
- * Copyright (C) Olly Betts 1993,1994,1997,2001,2002,2003,2004,2005,2006,2010,2011,2012,2013,2014
+ * Copyright (C) Olly Betts 1993,1994,1997,2001,2002,2003,2004,2005,2006,2010,2011,2012,2013,2014,2016
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,6 +27,7 @@
  * 1		days1 and days2 give survey dates as days since 1st Jan 1900.
  *		Set to -1 for "unknown".
  */
+#define IMG_API_VERSION 1
 #ifndef IMG_API_VERSION
 # define IMG_API_VERSION 0
 #elif IMG_API_VERSION > 1
@@ -50,6 +51,8 @@ extern "C" {
 # define img_LABEL  3
 # define img_XSECT  4
 # define img_XSECT_END 5
+/* Loop closure information for the *preceeding* traverse (img_MOVE + one or
+ * more img_LINEs). */
 # define img_ERROR_INFO 6
 
 /* Leg flags */
@@ -87,10 +90,14 @@ typedef struct {
 } img_point;
 
 typedef struct {
-   /* members you can access when reading (don't touch when writing) */
+   /* Members you can access when reading (don't touch when writing): */
    char *label;
    int flags;
    char *title;
+   /* If the coordinate system was specified, this contains a PROJ4 string
+    * describing it.  If not, this member will be NULL.
+    */
+   char *cs;
    /* Older .3d format versions stored a human readable datestamp string.
     * Format versions >= 8 versions store a string consisting of "@" followed
     * by the number of seconds since midnight UTC on 1/1/1970.  Some foreign
@@ -113,23 +120,31 @@ typedef struct {
     */
    time_t datestamp_numeric;
    char separator; /* character used to separate survey levels ('.' usually) */
+
+   /* Members that can be set when writing: */
 #if IMG_API_VERSION == 0
    time_t date1, date2;
 #else /* IMG_API_VERSION == 1 */
    int days1, days2;
 #endif
    double l, r, u, d;
-   /* Error information - valid when IMG_ERROR is returned: */
+
+   /* Error information - valid when img_ERROR_INFO is returned: */
    int n_legs;
    double length;
    double E, H, V;
-   /* The filename actually opened (e.g. may have ".3d" added). */
+
+   /* The filename actually opened (e.g. may have ".3d" added): */
    char * filename_opened;
+
+   /* Non-zero if reading an extended elevation: */
    int is_extended_elevation;
+
+   /* Members that can be set when writing: */
    /* The style of the data - one of the img_STYLE_* constants above */
    int style;
 
-   /* all other members are for internal use only */
+   /* All other members are for internal use only: */
    FILE *fh;          /* file handle of image file */
    char *label_buf;
    size_t buf_len;
@@ -199,7 +214,20 @@ img *img_open_survey(const char *fnm, const char *survey);
  * Returns pointer to an img struct or NULL for error (check img_error()
  * for details)
  */
-img *img_open_write(const char *fnm, char *title, int flags);
+#define img_open_write(F, T, S) img_open_write_cs(F, T, NULL, S)
+
+/* Open a .3d file for output in a specified coordinate system
+ * fnm is the filename
+ * title is the title
+ * cs is a PROJ4 string describing the coordinate system (or NULL)
+ * flags contains a bitwise-or of any file-wide flags - currently only one
+ * is available: img_FFLAG_EXTENDED.
+ *
+ * Returns pointer to an img struct or NULL for error (check img_error()
+ * for details)
+ */
+img *img_open_write_cs(const char *fnm, const char *title, const char * cs,
+		       int flags);
 
 /* Read an item from a .3d file
  * pimg is a pointer to an img struct returned by img_open()
