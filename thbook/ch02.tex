@@ -104,7 +104,7 @@ Therion uses following data types:
     (where |XX| is the language selected in initialization 
     or configuration file) and the next |<lang:YY>| 
     tag is displayed on the output. 
-    If no match is found, everything before any occurence of
+    If no match is found, everything before any occurrence of
     |<lang:ZZ>| tag is displayed.
 * {\it units} = length units supported: 
            meter[s], centimeter[s], inch[es], feet[s], yard[s]
@@ -146,7 +146,7 @@ Following coordinate systems are supported:
   supported on output.
 * |EPSG:<number>| = Most of EPSG coordinate systems. Almost every 
   coordinate system used worldwide has its own EPSG number. To find
-  number of your system, see |extern/proj4/nad/epsg| file in the
+  the number of your system, see |extern/proj4/nad/epsg| file in the
   therion source distribution.
 * |ESRI:<number>| = Similar to EPSG, but ESRI standard.
 %* |EUR79Z30| = UTM zone 30, EUR79 datum.  % ad-hoc addition not worth mentioning??
@@ -164,9 +164,13 @@ Following coordinate systems are supported:
 
 Therion contains built-in IGRF\[See \www{https://www.ngdc.noaa.gov/IAGA/vmod/}]
 Earth geomagnetic field model valid for period 
-1900--2020\NEW{5.4}. It is automatically used if the cave is located in space using 
-any of supported geodetic coordinate systems and no declination is specified by 
-user. The computed declination is listed in the LOG file for information.
+1900--2020\NEW{5.4}. It is automatically used if the cave is located in space with a
+|fix| station using any of the supported geodetic coordinate systems and in time with the
+centerlines |date| command. The computed declination is listed in the LOG file for
+information.
+
+If the user specified a |declination| in the centerline, that value takes
+precedence over the automatic calculation.
 
 \subchapter Data format.
 
@@ -777,7 +781,10 @@ Point is a command for drawing a point map symbol.
     are accepted: center, c, top, t, bottom, b, left, l, right, r,
     top-left, tl, top-right, tr, bottom-left, bl, bottom-right, br.
   * |scale| = symbol scale, can be: 
-    tiny (xs), small (s), normal (m), large (l), huge (xl). Normal is default.
+    tiny (xs), small (s), normal (m), large (l), huge (xl) or a 
+    numeric value. Normal is default. Named sizes scale by $\sqrt 2$, so that
+    $xs \equiv 0.5$, $s \equiv 0.707$, $m \equiv 1.0$, $l \equiv 1.414$ and
+    $xl \equiv 2.0$.
   * |place <bottom/default/top>| = changes displaying order in the map.
   * |clip <on/off>| = specify whether a symbol is clipped by the scrap border.
     You cannot specify this option for the following symbols: station,
@@ -1074,6 +1081,13 @@ You may use invisible border to achieve this inside of the passage.
   which should be joined.
   \[If you want some object which is clipped by a scrap boundary to continue
   to a neighbouring scrap, use |-clip off| option for that object.]
+
+  When joining more than two scraps at the same scrap border, a manual
+  join must be performed where the connection points must be entered
+  in one join statement.
+  \[Like |join origScrapLineWest:end upperScrapLineWest:0 lowerScrapLineWest:0| % line was too long
+    and another similar join command for the three east wall lines.]
+
 \enddescription
 
 \syntax
@@ -1163,6 +1177,8 @@ none, survey
     
     Use the revise command if you want to add maps from higher levels to the
     preview.
+  * |colo[u]r <color>| = set the map colour; this option overrides the automatic 
+    choice when the layout specifies |colour map-fg [map]|.
 \endcomopt
 
 \options
@@ -1243,8 +1259,8 @@ endsurface|
 \description
   Reads survey data in different formats (currently processed centreline in 
   *.3d, *.plt, *.xyz formats). Survey stations may be referenced in scraps 
-  etc. When importing Survex' 3D file, stations are inserted in survey 
-  hierarchy, if there exists identical hierarchy to that in 3D file.
+  etc. When importing a Survex 3D file, stations are inserted in the survey
+  hierarchy if there exists an identical hierarchy to that in 3D file.
 \enddescription
 
 \syntax
@@ -1279,7 +1295,13 @@ survey / all\[only with .3d files, where survey structure is specified]
 
 \description
    This command is used to store predefined precisions of centreline data.
-   See |sd| option description for |centreline| command. 
+   Built in grades are: BCRA\[see \www{http://bcra.org.uk/surveying/};
+     syntax is: |BCRA{\it n}|, where |{\it n}| may be |3| or |5|]
+   and UISv1\[see \www{http://www.uisic.uis-speleo.org/UISmappingGrades.pdf};
+     syntax is: |UISv1\_{\it n}|\NEW{5.4}, where |{\it n}| is |-1| to |6| or |X|; whereas 
+     |-1| to |2| are only declaratory and |X| requires |sd| data in |centerline|)].
+
+   See |sd| option description for |centreline| command to define your own grades.
 \enddescription
 
 \syntax:
@@ -1590,7 +1612,7 @@ nine distinct points is present if centreline contains
 station(s) fixed using geodetic coordinate system(s)]. 
 
 If the map in PDF format has been converted to raster using external program,
-convertor uses raster image {\it and} pdf map with the same base name 
+converter uses raster image {\it and} pdf map with the same base name
 located in the same directory to calculate the calibration data.
 
 If the PDF file is used directly, you have to set DPI and output format 
@@ -1603,7 +1625,7 @@ format which needs to be imported using XTherion and can not be processed
 by Therion directly.]
 from PocketTopo application can be imported in text editor as well as in map 
 editor ({\it File $\to$ Import $\to$ PocketTopo therion export} and 
-{\it Backgroud Images $\to$ Insert $\to$ PocketTopo therion export}). The
+{\it Background Images $\to$ Insert $\to$ PocketTopo therion export}). The
 same file is used for both imports. Importing sketch does not create scrap
 data directly. The drawing is just displayed on the background like scanned
 bitmaps and should be digitized manually.

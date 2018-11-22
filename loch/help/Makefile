@@ -1,3 +1,7 @@
 all:
-	make -i -C ./en
-	make -i -C ./sk
+	$(MAKE) -i -C ./en
+	$(MAKE) -i -C ./sk
+
+clean:
+	$(MAKE) -C ./en clean
+	$(MAKE) -C ./sk clean

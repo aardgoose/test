@@ -40,6 +40,7 @@
 #include "thmap.h"
 #include "thsketch.h"
 #include "thconfig.h"
+#include "thlookup.h"
 #include <stdio.h>
 #include "thtmpdir.h"
 #ifndef THMSVC
@@ -1041,7 +1042,7 @@ void thexpmap::export_th2(class thdb2dprj * prj)
                   fprintf(pltf,"    subtype %s\n", thmatch_string(lpt->subtype, thtt_line_subtypes));
                   lsubtype = lpt->subtype;
                 }
-                if ((lpt->tags | TT_LINEPT_TAG_ALTITUDE) != 0) {
+                if ((lpt->tags & TT_LINEPT_TAG_ALTITUDE) != 0) {
                   // TODO: altitude tags and others
                 }
                 lpt = lpt->nextlp;
@@ -1280,6 +1281,8 @@ void thexpmap::export_pdf(thdb2dxm * maps, thdb2dprj * prj) {
 
   if (this->layout->def_base_scale > 0)
     fprintf(mpf,"BaseScale:=%.2f;\n",0.01 / this->layout->base_scale);
+  else
+		this->layout->base_scale = this->layout->scale;
   fprintf(mpf,"color HelpSymbolColor;\nHelpSymbolColor := (0.8, 0.8, 0.8);\n");
   fprintf(mpf,"background:=(%.5f,%.5f,%.5f);\n",
     this->layout->color_map_fg.R,
@@ -1292,6 +1295,38 @@ void thexpmap::export_pdf(thdb2dxm * maps, thdb2dprj * prj) {
     fprintf(mpf,"input therion;\n");
   else
     fprintf(mpf,"%s\n",thmpost_library);
+
+  // insert font setup
+  if (this->layout->def_font_setup > 0) {
+    fprintf(mpf,"fonts_setup(%.1f,%.1f,%.1f,%.1f,%.1f);\n", this->layout->font_setup[0], this->layout->font_setup[1], this->layout->font_setup[2], this->layout->font_setup[3], this->layout->font_setup[4]);
+  } else {
+  	if ((0.01 / this->layout->base_scale) <= 1.0) {
+  		this->layout->font_setup[0] = 8.0;
+  		this->layout->font_setup[1] = 10.0;
+  		this->layout->font_setup[2] = 12.0;
+  		this->layout->font_setup[3] = 16.0;
+  		this->layout->font_setup[4] = 24.0;
+  	} else if ((0.01 / this->layout->base_scale) <= 2.0) {
+  		this->layout->font_setup[0] = 7.0;
+  		this->layout->font_setup[1] = 8.0;
+  		this->layout->font_setup[2] = 10.0;
+  		this->layout->font_setup[3] = 14.0;
+  		this->layout->font_setup[4] = 20.0;
+  	} else if ((0.01 / this->layout->base_scale) <= 5.0) {
+  		this->layout->font_setup[0] = 6.0;
+  		this->layout->font_setup[1] = 7.0;
+  		this->layout->font_setup[2] = 8.0;
+  		this->layout->font_setup[3] = 10.0;
+  		this->layout->font_setup[4] = 14.0;
+  	} else {
+  		this->layout->font_setup[0] = 5.0;
+  		this->layout->font_setup[1] = 6.0;
+  		this->layout->font_setup[2] = 7.0;
+  		this->layout->font_setup[3] = 8.0;
+  		this->layout->font_setup[4] = 10.0;
+  	}
+  }
+
   fprintf(mpf,"lang:=\"%s\";\n",thlang_getid(this->layout->lang));
   fprintf(mpf,"ATTR__elevation:=%s;\n",((prj->type == TT_2DPROJ_ELEV) || (prj->type == TT_2DPROJ_EXTEND) ? "true" : "false"));
 
@@ -1341,7 +1376,8 @@ else
   // prida nultu figure
   // fprintf(mpf,"beginfig(0);\nendfig;\n");
   
-  this->export_pdf_set_colors(maps, prj);
+  //this->export_pdf_set_colors(maps, prj);
+  this->export_pdf_set_colors_new(maps, prj);
   double ascR = 1.0, ascG = 1.0, ascB = 1.0,
     pscR = -1.0, pscG = -1.0, pscB = -1.0;
   lxVecLimits lim;
@@ -2058,18 +2094,36 @@ else
   ldata.legendtitle = thT("title legend",this->layout->lang);
 
   ldata.colorlegendtitle = "";
-  if ((this->layout->color_crit != TT_LAYOUT_CCRIT_UNKNOWN) && (this->layout->color_crit != TT_LAYOUT_CCRIT_SCRAP)) {
-    fprintf(tf,"\\colorlegendtitle={");
+  if (this->layout->color_crit != TT_LAYOUT_CCRIT_UNKNOWN) {
     switch (this->layout->color_crit) {
       case TT_LAYOUT_CCRIT_ALTITUDE:
-        fprintf(tf,"%s", utf2tex(thT("title color-legend-altitude",this->layout->lang)));
         ldata.colorlegendtitle = thT("title color-legend-altitude",this->layout->lang);
         break;
-      default: //TT_LAYOUT_CCRIT_MAP:
-        fprintf(tf,"%s", utf2tex(thT("title color-legend-map",this->layout->lang)));
+      case TT_LAYOUT_CCRIT_DEPTH:
+        ldata.colorlegendtitle = thT("title color-legend-depth",this->layout->lang);
+        break;
+      case TT_LAYOUT_CCRIT_MAP:
         ldata.colorlegendtitle = thT("title color-legend-map",this->layout->lang);
+        break;
+      case TT_LAYOUT_CCRIT_SCRAP:
+        ldata.colorlegendtitle = thT("title color-legend-scrap",this->layout->lang);
+        break;
+      case TT_LAYOUT_CCRIT_SURVEY:
+        ldata.colorlegendtitle = thT("title color-legend-survey",this->layout->lang);
+        break;
+      case TT_LAYOUT_CCRIT_EXPLODATE:
+        ldata.colorlegendtitle = thT("title color-legend-explodate",this->layout->lang);
+        break;
+      case TT_LAYOUT_CCRIT_TOPODATE:
+        ldata.colorlegendtitle = thT("title color-legend-topodate",this->layout->lang);
+        break;
+      default:
+        ldata.colorlegendtitle = thT("title color-legend-default",this->layout->lang);
     }
-    fprintf(tf,"}\n");
+    if ((this->layout->m_lookup != NULL) && (strlen(this->layout->m_lookup->m_title) > 0)) {
+      ldata.colorlegendtitle = this->layout->m_lookup->m_title;
+    }
+    fprintf(tf,"\\colorlegendtitle={%s}\n", utf2tex(ldata.colorlegendtitle.c_str()));
   }
 
   // ak neni atlas, tak nastavi legendcavename
@@ -2749,7 +2803,7 @@ thexpmap_xmps thexpmap::export_mp(thexpmapmpxs * out, class thscrap * scrap,
         if (out->layout->is_debug_stationnames() && (slp->station_name.id != 0)) {
           tmps = &(thdb.db1d.station_vec[slp->station_name.id - 1]);
           out->symset->export_mp_symbol_options(&dbg_stnms, SYMP_STATIONNAME);
-          dbg_stnms.appspf("p_label.urt(btex \\thstationname %s etex, (%.2f, %.2f), 0.0, 7);\n",
+          dbg_stnms.appspf("p_label.urt(btex \\thstationname %s etex, (%.2f, %.2f), 0.0, p_label_mode_debugstation);\n",
             (const char *) utf2tex(thobjectname__print_full_name(tmps->name, tmps->survey, layout->survey_level)), 
             thxmmxst(out, slp->stx, slp->sty));
         }
@@ -2828,7 +2882,7 @@ thexpmap_xmps thexpmap::export_mp(thexpmapmpxs * out, class thscrap * scrap,
                 }
                 if (out->layout->is_debug_stationnames() && (tmps != NULL)) {
                       out->symset->export_mp_symbol_options(&dbg_stnms, SYMP_STATIONNAME);
-                      dbg_stnms.appspf("p_label.urt(btex \\thstationname %s etex, (%.2f, %.2f), 0.0, 7);\n",
+                      dbg_stnms.appspf("p_label.urt(btex \\thstationname %s etex, (%.2f, %.2f), 0.0, p_label_mode_debugstation);\n",
                       (const char *) utf2tex(thobjectname__print_full_name(tmps->name, tmps->survey, layout->survey_level)), 
                       thxmmxst(out, ptp->point->xt, ptp->point->yt));
                 }
@@ -2894,7 +2948,7 @@ thexpmap_xmps thexpmap::export_mp(thexpmapmpxs * out, class thscrap * scrap,
             // prescanuje stenu
             lp = ((thline*)obj)->first_point;
             while(lp != NULL) {
-              if (((lp->tags | TT_LINEPT_TAG_ALTITUDE) > 0) &&
+              if (((lp->tags & TT_LINEPT_TAG_ALTITUDE) > 0) &&
                   (!thisnan(lp->rsize))) {
                 thexpmap_export_mp_bgif;
                 out->symset->export_mp_symbol_options(out->file, SYMP_WALLALTITUDE);
@@ -2955,7 +3009,7 @@ thexpmap_xmps thexpmap::export_mp(thexpmapmpxs * out, class thscrap * scrap,
     thdb.buff_tmp = utf2tex(thobjectname__print_full_name(scrap->name, scrap->fsptr, layout->survey_level));
     fprintf(out->file,"p_label(btex \\thlargesize %s etex,",thdb.buff_tmp.get_buffer());
     tmppt.export_mp(out);
-    fprintf(out->file,",0.0,6);\n");
+    fprintf(out->file,",0.0,p_label_mode_debugscrap);\n");
   }
 
 
@@ -3039,9 +3093,15 @@ void thexpmap::export_pdf_set_colors(class thdb2dxm * maps, class thdb2dprj * pr
                 maxz = curz;
             }
           }
-          cs->R = this->layout->color_map_fg.R;
-          cs->G = this->layout->color_map_fg.G;
-          cs->B = this->layout->color_map_fg.B;
+          if ((cs->fsptr != NULL) && (cs->fsptr->selected_color.defined)) {
+            cs->R = cs->fsptr->selected_color.R;
+            cs->G = cs->fsptr->selected_color.G;
+            cs->B = cs->fsptr->selected_color.B;
+          } else {
+            cs->R = this->layout->color_map_fg.R;
+            cs->G = this->layout->color_map_fg.G;
+            cs->B = this->layout->color_map_fg.B;
+          }
         }
         cmi = cmi->prev_item;  
       }
@@ -3101,10 +3161,10 @@ void thexpmap::export_pdf_set_colors(class thdb2dxm * maps, class thdb2dprj * pr
             case TT_LAYOUT_CCRIT_MAP:
               // vsetkym scrapom v kazdej priradi farbu
               if (firstmapscrap) {
-                if (cmap->map->colour.defined) {
-                  cR = cmap->map->colour.R;
-                  cG = cmap->map->colour.G;
-                  cB = cmap->map->colour.B;
+                if (cmap->selection_color.defined) {
+                  cR = cmap->selection_color.R;
+                  cG = cmap->selection_color.G;
+                  cB = cmap->selection_color.B;
                 } else {
                   thset_color(0, (double) (nmap - cmn), (double) nmap, cR, cG, cB);
                 }
@@ -3156,9 +3216,20 @@ void thexpmap::export_pdf_set_colors(class thdb2dxm * maps, class thdb2dprj * pr
               }
             break;
             default:
-              cs->R = this->layout->color_map_fg.R;
-              cs->G = this->layout->color_map_fg.G;
-              cs->B = this->layout->color_map_fg.B;
+              if (cmap->selection_color.defined) {
+            	cs->R = cmap->selection_color.R;
+            	cs->G = cmap->selection_color.G;
+            	cs->B = cmap->selection_color.B;
+              }
+              else if ((cs->fsptr != NULL) && (cs->fsptr->selected_color.defined)) {
+                cs->R = cs->fsptr->selected_color.R;
+                cs->G = cs->fsptr->selected_color.G;
+                cs->B = cs->fsptr->selected_color.B;
+              } else {
+                cs->R = this->layout->color_map_fg.R;
+                cs->G = this->layout->color_map_fg.G;
+                cs->B = this->layout->color_map_fg.B;
+              }
           }
         }
         cmi = cmi->prev_item;  
@@ -3382,6 +3453,154 @@ bool th2ddataobject::export_mp_end(thexpmapmpxs * out)
   }
   return true;
 }
+
+
+void thexpmap::export_pdf_set_colors_new(class thdb2dxm * maps, class thdb2dprj * prj)
+{
+
+  // parsneme lookup a najdeme ho
+  thlookup * lkp = NULL;
+  if (this->layout->color_crit_fname != NULL) {
+    int cc;
+    const char * ccidx;
+    const char * ccfname;
+    thlookup_parse_reference(this->layout->color_crit_fname, &cc, &ccidx, &ccfname);
+    lkp = this->db->get_lookup(ccfname);
+    if (lkp == NULL) {
+      if (strlen(ccidx) > 0) {
+        thwarning(("missing lookup -- %s", this->layout->color_crit_fname));
+      }
+      lkp = (thlookup *) this->db->create("lookup", this->src);
+      lkp->m_type = this->layout->color_crit;
+    }
+  }
+
+  // prejde vsetky scrapy a nastavi im farbu na color_map_fg
+  // farba priecnych rezov sa nastavuje pri exporte, zrata minz/maxz
+  // a pocet kapitol
+  if (lkp != NULL)
+    lkp->postprocess_object_references();
+
+  COLORLEGENDLIST.clear();
+
+  thdb2dxm * cmap;
+  thdb2dxs * cbm;
+  thdb2dmi * cmi;
+  thscrap * cs;
+
+  long nmap = 0;
+  bool firstmapscrap, nolkpitems;
+  thlayout_color csc;
+
+  // 1. reset scrap colors
+  cmap = maps;
+  while (cmap != NULL) {
+    cbm = cmap->first_bm;
+    firstmapscrap = true;
+    while (cbm != NULL) {
+      cmi = cbm->bm->last_item;
+      if (cbm->mode == TT_MAPITEM_NORMAL) while (cmi != NULL) {
+        if (cmi->type == TT_MAPITEM_NORMAL) {
+          cs = (thscrap *) cmi->object;
+          cs->RGBsrc = 0;
+        }
+        cmi = cmi->prev_item;
+      }
+      cbm = cbm->next_item;
+    }
+    cmap = cmap->next_item;
+  }
+
+
+
+  // najprv to nascanuje
+  nolkpitems = false;
+  if (lkp != NULL)
+    nolkpitems = (lkp->m_table.size() == 0);
+  cmap = maps;
+  while (cmap != NULL) {
+    cbm = cmap->first_bm;
+    firstmapscrap = true;
+    while (cbm != NULL) {
+      cmi = cbm->bm->last_item;
+//      if ((cbm->mode == TT_MAPITEM_NORMAL) && (strlen(cbm->bm->name) > 0)) while (cmi != NULL) {
+      if (cbm->mode == TT_MAPITEM_NORMAL) while (cmi != NULL) {
+        if (cmi->type == TT_MAPITEM_NORMAL) {
+          if (firstmapscrap) {
+            nmap++;
+            firstmapscrap = false;
+            // add map, if according to maps
+            if (lkp != NULL) {
+              if ((nolkpitems) && (lkp->m_type == TT_LAYOUT_CCRIT_MAP))
+                lkp->add_auto_item(cmap->map, cmap->selection_color);
+              lkp->scan_map(cmap->map);
+            }
+          }
+          cs = (thscrap *) cmi->object;
+          // add scrap if according to scraps
+          if ((nolkpitems) && (lkp->m_type == TT_LAYOUT_CCRIT_SCRAP)) {
+            csc.defined = 0;
+            if (cs->fsptr != NULL) {
+              csc = cs->fsptr->selected_color;
+            }
+            lkp->add_auto_item(cs, cmap->selection_color);
+          }
+
+          // set default color
+          if (cmap->selection_color.defined) {
+        	cs->R = cmap->selection_color.R;
+        	cs->G = cmap->selection_color.G;
+        	cs->B = cmap->selection_color.B;
+        	cs->RGBsrc = 2;
+          }
+          else if (((cs->fsptr != NULL) && (cs->fsptr->selected_color.defined)) && (cs->RGBsrc < 2)) {
+            cs->R = cs->fsptr->selected_color.R;
+            cs->G = cs->fsptr->selected_color.G;
+            cs->B = cs->fsptr->selected_color.B;
+        	cs->RGBsrc = 1;
+          } else if (cs->RGBsrc < 1) {
+            cs->R = this->layout->color_map_fg.R;
+            cs->G = this->layout->color_map_fg.G;
+            cs->B = this->layout->color_map_fg.B;
+          }
+        }
+        cmi = cmi->prev_item;
+      }
+      cbm = cbm->next_item;
+    }
+    cmap = cmap->next_item;
+  }
+
+  if (lkp == NULL)
+    return;
+
+  lkp->auto_generate_items();
+  lkp->postprocess();
+
+  cmap = maps;
+  while (cmap != NULL) {
+    cbm = cmap->first_bm;
+    firstmapscrap = true;
+    while (cbm != NULL) {
+      cmi = cbm->bm->last_item;
+      if (cbm->mode == TT_MAPITEM_NORMAL) while (cmi != NULL) {
+        if (cmi->type == TT_MAPITEM_NORMAL) {
+          cs = (thscrap *) cmi->object;
+          lkp->color_scrap(cs);
+        }
+        cmi = cmi->prev_item;
+      }
+      cbm = cbm->next_item;
+    }
+    cmap = cmap->next_item;
+  }
+
+  lkp->export_color_legend(this->layout);
+
+}
+
+
+
 
 
 double thexpmap_quick_map_export_scale;

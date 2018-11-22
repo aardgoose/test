@@ -1,3 +1,5 @@
+thversion.h
+thbook/version.tex
 thmpost.cxx
 thtex.h
 thlangdata.h
@@ -35,6 +37,7 @@ xtherion/therion.tcl
 *.xvi
 *.zip
 core
+thconfig
 geomag/test/geomag.i
 geomag/test/geomag.py
 loch.app/Contents/MacOS/loch
@@ -51,5 +54,6 @@ thTMPDIR/
 xtherion/ver.tcl
 xtherion/xtherion
 xtherion/xtherion.tcl
+xtherion/msgxth.tcl
 /loch/loch
 /therion

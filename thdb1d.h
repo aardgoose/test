@@ -55,8 +55,17 @@ struct thdb1d_loop {
   thdb1d_loop_leg * first_leg, * last_leg;
   class thdb1ds * from, * to;
   unsigned long nlegs;
+  unsigned long id;
   bool open;
-  double err_dx, err_dy, err_dz, err_length, src_length;
+  double err_dx, err_dy, err_dz, err_length, src_length, err;
+};
+
+struct thdb1d_traverse {
+  thdb1d_loop_leg * first_leg, * last_leg;
+  class thdb1ds * from, * to;
+  unsigned long nlegs;
+  unsigned long id;
+  double src_length, E, H, V;
 };
 
 class thdb1d_tree_node {
@@ -152,6 +161,10 @@ class thdb1ds {
   
   double explored;
   
+  bool d3_parsed; ///< Whether splay shots have been parsed.
+  thdb3ddata d3_outline; ///< splay 3d outline.
+
+
   /**
    * Default constructor.
    */
@@ -160,7 +173,7 @@ class thdb1ds {
     data_priority(0), temps(TT_TEMPSTATION_NONE),
     flags(TT_STATIONFLAG_NONE), mark(TT_DATAMARK_TEMP), extend(TT_EXTENDFLAG_NORMAL), 
     adjusted(false), fixed(false), placed(0), sdx(0.0), sdy(0.0), sdz(0.0),
-    explored(thnan) {}
+    explored(thnan), d3_parsed(false) {}
   
 
   /**
@@ -173,7 +186,7 @@ class thdb1ds {
     flags(TT_STATIONFLAG_NONE),
     mark(TT_DATAMARK_TEMP), extend(TT_EXTENDFLAG_NORMAL), mark_station(false), 
     adjusted(false), fixed(false), placed(0), sdx(0.0), sdy(0.0), sdz(0.0),
-    explored(thnan) {}
+    explored(thnan), d3_parsed(false) {}
     
   
   /**
@@ -204,6 +217,14 @@ class thdb1ds {
 
   void export_mp_flags(FILE * out);
   
+
+  /**
+   * Return 3D splay outline. Process if necessary.
+   */
+
+  thdb3ddata * get_3d_outline();
+
+
 };
 
 
@@ -247,6 +268,7 @@ class thdb1dl {
 typedef std::vector < thdb1dl > thdb1d_leg_vec_type;
 typedef std::list < thdb1d_loop_leg > thdb1d_loop_leg_list_type;
 typedef std::list < thdb1d_loop > thdb1d_loop_list_type;
+typedef std::list < thdb1d_traverse > thdb1d_traverse_list_type;
 
 
 
@@ -317,6 +339,8 @@ class thdb1d {
   thdb1d_loop_leg_list_type loop_leg_list;
 
   thdb1d_loop_list_type loop_list;
+
+  thdb1d_traverse_list_type traverse_list;
 
   /**
    * Standard constructor.

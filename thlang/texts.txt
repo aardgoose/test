@@ -1,5 +1,36 @@
+therion: title model
+bg: Модел
+ca: Model
+en: Model
+es: Modelo
+fr: Modèle
+pt: Modelo
+ru: Модель
+sk: Model
+
+therion: title map
+bg: Карта
+ca: Mapa
+en: Map
+es: Mapa
+fr: Carte
+pt: Mapa
+ru: Карта
+sk: Mapa
+
+therion: surface legs
+bg: Повърхностна антена
+ca: Visual de superficie
+en: Surface legs
+es: Visual de superficie
+fr: Visée de surface
+pt: Visadas na superfície
+ru: Поверхностная съёмка
+sk: povrchové zámery
+
 therion: point station
 bg: реперна точка
+ca: estació
 cz: měřičský bod
 de: Messpunkt
 el: σημείο χαρτογράφησης
@@ -17,11 +48,12 @@ zh_CN: 测点
 
 therion: point station:temporary
 bg: временна реперна точка
+ca: estació (temporal)
 cz: měřičský bod (nestabilizovaný)
 de: unmarkierter Messpunkt
 el: προσωρινό σημείο χαρτογράφησης
 en: temporary survey station
-es: estación topográfica
+es: estación (temporal)
 fr: station topo temporaire
 it: caposaldo termporaneo
 mi: kaimataara mo te wā
@@ -34,6 +66,7 @@ zh_CN: 临时测点
 
 therion: point station:painted
 bg: реперна точка (боядисана)
+ca: estació (pintada)
 cz: měřičský bod (zabarvený)
 de: farbig markierter Messpunkt
 el: σημείο χαρτογράφησης (βαμμένο)
@@ -51,6 +84,7 @@ zh_CN: 人工测点
 
 therion: point station:natural
 bg: реперна точка (естествена)
+ca: estació (natural)
 cz: měřičský bod (přírodní)
 de: natürlicher Messpunkt
 el: σημείο χαρτογράφησης (φυσικό)
@@ -68,6 +102,7 @@ zh_CN: 天然测点
 
 therion: point station:fixed
 bg: реперна точка (стабилизирана)
+ca: estació (fixa)
 cz: měřičský bod (stabilizovaný)
 de: dauerhafter Messpunkt
 el: μόνιμο σημείο χαρτογράφησης
@@ -85,11 +120,12 @@ zh_CN: 固定测点
 
 therion: point flag:entrance
 bg: вход
+ca: entrada
 cz: vchod
 de: Eingang
 el: είσοδος
 en: entrance
-es: boca
+es: entrada
 fr: entrée
 it: ingresso
 mi: ana ngutu
@@ -102,6 +138,7 @@ zh_CN: 洞口
 
 therion: point flag:sink
 bg: понор
+ca: engolidor 
 cz: ponor
 de: Schluckloch
 el: καταβόθρα
@@ -112,13 +149,14 @@ it: perdita
 mi: tapoko
 pl: ponor
 pt: sumidouro
-ru: сток
+ru: понор
 sk: ponor
 sq: pus
 zh_CN: 渗水点
 
 therion: point flag:spring
 bg: извор
+ca: sorgència
 cz: vývěr
 de: Quelle
 el: πηγή
@@ -128,37 +166,48 @@ fr: source
 it: sorgente
 mi: waipuna
 pl: wywierzysko
-pt: nascente
-ru: исток
+pt: ressurgência
+ru: источник
 sk: výver
 sq: burim
 zh_CN: 泉点
 
 therion: point flag:doline
+bg: въртоп/пропадане
+ca: dolina
 cz: závrt
 en: doline
+es: dolina
+fr: doline
+pt: dolina
+ru: воронка
 sk: závrt
 
 therion: point flag:dig
 bg: изкоп
+ca: desobstrucció
 cz: sonda
 de: Grabung
 el: διάνοιξη
 en: dig
+es: desobstrucción
 fr: désobstruction
 it: disostruzione
 mi: kari
 pl: wykop
+pt: desobstrução
+ru: раскоп
 sk: sonda
 sq: mihje
 
 therion: point flag:continuation
 bg: възможно продължение
+ca: possible continuació
 cz: možné pokračování
 de: Fortsetzung
 el: πιθανή συνέχεια
 en: possible continuation
-es: continuación
+es: continuación posible
 fr: suite possible
 it: possibile prosecuzione
 mi: roanga taea
@@ -171,16 +220,17 @@ zh_CN: 可能延伸洞道
 
 therion: point flag:air-draught
 bg: въздушно течение
+ca: corrent d'aire 
 cz: průvan
 de: Luftzug
 el: ροή αέρα
 en: air draught
-es: corriente aire
+es: corriente de aire
 fr: courant d’air
 it: corrente d'aria
 mi: tawhiri
 pl: przewiew
-pt: presença de vento
+pt: corrente de ar
 ru: ток воздуха
 sk: prievan
 sq: rrymim i ajrit
@@ -188,22 +238,28 @@ zh_CN: 气流
 
 therion: point flag:arch
 bg: арка
+ca: arc
 cz: skalní oblouk
 en: arch
+es: arco
+fr: arche
+pt: arco
+ru: арка
 sk: skalný oblúk
 
 therion: point flag:overhang
 bg: надвес
+ca: desplom 
 cz: převis
 de: Überhang
 el: προέκταση οροφής
 en: overhang
-es: extraplomo
+es: extraplomo 
 fr: surplomb
 it: sporgenza
 mi: tauwharenga
 pl: przewieszka
-pt_BR: projeção
+pt_BR: marquise
 pt_PT: projecção
 ru: нависание потолка
 sk: previs
@@ -212,6 +268,7 @@ zh_CN: 倒倾斜
 
 therion: line survey
 bg: антена
+ca: poligonal 
 cz: polygonový tah
 de: Messzug
 el: γραμμή χαρτογράφησης
@@ -221,7 +278,7 @@ fr: visée topo
 it: poligonale
 mi: ruri rārangi
 pl: ciąg pomiarowy
-pt: linha de topografia
+pt: linha de visada
 ru: нитка хода
 sk: polygónový ťah
 sq: vijat matese-vrojtuese
@@ -229,11 +286,12 @@ zh_CN: 测线
 
 therion: point station-name
 bg: име на реперна точка
+ca: nom de la estació 
 cz: číslo měřičského bodu
 de: Messpunktname
 el: όνομα σημείου χαρτογράφησης
 en: survey station name
-es: nombre estacion
+es: nombre de la estación
 fr: station topo, nom
 it: node del caposaldo
 mi: kaimatara ingoa
@@ -246,11 +304,12 @@ zh_CN: 测点名称
 
 therion: point entrance
 bg: вход
+ca: entrada
 cz: vchod
 de: Eingang
 el: είσοδος
 en: entrance
-es: boca
+es: entrada
 fr: entrée
 it: ingresso
 mi: ana ngutu
@@ -263,14 +322,17 @@ zh_CN: 洞口
 
 therion: line map-connection
 bg: свързване на карти
+ca: connexió entre mapes
 cz: spojení map
 de: zusammenhängende Pläne
 el: ένωση χαρτών
 en: map connection
+es: conexión entre mapas
 fr: jonction de carte
 it: riporto di mappa
 mi: mahere whenua ki te hui
 pl: połączenie map
+pt: conexão entre mapas
 ru: линия выноса
 sk: prepojenie máp
 sq: lidhjet ne harta
@@ -278,6 +340,7 @@ zh_CN: 图形连接
 
 therion: line wall
 bg: стена
+ca: paret 
 cz: stěna
 de: Wand
 el: τοίχος
@@ -295,33 +358,35 @@ zh_CN: 洞道边界
 
 therion: line wall:bedrock
 bg: стена (основна скала)
+ca: pared de roca
 cz: stěna
 de: Wand zum Deckgebirge
 el: τοίχος
 en: wall
-es: pared
+es: pared  de roca
 fr: mur
 it: roccia
 mi: tarā
 pl: ściana
-pt: parede
-ru: стена
+pt: parede (rocha matriz)
+ru: стена (коренная)
 sk: stena
 sq: shkembi-muri
 zh_CN: 基岩边界
 
 therion: line wall:underlying
 bg: по-ниско разположена стена
+ca: paret galeria inferior
 cz: stěna nižší úrovně
 de: Wand unterlagernder Gang
 el: υποκείμενος τοίχος
 en: underlying wall
-es: pared subyacente
+es: pared galeria inferior
 fr: mur sousjacent
 it: parete:sottostante
 mi: tāra ki raro
 pl: ściana położona niżej
-pt: parede subjacente
+pt: parede (conduto inferior)
 ru: нижерасположенная стена
 sk: stena nižšej úrovne
 sq: muri I shtrire
@@ -329,17 +394,23 @@ zh_CN: 洞底边界
 
 therion: line wall:overlying
 bg: по-високо разположена стена
+ca: paret galeria superior
 cz: stěna vyšší úrovně
 de: überlagerter Wandverlauf
 en: overlying wall
+es: pared galeria superior
+fr: mur susjacent
 it: parete:sovrastante
 mi: tāra ki runga
 pl: ściana położona wyżej
+pt: parede (conduto superior)
+ru: вышерасположенная стена
 sk: stena vyššej úrovne
 zh_CN: 洞顶边界
 
 therion: line wall:unsurveyed
 bg: окомерна скица на стените
+ca: paret no topografiada
 cz: nezaměřená stěna
 de: Wand unvermessen
 el: τοίχος (μη χαρτογραφημένος)
@@ -357,6 +428,7 @@ zh_CN: 未测量洞道边界
 
 therion: line wall:presumed
 bg: предполагаема стена
+ca: paret suposada
 cz: předpokládaná stěna
 de: Wand geschätzt
 el: τοίχος υποθετικός
@@ -374,28 +446,34 @@ zh_CN: 推测洞道边界
 
 therion: line wall:pit
 bg: отвес
+ca: pou d'entrada
 cz: vstupní propast
 de: Eingangsschacht
 en: entrance pit
 en_GB: entrance pitch
+es: pozo de entrada
+fr: mur-puits
 it: parete:pozzo
 mi: rua
 pl: studnia wstępna
+pt: parede (poço)
+ru: отвес
 sk: vstupná priepasť
 zh_CN: 竖井洞口
 
 therion: line wall:blocks
 bg: стена - блокаж
+ca: paret de blocs
 cz: zával
 de: Wand aus Versturz
 el: ογκόλιθοι
 en: blocks, breakdown
-es: bloques
+es: pared de bloques
 fr: effrondrement
 it: massi
 mi: pakaru
 pl: ściana utworzona przez zawalisko
-pt: desmoronamento
+pt: parede de blocos
 ru: глыбы
 sk: stena tvorená závalom
 sq: blloqe
@@ -403,16 +481,17 @@ zh_CN: 崩塌块石边界
 
 therion: line wall:debris
 bg: чакъл
+ca: paret de derrubis 
 cz: štěrk
 de: Wand aus Schutt
 el: χαλάσματα
 en: debris
-es: derrubios
+es: pared de derrubios
 fr: débris de roche
 it: detriti
 mi: otaota
 pl: ściana utworzona przez żwir
-pt: escombros
+pt: parede de escombros
 ru: щебень
 sk: stena tvorená suťou
 sq: depozitime/mbetje gurresh
@@ -420,16 +499,17 @@ zh_CN: 碎屑沉积边界
 
 therion: line wall:pebbles
 bg: камъчета
+ca: paret de còdols
 cz: valouny
 de: Wand aus Kies
 el: χαλίκια
 en: pebbles
-es: cantos rodados
+es: pared de cantos rodados
 fr: cailloux
 it: ciotoli
 mi: nga kōhatu iti
 pl: ściana utworzona przez okręglaki
-pt: seixos
+pt: parede de seixos
 ru: галька
 sk: stena tvorená okruhliakmi
 sq: gurralece
@@ -437,16 +517,17 @@ zh_CN: 卵砾石边界
 
 therion: line wall:sand
 bg: пясък
+ca: paret de sorra 
 cz: písek
 de: Wand aus Sand
 el: άμμος
 en: sand
-es: arena
+es: pared de arena
 fr: sable
 it: sabbia
 mi: onepū
 pl: ściana utworzona przez piasek
-pt: areia
+pt: parede de areia
 ru: песок
 sk: stena tvorená pieskom
 sq: rane
@@ -454,16 +535,17 @@ zh_CN: 砂边界
 
 therion: line wall:clay
 bg: глина
+ca: paret d'argila
 cz: bahno
 de: Wand aus Lehm
 el: άργιλος
 en: clay
-es: arcilla
+es: pared de arcilla
 fr: argile
 it: argilla
 mi: oneuku
 pl: ściana z gliny
-pt: lama
+pt: parede de lama/argila
 ru: глина
 sk: stena tvorená ílom
 sq: argjil
@@ -471,16 +553,17 @@ zh_CN: 粘土边界
 
 therion: line wall:ice
 bg: лед/фирн
+ca: paret de gel
 cz: led
 de: Wand aus Eis
 el: πάγος
 en: ice
-es: hielo
+es: pared de hielo
 fr: glace
 it: ghiaccio
 mi: kōpaka
 pl: ściana z lodu
-pt: gelo
+pt: parede de gelo
 ru: лед, фирн
 sk: stena tvorená ľadom
 sq: akull
@@ -488,38 +571,48 @@ zh_CN: 冰边界
 
 therion: line wall:flowstone
 bg: натек
+ca: paret de colada
 cz: stěna tvořená sintrem
 de: Wand aus Sinter
 en: flowstone wall
+es: pared de colada
 it: colata
 mi: tāra a pari kōhatu
 pl: ściana z nacieków
+pt: parede de escorrimento
+ru: натеки
 sk: stena tvorená sintrom
 zh_CN: 流石边界
 
 therion: line wall:moonmilk
 bg: пещерно мляко
+ca: paret de mondmilch
 cz: stěna tvořená měkkým sintrem
 de: Wand aus Bergmilch
 en: moonmilk wall
+es: pared de mondmilch
+fr: mur de mondmilch
 it: moonmilk
 mi: tāra a mirika marama
 pl: ściana z miękkich nacieków
+pt: parede de leite de lua
+ru: лунное молоко
 sk: stena tvorená mäkkým sintrom
 zh_CN: 月奶石边界
 
 therion: point wall-altitude
 bg: височинна отметка на стената
+ca: alçada paret 
 cz: nadmořská výška bodu na stěně
 de: Höhe über Koordinatenursprung
 el: ύψος τοίχου
 en: altitude
-es: altura pared
+es: altitud pared
 fr: altitude
 it: altezza
 mi: teitei, tiketike
 pl: wysokość punktu pomiarowego npm
-pt: altura
+pt: altura da parede
 ru: высотная отметка стены
 sk: nadmorská výška bodu na stene
 sq: lartesia mbidetare e murit
@@ -527,11 +620,12 @@ zh_CN: 海拔
 
 therion: point altitude
 bg: н.м. височина
+ca: altitud 
 cz: nadmořská výška bodu v chodbě
 de: Höhe über Koordinatenursprung
 el: ύψος
 en: altitude
-es: altura
+es: altitud
 fr: altitude
 it: quota
 mi: teitei, tiketike
@@ -544,6 +638,7 @@ zh_CN: 海拔
 
 therion: point section
 bg: място на сечение
+ca: secció 
 cz: příčný řez
 de: Schnitt
 el: τομή
@@ -553,7 +648,7 @@ fr: section
 it: sezione
 mi: roherohenga
 pl: przkrój
-pt_BR: seção
+pt_BR: corte
 pt_PT: secção
 ru: сечение
 sk: priečny rez
@@ -562,6 +657,7 @@ zh_CN: 断面
 
 therion: line section
 bg: напречно сечение
+ca: secció 
 cz: příčný řez
 de: Schnittlinie
 el: τομή
@@ -579,6 +675,7 @@ zh_CN: 横断面
 
 therion: point passage-height
 bg: височина на галерията
+ca: alçada galeria 
 cz: výška chodby
 de: Raumhöhe
 el: ύψος στοάς
@@ -588,7 +685,7 @@ fr: hauteur du passage
 it: altezza galleria
 mi: ara teitei
 pl: wysokość korytarza
-pt: altura da galeria
+pt: altura do conduto
 ru: высота хода
 sk: výška chodby
 sq: lartesia e kalimit
@@ -596,6 +693,7 @@ zh_CN: 洞道高度
 
 therion: point passage-height:unsigned
 bg: височина на галерията
+ca: alçada galeria
 cz: výška chodby
 de: Raumhöhe
 el: ύψος στοάς
@@ -605,7 +703,7 @@ fr: hauteur du passage
 it: altezza galleria
 mi: ara teitei
 pl: wysokość korytarza
-pt: altura da galeria
+pt: altura da galeria (valor absoluto)
 ru: высота хода
 sk: výška chodby
 sq: lartesia e kalimit-e pashenuar
@@ -613,11 +711,12 @@ zh_CN: 洞道高度:无标记的点
 
 therion: point passage-height:positive
 bg: височина на галерията над водата
+ca: alçada sobre el nivell de l'aigua
 cz: výška chodby nad hladinou
 de: Raumhöhe nach oben
 el: ύψος στοάς πάνω από νερό
 en: height above water level
-es: altura sobre nivel del mar
+es: altura sobre nivel del agua
 fr: hauteur au-dessus de l’eau
 it: altezza sopra il livello dell'acqua
 mi: te teitei a karewa ki runga
@@ -630,11 +729,12 @@ zh_CN: 水面洞高
 
 therion: point passage-height:negative
 bg: дълбочина на галерията под водата
+ca: profunditat sota el nivell de l'aigua
 cz: výška chodby pod hladinou
 de: Raumhöhe nach unten
 el: βάθος στοάς κάτω από νερό
 en: depth below water level
-es: profundidad bajo nivel del mar
+es: profundidad bajo nivel del agua
 fr: hauteur en dessous de l’eau
 it: profondità sotto il livello dell'acqua
 mi: te hōhunu a karewa ki raro
@@ -647,16 +747,17 @@ zh_CN: 水体深度
 
 therion: point passage-height:both
 bg: височина над и дълбочина под водата
+ca: alçada i profunditat respecte al nivell de l'aigua
 cz: výška nad i pod hladinou
 de: Raumhöhe gesamt
 el: ύψος και βάθος στοάς πάνω και κάτω από νερό
 en: height above, depth below water
-es: altura y profundidad respecto nivel del mar
+es: altura y profundidad respecto nivel del agua
 fr: hauteur au dessous et au dessus de l’eau
 it: altezza sopra e sotto il livello dell'acqua
 mi: karewa ki runga ki raro
 pl: wysokość korytarza nad powierzchnią wody i głębokość poniżej poziomu wody
-pt: altura acima e profundidade abaixo do nível da água
+pt: altura acima mais profundidade abaixo do nível da água
 ru: высота над и глубина ниже уровня воды
 sk: výška nad a hĺbka pod hladinou
 sq: lartesia mbi dhe nen nivelin e ujit
@@ -664,16 +765,17 @@ zh_CN: 水面洞高和水体深度
 
 therion: point air-draught
 bg: въздушно течение
+ca: corrent d'aire
 cz: průvan
 de: Luftzug
 el: ροή αέρα
 en: air draught
-es: corriente aire
+es: corriente d'aire
 fr: courant d’air
 it: corrente d'aria
 mi: tawhiri
 pl: przewiew
-pt: presença de vento
+pt: corrente de ar
 ru: ток воздуха
 sk: prievan
 sq: rrymim i ajrit
@@ -681,14 +783,17 @@ zh_CN: 气流
 
 therion: point air-draught:winter
 bg: зимно въздушно течение
+ca: corrent d'aire hivern 
 cz: zimní průvan
 de: Luftzug im Winter
 el: χειμερινή ροή αέρα
 en: winter air draught
+es: corriente de aire invierno
 fr: courant d’air d’hiver
 it: circolazione invernale
 mi: tawhiri a takurua
 pl: przewiew w zimie
+pt: corrente de ar (inverno)
 ru: ток воздуха зимний
 sk: zimný prievan
 sq: rrymim ajri-dimeror
@@ -696,14 +801,17 @@ zh_CN: 冷气流
 
 therion: point air-draught:summer
 bg: лятно въздушно течение
+ca: corrent d'aire estiu
 cz: letní průvan
 de: Luftzug im Sommer
 el: θερινή ροή αέρα
 en: summer air draught
+es: corriente de aire verano
 fr: courant d’air d’été
 it: circolazione estiva
 mi: tawhiri a raumati
 pl: przewiew w lecie
+pt: corrente de ar (verão)
 ru: ток воздуха летний
 sk: letný prievan
 sq: rrymim ajri-veror
@@ -711,6 +819,7 @@ zh_CN: 暖气流
 
 therion: point date
 bg: дата на наблюдението
+ca: data
 cz: datum pozorování
 de: Datum
 el: ημερομηνία
@@ -720,7 +829,7 @@ fr: date
 it: data d'osservazione
 mi: rā o te titiro
 pl: data obserwacji
-pt: data de observação
+pt: data do registro
 ru: дата наблюдения
 sk: dátum pozorovania
 sq: data e vrojtimit
@@ -728,24 +837,29 @@ zh_CN: 观测日期
 
 therion: point dig
 bg: изкоп
+ca: desobstrucció
 cz: sonda
 de: Grabung
 el: διάνοιξη
 en: dig
+es: desobstrucción
 fr: désobstruction
 it: disostruzione
 mi: kari
 pl: wykop
+pt: desobstrução
+ru: раскоп
 sk: sonda
 sq: mihje
 
 therion: point continuation
 bg: възможно продължение
+ca: possible continuació
 cz: možné pokračování
 de: Fortsetzung
 el: πιθανή συνέχεια
 en: possible continuation
-es: continuación
+es: continuación possible
 fr: suite possible
 it: possibile prosecuzione
 mi: roanga taea
@@ -758,6 +872,7 @@ zh_CN: 可能延伸洞道
 
 therion: point narrow-end
 bg: непроходимо верт. стеснение
+ca: final estret
 cz: neprůlezné zúžení
 de: Engstelle, zu schmal
 el: κλείσιμο στοάς λόγω στενώματος
@@ -767,7 +882,7 @@ fr: passage impénétrable
 it: chiude su strettoia
 mi: putanga kuiti mutunga
 pl: zwężenie nie do przejścia
-pt: passagem com final estreito
+pt: passagem (final estreito)
 ru: вертикальная узость
 sk: neprielezné zúženie
 sq: kalim I ngushte-fund
@@ -775,16 +890,17 @@ zh_CN: 狭窄洞道尽头
 
 therion: point low-end
 bg: непроходимо снижаване
+ca: final laminador
 cz: neprůlezné snížení
 de: Engstelle, zu flach
 el: κλείσιμο στοάς λόγω χαμηλής οροφής
 en: passage end, low
-es: final bajo
+es: final laminador
 fr: passage bas
 it: chiude su laminatoio
 mi: putanga pāpaku mutunga
 pl: obniżenie nie do przejścia
-pt: passagem com final baixo
+pt: passagem (final teto baixo_
 ru: горизонтальная узость
 sk: neprielezné zníženie
 sq: kalim I poshtem-fund
@@ -792,6 +908,7 @@ zh_CN: 低矮洞道尽头
 
 therion: point flowstone-choke
 bg: блокирано от натеци
+ca: reblit per concreció 
 cz: zasintrovaný konec
 de: Fortsetzung zugesintert
 el: κλείσιμο στοάς λόγο σταλαγμιτικού αποθέματος
@@ -809,6 +926,7 @@ zh_CN: 流石堵塞
 
 therion: point breakdown-choke
 bg: затворено от срутище
+ca: reblit per ensorrament
 cz: zavalený konec
 de: Fortsetzung verstürzt
 el: κλείσιμο στοάς λόγο χαλάσματος
@@ -825,17 +943,24 @@ sq: gurre rrjedhes-fund
 zh_CN: 崩塌堵塞
 
 therion: point clay-choke
+bg: затворено от глина
+ca: reblit per argila
 cz: konec uzavřený jílem
 de: Fortsetzung verlehmt
 en: clay choke
+es: colmatado por arcilla
+fr: colmaté par de l'argille
 it: chiude su riempimento
 mi: uku pari
 pl: koniec zamknięty gliną
+pt: obstrução por lama/argila
+ru: блокировано глиной
 sk: koniec uzavretý ílom
 zh_CN: 粘土堵赛
 
 therion: line floor-step
 bg: праг
+ca: ressalt
 cz: stupeň
 de: Bodenstufe
 el: σκαλοπάτι
@@ -853,6 +978,7 @@ zh_CN: 梯坎状洞底
 
 therion: line overhang
 bg: надвес
+ca: desplom
 cz: převis
 de: Überhang
 el: προέκταση οροφής
@@ -862,7 +988,7 @@ fr: surplomb
 it: sporgenza
 mi: tauwharenga
 pl: przewieszka
-pt_BR: projeção
+pt_BR: marquise
 pt_PT: projecção
 ru: нависание потолка
 sk: previs
@@ -871,11 +997,12 @@ zh_CN: 倒倾斜
 
 therion: line floor-meander
 bg: меандър, канал в пода
+ca: meandre al sòl
 cz: meandr ve dně
 de: Bodenmäander
 el: μαίανδρος δαπέδου
 en: floor meander
-es: meandro
+es: meandro en suelo
 fr: méandre au sol
 it: meandro
 mi: kopiko
@@ -888,6 +1015,7 @@ zh_CN: 洞底蛇曲
 
 therion: line pit
 bg: кладенец
+ca: pou
 cz: propast
 de: Schacht
 el: πηγάδι
@@ -898,7 +1026,7 @@ fr: puits
 it: pozzo
 mi: tupari
 pl: studnia
-pt: desnível
+pt: poço
 ru: колодец
 sk: priepasť
 sq: ngjitje
@@ -906,16 +1034,17 @@ zh_CN: 竖井
 
 therion: line ceiling-step
 bg: ниша в тавана
+ca: ressalt al sostre 
 cz: změna výšky stropu
 de: Deckenstufe
 el: σκαλοπάτι οροφής
 en: ceiling step
-es: resalte inverso
+es: resalte techo
 fr: marche de plafond
 it: gradino a soffitto
 mi: tapuae ki te tuanui
 pl: zmiana wysokości stropu
-pt_BR: degrau no teto
+pt_BR: desnível no teto
 pt_PT: degrau no tecto
 ru: уступ потолка
 sk: zmena výšky stropu
@@ -924,11 +1053,12 @@ zh_CN: 梯坎状洞顶
 
 therion: line ceiling-meander
 bg: меандър, канал в тавана
+ca: meandre al sostre 
 cz: stropní meandr
 de: Deckenmäander
 el: μαίανδρος οροφής
 en: ceiling meander
-es: meandro inverso
+es: meandro techo
 fr: méandre de plafond
 it: canale di volta
 mi: kopiko tuanui
@@ -942,6 +1072,7 @@ zh_CN: 天沟
 
 therion: line chimney
 bg: комин
+ca: xememeia
 cz: komín
 de: Schlot
 el: καμινάδα
@@ -952,18 +1083,19 @@ it: camino
 mi: tumera
 pl: komin
 pt: chaminé
-ru: труба
+ru: камин
 sk: komín
 sq: oxhak
 zh_CN: 烟囱式洞道
 
 therion: line gradient
 bg: наклон на галерията
+ca: pendent 
 cz: sklon chodby
 de: Gefälle
 el: κλίση στοάς
 en: passage gradient
-es: gradiente
+es: pendiente
 fr: pente
 it: scivolo
 mi: heke
@@ -976,11 +1108,12 @@ zh_CN: 洞道坡度
 
 therion: point gradient
 bg: наклон на галерията
+ca: pendent 
 cz: sklon chodby
 de: Gefälle
 el: κλίση στοάς
 en: passage gradient
-es: gradiente
+es: pendiente
 fr: pente
 it: scivolo
 mi: harapaki putanga
@@ -993,24 +1126,26 @@ zh_CN: 洞道坡度
 
 therion: point height
 bg: височина на праг/комин/кладенец
+ca: profunditat/alçada pou/ressalt/xemeneia
 cz: výška stupně/komínu/hloubka propasti
 de: Höhe der Stufe oder des Schlotes oder Tiefe des Schachts
 el: ύψος σκαλοπατιού/καμινάδας ή βάθος πηγαδιού
 en: pit/chimney/step depth/height
 en_GB: pitch/chimney/step depth/height
-es: altura resalte/chimenea/profundidad pozo
+es: profundidad/altura pozo/resalte/chimenea
 fr: hauteur d’une marche/d’une cheminée/profondeur
 it: altezza
 mi: papa tapuae/tumera/teitei rua/hōhonu
 pl: wysokość progu/komina/głębokość studni
 pt: altura do chão para degrau/chaminé/desnível
-ru: высота уступа/трубы/колодца
+ru: высота уступа/камина/колодца
 sk: hĺbka/výška priepasti/stupňa/komína
 sq: lartesia e shkalles ne dysheme/oxhaku/thellesia e leshimit
 zh_CN: 洞底梯坎高/烟囱洞道高/竖洞深度
 
 therion: point dimensions
 bg: размери на галерията
+ca: dimensions
 cz: rozměry
 de: Ausdehnung
 el: διαστάσεις
@@ -1028,6 +1163,7 @@ zh_CN: 规模
 
 therion: point height:unsigned
 bg: височина на праг
+ca: alçada ressalt
 cz: výška stupně
 de: Höhe der Bodenstufe
 el: ύψος σκαλοπατιού
@@ -1037,7 +1173,7 @@ fr: hauteur d’une marche
 it: altezza camino
 mi: teitei papa tapuae
 pl: wysokość progu
-pt: altura do degrau no chão
+pt: altura do degrau no chão (valor absoluto)
 ru: высота уступа
 sk: výška stupňa
 sq: lartesia e shkalles se dyshemes
@@ -1045,6 +1181,7 @@ zh_CN: 洞底梯坎高
 
 therion: point height:positive
 bg: височина на комин
+ca: alçada xememeia
 cz: výška komínu
 de: Höhe des Schlotes
 el: ύψος καμινάδας
@@ -1061,30 +1198,32 @@ sq: lartesia e oxhakut
 zh_CN: 烟囱式洞道高
 
 therion: point height:negative
-bg: Дълбочина на кладенец
+bg: дълбочина на кладенец
+ca: profunditat pou 
 cz: hloubka propasti
 de: Tiefe des Schachts
 el: βάθος πηγαδιού
 en: pit depth
 en_GB: pitch depth
 es: profundidad pozo
-fr: profondeur
+fr: profondeur d'un puits
 it: prodondità pozzo
 mi: rua hōhonu
 pl: głębokosc studni
-pt: profundidade do desnível
-ru: высота колодца
+pt: profundidade do poço
+ru: глубина колодца
 sk: hĺbka priepasti
 sq: thellesia e leshimit
 zh_CN: 竖直洞道深度
 
 therion: line contour
 bg: контур
+ca: corba de nivell 
 cz: vrstevnice
 de: Höhenlinie
 el: ισοϋψής
 en: contour
-es: contorno
+es: curva de nivel
 fr: contour
 it: contorno
 mi: koru
@@ -1097,6 +1236,7 @@ zh_CN: 等高线
 
 therion: line slope
 bg: склон
+ca: pendent 
 cz: svah
 de: Hangform
 el: κλίση
@@ -1114,28 +1254,30 @@ zh_CN: 斜坡
 
 therion: line rock-border
 bg: очертание на камък
+ca: contorn de bloc
 cz: kameny
 de: Umriss eines Felsens
 el: περίγραμμα βράχου
 en: rock border
-es: contorno bloque
+es: bloque (contorno)
 fr: bord d’un rocher
 it: bordo masso
 mi: rohe kōhatu
 pl: obrys kamienia
-pt: lateral da rocha
-ru: внешний кромка глыбы
+pt: contorno da rocha
+ru: внешняя кромка глыбы
 sk: obrys kameňa
 sq: kufij shkembinjsh
 zh_CN: 块石边界
 
 therion: line rock-edge
 bg: ръбове на камък
+ca: aresta de bloc
 cz: hrany kamenů
 de: Struktur eines Felsens
 el: άκρη βράχου
 en: rock edges
-es: arista bloque
+es: bloque (arista)
 fr: arête d’un rocher
 it: spigolo masso
 mi: mata kohatu
@@ -1148,6 +1290,7 @@ zh_CN: 块石边缘
 
 therion: point bedrock
 bg: основна скала
+ca: roca mare
 cz: pevná skála
 de: Deckgebirge
 el: πέτρωμα
@@ -1157,7 +1300,7 @@ fr: roche
 it: roccia
 mi: koiwi a papa
 pl: lita skała
-pt: rocha encaixante
+pt: rocha matriz
 ru: коренная порода
 sk: pevná skala
 sq: shtrat shkembi
@@ -1165,6 +1308,7 @@ zh_CN: 基岩
 
 therion: point blocks
 bg: камъни, блокаж
+ca: blocs
 cz: kamenné bloky
 de: Blöcke
 el: ογκόλιθοι
@@ -1174,7 +1318,7 @@ fr: blocs
 it: massi
 mi: pakaru
 pl: kamienne bloki
-pt: blocos, desmoronamento
+pt: blocos
 ru: глыбы, завал
 sk: kamenné bloky
 sq: blloqe, shembje
@@ -1182,6 +1326,7 @@ zh_CN: 崩塌块石
 
 therion: point debris
 bg: чакъл
+ca: derrubis 
 cz: štěrk
 de: Schutt
 el: χαλάσματα
@@ -1199,6 +1344,7 @@ zh_CN: 碎屑堆积
 
 therion: point sand
 bg: пясък
+ca: sorra
 cz: písek
 de: Sand
 el: άμμος
@@ -1216,6 +1362,7 @@ zh_CN: 砂
 
 therion: point clay
 bg: глина
+ca: argila
 cz: bahno
 de: Lehm
 el: άργιλος
@@ -1225,7 +1372,7 @@ fr: argile
 it: argilla
 mi: oneuku
 pl: glina
-pt: lama
+pt: lama/argila
 ru: глина
 sk: íl
 sq: argjil
@@ -1233,6 +1380,7 @@ zh_CN: 粘土
 
 therion: point water
 bg: вода
+ca: aigua
 cz: voda
 de: Wasser
 el: νερό
@@ -1250,6 +1398,7 @@ zh_CN: 水
 
 therion: point ice
 bg: лед
+ca: gel
 cz: led
 de: Eis
 el: πάγος
@@ -1267,6 +1416,7 @@ zh_CN: 冰
 
 therion: point snow
 bg: сняг
+ca: neu
 cz: sníh
 de: Schnee
 el: χιώνι
@@ -1284,6 +1434,7 @@ zh_CN: 雪
 
 therion: point pebbles
 bg: камъчета
+ca: còdols
 cz: valouny
 de: Kies
 el: χαλίκια
@@ -1301,6 +1452,7 @@ zh_CN: 卵石
 
 therion: point raft
 bg: насип
+ca: calcita surant
 cz: náplav
 de: schwimmendes Kalkhäutchen
 el: σταλαγμιτικό υλικό που επιπλέει
@@ -1311,13 +1463,14 @@ it: calcite flottante
 mi: mōkihi o kōhatu hōhonu
 pl: nanios
 pt: jangada
-ru: высыпка
+ru: плавающий кальцит
 sk: náplav
 sq: trap-skele
 zh_CN: 石筏
 
 therion: point guano
 bg: гуано
+ca: guà
 cz: guano
 de: Guano
 el: γκουανό (περιττώματα νυχτερίδων)
@@ -1334,14 +1487,22 @@ sq: jashteqitje e lakuriqeve-guano
 zh_CN: 粪类堆积
 
 therion: point clay-tree
+bg: глинено/кално дърво
+ca: avet d'argila
 de: Lehmbäumchen
 en: clay tree
+es: abetos arcilla
+fr: sapins d'argile
 it: pini d'argilla
 mi: rakau oneuku
+pt: cones de lama/argila
+ru: глиняное деревце
+sk: výzdoba z blata
 zh_CN: 粘土层
 
 therion: line border
 bg: граница
+ca: límit
 cz: ohraničení
 de: Begrenzung
 el: άκρη
@@ -1359,6 +1520,7 @@ zh_CN: 边界线
 
 therion: line border:visible
 bg: видима граница
+ca: límit
 cz: ohraničení
 de: sichtbare Begrenzung
 el: άκρη
@@ -1376,6 +1538,7 @@ zh_CN: 可见边界
 
 therion: line border:temporary
 bg: временна граница
+ca: límit temporal
 cz: nestálé ohraničení
 de: vorübergehende Begrenzung
 el: προσωρινή άκρη
@@ -1393,6 +1556,7 @@ zh_CN: 暂时边界
 
 therion: line border:presumed
 bg: предполагаема граница
+ca: límit suposat
 cz: předpokládané ohraničení
 de: geschätzte Begrenzung
 el: υποθετική άκρη
@@ -1410,6 +1574,7 @@ zh_CN: 推测边界
 
 therion: area water
 bg: вода
+ca: aigua
 cz: vodní plocha
 de: Wasserfläche
 el: νερό
@@ -1427,6 +1592,7 @@ zh_CN: 水体区
 
 therion: area sump
 bg: сифон
+ca: sifó 
 cz: sifon
 de: Siphonfläche
 el: σιφόνι
@@ -1444,6 +1610,7 @@ zh_CN: 潜水塘区
 
 therion: area snow
 bg: сняг
+ca: neu
 cz: sníh
 de: Schneefläche
 el: χιόνι
@@ -1461,6 +1628,7 @@ zh_CN: 雪区
 
 therion: area ice
 bg: лед
+ca: gel
 cz: led
 de: Eisfläche
 el: πάγος
@@ -1478,6 +1646,7 @@ zh_CN: 冰区
 
 therion: area sand
 bg: пясък
+ca: sorra
 cz: písek
 de: Sandfläche
 el: άμμος
@@ -1495,6 +1664,7 @@ zh_CN: 砂区
 
 therion: area clay
 bg: глина
+ca: argila
 cz: bahno
 de: Lehmfläche
 el: άργιλος
@@ -1504,7 +1674,7 @@ fr: argile
 it: argilla
 mi: oneuku
 pl: glina
-pt: lama
+pt: lama/argila
 ru: глина
 sk: íl
 sq: argjil
@@ -1512,6 +1682,7 @@ zh_CN: 粘土区
 
 therion: area pebbles
 bg: камъчета
+ca: còdols
 cz: valouny
 de: Kiesfläche
 el: χαλίκια
@@ -1529,6 +1700,7 @@ zh_CN: 卵石区
 
 therion: area debris
 bg: чакъл
+ca: derrubis
 cz: štěrk
 de: Schuttfläche
 el: χαλάσματα
@@ -1546,11 +1718,12 @@ zh_CN: 碎屑沉积区
 
 therion: area flowstone
 bg: каменен водопад
+ca: colada
 cz: sintrové náteky
 de: flächiger Sinter
 el: σταλαγμιτικό υλικό δαπέδου
 en: flowstone
-es: concreción
+es: colada
 fr: concrétion
 it: concrezione
 pt: escorrimento
@@ -1561,12 +1734,15 @@ zh_CN: 流石区
 
 therion: area moonmilk
 bg: пещерно мляко
+ca: mondmilch
 cz: nickamínek
 de: Bergmilch
 el: γάλα σπηλαίου
 en: moonmilk
+es: mondmilch
 fr: mondmilch
 it: moonmilk
+pt: leite de lua
 ru: лунное молоко
 sk: náteky mäkkého sintra
 sq: qumesht-hena
@@ -1574,6 +1750,7 @@ zh_CN: 月奶石区
 
 therion: area blocks
 bg: блокаж
+ca: blocs
 cz: skalní bloky
 de: Fläche mit Blöcken
 el: ογκόλιθοι
@@ -1591,6 +1768,7 @@ zh_CN: 块石堆积区
 
 therion: area bedrock
 bg: основна скала
+ca: roca mare
 cz: pevná skála
 de: Deckgebirge
 el: πέτρωμα
@@ -1598,7 +1776,7 @@ en: bedrock
 es: roca madre
 fr: roche
 it: roccia
-pt: rocha encaixante
+pt: rocha matriz
 ru: коренная порода
 sk: pevná skala
 sq: shtrat shkembi
@@ -1606,6 +1784,7 @@ zh_CN: 基岩区
 
 therion: line water-flow
 bg: водно течение
+ca: curs d'aigua
 cz: vodní tok
 de: Gerinne
 el: υδρορροή
@@ -1623,6 +1802,7 @@ zh_CN: 水流
 
 therion: point water-flow
 bg: водно течение
+ca: curs d'aigua
 cz: vodní tok
 de: Gerinne
 el: υδρορροή
@@ -1640,11 +1820,12 @@ zh_CN: 流水点
 
 therion: line water-flow:permanent
 bg: постоянно водно течение
+ca: curs d'aigua permanent
 cz: vodní tok
 de: ständiges Gerinne
 el: μόνιμη υδρορροή
 en: water flow
-es: curso agua
+es: curso agua permanente
 fr: rivière, permanente
 it: corso d'acqua permanente
 mi: wairere
@@ -1657,11 +1838,12 @@ zh_CN: 常流水
 
 therion: point water-flow:permanent
 bg: постоянно водно течение
+ca: curs d'aigua permanent
 cz: vodní tok
 de: ständiges Gerinne
 el: μόνιμη υδρορροή
 en: water flow
-es: curso agua
+es: curso agua permanente
 fr: rivière, permanente
 it: corso d'acqua permanente
 mi: wairere
@@ -1674,40 +1856,43 @@ zh_CN: 常流水
 
 therion: line water-flow:intermittent
 bg: периодично водно течение
+ca: curs d'aigua temporal
 cz: občasný vodní tok
 de: zeitweises Gerinne
 el: διακοπτόμενη υδρορροή
 en: intermittent water flow
-es: curso agua intermitente
+es: curso agua temporal
 fr: rivière, intermittente
 it: corso d'acqua temporaneo
 mi: wairere taumutumutu
 pl: okresowy ciek wodny
 pt: fluxo de água intermitente
-ru: непостоянный водоток
+ru: временный водоток
 sk: občasný vodný tok
 sq: rrjedhe uji me force
 zh_CN: 季节性流水
 
 therion: point water-flow:intermittent
 bg: периодично водно течение
+ca: curs d'aigua temporal
 cz: občasný vodní tok
 de: zeitweises Gerinne
 el: διακοπτόμενη υδρορροή
 en: intermittent water flow
-es: curso agua intermitente
+es: curso agua temporal
 fr: rivière, intermittente
 it: corso d'acqua temporaneo
 mi: wairere taumutumutu
 pl: okresowy ciek wodny
 pt: fluxo de água intermitente
-ru: непостоянный водоток
+ru: временный водоток
 sk: občasný vodný tok
 sq: rrjedhe uji me force
 zh_CN: 季节性流水
 
 therion: line water-flow:conjectural
 bg: предполагаемо водно течение
+ca: curs d'aigua suposat
 cz: předpokládaný vodní tok
 de: vermutetes Gerinne
 el: υποτιθέμενη υδρορροή
@@ -1725,6 +1910,7 @@ zh_CN: 推测流水
 
 therion: point water-flow:paleo
 bg: палео речно легло
+ca: paleo-curs d'aigua 
 cz: paleořečiště
 de: ehemaliges Gerinne
 el: παλαιουδρορροή
@@ -1743,6 +1929,7 @@ zh_CN: 古水流
 therion: point spring
 bg: извор
 cz: vývěr
+ca: sorgència
 de: Quelle
 el: πηγή
 en: spring
@@ -1751,14 +1938,15 @@ fr: source
 it: sorgente
 mi: waipuna
 pl: wywierzysko
-pt: nascente
-ru: исток
+pt: ressurgência
+ru: источник
 sk: výver
 sq: burim
 zh_CN: 泉点
 
 therion: point sink
 bg: понор
+ca: engolidor
 cz: ponor
 de: Schluckloch
 el: καταβόθρα
@@ -1769,18 +1957,19 @@ it: perdita
 mi: tapoko
 pl: ponor
 pt: sumidouro
-ru: сток
+ru: понор
 sk: ponor
 sq: pus
 zh_CN: 渗水点
 
 therion: point flowstone
 bg: натек
+ca: colada
 cz: sintr
 de: flächiger Sinter
 el: σταλαγμιτικό υλικό δαπέδου
 en: flowstone
-es: concreción
+es: colada
 fr: concrétions
 it: concrezione
 mi: pari kōhatu
@@ -1793,11 +1982,12 @@ zh_CN: 流石
 
 therion: line flowstone
 bg: каменен водопад
+ca: colada
 cz: sintrové náteky
 de: flächiger Sinter
 el: σταλαγμιτικό υλικό δαπέδου
 en: flowstone
-es: concreción
+es: colada
 fr: concrétion
 it: concrezione
 mi: pari kōhatu
@@ -1810,6 +2000,7 @@ zh_CN: 流石
 
 therion: point moonmilk
 bg: пещерно мляко
+ca: mondmilch
 cz: nickamínek
 de: Bergmilch
 el: γάλα σπηλαίου
@@ -1819,7 +2010,7 @@ fr: mondmilch
 it: moonmilk
 mi: mirika marama
 pl: miękkie nacieki
-pt: leite-de-lua
+pt: leite de lua
 ru: лунное молоко
 sk: mäkký sinter
 sq: qumesht-hena
@@ -1827,6 +2018,7 @@ zh_CN: 月奶石
 
 therion: line moonmilk
 bg: пещерно мляко
+ca: mondmilch
 cz: nickamínek
 de: Bergmilch
 el: γάλα σπηλαίου
@@ -1835,6 +2027,7 @@ fr: mondmilch
 it: moonmilk
 mi: mirika marama
 pl: miękkie nacieki
+pt: leite de lua
 ru: лунное молоко
 sk: náteky mäkkého sintra
 sq: qumesht-hena
@@ -1842,6 +2035,7 @@ zh_CN: 月奶石
 
 therion: point stalactite
 bg: сталактит
+ca: estalactita
 cz: stalaktit
 de: Stalaktit
 el: σταλακτίτης
@@ -1859,11 +2053,18 @@ zh_CN: 石钟乳
 
 therion: point stalactites
 bg: сталактити
+ca: estalactites
 cz: stalaktity
 en: stalactites
+es: estalactitas
+fr: stalactites
+pt: estalactites
+ru: сталактиты
+sk: stalaktity
 
 therion: point stalagmite
 bg: сталагмит
+ca: estalagmita
 cz: stalagmit
 de: Stalagmit
 el: σταλαγμίτης
@@ -1881,16 +2082,23 @@ zh_CN: 石笋
 
 therion: point stalagmites
 bg: сталагмити
+ca: estalagmites
 cz: stalagmity
 en: stalagmites
+es: estalagmitas
+fr: stalagmites
+pt: estalagmites
+ru: сталагмиты
+sk: stalagmity
 
 therion: point pillar
 bg: сталактон
+ca: columna
 cz: stalagnát
 de: Säule
 el: κολόνα
 en: pillar
-es: pilar
+es: columna
 fr: pillier
 it: colonna
 mi: pou
@@ -1903,51 +2111,73 @@ zh_CN: 石柱
 
 therion: point pillars
 bg: сталактони
+ca: columnes
 cz: stalagnáty
 de: Säulen
 en: pillars
+es: columnas
+fr: pilliers
+pt: colunas
+ru: колонны
+sk: stalagnáty
 
 therion: point ice-stalactite
 bg: леден сталактит
+ca: estalactita de gel
 cz: ledový stalaktit
 de: Eisstalaktit
 en: ice stalactite
+es: estalactita de hielo
+fr: stalactite de glace
 it: stalattite di ghiaccio
 mi: kōpaka ki te haere ki runga
 pl: lodowy stalaktyt
+pt: estalactite de gelo
+ru: ледяной сталактит
 sk: ľadový stalaktit
 zh_CN: 冰乳
 
 therion: point ice-stalagmite
 bg: леден сталагмит
+ca: estalagmita de gel
 cz: ledový stalagmit
 de: Eisstalagmit
 en: ice stalagmite
+es: estalagmita de hielo
+fr: stalagmite de glace
 it: stalagmite di ghiaccio
 mi: kōpaka ki te haere ki raro
 pl: lodowy stalagmit
+pt: estalagmite de gelo
+ru: ледяной сталагмит
 sk: ľadový stalagmit
 zh_CN: 冰笋
 
 therion: point ice-pillar
 bg: леден сталактон
+ca: columna de gel
 cz: ledový stalagnát
 de: Eissäule
 en: ice pillar
+es: columna de hielo
+fr: colonne de glace
 it: colonna di ghiaccio
 mi: pou Kōpaka
 pl: lodowy stalagnat
+pt: coluna de gelo
+ru: ледяная колонна
 sk: ľadový stalagnát
 zh_CN: 冰柱
 
 therion: point curtain
 bg: драперия
+ca: bandera
 cz: sintrové záclony
 de: Sinterfahne
 el: κουρτίνα
 en: curtain
-es: cortina
-fr: rideau
+es: bandera
+fr: rideau, draperie
 it: cortina
 mi: araia
 pl: draperie naciekowe
@@ -1959,16 +2189,17 @@ zh_CN: 石幕
 
 therion: point soda-straw
 bg: цевичен сталактит
+ca: fistulosa (macarrons)
 cz: brčka
 de: Makkaroni
 el: μακαρόνια
 en: soda straw
-es: fistulosa
+es: fistulosa (macarones)
 fr: fistuleuse
 it: tubolare
 mi: pū ngote
 pl: nacieki
-pt: canudos
+pt: canudo
 pt_PT: tubulares
 ru: сталактиты-соломины
 sk: brčká
@@ -1977,6 +2208,7 @@ zh_CN: 鹅管
 
 therion: point popcorn
 bg: коралити
+ca: colflori
 cz: pizolity
 de: Blumenkohlsinter
 el: μανιτάρια από σταλαγμιτικό υλικό
@@ -1994,11 +2226,12 @@ zh_CN: 石珊瑚
 
 therion: point cave-pearl
 bg: пещерен бисер
+ca: perles de les cavernes
 cz: jeskynní perly
 de: Höhlenperle
 el: μαργαριτάρι των σπηλαίων
 en: cave pearl
-es: perla de caverna
+es: perlas de caverna
 fr: perle des cavernes
 it: pisolite
 mi: ana kahurangi
@@ -2012,6 +2245,7 @@ zh_CN: 穴珠
 
 therion: point disk
 bg: диск
+ca: disc
 cz: disk
 de: Diskus
 el: δίσκος
@@ -2029,6 +2263,7 @@ zh_CN: 石盘
 
 therion: point helictite
 bg: хеликтити
+ca: excèntrica
 cz: heliktit
 de: Excentrique
 el: ελικτίτης
@@ -2047,6 +2282,7 @@ zh_CN: 卷曲石
 
 therion: point aragonite
 bg: арагонит
+ca: aragonit
 cz: aragonit
 de: Aragonit
 el: αραγονίτης
@@ -2065,6 +2301,7 @@ zh_CN: 文石
 
 therion: point crystal
 bg: кристал
+ca: cristall 
 cz: krystal
 de: Kristall
 el: κρύσταλλο
@@ -2082,11 +2319,12 @@ zh_CN: 晶花
 
 therion: point wall-calcite
 bg: повлек
+ca: paret de calcita
 cz: vápencový povlak
 de: Wandsinter
 el: ασβεστίτης τοιχώματος
 en: wall calcite
-es: calcita
+es: pared de calcita
 fr: mur, calcite
 it: calcite
 mi: tāra a nga roimata a pakeho
@@ -2100,6 +2338,7 @@ zh_CN: 洞壁石花
 
 therion: point gypsum
 bg: гипс
+ca: guix
 cz: sádrovec
 de: Gips
 el: γύψος
@@ -2117,11 +2356,12 @@ zh_CN: 石膏
 
 therion: point gypsum-flower
 bg: гипсово цвете
+ca: flor de guix
 cz: sádrovcový květ
 de: Gipsblume
 el: άνθος γύψου
 en: gypsum flower
-es: flor yeso
+es: flor de yeso
 fr: fleur de gypse
 it: fiore di gesso
 mi: putiputi tote
@@ -2134,16 +2374,17 @@ zh_CN: 石膏花
 
 therion: point rimstone-dam
 bg: сухо синтрово езеро
+ca: gour sec
 cz: sintrová hrázka
 de: Sinterbarriere
 el: γκουρ (λιθωματικό φράγμα)
 en: rimstone dam
-es: gour-presa
+es: gour seco
 fr: gours
 it: gour
 mi: kōhatu matatara
 pl: naciekowa przegroda
-pt: travertino
+pt: travertino vazio
 ru: гуры без воды
 sk: sintrová hrádza
 sq: penda guri
@@ -2151,16 +2392,17 @@ zh_CN: 边石坝
 
 therion: point rimstone-pool
 bg: синтрово езеро
+ca: gour amb aigua
 cz: sintrové jezírko
 de: Sinterbecken
 el: γκουρ (λιθωματική λεκάνη)
 en: rimstone pool
-es: gour-poza
+es: gour con agua
 fr: gour
 it: vasca
 mi: kōhatu kopua wai
 pl: jeziorko naciekowe
-pt: lago travertino
+pt: travertino cheio
 ru: гуры с водой
 sk: sintrové jazierko
 sq: vaska uji
@@ -2168,6 +2410,7 @@ zh_CN: 边石潭
 
 therion: point anastomosis
 bg: анастомоза
+ca: anastomosis
 cz: anastomóza
 de: Anastomose
 el: αναστόμωση
@@ -2185,6 +2428,7 @@ zh_CN: 溶沟
 
 therion: point karren
 bg: кари
+ca: rascler
 cz: škrapy
 de: Karren
 el: κάρρεν - γυμνός καρστικοποιημένος βράχος
@@ -2202,11 +2446,12 @@ zh_CN: 溶痕
 
 therion: point scallop
 bg: фасетки
+ca: emprenta de corrent - scallop
 cz: erozní útvary
 de: Fließfacette
 el: σκάλοπ (κενά διάβρωσης)
 en: scallop
-es: cavitaciones
+es: huellas de corriente - cavitaciones
 fr: vagues d’érosion (coups de gouge)
 it: scallop
 mi: anatipa
@@ -2219,16 +2464,17 @@ zh_CN: 贝窝
 
 therion: point flute
 bg: карни жлебове
+ca: emprenta de corrent - flute
 cz: píšťaly
 de: Kolk
 el: αυλάκι διάβρωσης
 en: flute
-es: canaleta
+es: huellas de corriente - canaletas
 fr: marmites
 it: scanalatura
 mi: koauau
 pl: marmity
-pt: marcas de fluxo
+pt: marmita
 ru: канавки
 sk: píšťaly
 sq: flauta
@@ -2236,6 +2482,7 @@ zh_CN: 溶槽
 
 therion: point raft-cone
 bg: насипен конус
+ca: cons
 cz: náplavový kužel
 de: schwimmendes Kalkhäutchen
 el: σταλαγμιτικός κώνος που επιπλέει
@@ -2245,19 +2492,20 @@ fr: cone
 it: calcite flottante
 mi: korere a mōkihi kōhatu hōhonu
 pl: nanios
-pt: cone de jangada
-ru: высыпной конус
+pt: cone de jangadas
+ru: насыпной конус
 sk: náplavový kužeľ
 sq: rrjedhe uji konike
 zh_CN: 钙膜晶锥
 
 therion: point archeo-material
 bg: археологическа находка
+ca: jaciment arqueològic
 cz: archeologické nálezy
 de: archäologischer Fund
 el: αρχαιολογικό εύρημα
 en: archaeological material
-es: yacimiento (arq)
+es: yacimiento arqueológico
 fr: matériel archéo
 it: materiale archeologico
 mi: taonga o nehe
@@ -2270,11 +2518,12 @@ zh_CN: 考古遗物
 
 therion: point paleo-material
 bg: палеонтологична находка
+ca: jaciment paleontològic
 cz: paleontologické nálezy
 de: paläontologischer Fund
 el: παλαιοντολογικό εύρημα
 en: paleo material
-es: yacimiento (pal)
+es: yacimiento paleontológico
 fr: matériel paléo
 it: materiale paleologico
 mi: taiao taonga o nehe
@@ -2287,6 +2536,7 @@ zh_CN: 原始堆积
 
 therion: point vegetable-debris
 bg: останки от растителност
+ca: detritus vegetal
 cz: zbytky rostlin
 de: Pflanzenreste
 el: φυτικά κατάλοιπα
@@ -2304,6 +2554,7 @@ zh_CN: 生物碎屑堆积
 
 therion: point root
 bg: корени
+ca: arrel
 cz: kořeny
 de: Holzreste
 el: ρίζες
@@ -2321,16 +2572,17 @@ zh_CN: 树根
 
 therion: point no-equipment
 bg: липсва екипировка!
+ca: sense equipar!
 cz: nevystrojené místo
 de: keine Ausrüstung
 el: χωρίς υλικά
 en: no equipment!
-es: sin equipar
+es: sin equipar!
 fr: pas d’équipement
 it: senza armo
 mi: wahi a taonga mahi kore
 pl: miejsce bez punktu asekuracyjnego
-pt: local sem equipamento
+pt: sem equipamento
 ru: снаряжение отутствует!
 sk: nevystrojené miesto
 sq: vend pa pajisje
@@ -2338,6 +2590,7 @@ zh_CN: 无需装备点
 
 therion: point anchor
 bg: закрепване
+ca: ancoratge
 cz: kotvení
 de: Seilbefestigung
 el: αγκύρωση
@@ -2355,6 +2608,7 @@ zh_CN: 锚点
 
 therion: point rope
 bg: въже
+ca: corda
 cz: lano
 de: Seil
 el: σχοινί
@@ -2365,35 +2619,19 @@ it: corda
 mi: taura
 pl: lina
 pt: corda
-ru: линейная опора
-sk: lano
-sq: litar
-zh_CN: 绳子
-
-therion: line rope
-bg: въже
-cz: lano
-de: Seil
-el: σχοινί
-en: rope
-es: cuerda
-fr: corde
-it: corda
-mi: taura
-pl: lina
-pt: corda
-ru: линейная опора
+ru: верёвка
 sk: lano
 sq: litar
 zh_CN: 绳子
 
 therion: point rope-ladder
 bg: пещерна стълба
+ca: escala de corda
 cz: lanový žebřík
 de: Drahtseilleiter
 el: ανεμόσκαλα
 en: rope ladder
-es: escala
+es: escala de cuerda
 fr: échelle de corde
 it: scala di corda
 mi: arawhata taura
@@ -2406,11 +2644,12 @@ zh_CN: 绳梯
 
 therion: line rope-ladder
 bg: пещерна стълба
+ca: escala de corda
 cz: lanový žebřík
 de: Drahtseilleiter
 el: ανεμόσκαλα
 en: rope ladder
-es: escala
+es: escala de cuerda
 fr: échelle de corde
 it: scala di corda
 mi: arawhata taura
@@ -2423,6 +2662,7 @@ zh_CN: 绳梯
 
 therion: point fixed-ladder
 bg: стационарна стълба
+ca: escala fixa
 cz: pevný žebřík
 de: feste Leiter
 el: μόνιμη σκάλα
@@ -2440,6 +2680,7 @@ zh_CN: 固定梯子
 
 therion: line fixed-ladder
 bg: стационарна стълба
+ca: escala fixa
 cz: pevný žebřík
 de: feste Leiter
 el: μόνιμη σκάλα
@@ -2457,6 +2698,7 @@ zh_CN: 固定梯子
 
 therion: point steps
 bg: стъпала
+ca: graons
 cz: schody
 de: Stufen
 el: σκαλοπάτια
@@ -2472,8 +2714,27 @@ sk: schody
 sq: shkalle
 zh_CN: 梯坎
 
+therion: line rope
+bg: въже
+ca: corda
+cz: lano
+de: Seil
+el: σχοινί
+en: rope
+es: cuerda
+fr: corde
+it: corda
+mi: taura
+pl: lina
+pt: corda
+ru: верёвка
+sk: lano
+sq: litar
+zh_CN: 绳子
+
 therion: line steps
 bg: стъпала
+ca: graons
 cz: schody
 de: Stufen
 el: σκαλοπάτια
@@ -2491,16 +2752,29 @@ zh_CN: 梯坎
 
 therion: point via-ferrata
 bg: виа-ферата
+ca: via-ferrata
 de: Klettersteig
 en: via-ferrata
+es: via-ferrata
+fr: via-ferrata
+pt: via ferrata
+ru: виа-ферата
+sk: via ferrata
 
 therion: line via-ferrata
 bg: виа-ферата
+ca: via-ferrata
 de: Klettersteig
 en: via-ferrata
+es: via-ferrata
+fr: via-ferrata
+pt: via ferrata
+ru: виа-ферата
+sk: via ferrata
 
 therion: point traverse
 bg: траверс
+ca: passamans
 cz: traverz
 de: Querung
 el: τραβέρσα
@@ -2518,11 +2792,12 @@ zh_CN: 横越
 
 therion: point bridge
 bg: мост
+ca: pont de roca
 cz: most
 de: Brücke
 el: γέφυρα
 en: bridge
-es: puente roca
+es: puente de roca
 fr: pont
 it: ponte di roccia
 mi: piriti
@@ -2535,18 +2810,31 @@ zh_CN: 桥
 
 therion: point handrail
 bg: перила
+ca: barana
 cz: zábradlí
 de: Geländer
 en: handrail
+es: barandilla
+fr: rampe
+pt: corrimão
+ru: перила
+sk: zábradlie
 
 therion: line handrail
 bg: перила
+ca: barana
 cz: zábradlí
 de: Geländer
 en: handrail
+es: barrandilla
+fr: rampe
+pt: corrimão
+ru: перила
+sk: zábradlie
 
 therion: point camp
 bg: лагер
+ca: campament
 cz: bivak
 de: Biwak
 el: κατασκήνωση
@@ -2565,6 +2853,7 @@ zh_CN: 营地
 therion: point remark
 bg: забележка
 cz: poznámka
+ca: nota
 de: Bemerkung
 el: σχόλιο
 en: remark
@@ -2573,7 +2862,7 @@ fr: remarque
 it: nota
 mi: korero
 pl: uwaga
-pt: anotação
+pt: observação
 ru: заметка
 sk: poznámka
 sq: shenim
@@ -2581,6 +2870,7 @@ zh_CN: 备注
 
 therion: point label
 bg: етикет
+ca: etiqueta
 cz: pojmenování
 de: Beschriftung
 el: περιγραφή
@@ -2590,14 +2880,15 @@ fr: libellé
 it: etichetta
 mi: ingoa
 pl: nazwa
-pt: indicação
-ru: текстовая метка
+pt: rótulo
+ru: подпись
 sk: pomenovanie
 sq: mbishkrim-etiket
 zh_CN: 标记
 
 therion: line label
 bg: етикет
+ca: etiqueta
 cz: pojmenování
 de: Beschriftung
 el: περιγραφή
@@ -2607,7 +2898,7 @@ fr: libellé
 it: etichetta
 mi: ingoa
 pl: nazwa
-pt: indicação
+pt: rótulo
 ru: текстовая метка
 sk: pomenovanie
 sq: mbishkrim
@@ -2615,6 +2906,7 @@ zh_CN: 标记
 
 therion: title legend
 bg: Легенда
+ca: Llegenda
 cz: Legenda
 de: Legende
 el: Τίτλος
@@ -2632,11 +2924,12 @@ zh_CN: 图例
 
 therion: title color-legend-altitude
 bg: Височинна скала
+ca: Altituds
 cz: Nadmořské výšky
 de: Höhe
 el: Υψομετρικά
 en: Altitudes
-es: color (altitud)
+es: Altitudes
 fr: Altitudes
 it: Profondità
 mi: Teitei, Tiketike
@@ -2647,13 +2940,21 @@ sk: Nadmorské výšky
 sq: titulli ngjyra-permbajtja-lartesia mbidetare
 zh_CN: 海拔
 
+therion: title color-legend-depth
+ca: Desnivell
+en: Depth
+es: Desnivel
+fr: Profondeur
+pt: Profundidade
+
 therion: title color-legend-map
 bg: Карти
 cz: Mapy
+ca: Mapes
 de: Karten
 el: Χάρτες
 en: Maps
-es: color (mapa)
+es: Mapas
 fr: Cartes
 it: Mappa
 mi: Mahere whenua
@@ -2664,8 +2965,44 @@ sk: Mapy
 sq: hartat
 zh_CN: 地图
 
+therion: title color-legend-scrap
+ca: Trossos
+en: Scraps
+es: Trozos/cachos
+fr: Scraps
+pt: Croquis
+
+therion: title color-legend-survey
+ca: Topos
+en: Surveys
+es: Topos
+fr: Topos
+pt: Topos
+
+therion: title color-legend-explodate
+ca: Data d'exploració
+en: Exploration date
+es: Fecha de exploración
+fr: Date d'exploration
+pt: Data da exploração
+
+therion: title color-legend-topodate
+ca: Data de topografia
+en: Surveying date
+es: Fecha de topografia
+fr: Date de topographie
+pt: Data da topo
+
+therion: title color-legend-default
+ca: Llegenda de colors
+en: Color legend
+es: Leyenda de colores
+fr: Légende colorée
+pt: Cores
+
 therion: units ft
 bg: футове
+ca: ft
 cz: ft
 de: ft
 el: πόδια
@@ -2683,6 +3020,7 @@ zh_CN: 英尺
 
 therion: title cave length
 bg: Дължина
+ca: Recorregut
 cz: Délka
 de: Gesamtlänge
 el: Μήκος
@@ -2692,7 +3030,7 @@ fr: Longueur
 it: Sviluppo
 mi: Roa a ana
 pl: długość
-pt: Extensão
+pt: Extensão total visadas
 ru: Длина
 sk: Dĺžka
 sq: gjatesia
@@ -2700,6 +3038,7 @@ zh_CN: 洞道长度
 
 therion: units m
 bg: м
+ca: m
 cz: m
 de: m
 el: μ
@@ -2717,6 +3056,7 @@ zh_CN: 米
 
 therion: title cave depth
 bg: Денивелация
+ca: Desnivell
 cz: Převýšení
 de: Niveaudifferenz
 el: Βάθος
@@ -2734,6 +3074,7 @@ zh_CN: 洞道深度
 
 therion: title explo (plural)
 bg: Изследвали
+ca: Explorat per
 cz: Objevili
 de: Entdeckung
 el: Εξερευνητές
@@ -2743,7 +3084,7 @@ fr: Explorateurs
 it: Esplorazione
 mi: Kaipokai whenua
 pl: odkryli
-pt: Exploradas por
+pt: Explorada por
 ru: Исследование
 sk: Objavili
 sq: hulumtuar nga
@@ -2751,6 +3092,7 @@ zh_CN: 探测
 
 therion: title explo
 bg: Изследвал
+ca: Explorat per
 cz: Objevil
 de: Entdeckung
 el: Εξερευνητής
@@ -2768,16 +3110,17 @@ zh_CN: 探测
 
 therion: title topo (plural)
 bg: Картирали
+ca: Topografiat per
 cz: Měřili
 de: Vermessung
 el: Χαρτογραφήθηκε από τους
 en: Surveyed by
-es: Espeleometría
+es: Topografiado por
 fr: Topographes
 it: Topografia
 mi: Kairūri
 pl: pomierzyli
-pt: Topografadas por
+pt: Topografada por
 ru: Съемка
 sk: Zamerali
 sq: matur nga
@@ -2785,11 +3128,12 @@ zh_CN: 测量
 
 therion: title topo
 bg: Картирал
+ca: Topografiat per 
 cz: Měřil
 de: Vermessung
 el: Χαρτογραφήθηκε από τον
 en: Surveyed by
-es: Topografía
+es: Topografiado por
 fr: Topographe
 it: Topografia
 mi: Kairūri
@@ -2802,16 +3146,17 @@ zh_CN: 测量
 
 therion: title carto (plural)
 bg: Комп. обработка
+ca: Dibuixat per
 cz: Kreslili
 de: Zeichnung
 el: Σκαρίφημα
 en: Drawn by
-es: Cartografía
+es: Dibujado por
 fr: Dessinateurs
 it: Cartografia
 mi: Kaituhi
 pl: rysowali
-pt: Desenhadas por
+pt: Desenhada por
 ru: Камеральная обработка
 sk: Kreslili
 sq: vizatuar nga
@@ -2819,11 +3164,12 @@ zh_CN: 绘图
 
 therion: title carto
 bg: Комп. обработка
+ca: Dibuixat per
 cz: Kreslil
 de: Zeichnung
 el: Σκαρίφημα
 en: Drawn by
-es: Cartografía
+es: Dibujado por
 fr: Dessinateur
 it: Cartografia
 mi: Kaituhi
@@ -2836,11 +3182,12 @@ zh_CN: 绘图
 
 therion: title preview above
 bg: Изглед от горе
+ca: [Vista prèvia superior]
 cz: [Náhled horních vrstev]
 de: Vorschau oben
 el: [προεπισκόπηση πάνω]
 en: [Preview above]
-es: Vista previa superior
+es: [Vista previa superior]
 fr: [Prévisualisation au-dessus]
 it: Anteprima sopra
 mi: Tuhi a ana ki runga
@@ -2853,11 +3200,12 @@ zh_CN: 往上预览
 
 therion: title preview below
 bg: Изглед от долу
+ca: [Vista prèvia inferior]
 cz: [Náhled dolních vrstev]
 de: Vorschau unten
 el: [προεπισκόπηση κάτω]
 en: [Preview below]
-es: Vista previa inferior
+es: [Vista previa inferior]
 fr: [Prévisualisation au-dessous]
 it: Anteprima sotto
 mi: Tuhi a ana ki raro
@@ -2870,29 +3218,19 @@ zh_CN: 往下预览
 
 therion: title surface bitmap
 bg: Карта на повърхността
+ca: [Mapa de superficie]
 cz: [Povrchová mapa]
 de: Erdoberfläche
 el: [χάρτης επιφάνειας]
 en: [Surface Image]
-es: Mapa superficie
+es: [Mapa de superficie]
 fr: [Carte extérieure]
 it: Mappa superficie
 mi: Konohi o te whenua
 pl: mapa powierzchni
-pt: [Mapa de superfície]
+pt: [Imagem da superfície]
 ru: [Карта поверхности]
 sk: [Povrchová mapa]
 sq: harta e siperfaqes
 zh_CN: 外观图
 
-therion: title model
-bg: Модел
-en: Model
-
-therion: title map
-bg: Карта
-en: Map
-
-therion: surface legs
-bg: Повърхностна антена
-en: Surface legs

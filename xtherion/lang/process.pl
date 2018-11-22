@@ -189,7 +189,7 @@ sub update_todo_list {
     @lines = split(/\n/,$ln);
     foreach $ln (@lines) {
       $i++;
-      if ($ln =~ /^\[mc\ \"(.*)\"/) {
+      if ($ln =~ /^\[mc\ \"(.*?)\"/) {
         $hr{$1}{therion} = $i;
       }
     }
@@ -291,4 +291,3 @@ if ($ARGV[0] =~ /^update$/i) {
 } else {
   write_sources($rf);
 }
-

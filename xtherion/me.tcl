@@ -30,6 +30,9 @@ xth_about_status [mc "loading map editor ..."]
 catch {package require Img}
 
 set xth(me,dflt,scrap,scale) {}
+set xth(me,wheel,clk) [clock seconds]
+set xth(me,wheel,position) 0
+set xth(me,wheel,sensitivity) 22
 
 proc xth_me_reset_defaults {} {
   global xth
@@ -1121,6 +1124,7 @@ proc xth_me_area_end_drag {tagOrId imgx x y} {
   }
   xth_me_images_rescandraw
   update idletasks 
+  set xth(ctrl,me,lastclick) [list [xth_me_can2realx [$xth(me,can) canvasx $x]] [xth_me_can2realy [$xth(me,can) canvasy $y]]]  
 }
 
 
@@ -1194,6 +1198,25 @@ proc xth_me_bind_image_drag {tagOrId imgx} {
 }
 
 
+# Windows and Mac have only one binding for the mouse wheel, no matter if it's going up or down
+# so we have to figure it out ourselves.
+proc xth_me_mousewheel {widget delta} {
+  if { $delta >= 0 } {
+    set cmd [list yview scroll [expr {-$delta/3}] pixels]
+    set cms_canvas xth_me_mousewheel_up
+  } else {
+    set cmd [list yview scroll [expr {(2-$delta)/3}] pixels]
+    set cms_canvas xth_me_mousewheel_down
+  }
+  set over [winfo containing -displayof $widget {*}[winfo pointerxy $widget]]
+  if { $over eq ".xth.me.af.apps.cf.c"} {
+    catch {$cms_canvas}
+  } elseif { $over == "" || [catch {$over {*}$cmd}] } {
+    catch {$widget {*}$cmd}
+  }
+  return;
+}
+
 xth_app_create me [mc "Map Editor"]
 
 xth_ctrl_add me cmds [mc "File commands"]
@@ -1241,6 +1264,13 @@ set xth(ctrl,me,area,ymin) ""
 set xth(ctrl,me,area,ymax) ""
 
 set xth(ctrl,me,cmds,moveto) ""
+
+set xth(ctrl,me,lastclick) {"" ""}
+set xth(ctrl,me,cmds,fx) ""
+set xth(ctrl,me,cmds,fy) ""
+set xth(ctrl,me,cmds,tx) ""
+set xth(ctrl,me,cmds,ty) ""
+
 
 set xth(ctrl,me,scrap,name) ""
 set xth(ctrl,me,scrap,projection) ""
@@ -1522,15 +1552,46 @@ Button $ccbox.mt -text [mc "Move to"] -anchor center -font $xth(gui,lfont) \
 xth_status_bar me $ccbox.mt [mc "Move file command to given position."]
 ComboBox $ccbox.tt -postcommand xth_me_cmds_set_move_to_list \
   -modifycmd xth_me_cmds_set_move_to \
-  -font $xth(gui,lfont) -height 4 -state disabled -width 8 \
+  -font $xth(gui,lfont) -height 16 -state disabled -width 8 \
   -textvariable xth(ctrl,me,cmds,moveto)
 xth_status_bar me $ccbox.tt [mc "Select destination scrap and position in it."]
+Button $ccbox.shf -text [mc "Shift from"] -anchor center -font $xth(gui,lfont) \
+-state disabled -width 8 -command "xth_me_cmds_shift_setf"
+xth_status_bar me $ccbox.shf [mc "Set start point of object shifting vector. Either selected point or place of last right-click."]
+Button $ccbox.sht -text [mc "Shift to"] -anchor center -font $xth(gui,lfont) \
+-state disabled -width 8 -command "xth_me_cmds_shift_sett"
+xth_status_bar me $ccbox.sht [mc "Set end point of object shifting vector. Either selected point or place of last right-click."]
+Entry $ccbox.shfx -font $xth(gui,lfont) -state disabled -width 4 \
+-textvariable xth(ctrl,me,cmds,fx)
+xth_status_bar me $ccbox.shfx [mc "X coordinate of start point of object shifting vector."]
+Entry $ccbox.shfy -font $xth(gui,lfont) -state disabled -width 4 \
+-textvariable xth(ctrl,me,cmds,fy)
+xth_status_bar me $ccbox.shfy [mc "Y coordinate of start point of object shifting vector."]
+Entry $ccbox.shtx -font $xth(gui,lfont) -state disabled -width 4 \
+-textvariable xth(ctrl,me,cmds,tx)
+xth_status_bar me $ccbox.shtx [mc "X coordinate of end point of object shifting vector."]
+Entry $ccbox.shty -font $xth(gui,lfont) -state disabled -width 4 \
+-textvariable xth(ctrl,me,cmds,ty)
+xth_status_bar me $ccbox.shty [mc "Y coordinate of end point of object shifting vector."]
+Button $ccbox.shswap -text [mc "Swap"] -anchor center -font $xth(gui,lfont) \
+-state disabled -width 8 -command "xth_me_cmds_shift_swap"
+xth_status_bar me $ccbox.shty [mc "Swap points of object shifting vector."]
+Button $ccbox.shift -text [mc "Shift object"] -anchor center -font $xth(gui,lfont) \
+-state disabled -width 8 -command "xth_me_cmds_shift"
+xth_status_bar me $ccbox.shty [mc "Shift currently selected point, line or scrap according to specified vector."]
+
+
 grid columnconf $ccbox 0 -weight 1
 grid columnconf $ccbox 1 -weight 1
-grid $ccbox.go -column 0 -row 0 -columnspan 2 -sticky news
-grid $ccbox.cfg $ccbox.sel -row 1 -sticky news
-grid $ccbox.mu $ccbox.md -row 2 -sticky news
-grid $ccbox.mt $ccbox.tt -row 3 -sticky news
+grid columnconf $ccbox 2 -weight 1
+grid columnconf $ccbox 3 -weight 1
+grid $ccbox.go -column 0 -row 0 -columnspan 4 -sticky news
+grid $ccbox.cfg $ccbox.sel -row 1 -sticky news -columnspan 2
+grid $ccbox.mu $ccbox.md -row 2 -sticky news -columnspan 2
+grid $ccbox.mt $ccbox.tt -row 3 -sticky news -columnspan 2
+grid $ccbox.shf $ccbox.sht -row 4 -sticky news -columnspan 2
+grid $ccbox.shfx $ccbox.shfy $ccbox.shtx $ccbox.shty -row 5 -sticky news
+grid $ccbox.shswap $ccbox.shift -row 6 -sticky news -columnspan 2
 
 # initialize text editor
 set txb $xth(ctrl,me,text)
@@ -1559,24 +1620,7 @@ grid $txb.sv -column 1 -row 0 -sticky news
 grid $txb.sh -column 0 -row 1 -sticky news
 grid $txb.upd -column 0 -row 2 -columnspan 2 -sticky news
 xth_status_bar me $txb.txt [mc "Editor for free text in therion 2D file."]
-bind $txb.txt <$xth(kb_control)-Key-x> "tk_textCut $txb.txt"
-bind $txb.txt <$xth(kb_control)-Key-c> "tk_textCopy $txb.txt"
-bind $txb.txt <$xth(kb_control)-Key-v> "tk_textPaste $txb.txt"
-
-if {$xth(gui,bindinsdel)} {
-  bind $txb.txt <Delete> {
-    %W delete insert
-    %W see insert
-  }
-  bind $txb.txt <Shift-Key-Delete> "tk_textCut $txb.txt"
-  bind $txb.txt <$xth(kb_control)-Key-Insert> "tk_textCopy $txb.txt"
-  bind $txb.txt <Shift-Key-Insert> "tk_textPaste $txb.txt"
-#  catch {
-#    bind $txb.txt <Shift-Key-KP_Decimal> "tk_textCut $txb.txt"
-#    bind $txb.txt <$xth(kb_control)-Key-KP_Insert> "tk_textCopy $txb.txt"
-#    bind $txb.txt <Shift-Key-KP_0> "tk_textPaste $txb.txt"
-#  }
-}
+xth_app_text_copy_paste_binds $txb.txt
 
 if {[info exists xth(gui,te)]} {
 #  bind $txb.txt <$xth(kb_control)-Key-a> "xth_te_text_select_all %W"
@@ -2003,10 +2047,14 @@ grid $ptc.rotc -row $crow -column 0 -columnspan 2 -sticky news
 grid $ptc.rot -row $crow -column 2 -columnspan 2 -sticky news -padx 2 -pady 1
 incr crow
 ## DISABLED
-#grid $ptc.xszc -row 6 -column 0 -columnspan 2 -sticky news
-#grid $ptc.xsz -row 6 -column 2 -columnspan 2 -sticky news -padx 1
-#grid $ptc.yszc -row 7 -column 0 -columnspan 2 -sticky news
-#grid $ptc.ysz -row 7 -column 2 -columnspan 2 -sticky news -padx 1
+if $xth(gui,me,pointsizectrl) {
+  grid $ptc.xszc -row $crow -column 0 -columnspan 2 -sticky news
+  grid $ptc.xsz -row $crow -column 2 -columnspan 2 -sticky news -padx 1
+  incr crow 
+  grid $ptc.yszc -row $crow -column 0 -columnspan 2 -sticky news
+  grid $ptc.ysz -row $crow -column 2 -columnspan 2 -sticky news -padx 1
+  incr crow
+}
 grid $ptc.upd -row $crow -column 0 -columnspan 4 -sticky news
 incr crow
 
@@ -2099,13 +2147,8 @@ Button $lnc.simpl -text [mc "Simplify line"] -anchor center -font $xth(gui,lfont
   -state disabled -command {xth_me_cmds_line_simplify} -width 10
 xth_status_bar me $lnc.upd [mc "Click this button to apply line changes."]
 
-menu $lnc.lpa.m -tearoff 0 -font $xth(gui,lfont)
-$lnc.lpa.m add command -label [mc "Insert point"] -command {xth_me_cmds_start_linept_insert} -state disabled
-$lnc.lpa.m add command -label [mc "Delete point"] -command {xth_me_cmds_delete_linept {} {}} -state disabled
-$lnc.lpa.m add command -label [mc "Split line"] -command {xth_me_cmds_line_split} -state disabled
-$lnc.lpa.m add command -label [mc "Trace line"] -command {xth_me_cmds_line_trace_start}
-$lnc.lpa.m add command -label [mc "Convert to curve"] -command {xth_me_cmds_line_poly2bezier}
-$lnc.lpa.m add command -label [mc "Simplify line"] -command {xth_me_cmds_line_simplify}
+set tmp $lnc.lpa
+xth_me_create_line_point_edit_menu tmp disabled
 
 #Button $lnc.insp -text "Insert" -anchor center -font $xth(gui,lfont) \
 #  -state disabled -width 10 -command {xth_me_cmds_start_linept_insert}
@@ -2250,24 +2293,7 @@ grid $txb.txt -column 0 -row 0 -sticky news
 grid $txb.sv -column 1 -row 0 -sticky news
 grid $txb.sh -column 0 -row 1 -sticky news
 xth_status_bar me $txb [mc "Editor for line point options."]
-bind $txb.txt <$xth(kb_control)-Key-x> "tk_textCut $txb.txt"
-bind $txb.txt <$xth(kb_control)-Key-c> "tk_textCopy $txb.txt"
-bind $txb.txt <$xth(kb_control)-Key-v> "tk_textPaste $txb.txt"
-
-if {$xth(gui,bindinsdel)} {
-  bind $txb.txt <Delete> {
-    %W delete insert
-    %W see insert
-  }
-  bind $txb.txt <Shift-Key-Delete> "tk_textCut $txb.txt"
-  bind $txb.txt <$xth(kb_control)-Key-Insert> "tk_textCopy $txb.txt"
-  bind $txb.txt <Shift-Key-Insert> "tk_textPaste $txb.txt"
-#  catch {
-#    bind $txb.txt <Shift-Key-KP_Decimal> "tk_textCut $txb.txt"
-#    bind $txb.txt <$xth(kb_control)-Key-KP_Insert> "tk_textCopy $txb.txt"
-#    bind $txb.txt <Shift-Key-KP_0> "tk_textPaste $txb.txt"
-#  }
-}
+xth_app_text_copy_paste_binds $txb.txt
 
 if {[info exists xth(gui,te)]} {
   bind $txb.txt <Tab> $xth(te,bind,text_tab)
@@ -2592,6 +2618,14 @@ Label $xth(me,pbar) -text "" -width 15 -relief sunken -font $xth(gui,lfont) \
   -anchor center -state disabled
 pack $xth(me,pbar) -side left
 xth_status_bar me $xth(me,pbar) [mc "Current mouse position."]
+
+# For Windows and Mac there is only one MouseWheel event to bond to.
+bind all <MouseWheel> [list xth_me_mousewheel %W %D]
+# In Linux we have the button 4 and 5 to bind to get mouse wheel movements.
+if {[tk windowingsystem] eq "x11"} {
+  bind all <4> [list xth_me_mousewheel %W 120]
+  bind all <5> [list xth_me_mousewheel %W -120]
+}
 
 xth_ctrl_minimize me cmds
 xth_ctrl_minimize me prev

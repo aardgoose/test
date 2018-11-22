@@ -96,6 +96,8 @@ enum {
   TT_LAYOUT_MAP_IMAGE = 2051,
   TT_LAYOUT_GRID_COORDS = 2052,
   TT_LAYOUT_SYMBOL_COLOR = 2053,
+  TT_LAYOUT_FONT_SETUP = 2054,
+  TT_LAYOUT_MIN_SYMBOL_SCALE = 2055,
 };
 
 
@@ -398,40 +400,20 @@ enum {
   TT_LAYOUT_CCRIT_EXPLODATE,
   TT_LAYOUT_CCRIT_MAP,
   TT_LAYOUT_CCRIT_SCRAP,
+  TT_LAYOUT_CCRIT_SURVEY,
 };
 
 static const thstok thtt_layout_ccrit[] = {
   {"altitude", TT_LAYOUT_CCRIT_ALTITUDE},
   {"altitudes", TT_LAYOUT_CCRIT_ALTITUDE},
   {"depth", TT_LAYOUT_CCRIT_DEPTH},
-  {"topo-date", TT_LAYOUT_CCRIT_TOPODATE},
   {"explo-date", TT_LAYOUT_CCRIT_EXPLODATE},
   {"map", TT_LAYOUT_CCRIT_MAP},
   {"maps", TT_LAYOUT_CCRIT_MAP},
   {"scrap", TT_LAYOUT_CCRIT_SCRAP},
   {"scraps", TT_LAYOUT_CCRIT_SCRAP},
+  {"topo-date", TT_LAYOUT_CCRIT_TOPODATE},
   {NULL, TT_LAYOUT_CCRIT_UNKNOWN}
-};
-
-
-/**
- * Layout color tables.
- */
-
-enum {
-  TT_LAYOUT_CTABLE_UNKNOWN = 0,
-  TT_LAYOUT_CTABLE_HSV,
-};
-
-static const thstok thtt_layout_ctable[] = {
-  {"hsv", TT_LAYOUT_CTABLE_HSV},
-  {NULL, TT_LAYOUT_CTABLE_UNKNOWN}
-};
-
-enum {
-  TT_LAYOUT_CMODE_AUTO,
-  TT_LAYOUT_CMODE_TABLE,
-  TT_LAYOUT_CMODE_MANUAL,
 };
 
 
@@ -467,6 +449,7 @@ static const thstok thtt_layout_opt[] = {
   {"doc-title",TT_LAYOUT_DOC_TITLE},
   {"endcode",TT_LAYOUT_ENDCODE},
   {"exclude-pages",TT_LAYOUT_EXCLUDE_PAGES},
+  {"fonts-setup", TT_LAYOUT_FONT_SETUP},
   {"grid",TT_LAYOUT_GRID},
   {"grid-coords",TT_LAYOUT_GRID_COORDS},
   {"grid-origin",TT_LAYOUT_GRID_ORIGIN},
@@ -480,6 +463,7 @@ static const thstok thtt_layout_opt[] = {
   {"map-header",TT_LAYOUT_MAP_HEADER},
   {"map-header-bg",TT_LAYOUT_MAP_HEADER_BG},
   {"map-image",TT_LAYOUT_MAP_IMAGE},
+  {"min-symbol-scale", TT_LAYOUT_MIN_SYMBOL_SCALE},
   {"nav-factor",TT_LAYOUT_NAV_FACTOR},
   {"nav-size",TT_LAYOUT_NAV_SIZE},
   {"north",TT_LAYOUT_NORTH},
@@ -535,6 +519,8 @@ class thlayout : public thdataobject {
   public:
 
   class thconfig * m_pconfig;
+
+  class thlookup * m_lookup;
     
   double scale, scale_bar, base_scale, ox, oy, oz, hsize, vsize, paphs, papvs, paghs, pagvs, marls, marts, gxs, gys, gzs, gox, goy, goz, navf, overlap, opacity,
     map_header_x, map_header_y, legend_width, surface_opacity, rotate;
@@ -550,9 +536,10 @@ class thlayout : public thdataobject {
     debug, survey_level, surface, grid_coords;
   
   thlayout_color color_map_bg, color_map_fg, color_preview_below, color_preview_above;
-  int color_crit, // none, altitude, ...
-   color_mode, // auto - values and colors, table - colors, manual
-   color_table; // hsv, cool, hot ...
+  int color_crit; // none, altitude, ...
+  const char * color_crit_fname;
+
+  double min_symbol_scale, font_setup[5];
 
   
   thlayoutln * first_line, * last_line;
@@ -577,7 +564,8 @@ class thlayout : public thdataobject {
     def_map_header, def_lang, def_scale_bar, def_map_header_bg,
     def_max_explos, def_max_topos, def_max_cartos,
     def_max_copys, def_explo_lens, def_topo_lens, def_debug, def_survey_level, def_surface,
-    def_surface_opacity, def_units, def_grid_coords, def_color_labels;
+    def_surface_opacity, def_units, def_grid_coords, def_color_labels,
+    def_font_setup, def_min_symbol_scale;
     
   
   thlayout_copy_src * first_copy_src, * last_copy_src;
@@ -699,6 +687,13 @@ class thlayout : public thdataobject {
    
   void export_config(FILE * o, thdb2dprj * prj, double x_scale, double x_origin_shx, double x_origin_shy);
   
+
+  /**
+   * Export font size.
+   */
+  void export_mptex_font_size(FILE * o, class th2ddataobject * obj, bool print_default_scale);
+
+
   /**
    * Export main tex file.
    */

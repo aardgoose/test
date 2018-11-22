@@ -26,6 +26,7 @@
  */
  
 #include "thlayout.h"
+#include "thlookup.h"
 #include "thexception.h"
 #include "thchenc.h"
 #include "thdata.h"
@@ -37,6 +38,7 @@
 #include "thlang.h"
 #include "thcsdata.h"
 #include "thconfig.h"
+#include "th2ddataobject.h"
 #include <string.h>
 #ifdef THMSVC
 #include <direct.h>
@@ -58,6 +60,7 @@ thlayout::thlayout()
 
   this->ccode = TT_LAYOUT_CODE_UNKNOWN;
   this->m_pconfig = NULL;
+  this->m_lookup = NULL;
 
   this->def_scale = 0;
   this->scale = 0.005;
@@ -98,6 +101,12 @@ thlayout::thlayout()
   this->gys = thnan;
   this->gzs = thnan;
   
+  this->def_min_symbol_scale = 0;
+  this->min_symbol_scale = 0.0;
+
+  this->def_font_setup = 0;
+  this->font_setup[0] = thnan;
+
   this->def_origin_label = 0;
   this->olx = "0";
   this->oly = "0";
@@ -234,9 +243,7 @@ thlayout::thlayout()
   this->color_preview_above.B = 0;
   
   this->color_crit = TT_LAYOUT_CCRIT_UNKNOWN;
-  this->color_mode = TT_LAYOUT_CMODE_AUTO;
-  this->color_table = TT_LAYOUT_CTABLE_HSV;  
-  
+  this->color_crit_fname = NULL;
 }
 
 
@@ -305,6 +312,8 @@ thcmd_option_desc thlayout::get_default_cod(int id) {
     case TT_LAYOUT_GRID_SIZE:
     case TT_LAYOUT_GRID_ORIGIN:
       return thcmd_option_desc(id,4);
+    case TT_LAYOUT_FONT_SETUP:
+      return thcmd_option_desc(id,5);
     case TT_LAYOUT_PAGE_SETUP:
       return thcmd_option_desc(id,7);
     default:
@@ -388,6 +397,8 @@ void thlayout::set(thcmd_option_desc cod, char ** args, int argenc, unsigned lon
   double dum;
   thlayout_copy_src dumm;
   int sv, sv2, dum_int;
+  const char * tmp1;
+  const char * tmp2;
   //bool parsed;
   thlayout_copy_src * lcp;
   thcmd_option_desc defcod = this->get_default_cod(cod.id);
@@ -626,6 +637,26 @@ void thlayout::set(thcmd_option_desc cod, char ** args, int argenc, unsigned lon
       this->def_grid_size = 2;
       break;
 
+    case TT_LAYOUT_FONT_SETUP:
+      for(sv2 = 0; sv2 < 5; sv2++) {
+        thparse_double(sv,dum,args[sv2]);
+        if ((sv != TT_SV_NUMBER) || (dum <= 0.0)) {
+          ththrow(("invalid font size -- %s", args[sv2]))
+        } else {
+          if ((sv2 > 0) && (dum < this->font_setup[sv2-1])) {
+            ththrow(("font size should be increasing by scale -- %s", args[sv2]))
+          }
+          this->font_setup[sv2] = dum;
+        }
+      }
+      this->def_font_setup = 2;
+      break;
+
+    case TT_LAYOUT_MIN_SYMBOL_SCALE:
+      th2dparse_scale(args[0], sv, this->min_symbol_scale);
+      this->def_min_symbol_scale = 2;
+      break;
+
     case TT_LAYOUT_COLOR:
       sv = thmatch_token(args[0],thtt_layout_color);
       switch (sv) {
@@ -639,11 +670,14 @@ void thlayout::set(thcmd_option_desc cod, char ** args, int argenc, unsigned lon
           }
 	  break;
         case TT_LAYOUT_COLOR_MAP_FG:
-          this->color_crit = thmatch_token(args[1], thtt_layout_ccrit);
+          thlookup_parse_reference(args[1], &(this->color_crit), &tmp1, &tmp2);
+          //this->color_crit = thmatch_token(args[1], thtt_layout_ccrit);
           if (this->color_crit == TT_LAYOUT_CCRIT_UNKNOWN)
             this->color_map_fg.parse(args[1]);
-          else
+          else {
+            this->color_crit_fname = thdb.strstore(args[1]);
             this->color_map_fg.defined = 2;
+          }
           break;
         case TT_LAYOUT_COLOR_MAP_BG:
           this->color_map_bg.parse(args[1], true);
@@ -1070,6 +1104,8 @@ void thlayout::self_print_library() {
 
   thprintf("\tplayout->color_map_fg.defined = %d;\n", this->color_map_fg.defined);
   thprintf("\tplayout->color_crit = %d;\n", this->color_crit);
+  if (this->color_crit_fname != NULL)
+    thprintf("\tplayout->color_crit_fname = \"%s\";\n", this->color_crit_fname);
   thprintf("\tplayout->color_map_fg.R = %lg;\n",this->color_map_fg.R);
   thprintf("\tplayout->color_map_fg.G = %lg;\n",this->color_map_fg.G);
   thprintf("\tplayout->color_map_fg.B = %lg;\n",this->color_map_fg.B);
@@ -1218,6 +1254,21 @@ void thlayout::self_print_library() {
     thdecode_c(&(this->db->buff_enc), this->excl_list);
     thprintf("\tplayout->excl_list = \"%s\";\n", this->db->buff_enc.get_buffer());
   }
+
+  thprintf("\tplayout->def_font_setup = %d;\n", this->def_font_setup);
+  if (!thisnan(this->font_setup[0])) {
+    thprintf("\tplayout->font_setup[0] = %lg;\n",this->font_setup[0]);
+    thprintf("\tplayout->font_setup[1] = %lg;\n",this->font_setup[1]);
+    thprintf("\tplayout->font_setup[2] = %lg;\n",this->font_setup[2]);
+    thprintf("\tplayout->font_setup[3] = %lg;\n",this->font_setup[3]);
+    thprintf("\tplayout->font_setup[4] = %lg;\n",this->font_setup[4]);
+  }
+
+  thprintf("\tplayout->def_min_symbol_scale = %d;\n", this->def_min_symbol_scale);
+  if (this->min_symbol_scale > 0.0) {
+    thprintf("\tplayout->min_symbol_scale = %lg;\n",this->min_symbol_scale);
+  }
+
   
   thprintf("\tplayout->def_grid_size = %d;\n", this->def_grid_size);
   if (!thisnan(this->gxs)) {
@@ -1707,6 +1758,7 @@ void thlayout::process_copy() {
       
       begcopy(color_map_fg.defined)
         this->color_crit = srcl->color_crit;
+        this->color_crit_fname = srcl->color_crit_fname;
         this->color_map_fg.R = srcl->color_map_fg.R;
         this->color_map_fg.G = srcl->color_map_fg.G;
         this->color_map_fg.B = srcl->color_map_fg.B;
@@ -1765,6 +1817,18 @@ void thlayout::process_copy() {
         this->gxs = srcl->gxs;
         this->gys = srcl->gys;
         this->gzs = srcl->gzs;
+      endcopy
+
+      begcopy(def_font_setup)
+        this->font_setup[0] = srcl->font_setup[0];
+        this->font_setup[1] = srcl->font_setup[1];
+        this->font_setup[2] = srcl->font_setup[2];
+        this->font_setup[3] = srcl->font_setup[3];
+        this->font_setup[4] = srcl->font_setup[4];
+      endcopy
+
+      begcopy(def_min_symbol_scale)
+        this->min_symbol_scale = srcl->min_symbol_scale;
       endcopy
   
       begcopy(def_origin_label)
@@ -2099,6 +2163,43 @@ void thlayout_map_image::parse(char ** args, const char * cpath) {
   else
     fpath += args[3];
   this->m_fn = thdb.strstore(fpath.c_str());
+
+}
+
+
+void thlayout::export_mptex_font_size(FILE * o, th2ddataobject * obj, bool print_default_scale) {
+  switch (obj->scale) {
+    case TT_2DOBJ_SCALE_XL:
+      fprintf(o,"\\thhugesize ");
+      break;
+    case TT_2DOBJ_SCALE_L:
+      fprintf(o,"\\thlargesize ");
+      break;
+    case TT_2DOBJ_SCALE_S:
+      fprintf(o,"\\thsmallsize ");
+      break;
+    case TT_2DOBJ_SCALE_XS:
+      fprintf(o,"\\thtinysize ");
+      break;
+    case TT_2DOBJ_SCALE_NUMERIC:
+    	{
+    		double optical_zoom = this->scale / this->base_scale;
+    		if (obj->scale_numeric <= 0.5)
+    			fprintf(o,"\\size[%.1f] ", optical_zoom * obj->scale_numeric / 0.5 * this->font_setup[0]);
+				else if (obj->scale_numeric <= 0.707)
+    			fprintf(o,"\\size[%.1f] ", optical_zoom * obj->scale_numeric / 0.707 * this->font_setup[1]);
+				else if (obj->scale_numeric >= 2.0)
+    			fprintf(o,"\\size[%.1f] ", optical_zoom * obj->scale_numeric / 2.0 * this->font_setup[4]);
+				else if (obj->scale_numeric >= 1.414)
+    			fprintf(o,"\\size[%.1f] ", optical_zoom * obj->scale_numeric / 1.414 * this->font_setup[3]);
+				else
+    			fprintf(o,"\\size[%.1f] ", optical_zoom * obj->scale_numeric * this->font_setup[2]);
+    	}
+    	break;
+    default:
+    	if (print_default_scale) fprintf(o,"\\thnormalsize ");
+    	break;
+  }
 
 }
 

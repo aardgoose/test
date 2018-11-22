@@ -366,7 +366,7 @@ void lxData::Rebuild()
     cl_cells->InsertNextCell(2);
     cl_cells->InsertCellPoint(sh.from);
     cl_cells->InsertCellPoint(sh.to);
-    if (sh_it->m_sectionType != LXFILE_SHOT_SECTION_NONE) {    
+    if ((sh_it->m_sectionType != LXFILE_SHOT_SECTION_NONE) && (!(sh.surface || sh.splay))) {
       tmpDbl = stationMap[sh_it->m_from].m_pst->m_c;
       fc[0] = tmpDbl[0]; fc[1] = tmpDbl[1]; fc[2] = tmpDbl[2];
       tmpDbl = stationMap[sh_it->m_to].m_pst->m_c;
@@ -540,7 +540,7 @@ void lxData::Rebuild()
 #else
   this->scrapWallsNormals->SetInput(this->scrapWalls);
 #endif
-  this->scrapWallsNormals->SetFeatureAngle(360.0);
+  this->scrapWallsNormals->SetFeatureAngle(120.0);
   this->scrapWallsNormals->SetAutoOrientNormals(false);
   this->scrapWallsNormals->Update();
 

@@ -46,6 +46,7 @@
 #include "thcs.h"
 #include "thtexfonts.h"
 #include "thlang.h"
+#include <libgen.h>
 
 
 thexptable::thexptable() {
@@ -393,14 +394,17 @@ void thexptable::process_db(class thdatabase * dbp)
   }
 
 
-#ifdef THLINUX
-  const char * title = basename( this->outpt );
-#elif THMACOSX
-  const char * title = "cave";
-#else
+#ifdef THWIN32
   char title[_MAX_FNAME];
   _splitpath(this->outpt, NULL, NULL, title, NULL);
+#elif THLINUX
+  thbuffer bnb;
+  bnb.strcpy(this->outpt);
+  const char * title = basename(bnb.get_buffer());
+#else
+  const char * title = "cave";
 #endif
+
 
   switch (this->format) {
     case TT_EXPTABLE_FMT_TXT:
@@ -464,6 +468,8 @@ void thexptable::add_coordinates(double x, double y, double z, const char * xlab
       this->m_table.insert_attribute(xlabel,  tx);
       if (thcs_get_data(this->cs)->dms)
         this->m_table.get_field(xlabel)->m_double_format = "%.8f";
+      else
+        this->m_table.get_field(xlabel)->m_double_format = "%.3f";
     }
   }
   if (ylabel != NULL) {
@@ -482,6 +488,8 @@ void thexptable::add_coordinates(double x, double y, double z, const char * xlab
       this->m_table.insert_attribute(ylabel,  ty);
       if (thcs_get_data(this->cs)->dms)
         this->m_table.get_field(ylabel)->m_double_format = "%.8f";
+      else
+        this->m_table.get_field(ylabel)->m_double_format = "%.3f";
     }
   }
   if (zlabel != NULL) {
@@ -490,8 +498,10 @@ void thexptable::add_coordinates(double x, double y, double z, const char * xlab
     }
     if (thisnan(tz))
       this->m_table.insert_attribute(zlabel,  "");
-    else
+    else {
       this->m_table.insert_attribute(zlabel,  tz);
+      this->m_table.get_field(zlabel)->m_double_format = "%.3f";
+    }
   }
 }
 

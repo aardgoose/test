@@ -64,6 +64,30 @@ if {[lsearch -exact $xth(kbencodings) [encoding system]] < 0} {
   lappend xth(kbencodings) [encoding system]
 }
 
+# The collation aware sort code used by xtherion takes a map in which collation differences can be 
+# listed as {from to from to...}, sorts the mapped items, and retrieves only the original elements.
+#
+# Examples:
+#
+# Portuguese:
+# % lsort {ab ãc ae ãd}
+# ab ae ãc ãd
+# % collatesort {ab ãc ae ãd} {ã a}
+# ab ãc ãd ae
+#
+# Spanish (ll sorts after lz):
+# % collatesort {llano luxación leche} {ll lzz}
+# leche luxación llano
+#
+# German (umlauts sorted as if "ä" was "ae"):
+# % lsort {Bar Bär Bor}
+# Bar Bor Bär
+# % collatesort {Bar Bär Bor} {ä ae}
+# Bär Bar Bor
+#
+set xth(collation-maps,pt) { á a à a ã a â a é e ê e í i î i ó o ô o õ o ú u ù u û u ç c \
+  Á A À A Ã A Â A É E Ê E Í I Î I Ó O Ô O Õ O Ú U Û U Ç C }
+
 set xth(length_units) {m cm in ft yd}
 set xth(angle_units) {deg min grad}
 set xth(point_types) {}
@@ -203,10 +227,10 @@ set xth(gui,me,pasivefill) green
 set xth(gui,me,controlfill) blue
 set xth(gui,me,highlightfill) cyan
 set xth(gui,me,unselectedfill) lightgray
-set xth(gui,me,wallcolor) brown
+set xth(gui,me,wallcolor) blue
 set xth(gui,me,pitcolor) magenta
 set xth(gui,me,slopecolor) gold
-set xth(gui,me,rockcolor) snow4
+set xth(gui,me,rockcolor) purple
 set xth(gui,me,bordercolor) turquoise
 set xth(gui,me,stationcolor) darkorange
 
@@ -214,6 +238,7 @@ set xth(gui,me,typelistwidth) 16
 set xth(gui,rmb) 3
 
 set xth(gui,bindinsdel) 1
+set xth(gui,me,pointsizectrl) 0
 
 # platform dependend settings
 case $tcl_platform(platform) {
@@ -292,6 +317,9 @@ set tmp [mc "theme basic-symbols"]
 set tmp [mc "theme passage-fills"]
 set tmp [mc "theme speleothems"]
 set tmp [mc "theme equipement"]
+# This line type is special. It even doesn't appears on map legend.
+# Couldn't find a better place to include this
+set tmp [mc "line arrow"]
 
 set xth(me,themes) {
   {theme basic-symbols}

@@ -53,7 +53,7 @@ Works like the |encoding| command in data files---specifies character sets.
 
 \NEW{5.3}Outside of |layout| command specifies the coordinate system for output. 
 It is not possible to specify more coordinate systems for different outputs (the 
-last occurence of |cs| is used for all output files).
+last occurrence of |cs| is used for all output files).
 
 If no |cs| is defined in the configuration file, the first |cs| therion
 encounters in the data files is used as an output |cs|.
@@ -203,6 +203,8 @@ available translations, see |thlang/texts.txt| file.
     symbol-hide <point/line/area/group/special> <symbol-type>
     symbol-show <point/line/area/group/special> <symbol-type>
     symbol-colour <point/line/area/group/special> <symbol-type> <colour>
+    min-symbol-scale <scale>
+    fonts-setup <tinysize> <smallsize> <normalsize> <largesize> <hugesize>
     size <width> <height> <units>
     overlap <value> <units>
     page-setup <dimensions> <units>
@@ -320,6 +322,22 @@ endlayout|
     currently applies to pattern fills only if (1) output format is PDF and
     (2)~\MP\ version is at least 1.000] (M, A)
 
+  * \NEW{5.4.1}|min-symbol-scale <scale>| = 
+    define minimal |<scale>|, from which points and lines are displayed on the map. E.g. for
+    |min-symbol-scale M|, no points or lines scaled |S| and |XS| will be shown on the map.
+    |<scale>| has the same format, as |scale| option for points and lines.
+
+  * \NEW{5.4.1}|fonts-setup <tinysize> <smallsize> <normalsize> <largesize> <hugesize>| =
+    specify size of the text in points. 
+    |<normalsize>| applies to point label, |<smallsize>| applies to 
+    remark and all other point labels. Each of them may apply to line label 
+    according to its |-size| option.
+    
+    The defaults are 
+    |8 10 12 16 24| for scales upto 1:100; 
+    |7 8 10 14 20| for scales upto 1:200; 
+    |6 7 8 10 14| for scales upto 1:500 and 
+    |5 6 7 8 10| for scales smaller than 1:500.
 
   {\it page layout related:}\Nobreak
 
@@ -396,9 +414,10 @@ endlayout|
      header is filled with background color (e.g.~to hide map grid). 
      (M; default: off)
   * |map-image <x> <y> <n/s/e/w/ne/nw/se/sw/center> <filename>| = 
-    include image specified by |<filename>| into map at location 
-    specified by |<x> <y>|. For coordinates and alignment details, see
-    |map-header| specification.
+    include image\[Note that you can include PDF too, which may be used to
+    combine plan and extended elevation into one nice looking PDF file.] specified
+    by |<filename>| into map at location specified by |<x> <y>|. For coordinates 
+    and alignment details, see |map-header| specification.
   * |legend-width <n> <units>| = legend width (M, A; default: |14 cm|)
   * |legend <on/off/all>| = display list of used map symbols in the map header. 
     If set to |all|, all symbols from the current symbol set are displayed. 
@@ -604,11 +623,11 @@ piecewise linear 3d model from passage walls made of B\'ezier curves.
   * |location <on/(off)>| = set whether to export coordinates of cave entrances in
     the table.
   * \NEW{5.3}|surveys (on)/off| = exports raw list of caves when set |off|. Otherwise 
-    survey structure with aggregated ststistics is also displayed.
+    survey structure with aggregated statistics is also displayed.
     
   {\it database:}\Nobreak
   
-  * |format/fmt <format>| = currently only |sql|
+  * |format/fmt <format>| = currently |sql| and |csv|
   * |encoding/enc <encoding>| = set output encoding
 \endoptions
 
@@ -620,7 +639,7 @@ piecewise linear 3d model from passage walls made of B\'ezier curves.
 model & loch, dxf, esri, compass, survex, vrml, 3dmf, kml\cr
 map  & pdf, svg, xhtml, dxf, esri, survex, xvi, kml, \NEW{5.3}bbox\cr
 atlas & pdf\cr
-database & sql\cr
+database & sql, \NEW{5.4}csv\cr
 lists & html, txt, kml, dbf\cr}}\egroup
 
 

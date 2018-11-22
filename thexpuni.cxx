@@ -473,8 +473,8 @@ void thexpmap::export_kml(class thdb2dxm * maps, class thdb2dprj * prj)
   fprintf(out, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<kml xmlns=\"http://earth.google.com/kml/2.0\">\n");
   fprintf(out, "<Folder>\n");
   fprintf(out, "<Style id=\"ThMapStyle\"> <PolyStyle> <fill>1</fill> <outline>0</outline> </PolyStyle> </Style>\n");
-  fprintf(out, "<Style id=\"ThEntranceIcon\"> <IconStyle> <Icon> <href>http://pk-sofia.com/images/stories/KmlIconEntrance.png</href> </Icon> <hotSpot x=\"0.5\" y=\"0\" xunits=\"fraction\" yunits=\"fraction\" /> </IconStyle> </Style>\n");
-  fprintf(out, "<Icon> <href>http://pk-sofia.com/images/stories/KmlIconMap.png</href> </Icon>\n");
+  fprintf(out, "<Style id=\"ThEntranceIcon\"> <IconStyle> <Icon> <href>https://therion.speleo.sk/downloads/KmlIconEntrance.png</href> </Icon> <hotSpot x=\"0.5\" y=\"0\" xunits=\"fraction\" yunits=\"fraction\" /> </IconStyle> </Style>\n");
+  fprintf(out, "<Icon> <href>https://therion.speleo.sk/downloads/KmlIconMap.png</href> </Icon>\n");
   // VG 250616: TODO change icons above, maybe upload to therion website after testing
 
   thsurvey * mainsrv = db->fsurveyptr;
@@ -522,6 +522,7 @@ void thexpmap::export_kml(class thdb2dxm * maps, class thdb2dprj * prj)
 
   int cA, cR, cG, cB;
   #define checkc(c) if (c < 0) c = 0; if (c > 255) c = 255;
+  bool first_outer;
 
   while (cmap != NULL) {
     cbm = cmap->first_bm;
@@ -533,15 +534,15 @@ void thexpmap::export_kml(class thdb2dxm * maps, class thdb2dprj * prj)
         fprintf(out,"<Placemark>\n");
         fprintf(out,"<styleUrl>#ThMapStyle</styleUrl>\n");
         fprintf(out,"<name><![CDATA[%s]]></name>\n", mapname.c_str());
-        if ((layout->color_crit == TT_LAYOUT_CCRIT_MAP) && (cmap->map->colour.defined)) {
-          cR = int (255.0 * cmap->map->colour.R + 0.5);
-          cG = int (255.0 * cmap->map->colour.G + 0.5);
-          cB = int (255.0 * cmap->map->colour.B + 0.5);
-        } else {
+        //if ((layout->color_crit == TT_LAYOUT_CCRIT_MAP) && (cmap->map->colour.defined)) {
+        //  cR = int (255.0 * cmap->map->colour.R + 0.5);
+        //  cG = int (255.0 * cmap->map->colour.G + 0.5);
+        //  cB = int (255.0 * cmap->map->colour.B + 0.5);
+        //} else {
           cR = int (255.0 * this->layout->color_map_fg.R + 0.5);
           cG = int (255.0 * this->layout->color_map_fg.G + 0.5);
           cB = int (255.0 * this->layout->color_map_fg.B + 0.5);
-        }
+        //}
         if (this->layout->transparency) {
           cA = int (255.0 * this->layout->opacity + 0.5);
         } else {
@@ -561,15 +562,19 @@ void thexpmap::export_kml(class thdb2dxm * maps, class thdb2dprj * prj)
             xu.parse_scrap(scrap);
             if (xu.m_part_list.size() > 0) {
               fprintf(out,"<Polygon>\n");
+              first_outer = true;
               std::list<thexpuni_part>::iterator it;
               std::list<thexpuni_data>::iterator ip;
               double x,y,z;
               for(it = xu.m_part_list.begin(); it != xu.m_part_list.end(); it++) {
-                if (it->m_outer)
+                if (it->m_outer) {
+                  if (!first_outer) {
+                      fprintf(out,"</Polygon>\n<Polygon>\n");
+                  }
                   fprintf(out,"<outerBoundaryIs>\n");
-                else
+                  first_outer = false;
+                } else
                   fprintf(out,"<innerBoundaryIs>\n");
-
                 fprintf(out,"<LinearRing>\n<coordinates>\n");
                 for(ip = it->m_point_list.begin(); ip != it->m_point_list.end(); ip++) {
                   thcs2cs(thcs_get_data(thcfg.outcs)->params, thcs_get_data(TTCS_LONG_LAT)->params, 

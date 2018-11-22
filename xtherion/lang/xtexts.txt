@@ -5,8 +5,10 @@ de: Ziehen um Größe zu ändern.
 el: Drag για προσαρμογή μεγέθους πίνακα ελέγχου.
 en: Drag to resize control panel.
 es: Arrastar para cambiar el tamaño del panel de control.
+fr: Tirer pour agrandir/réduire le panneau de controle
 it: Trascina per ridimensionare il pannello dei controlli
-ru: Перетаскивайте для изменения размера панели
+pt: Arraste para redimensionar o painel de controle.
+ru: Перетащите для изменения размера панели
 sk: Rozšíriť alebo zúžiť okno kontrolných panelov.
 sq: levize per te rritur dritaren kontrolluese
 zh_CN: 拖动调整控制面板大小
@@ -18,7 +20,9 @@ de: Datei
 el: Αρχείο
 en: File
 es: Archivo
+fr: Fichier
 it: File
+pt: Arquivo
 ru: Файл
 sk: Súbor
 sq: fajlli
@@ -32,7 +36,9 @@ el: Μεγιστοποίηση
 en: Maximize
 en_GB: Maximise
 es: Maximizar
+fr: Maximiser
 it: Massimizza
+pt: Maximizar
 ru: Развернуть
 sk: Maximalizovať
 sq: rrite ne maksimum
@@ -46,7 +52,9 @@ el: Κανονικό μέγεθος
 en: Normalize
 en_GB: Normalise
 es: Normalizar
+fr: Normaliser
 it: Normalizza
+pt: Normalizar
 ru: Свернуть
 sk: Normálna veľkosť
 sq: normalizo
@@ -59,7 +67,9 @@ de: Panel verschieben
 el: Αλλαγή παράθυρου
 en: Switch panels
 es: Alternar paneles
+fr: Changer de panneaux
 it: Cambia posto al pannello
+pt: Trocar de painel
 ru: Переключить панели
 sk: Prehoď panely
 sq: nderro panelat
@@ -70,7 +80,10 @@ bg: Превключи панела с инструменти
 cz: Vypnout/zapnout lištu nástrojů
 de: Werkzeugleiste anzeigen/verbergen
 el: Εμφάνιση / μη-εμφάνιση γραμμής εργαλείων
+es: Alternar barra de herramientas
+fr: Montrer la barre des tâches
 it: Mostra/Nascondi la barra strumenti
+pt: Barra de ferramentas
 ru: Переключить панель инструментов
 sk: Zapnúť/vypnúť panel
 sq: dritarja aktivizuese
@@ -83,7 +96,9 @@ de: Zeichensatz
 el: Κωδικοποίηση πληκτρολογίου
 en: KBD encoding
 es: Codificación teclado
+fr: Encodage du clavier
 it: Encoding della tastiera
+pt: Codificação de caracteres
 ru: Кодировка клавиатуры
 sk: Kódovanie klávesnice
 sq: KBD-kodimi
@@ -96,7 +111,9 @@ de: Fenster
 el: Παράθυρο
 en: Window
 es: Ventana
+fr: Fenêtre
 it: Finestra
+pt: Janela
 ru: Окно
 sk: Okno
 sq: dritarja
@@ -109,7 +126,9 @@ de: Beenden
 el: Έξοδος
 en: Quit
 es: Salir
+fr: Quitter
 it: Esci
+pt: Encerrar
 ru: Выход
 sk: Ukončiť
 sq: mbylle
@@ -122,7 +141,9 @@ de: Hilfe
 el: Βοήθεια
 en: Help
 es: Ayuda
+fr: Aide
 it: Aiuto
+pt: Ajuda
 ru: Помощь
 sk: Pomoc
 sq: ndihma
@@ -134,8 +155,10 @@ cz: Alkohol tester
 de: Blutalkoholrechner
 el: Αλκοτέστ
 en: BAC calculator
-es: Borrachímetro
+es: Test de alcoholemia
+Fr: Test d'alcoolémie
 it: Calcolatore BAC
+pt: Calculadora TAS
 ru: Калькулятор алкоголя
 sk: Alkohol tester
 sq: llogaritesi I alkoolit
@@ -148,7 +171,9 @@ de: Persönliche Angaben
 el: Βιομετρικά δεδομένα
 en: Biometric data
 es: Datos biométricos
+fr: Données biométriques
 it: Dati biometrici
+pt: Informações biométricas
 ru: Биометрические данные
 sk: Biometrické údaje
 sq: shenimet biometrike
@@ -161,7 +186,9 @@ de: Alter
 el: ηλικία
 en: age
 es: edad
+fr: âge
 it: età
+pt: idade
 ru: Возраст
 sk: vek
 sq: mosha
@@ -174,7 +201,9 @@ de: Jahre
 el: έτη
 en: years
 es: años
+fr: ans
 it: anni
+pt: anos
 ru: лет
 sk: rokov
 sq: vitet
@@ -187,7 +216,9 @@ de: Geschlecht
 el: φύλο
 en: gender
 es: sexo
+fr: Genre/Sexe
 it: sesso
+pt: gênero
 ru: Пол
 sk: pohlavie
 sq: gjinia
@@ -200,7 +231,9 @@ de: männlich
 el: αρσενικό
 en: male
 es: hombre
+fr: Homme
 it: maschio
+pt: masculino
 ru: мужчина
 sk: muž
 sq: mashkull
@@ -213,7 +246,9 @@ de: weiblich
 el: θυλικό
 en: female
 es: mujer
+fr: Femme
 it: femmina
+pt: feminino
 ru: женщина
 sk: žena
 sq: femer
@@ -226,7 +261,9 @@ de: Größe
 el: ύψος
 en: height
 es: altura
+fr: Taille
 it: altezza
+pt: altura
 ru: Рост
 sk: výška
 sq: gjatesia
@@ -239,7 +276,9 @@ de: Gewicht
 el: βάρος
 en: weight
 es: peso
+fr: poids
 it: peso
+pt: peso
 ru: Вес
 sk: váha
 sq: pesha
@@ -252,7 +291,9 @@ de: Alkoholkonsum
 el: Δεδομένα κατανάλωσης
 en: Consumption data
 es: Datos de ingestión
+fr: Consommation
 it: Bevande assunte
+pt: Informações de consumo
 ru: Характеристика принятого
 sk: Údaje o spotrebe
 sq: shenimet e hargjimeve
@@ -265,7 +306,9 @@ de: Menge
 el: όγκος
 en: volume
 es: volumen
+fr: Volume
 it: volume
+pt: volume
 ru: Объем
 sk: objem
 sq: volumi
@@ -277,8 +320,10 @@ cz: koncentrace alkoholu
 de: Alkoholgehalt
 el: περιεκτικότητα σε αλκοόλ
 en: alcohol level
-es: contenido alcohólico
+es: contenido etílico
+fr: Taux d'alcool
 it: tasso alcolico
+pt: nível de álcool
 ru: Крепость
 sk: koncentrácia
 sq: sasia e alkoolit
@@ -291,7 +336,9 @@ de: vergangene Zeit
 el: ώρα που πέρασε
 en: time elapsed
 es: tiempo transcurrido
+fr: Temps écoulé
 it: tempo trascorso
+pt: tempo transcorrido
 ru: Прошло времени
 sk: uplynutý čas
 sq: koha e duhur
@@ -304,7 +351,9 @@ de: Berechne
 el: υπολογισμός
 en: Calculate
 es: Calcular
+fr: Calculer
 it: Calcola
+pt: Calcular
 ru: Посчитать
 sk: Vypočítať
 sq: llogarit
@@ -316,9 +365,11 @@ cz: Hladina alkoholu v krvi
 de: Blutalkoholpegel
 el: Περιεκτικότητα αίματος σε αλκοόλ
 en: BAC
-es: tasa alcoholemia
+es: tasa de alcoholemia
+fr: Alcoolémie
 it: BAC
-ru: BAC
+pt: TAS
+ru: Концентрация алкоголя в крови
 sk: Hladina alkoholu
 sq: perqindja e alkoolit ne gjak-BAC
 zh_CN: 血液中酒精浓度
@@ -326,11 +377,14 @@ zh_CN: 血液中酒精浓度
 therion: ETA
 bg: Време до изтрезняване
 cz: Čas do vystřízlivění
+de: Restzeit
 el: Αναμενόμενη ώρα άφιξης
 en: ETA
-es: TBE (Tiempo Bajada Estimado)
+es: TBE (Tiempo Estimado Bajada)
+fr: Temps de retour à la normale
 it: ETA
-ru: ETA
+pt: TEC
+ru: Время до отрезвления
 sk: Čas do vytriezvenia
 sq: ETA
 zh_CN: 预计清醒时间
@@ -342,7 +396,9 @@ de: Stunden
 el: ώρες
 en: hours
 es: horas
+fr: heures
 it: ore
+pt: horas
 ru: часов
 sk: hodín
 sq: oret
@@ -351,10 +407,13 @@ zh_CN: 小时
 therion: MRR
 bg: MRR
 cz: Rychlost odbourávání
+de: Abbaurate
 el: MRR
 en: MRR
 es: tasa de descenso
+fr: MRR
 it: MRR
+pt: Taxa de redução
 ru: MRR
 sk: Rýchlosť odburávania
 sq: MRR
@@ -367,7 +426,9 @@ de: Compiler
 el: Συντάκτης
 en: Compiler
 es: Compilador
+fr: Compilateur
 it: Compilatore
+pt: Compilador
 ru: Компилятор
 sk: Kompilátor
 sq: kompilatori
@@ -380,7 +441,9 @@ de: Einstellungen
 el: Ρυθμίσεις
 en: Settings
 es: Ajustes
+fr: Settings
 it: Impostazioni
+pt: Configurações
 ru: Настройки
 sk: Nastavenia
 sq: setingu
@@ -393,7 +456,9 @@ de: Messdatenstruktur
 el: Δομή χαρτογράφησης
 en: Survey structure
 es: Estructura de la poligonal
+fr: Structure de la topo
 it: Struttura rilievi
+pt: Estrutura da topografia
 ru: Структура съемки
 sk: Štruktúra dát
 sq: struktura e matjeve
@@ -406,7 +471,9 @@ de: Infos zur Vermessung
 el: Πληροφορίες χαρτογράφησης
 en: Survey info
 es: Información de la poligonal
+fr: Information topographiques
 it: Informazioni rilievi
+pt: Informações da topografia
 ru: Информация
 sk: Informácie
 sq: informatat e matjeve
@@ -419,7 +486,9 @@ de: Planstruktur
 el: Δομή αποτύπωσης
 en: Map structure
 es: Estructura del mapa
+fr: Structure de la carte
 it: Struttura mappe
+pt: Estrutura dos mapas
 ru: Структура карты
 sk: Mapová štruktúra
 sq: struktura e hartes
@@ -430,7 +499,10 @@ bg: Предварителен изглед
 cz: Náhled
 de: Vorschau
 el: Προεπισκόπηση
+es: Vista preliminar
+fr: Vue préliminaire
 it: Anteprima
+pt: Visualização
 ru: Предпросмотр
 sk: Náhľad
 sq: parashiqimi
@@ -443,7 +515,9 @@ de: Arbeitsverzeichnis
 el: Φάκελος εργασίας
 en: Working directory
 es: Directorio actual
+fr: Dossier de travail
 it: Cartella di lavoro
+pt: Diretório de trabalho
 ru: Рабочий каталог
 sk: Pracovný adresár
 sq: direktorati i punes
@@ -455,8 +529,10 @@ cz: Cesta k pracovnímu adresáři.
 de: Pfad zum Arbeitsverzeichnis.
 el: Φάκελος εργασίας
 en: Shows working directory path.
-es: Muestra el directorio actual.
+es: Ruta del directorio actual.
+fr: Chemin du dossier de travail
 it: Path della cartella di lavoro
+pt: Caminho completo do diretório de trabalho.
 ru: Путь к рабочему каталогу.
 sk: Cesta k pracovnému adresáru.
 sq: tregon shtegun e direktoratit punues
@@ -468,8 +544,10 @@ cz: Konfigurační soubor
 de: Konfigurationsdatei
 el: Αρχείο σχηματισμού (config)
 en: Configuration file
-es: Archivo configuración
+es: Archivo de configuración
+fr: Fichier de configuration
 it: File di configurazione
+pt: Arquivo de configuração
 ru: Конфигурационный файл
 sk: Konfiguračný súbor
 sq: arkivi I konfiguracionit
@@ -482,7 +560,9 @@ de: Name der Konfigurationsdatei.
 el: Εμφανίζει το όνομα του αρχείου σχηματισμού (config)
 en: Shows configuration file name.
 es: Muestra el nombre del archivo de configuración.
+fr: Nom du fichier de configuration
 it: Nome del file di configurazione
+pt: Nome do arquivo de configuração.
 ru: Имя конфигурационного файла.
 sk: Meno konfiguračného súboru.
 sq: tregon emrin e arkivit te konfiguracionit
@@ -495,7 +575,9 @@ de: Kommandozeilenoptionen
 el: Επιλογές γραμμής εντολής
 en: Command line options
 es: Opciones de línea de comandos
+fr: Options de commandes en ligne
 it: Opzioni del comando
+pt: Opções linha de comando
 ru: Опции командной строки
 sk: Argumenty programu
 sq: opcionet e vijes komanduese
@@ -503,27 +585,31 @@ zh_CN: 命令行选项
 
 therion: Therion command line options.
 bg: Опции на командният ред на Терион
-cz: Argumenty therionu pro příkazovou řádku.
+cz: Argumenty Therionu pro příkazovou řádku.
 de: Therion Kommandozeilenoptionen.
 el: Εδώ μπορείτε να περάσετε τις επιλογές γραμμής εντολής στο Therion
 en: Here you can pass command line options to Therion.
-es: Aquí se pueden pasar a therion opciones de línea de comandos
-it: Opzioni del comando therion
+es: Opciones de línea de comandos de Therion
+fr: Options de commandes en ligne Therion
+it: Opzioni del comando Therion
+pt: Opções de linha de comando para chamar o Therion.
 ru: Опции командной строки Therion.
 sk: Argumenty programu v príkazovom riadku.
 sq: ketu ju mund te bartni vijen komanduese te arkivit tek Therion-i
 zh_CN: 泰里翁命令行选项
 
 therion: Run therion.
-bg: Пускане на therion
-cz: Spustí therion.
+bg: Пускане на Therion
+cz: Spustí Therion.
 de: Therion ausführen.
 el: Εκτέλεση του Therion
-en: Run therion.
-es: Ejecutar therion.
-it: Esegui therion
-ru: Запуск therion.
-sk: Spustiť therion.
+en: Run Therion.
+es: Ejecutar Therion.
+fr: Executer Therion
+it: Esegui Therion
+pt: Rodar o Therion.
+ru: Запуск Therion.
+sk: Spustiť Therion.
 sq: aktivizo Therion-in
 zh_CN: 运行泰里翁
 
@@ -531,7 +617,11 @@ therion: Xpdf
 bg: Xpdf
 cz: Xpdf
 de: Xpdf
+es: Xpdf
+fr: Xpdf
 it: Xpdf
+pt: Xpdf
+ru: Xpdf
 sk: Xpdf
 sq: Xpdf
 zh_CN: Xpdf
@@ -540,7 +630,11 @@ therion: Acrobat Reader
 bg: Acrobat Reader
 cz: Acrobat Reader
 de: Acrobat Reader
+es: Acrobat Reader
+fr: Acrobat Reader
 it: Acrobat Reader
+pt: Acrobat Reader
+ru: Acrobat Reader
 sk: Acrobat Reader
 sq: lexuesi I programit-Akrobat
 zh_CN: Acrobat Reader
@@ -550,7 +644,10 @@ bg: Път към PDF файл
 cz: Cesta k PDF souboru
 de: Pfad zur PDF-Datei.
 el: υποφάκελος του .pdf
+es: Ruta completa del archivo PDF
+fr: Chemin complet du fichier PDF
 it: File PDF
+pt: Caminho completo para arquivo PDF gerado.
 ru: PDF-файл для просмотра
 sk: Cesta k PDF súboru.
 sq: arkivi-PDF
@@ -563,8 +660,10 @@ de: Infos zur Vermessung.
 el: Στοιχεία χαρτογράφησης
 en: Survey information.
 es: Estadísticas de la poligonal.
+fr: Informations de la topographie
 it: Informazioni del rilievo
-ru: Информация о съемке.
+pt: Informações sobre o mapeamento.
+ru: Информация о съёмке.
 sk: Informácie o častiach.
 sq: informatat e matjeve
 zh_CN: 测绘信息
@@ -574,9 +673,11 @@ bg: Потребителският интерфейс е неактивен. З�
 cz: Uživatelské rozhraní není aktivní. Pro jeho aktivaci otevřete existující soubor nebo vytvořte nový.
 de: Fenster nicht aktiv. Um es zu benutzen, öffne eine existierende Datei oder lege eine neue an.
 el: Διασύνδεση χρήστη ανενεργή. Για να ενεργοποιηθεί, ανοίξτε υπάρχον αρχείο ή δημιουργήστε νέο.
-en: User interface is not active. To activate it, open existing file or create new one.
+en: User interface is not active. To activate it, open an existing file or create a new one.
 es: El interfaz está inactivo. Para activarlo, abre un archivo existente o crea uno nuevo.
-it: L'interfaccia utente non è attiva. Per attivarla apri un file o creane uno
+fr: L'interface n'est pas active. Pour l'activer, ouvrez un fichier existant ou créez-en un nouveau.
+it: L'interfaccia utente non è attiva. Per attivarla apri un file o creane uno.
+pt: A interface do usuário não está ativa. Para ativá-la, abra um arquivo existente ou crie um novo arquivo.
 ru: Интерфейс неактивен. Для активации откройте существующий файл или создайте новый.
 sk: XTherion momentálne nie je aktívny. Otvorte existujúci konfiguračný súbor alebo vytvorte nový.
 sq: interfejsi I perdoruesit nuk eshte aktiv. Ta aktivizosh, hape arkivin egzistues apo hape nje te ri.
@@ -588,24 +689,28 @@ cz: nahrávám kompilátor...
 de: Lade Compiler...
 el: φόρτιση συντάκτη...
 en: loading compiler...
-es: compilador...
+es: compilador cargando...
+fr: Chargement du compilateur...
 it: compilatore ...
+pt: carregando o compilador...
 ru: загрузка компилятора...
 sk: kompilátor...
 sq: duke lexuar kompiluesin…
 zh_CN: 程序编译载入中…
 
 therion: Running therion ...
-bg: Стартиране на therion ...
+bg: Стартиране на Therion ...
 cz: Probíhá kompilace ...
 de: Therion ausführen ...
 el: Εκτελείται το Therion
-en: Running therion ...
-es: Ejecutando therion ...
-it: esecuzione therion ...
-ru: Запуск therion ...
+en: Running Therion ...
+es: Ejecutando Therion ...
+fr: Therion en cours d'exécution...
+it: esecuzione Therion ...
+pt: Rodando o Therion...
+ru: Запуск Therion ...
 sk: Prebieha výpočet...
-sq: duke ve ne pune therion-in…
+sq: duke ve ne pune Therion-in…
 zh_CN: 泰里翁运行中…
 
 therion: RUNNING
@@ -615,7 +720,9 @@ de: ARBEITE
 el: ΕΚΤΕΛΕΣΗ
 en: RUNNING
 es: EJECUTANDO
+fr: RUNNING
 it: ESECUZIONE
+pt: PROCESSANDO
 ru: ОБРАБОТКА
 sk: VÝPOČET
 sq: ne punim e siper
@@ -628,7 +735,9 @@ de: FEHLER
 el: ΣΦΑΛΜΑ
 en: ERROR
 es: ERROR
+fr: ERREUR
 it: ERRORE
+pt: ERRO
 ru: ОШИБКА
 sk: CHYBA
 sq: gabim
@@ -638,17 +747,24 @@ therion: WARNING
 bg: Внимание!
 cz: VAROVÁNÍ
 de: WARNUNG
+es: ADVERTENCIA
+fr: WARNING
+pt: AVISO
+ru: ПРЕДУПРЕЖДЕНИЕ
+sk: VAROVANIE
 zh_CN: 警告
 
 therion: Reading therion log file ...
-bg: Четене на лог-файла на therion ...
-cz: Načítám LOG soubor therionu ...
+bg: Четене на лог-файла на Therion ...
+cz: Načítám LOG soubor Therionu ...
 de: Lese Therion Logdatei ...
-el: Ανάγνωση του αρχείου log therion
+el: Ανάγνωση του αρχείου log Therion
 en: Reading therion log file ...
-es: Leyendo archivo log ...
-it: Lettura file di log di therion ...
-ru: Чтение лог-файла therion...
+es: Leyendo archivo de registro ...
+fr: Lecture du log de Therion...
+it: Lettura file di log di Therion ...
+pt: Lendo o arquivo log do Therion...
+ru: Чтение лог-файла Therion...
 sk: Načitávam LOG súbor.
 sq: duke lexuar arkivin hyres te Therion-it
 zh_CN: 泰里翁记录文件读取中 ...
@@ -660,7 +776,9 @@ de: \nFehler beim Öffnen von therion.log\n
 el: \nσφάλμα κατα το άνοιγμα του αρχείου therion.log\n
 en: \nerror opening therion.log file\n
 es: \nerror abriendo el archivo therion.log\n
+fr: \nerreur en ouvrant therion.log.\n
 it: \nerrore in apertura del file therion.log
+pt: \nerro ao abrir arquivo therion.log\n
 ru: \nошибка открытия файла therion.log\n
 sk: \nchyba pri čítaní súboru therion.log\n
 sq: gabim gjate hapjes se Therion-it.arkivin hyres/n
@@ -672,8 +790,10 @@ cz: Zobrazit/skrýt ovládací panel
 de: Dieses Panel anzeigen oder verbergen
 el: Κάντε κλικ για εμφάνιση ή μη-εμφάνιση του πίνακα ελέγχου
 en: Click to show or hide this control panel.
-es: Clicar para mostrar u ocultar este panel de control
+es: Mostrar u ocultar este panel de control
+fr: Affiche/Cache le panneau de controle
 it: Visualizza o nascondi questo pannello
+pt: Alternar visualização deste painel de controle
 ru: Показать или спрятать панель
 sk: Stlačte ak chcete zobraziť alebo skryť tento panel
 sq: kliko te hapesh ose te mbyllesh kete panel te kontrollit
@@ -685,8 +805,10 @@ cz: nahrávám mapový editor...
 de: Lade Karteneditor ...
 el: φόρτιση του επεξεργαστή αποτύπωσης...
 en: loading map editor ...
-es: editor de mapas...
+es: cargando editor de mapas...
+fr: Chargement de l'éditeur de cartes...
 it: editor di mappa ...
+pt: carregando o editor de mapas...
 ru: загрузка редактора карт...
 sk: Mapový editor
 sq: duke lexuar permiresuesin e hartave…
@@ -695,11 +817,13 @@ zh_CN: 地图编辑器载入中…
 therion: Undo %s
 bg: Отмяна
 cz: Zpět - %s
-de: Rückgängig %s
+de: Rückgängig: %s
 el: Αναίρεση %s
 en: Undo %s
 es: Deshacer %s
+fr: Annuler %s
 it: Indietro %s
+pt: Desfazer %s
 ru: Отменить %s
 sk: Späť - %s
 sq: prishe %s
@@ -708,11 +832,13 @@ zh_CN: 取消%s
 therion: Redo %s
 bg: Възстановяване
 cz: Znovu - %s
-de: Wiederholen %s
+de: Wiederholen: %s
 el: Επανάληψη %s
 en: Redo %s
 es: Rehacer %s
+fr: Refaire %s
 it: Rifai %s
+pt: Refazer %s
 ru: Вернуть %s
 sk: Opakovať- %s
 sq: beje perseri %s
@@ -721,10 +847,13 @@ zh_CN: 恢复 %s
 therion: %s \[%s\] -- multiple encoding commands in file
 bg: %s \[%s\] -- няколко команди encoding във файла
 cz: %s \[%s\] -- vícenásobný výskyt příkazu encoding v jednom souboru
+de: %s \[%s\] -- mehrfache encoding Kommandos in der Datei
 el: %s \[%s\] -- πολλαπλές εντολές κωδικοποίησης στο αρχείο
 en: %s \[%s\] -- multiple encoding commands in file
 es: %s \[%s\] -- múltiples comandos de codificación en el archivo
+fr: %S \[%s\] -- plusieurs commande d'encodage dans le fichier
 it: %s \[%s\] -- encoding ripetuto nel file di comandi
+pt: %s \[%s\] -- mais de um elemento de codificação no mesmo arquivo
 ru: %s \[%s\] -- несколько команд encoding в файле
 sk: %s \[%s\] -- viac encoding príkazov v jednom súbore
 sq: %s \[%s\] –shumezo komandat te deshifrimit ne arkiv
@@ -733,10 +862,13 @@ zh_CN: %s \[%s\] --文件中多重编码命令
 therion: %s \[%s\] -- unknown encoding -- %s
 bg: %s \[%s\] -- неизвестна кодировка -- %s
 cz: %s \[%s\] -- neznámé kódování znaků -- %s
+de: %s \[%s\] -- unbekanntes encoding -- %s
 el: %s \[%s\] -- άγνωστη κωδικοποίηση -- %s
 en: %s \[%s\] -- unknown encoding -- %s
 es: %s \[%s\] -- codificación desconocida -- %s
+fr: %s \[%s\] -- encodage inconnu -- %s
 it: %s \[%s\] -- encoding non conosciuto -- %s
+pt: %s \[%s\] -- codificação desconhecida -- %s
 ru: %s \[%s\] -- неизвестная кодировка -- %s
 sk: %s \[%s\] -- neznáme kódovanie znakov -- %s
 sq: %s \[%s\] – deshifrim I panjohur -- %s
@@ -749,7 +881,9 @@ de: Fläche anpassen
 el: προσαρμογή επιφάνειας
 en: adjusting area
 es: ajustando área
+fr: Ajustement de l'aire
 it: aggiustamento area
+pt: ajustando área
 ru: регулирование области
 sk: prispôsobenie pracovnej plochy
 zh_CN: 自定义工作区
@@ -761,7 +895,9 @@ de: Zoomen
 el: μεγέθυνση
 en: zooming
 es: zooming
+fr: Zoomer
 it: zooming
+pt: dando zoom
 ru: масштабирование
 sk: zoomovanie
 sq: zmadhimi
@@ -774,7 +910,9 @@ de: Zoom %d %%
 el: Μεγέθυνση %d %%
 en: Zoom %d %%
 es: Zoom %d %%
+fr: Zoom %d %%
 it: Zomm %d %%
+pt: Zoom %d %%
 ru: Масштаб %d %%
 sk: Zoom %d %%
 sq: zmadho %d %%
@@ -787,7 +925,9 @@ de: Zoome Objekte ...
 el: Μεγέθυνση αντικειμένων...
 en: Zooming objects ...
 es: Zoom sobre objetos ...
+fr: Zoomer sur les objets...
 it: Zoom degli oggetti ...
+pt: Dando zoom nos objetos...
 ru: Масштабирование объектов...
 sk: Zoomovanie objektov ...
 sq: objektet e zmadhimit…
@@ -800,7 +940,9 @@ de: Bild verschieben
 el: μετακίνηση εικόνας
 en: dragging image
 es: arrastrando imagen
+fr: Ajuster l'image
 it: trascinamento immagine
+pt: arrastando imagem
 ru: перетаскивание изображения
 sk: Presúvanie obrázku
 sq: imazhi per tu vizatuar
@@ -813,7 +955,9 @@ de: Karteneditor
 el: Επεξεργαστής αποτύπωσης
 en: Map Editor
 es: Editor de mapas
+fr: Editeur de cartes
 it: Editor di mappa
+pt: Editor de Mapas
 ru: Редактор карт
 sk: Mapový Editor
 sq: permiresuesi I hartave
@@ -826,7 +970,9 @@ de: Dateibefehle
 el: Αντικείμενα
 en: Objects
 es: Objetos
+fr: Objets
 it: Oggetti
+pt: Elementos do arquivo
 ru: Команды в файле
 sk: Príkazy v súbore
 sq: objektet
@@ -839,7 +985,9 @@ de: Suchen & auswählen
 el: Αναζήτηση και επιλογή
 en: Search & Select
 es: Buscar y Seleccionar
+fr: Rechercher et sélectionner
 it: Cerca e seleziona
+pt: Buscar & Selecionar
 ru: Поиск и Выделение
 sk: Hľadaj a Vyber
 sq: kerko dhe zgjidh
@@ -851,8 +999,10 @@ cz: Náhled příkazu
 de: Kommandovorschau
 el: Προεπισκόπηση εντολής
 en: Command preview
-es: Ver comandos
+es: Vista previa comando
+fr: Vue préliminaire de la commande
 it: Anteprima comando
+pt: Elemento
 ru: Просмотр команды
 sk: Náhľad príkazu
 sq: komanda e parashiqimit
@@ -865,7 +1015,9 @@ de: Punkte bearbeiten
 el: Σημεία
 en: Points
 es: Puntos
+fr: Points
 it: Punti
+pt: Ponto
 ru: Точка
 sk: Bod
 sq: pikat
@@ -878,7 +1030,9 @@ de: Linien bearbeiten
 el: Γραμμές
 en: Lines
 es: Líneas
+fr: Lignes
 it: Linee
+pt: Linha
 ru: Линия
 sk: Krivka
 sq: rjeshtat
@@ -891,7 +1045,9 @@ de: Linienpunkte bearbeiten
 el: Σημεία γραμμών
 en: Line points
 es: Puntos de línea
+fr: Point de ligne
 it: Punti della linea
+pt: Ponto de linha
 ru: Точка линии
 sk: Bod krivky
 sq: pikat e rjeshtit
@@ -903,8 +1059,10 @@ cz: Oblast
 de: Flächen bearbeiten
 el: Επιφάνειες
 en: Areas
-es: Areas
+es: Áreas
+fr: Aires
 it: Aree
+pt: Área
 ru: Область
 sk: Plocha
 sq: fushat
@@ -916,8 +1074,10 @@ cz: Scrap
 de: Skizze bearbeiten
 el: Σκραπ
 en: Scraps
-es: Croquis
+es: Trozo/Cacho
+fr: Scraps
 it: Scrap
+pt: Trecho
 ru: Скрап
 sk: Scrap
 sq: mbeturinat
@@ -930,7 +1090,9 @@ de: Texteditor
 el: Επεξεργαστής κειμένου
 en: Text editor
 es: Editor de texto
+fr: Editeur de texte
 it: Editor di testo
+pt: Editor de texto
 ru: Редактор
 sk: Textový editor
 sq: permirsuesi I tekstit
@@ -942,8 +1104,10 @@ cz: Kreslící plocha
 de: Zeichenfläche
 el: Επιφάνεια σχεδιασμού
 en: Drawing area
-es: Area de dibujo
+es: Área de dibujo
+fr: Aire de dessin
 it: Area di disegno
+pt: Área de desenho
 ru: Зона рисования
 sk: Pracovná plocha
 sq: fusha e vizatimit
@@ -956,7 +1120,9 @@ de: Hintergrundbilder
 el: Εικόνες φόντου
 en: Background images
 es: Imágenes de fondo
+fr: Images d'arrière plan
 it: Immagini di background
+pt: Imagens de fundo
 ru: Фоновые изображения
 sk: Obrázky pozadia
 sq: imazhet ne prapavije
@@ -968,8 +1134,10 @@ cz: Současná kreslící plocha.
 de: Aktuelle Zeichenfläche
 el: Ενεργή επιφάνεια σχεδιασμού
 en: Current drawing area.
-es: Area de dibujo actual.
+es: Área de dibujo actual.
+fr: Aire de dessin active
 it: Area di disegno attiva
+pt: Área de desenho atual
 ru: Текущая зона рисования.
 sk: Súčasná pracovná plocha.
 sq: fusha momentale e vizatimit
@@ -978,10 +1146,13 @@ zh_CN: 当前绘图区
 therion: X min.
 bg: X min.
 cz: X min.
+de: X min.
 el: Ελάχιστο Χ
 en: X min.
-es: X min
+es: X mínima
+fr: X min.
 it: Minimo X
+pt: X mín.
 ru: X min.
 sk: Minimum X.
 sq: minimum X.
@@ -990,10 +1161,13 @@ zh_CN: 最小 X.
 therion: Y min.
 bg: Y min.
 cz: Y min.
+de: Y min.
 el: Ελάχιστο Υ
 en: Y min.
-es: Y min
+es: Y mínima
+fr: Y min.
 it: Minimo Y
+pt: Y mín.
 ru: Y min.
 sk: Minimum Y.
 sq: minimum Y.
@@ -1002,10 +1176,13 @@ zh_CN: 最小 Y.
 therion: X max.
 bg: X max.
 cz: X max.
+de: X max.
 el: Μέγιστο Χ
 en: X max.
-es: X max
+es: X máxima
+fr: X max.
 it: Massimo X
+pt: X máx.
 ru: X max.
 sk: Maximum X.
 sq: maksimum X.
@@ -1014,10 +1191,13 @@ zh_CN: 最大 X.
 therion: Y max.
 bg: Y max.
 cz: Y max.
+de: Y max.
 el: Μέγιστο Υ
 en: Y max.
-es: Y max
+es: Y máxima
+fr: T max.
 it: Massimo Y
+pt: Y máx.
 ru: Y max.
 sk: Maximum Y.
 sq: maksimum Y.
@@ -1030,7 +1210,9 @@ de: Anpassen
 el: Προσαρμογή
 en: Adjust
 es: Ajustar
+fr: Ajuster
 it: Ridimensiona
+pt: Aplicar
 ru: Установить
 sk: Prispôsob
 sq: permireso
@@ -1043,7 +1225,9 @@ de: Zeichenfläche an Begrenzung anpassen.
 el: Προσαρμογή επιφάνειας σχεδίου στα δεδομένα όρια
 en: Adjust drawing area to given limits.
 es: Ajustar el área de dibujo a los límites indicados.
+fr: Ajuster l'aire de dessin a des limites prédéfinies
 it: Ridimensiona l'area di disegno ai limiti dati
+pt: Ajustar área de desenho para os valores acima.
 ru: Установить зону рисования в заданных границах.
 sk: Prispôsobiť pracovnú plochu daným limitom.
 sq: permireso fushen e vizatimit deri ne kufijt e dhene.
@@ -1055,8 +1239,10 @@ cz: Auto přizpůs.
 de: Automatisch anpassen
 el: Αυτόματη προσαρμογή
 en: Auto adjust
-es: Autoajustar
+es: Auto-ajustar
+fr: Ajustement auto
 it: Auto-ridimensiona
+pt: Ajuste automático
 ru: Авто
 sk: Automaticky
 sq: permiresimi automatik
@@ -1068,8 +1254,10 @@ cz: Automaticky přizpůsobí kreslící plochu všem objektům.
 de: Zeichenfläche an berechnete Begrenzung anpassen.
 el: Προσαρμογή επιφάνειας σχεδίου στα όρια που αυτομάτως ορίστηκαν
 en: Adjust drawing area to automatically calculated limits.
-es: Ajustar área de dibujo automáticamente.
+es: Ajustar área de dibujo automáticamente a los limites calculados.
+fr: Ajuster l'aire de dessin sur des limites calculées automatiquement
 it: Ridimensiona l'area di disegno ai limiti calcolati
+pt: Ajustar área de desenho para valores calculados automaticamente.
 ru: Автоматически установить зону рисования.
 sk: Automaticky prispôsobiť pracovnú plochu všetkým objektom.
 sq: permireso fushen e vizatimit ne kufirin e llogaritur automatikisht.
@@ -1082,7 +1270,9 @@ de: Zoom
 el: μεγέθυνση
 en: zoom
 es: zoom
+fr: zoom
 it: zoom
+pt: zoom
 ru: масштаб
 sk: zoom
 sq: zmadho
@@ -1094,8 +1284,10 @@ cz: Zoom kreslící plochy.
 de: Zeichenfläche zoomen.
 el: Έλεγχος μεγέθυνσης. Κάντε κλικ στον ορθογώνιο για να δείτε το μενού.
 en: Zoom control. Click on rectangle to see menu.
-es: Control del zoom. Clic en rectángulo para ver menú.
+es: Zoom control. Teclear en el rectangulo para ver el menu.
+fr: Controle du zoom. Cliquer sur le rectangle pour afficher le menu.
 it: Zoom area di disegno
+pt: Zoom na área de desenho.
 ru: Масштабировать зону рисования.
 sk: Zoom pracovnej plochy.
 sq: kontrolli I zmadhimit. Kliko ne gjashtekendesh te shohesh menyn
@@ -1107,8 +1299,10 @@ cz: nahrávám příkazový modul ...
 de: Lade Befehlsmodul ...
 el: φόρτιση ενότητα εντολών...
 en: loading commands module ...
-es: comandos ...
+es: cargando modulo de comandos ...
+fr: Chargement du module de commandes...
 it: modulo comandi ...
+pt: carregando o módulo de elementos...
 ru: загрузка модуля команд...
 sk: príkazový modul...
 sq: duke lexuar modulin komandues…
@@ -1121,7 +1315,9 @@ de: Wähle Befehl.
 el: Κάντε κλικ σε μια γραμμή για να συλλέξετε το αντικείμενο στον καμβά και το αντίθετο.
 en: Click a line to get corresponding object selected on canvas or vice versa.
 es: Al clicar una de las líneas, se resaltará en la topo el objeto correspondiente, y viceversa.
+fr: Cliquer sur une ligne pour sélectionner sur la topo les objets correspondants et vice et versa.
 it: Seleziona comando.
+pt: Selecione o elemento.
 ru: Выберите команду.
 sk: Vyber príkaz.
 sq: kliko ne resht qe te fitosh objektin e deshiruar I zgjedhur ne pelhure ose anasjelltas.
@@ -1132,9 +1328,11 @@ bg: Действие
 cz: Tlačítko Akce.
 de: Aktionsknopf.
 el: Πατώντας εδώ μπορείτε να εισάγετε αντικείμενα με το ποντίκι. Πατήστε την εντολή να δείτε το μενού.
-en: After clicking this button, you can insert objects by mouse. Click on action to see menu.
-es: Tras pulsar este botón, se pueden insertar con el ratón puntos, lineas, etc. Clic en acción para ver menú.
+en: After clicking this button, you can insert objects using the mouse. Click on action to see menu.
+es: Tras pulsar este botón, se pueden insertar objetos con el ratón. Clic en acción para ver menú.
+fr: Après avoir cliquer sur ce bouton, vous pouvez insérer des objects à la souris. Clic en action pour afficher le menu.
 it: Bottone di azione.
+pt: Botão da ação selecionada.
 ru: Действия.
 sk: Gombík - akcia.
 sq: pasi te klikoni kete buton, ju mund te futni objekte me mi. kliko ne aksion qe te shohesh menyn.
@@ -1145,9 +1343,11 @@ bg: Преминете на мишка за да избирате обекти
 cz: Přepnutí myši do výběrového módu.
 de: Maus umschalten um Objekte auszuwählen.
 el: Αφού πατήστε εδώ μπορείτε να συλλέξετε αντικείμενα στον καμβά με το ποντίκι.
-en: After clicking this button, you can select objects on canvas by mouse.
-es: Tras clicar aquí, podrás seleccionar cosas en la topo con el ratón.
+en: After clicking this button, you can select objects on the canvas using the mouse.
+es: Tras clicar aquí, podrás seleccionar objetos en la topo con el ratón.
+fr: En cliquant sur ce bouton, vous pouvez sélectionner les objects sur la topo avec la souris.
 it: Cambia la modalità del mouse per selezionare oggetti.
+pt: Troque o modo do mouse para selecionar objetos.
 ru: Переключитесь на мышь, чтобы выбирать объекты.
 sk: Nastav mód myši na vyberanie objektov.
 sq: pasi te klikosh kete buton, ju mund te zgjedhni objektet ne pelhure me mi.
@@ -1160,7 +1360,9 @@ de: Aktion
 el: Εντολή
 en: Action
 es: Acción
+fr: Action
 it: Azione
+pt: Ação
 ru: Действие
 sk: Akcia
 sq: aksion
@@ -1172,8 +1374,10 @@ cz: Nastaví akci pro tlačítko akcí.
 de: Dem Aktionsknopf zugewiesene Aktion konfigurieren.
 el: Ορισμός εντολής που θα εκτελείται κάνοντας κλικ στο κουμπί Εισαγωγή <αντικείμενο>
 en: Action you choose will be executed by clicking on Insert <object> button.
-es: Clic para ver menú. La acción que escojas será la que ejecute el botón Insertar <objeto>
+es: La acción escogida sera ejecutada al clicar el botón Insertar <objeto>
+fr: L'action choisie sera exécutée en cliquant sur le bouton Insérer <objet>
 it: Configura l'azione assegnata al bottone d'azione.
+pt: Escolha a ação atribuída ao botão de ação.
 ru: Выберите действие, назначенное для кнопки.
 sk: Nakonfiguruj akciu pre gombík - akcia.
 sq: aksionin qe e zgjedhni do te egzekutohet me klikimin ne butonin Fute <objektin>
@@ -1185,8 +1389,10 @@ cz: Přesun výš
 de: Schiebe nach oben
 el: Μετακίνηση προς τα πάνω
 en: Move up
-es: Arriba
+es: Mover Arriba
+fr: Déplacer dessus
 it: Sposta sù
+pt: Mover para cima
 ru: Вверх
 sk: Presuň vyššie
 sq: levize lart
@@ -1197,9 +1403,11 @@ bg: Премести нагоре в списъка файла с команди
 cz: Přesune příkaz výš v seznamu příkazů.
 de: In der Liste nach oben schieben.
 el: Μετακίνηση αντικειμένου ψηλότερα στην λίστα. Χρήσιμο σε περίπτωση που είναι σε λάθος σκράπ το αντικείμενο.
-en: Move object up in the list. Use if object is in wrong scrap.
-es: Desplaza el objeto hacia arriba en la lista. Usar si el objeto está en lugar erróneo.
+en: Move object up in the list. Use if an object is in the wrong scrap.
+es: Desplaza el objeto hacia arriba en la lista. Usar si el objeto está en trozo erróneo.
+fr: Déplacer l'objet jusqu'en haut de la liste. A utiliser si l'objet est dans le mauvais scrap.
 it: Sposta il comando in sù nella lista.
+pt: Mover elemento selecionado uma posição para cima.
 ru: Переместить команду вверх по файлу.
 sk: Presuň príkaz vyššie v zozname príkazov.
 sq: levize objektin lart ne liste. Perdor nese objekti eshte ne deponi te gabuar.
@@ -1211,8 +1419,10 @@ cz: Přesun níž
 de: Schiebe nach unten
 el: Μετακίνηση προς τα κάτω
 en: Move down
-es: Abajo
+es: Mover Abajo
+fr: Déplacer dessous
 it: Sposta giù
+pt: Mover para baixo
 ru: Вниз
 sk: Presuň nižšie
 sq: levize poshte
@@ -1223,9 +1433,11 @@ bg: Премести надолу в списъка файла с команди
 cz: Přesune příkaz níž v seznamu příkazů.
 de: In der Liste nach unten schieben.
 el: Μετακίνηση αντικειμένου χαμηλότερα στην λίστα. Χρήσιμο σε περίπτωση που είναι σε λάθος σκράπ το αντικείμενο.
-en: Move object down in the list. Use if object is in wrong scrap.
-es: Desplaza el objeto hacia abajo en la lista. Usar si el objeto está en lugar erróneo.
+en: Move object down in the list. Use if an object is in the wrong scrap.
+es: Desplaza el objeto hacia abajo en la lista. Usar si el objeto está en trozo erróneo.
+fr: Déplacer l'objet jusqu'en bas de la liste. A utiliser si l'objet est dans un mauvais scrap.
 it: Sposta il comando in giù nella lista.
+pt: Mover elemento selecionado uma posição para baixo.
 ru: Переместить команду вниз по файлу.
 sk: Presuň príkaz nižšie v zozname príkazov.
 sq: levize objektin poshte ne liste. Perdore nese objekti eshte ne deponi te gabuar.
@@ -1237,8 +1449,10 @@ cz: Přesunout příkaz na danou pozici v seznamu.
 de: Befehl an angegebene Position schieben.
 el: Μετακίνηση αντικειμένου σε συγκεκριμένη θέση (θέση = αριθμός σε κάθε σειρά).
 en: Move object to given position (position = number on each line).
-es: Mover el objeto a la posición indicada (número al principio de cada línea).
+es: Mover el objeto a la posición indicada (posición = número de cada línea).
+fr: Déplacer l'objet à la position indiquée (position = numéro de chaque ligne).
 it: Sposta il comando nella posizione specificata.
+pt: Mover elemento selecionado para posição indicada.
 ru: Переместить команду в указанную позицию в файле.
 sk: Presuň príkaz na danú pozíciu v zozname.
 sq: levize objektin ne pozicion te dhanun( pozicioni = numri ne secilen rjesht).
@@ -1250,12 +1464,73 @@ cz: Výběr cílového scrapu a pozice v něm.
 de: Zielskizze auswählen und positionieren.
 el: Επιλέξετε το σκραπ προορισμού και την θέση μέσα σε αυτό.
 en: Select destination scrap and position in it.
-es: Seleccionar croquis de destino y la posición en él.
+es: Seleccionar trozo de destino y la posición en él.
+fr: Sélectionner le scrap de destination ainsi que sa position dans celui-ci.
 it: Selezione lo scrap di destinazione e posizionati in esso.
+pt: Selecione trecho de destino e posicione-o.
 ru: Укажите целевой скрап и позицию в нем.
 sk: Nastav cieľový scrap a pozíciu v ňom.
 sq: zgjedhe destinacionin per deponi dhe poziciono ne te.
 zh_CN: 在其中选择目标草图和位置
+
+therion: Shift from
+es: Desplazar desde
+fr: Déplacer à partir
+pt: Deslocar de
+
+therion: Set start point of object shifting vector. Either selected point or place of last right-click.
+es: Definir el punto origen del vector de desplazamiento. Seleccionar un punto o el lugar del ultimo click con el boton derecho.
+pt: Defina ponto inicial do vetor de deslocamento do objeto. Selecione ou um ponto ou o local do último clique com o botão direito do mouse.
+
+therion: Shift to
+es: Desplazar hasta
+fr: Déplacer jusqu'à
+pt: Deslocar para
+
+therion: Set end point of object shifting vector. Either selected point or place of last right-click.
+es: Definir el punto destino del vector de desplazamiento. Seleccionar un punto o el lugar del ultimo click con el boton derecho.
+fr: Définir le point de destination du vecteur de déplacement. Sélectionner un point ou le lieu du dernier clic avec le bouton droit.
+pt: Defina ponto final do vetor de deslocamento do objeto. Selecione ou um ponto ou o local do último clique com o botão direito do mouse.
+
+therion: X coordinate of start point of object shifting vector.
+es: Coordenada X del punto origen del vector de desplazamiento de objetos. 
+fr: Coordonnée X du point d'origine du vecteur de déplacement des objets.
+pt: Coordenada X do ponto inicial do vetor de deslocamento do objeto.
+
+therion: Y coordinate of start point of object shifting vector.
+es: Coordenada Y del punto origen del vector de desplazamiento de objetos. 
+fr: Coordonnée Y du point d'origine du vecteur de déplacement des objets.
+pt: Coordenada Y do ponto inicial do vetor de deslocamento do objeto.
+
+therion: X coordinate of end point of object shifting vector.
+es: Coordenada X del punto destino del vector de desplazamiento de objetos. 
+fr: Coordonnée X du point de destination du vecteur déplacement des objets.
+pt: Coordenada X do ponto final do vetor de deslocamento do objeto.
+
+therion: Y coordinate of end point of object shifting vector.
+es: Coordenada Y del punto destino del vector de desplazamiento de objetos. 
+fr: Coordonnée Y du point de destination du vecteur déplacement des objets.
+pt: Coordenada Y do ponto final do vetor de deslocamento do objeto.
+
+therion: Swap
+es: Intercambiar
+fr: Interchager
+pt: Inverter
+
+therion: Swap points of object shifting vector.
+es: Intercambiar los puntos del vector de desplazamiento de objetos.
+fr: Interchanger les points du vecteur déplacement des objets.
+pt: Inverter pontos do vetor de deslocamento do objeto.
+
+therion: Shift object
+es: Desplazar objeto 
+fr: Déplacer l'objet
+pt: Deslocar objeto
+
+therion: Shift currently selected point, line or scrap according to specified vector.
+es: Desplaza el punto, línea o trozo actualmente seleccionado con el vector especificado. 
+fr: Déplacer le point, la ligne ou le scrap actuellement sélectionné avec le vecteur spécifié.
+pt: Deslocar ponto, linha ou croqui selecionado de acordo com o vetor definido.
 
 therion: Update text
 bg: Обнови текста
@@ -1264,7 +1539,9 @@ de: Text aktualisieren
 el: Ανανέωση κειμένου
 en: Update text
 es: Actualizar texto
+fr: Actualiser le texte
 it: Aggiorna testo
+pt: Atualizar texto
 ru: Сохранить текст
 sk: Aktualizuj text
 sq: aktualizo tekstin
@@ -1275,9 +1552,11 @@ bg: Натиснете този бутон за да запазите напис
 cz: Stiskněte toto tlačítko pro uložení Vámi zapsaného kódu.
 de: Diesen Knopf drücken, um Daten zu speichern.
 el: Πατήστε το κουμπί να αποθηκευτεί ο κώδικας που γράψατε
-en: Press this button to save code you have written.
+en: Press this button to save your code changes.
 es: Clicar aquí para guardar los cambios hechos en el código.
+fr: Cliquer ici pour guarder les modifications du code.
 it: Premi questo bottone per salvare il codice che hai scritto.
+pt: Pressione este botão para salvar o código que escreveu.
 ru: Нажмите эту кнопку для сохранения написанного кода.
 sk: Stlačte toto tlačítko pre uloženie Vami zapísaného kódu.
 sq: shtype kete buton ta ruajsh kodin te cilin e ke shkru.
@@ -1289,8 +1568,10 @@ cz: Editor pro text ve 2D souborech.
 de: Editor für Freitext in Therion 2D Datei.
 el: Χρησιμοποιείτε τον επεξεργαστή αυτό για επεξεργασία αρχείων .th2
 en: Use this editor window to modify .th2 files.
-es: Usa este editor para modificar los archivos .th2. Otros editores darán problemas.
+es: Usa este editor para modificar los archivos .th2.
+fr: Utiliser cet éditeur pour modifier les fichiers .th2.
 it: Editor di testo libero per il file 2D di therion.
+pt: Editor para texto livre no arquivo 2d do therion.
 ru: Редактор произвольного текста в 2D файле.
 sk: Editor pre špeciálne príkazy v 2D súboroch.
 sq: perdore kete dritare per permiresim qe te modofikosh. Th2 arkivin.
@@ -1303,7 +1584,9 @@ de: Muster
 el: αναζήτηση για
 en: search for
 es: buscar
+fr: Chercher
 it: testo
+pt: expressão
 ru: выражение
 sk: výraz
 sq: kerko per
@@ -1316,7 +1599,9 @@ de: Suchmuster eingeben.
 el: Εισαγωγή λέξεις για αναζήτηση
 en: Enter word(s) to search for.
 es: Introducir palabra(s) a buscar.
+fr: Entrer le(s) mot(s) à chercher.
 it: Scrivi il testo da cercare.
+pt: Entre a expressão a ser buscada.
 ru: Введите выражение поиска.
 sk: Vložte hľadaný výraz.
 sq: fute fjalin qe do ta kerkosh.
@@ -1328,8 +1613,10 @@ cz: regulární výraz
 de: Regulärer Ausdruck
 el: Χρήση μπαλαντέρ
 en: regular expression
-es: patrón regular (kob.*)
+es: comodines (kob.*)
+fr: Expression régulière
 it: espressione regolare
+pt: expressão regular
 ru: регулярное выражение
 sk: regulárny výraz
 sq: shprehje e rregullt
@@ -1339,10 +1626,12 @@ therion: Search for regular expression.
 bg: Търсене по регулярен израз
 cz: Vyhledávání regulárního výrazu.
 de: Suche nach regulärem Ausdruck.
-el: Χρήση μπαλαντέρ στην αναζήτηση (σπή.* θα βρει σπήλαιο, σπήλαια, σπήκερ)
-en: Use wildcards on search (cav.* will find cave, cavern, cavalier...)
+el: Χρήση μπαλαντέρ στην αναζήτηση (σπή.* θα βρει σπήλαιο, σπήλαια, σπήκερ).
+en: Use wildcards on search (cav.* will find cave, cavern, cavalier...).
 es: Usar comodines en la búsqueda (kob.* encuentra koba, kobea, kobie, etc).
+fr: Utiliser les expressions régulières pour chercher ((cav.* va chercher cave, cavern, cavalier...).
 it: Cerca espressione regolare.
+pt: Buscar por expressão regular
 ru: Искать по регулярному выражению.
 sk: Vyhľadávanie regulárneho výrazu.
 sq: kerko per shprehje te rregullt.
@@ -1354,8 +1643,10 @@ cz: rozlišovat velikost písmen
 de: Groß- und Kleinschreibung berücksichtigen
 el: case sensitive
 en: case sensitive
-es: distinguir mayúsculas
+es: distinguir mayúsculas/minúsculas
+fr: casse sensitive
 it: case-sensitive
+pt: diferenciar MAIÚSCULAS/minúsculas
 ru: учитывать регистр
 sk: rozlišovať veľkosť
 sq: rast I ndjeshem-senzitiv
@@ -1367,8 +1658,10 @@ cz: Vyhledávání s rozlišením velikosti písmen.
 de: Suche mit Groß- und Kleinbuchstaben.
 el: Αναζήτηση case sensitive
 en: Case sensitive search.
-es: Búsqueda sensible a las mayúsculas.
+es: Búsqueda sensible a las mayúsculas/minúsculas.
+fr: Chercher en respectant la casse
 it: Ricerca case-sensistive
+pt: Busca deve diferenciar letras MAIÚSCULAS das minúsculas.
 ru: Поиск с учетом регистра.
 sk: Vyhľadávanie s rozlišovaním veľkých a malých písmen.
 sq: kerko rast senzitiv
@@ -1381,7 +1674,9 @@ de: Nächste Stelle finden
 el: Εύρεση επομένου
 en: Find next
 es: Siguiente
+fr: Suivant
 it: Prossimo
+pt: Próximo
 ru: Следующий
 sk: Nasledujúci
 sq: gjeje tjetren me radhe
@@ -1394,7 +1689,9 @@ de: Nächstes Objekt auswählen, das auf Muster passt.
 el: Επιλογή επόμενου αντικείμενου που ταιριάζει στην αναζήτηση
 en: Select next object matching expression.
 es: Selecionar siguiente objeto encontrado.
+fr: Sélectionner l'objet trouvé suivant
 it: Seleziona il prossimo oggetto trovato
+pt: Selecionar o próximo objeto que atenda à expressão.
 ru: Выбрать следующий объект, соответствующий выражению поиска.
 sk: Nájdi ďalší objekt zodpovedajúci hľadanému výrazu.
 sq: zgjedhe objektin tjeter me radhe te shprehjes qe pershtatet
@@ -1407,7 +1704,9 @@ de: Finde erstes
 el: Εύρεση πρώτου
 en: Search
 es: Buscar
+fr: Chercher
 it: Cerca
+pt: Primeiro
 ru: Первый
 sk: Nájdi prvý
 sq: kerko te parin
@@ -1420,7 +1719,9 @@ de: Erstes Objekt finden, das auf Muster passt.
 el: Επιλογή πρώτου αντικείμενου που ταιριάζει στην αναζήτηση
 en: Selects first object matching expression.
 es: Selecionar el primer objeto encontrado.
+fr: Sélectionner le premier objet trouvé
 it: Seleziona il primo oggetto trovato
+pt: Selecionar o primeiro objeto que atenda à expressão.
 ru: Выбрать первый объект, соответствующий выражению поиска.
 sk: Nájdi prvý objekt zodpovedajúci hľadanému výrazu.
 sq: zgjedh objektin e pare te shprehjes qe pershtatet
@@ -1432,8 +1733,10 @@ cz: Zobrazit vše
 de: Zeige alles
 el: Εμφάνιση όλων
 en: Show all
-es: Mostrar todo
+es: Mostrar todos
+fr: Tout montrer
 it: Tutti
+pt: Todos
 ru: Показать все
 sk: Označ všetky
 sq: tregoji te gjitha
@@ -1445,8 +1748,10 @@ cz: Zvýrazní všechny objekty odpovídající výrazu.
 de: Alle Objekte hervorheben, die auf Muster passen.
 el: Τόνωση όλων όσων ταιριάζουν στην αναζήτηση.
 en: Highlight all objects matching expression.
-es: Seleccionar todos los objetos encontrados.
+es: Resaltar todos los objetos encontrados.
+fr: Mets en évidence tous les objets trouvés.
 it: Evidenzia tutti gli oggetti trovati
+pt: Destacar todos os objetos que atedam à expressão.
 ru: Подсветить все объекты, соответствующие выражению поиска.
 sk: Zvýrazní všetky objekty zodpovedajúce hľadanému výrazu.
 sq: zghedh te gjitha objektet qe pershtaten me shprehjen
@@ -1459,7 +1764,9 @@ de: Alles löschen
 el: Αναίρεση όλων
 en: Clear all
 es: Deseleccionar
+fr: Désélectionner
 it: Cancella
+pt: Limpar
 ru: Очистить все
 sk: Zruš výber
 sq: fshij krejt
@@ -1472,7 +1779,9 @@ de: Hervorgehobene Objekte löschen.
 el: Αναίρεση των τονισθέντων
 en: Clear highlighted objects.
 es: Deseleccionar todos los objetos resaltados.
+fr: Désélectionner tous les objets sélectionnés précédemment
 it: Togli l'evidenziazione degli oggetti.
+pt: Remover todos os destaques nos objetos.
 ru: Снять подсветку со всех объектов.
 sk: Zruší zvýraznenie vybratých objektov.
 sq: fshij objektet e zgjedhura-te hijezuara
@@ -1484,8 +1793,10 @@ cz: nahrávám obrázkový modul ...
 de: Lade Bildmodul ...
 el: φορτίζεται η ενότητα εικόνων...
 en: loading images module ...
-es: imágenes ...
+es: cargando modulo de imágenes ...
+fr: Chargement du module d'images...
 it: modulo immagini ...
+pt: carregando módulo de imagens...
 ru: загрузка модуля изображений...
 sk: nahrávam obrázkový modul...
 sq: duke lexuar modulin e imazhit…
@@ -1498,7 +1809,9 @@ de: Wähle Hintergrundbild.
 el: Κάντε κλικ στον κατάλογο να επιλέξετε την εικόνα που αντιστοιχεί.
 en: Click on a line in the list to select corresponding image.
 es: Al clicar un renglón, seleccionarás la imagen de fondo correspondiente.
+fr: Cliquer sur une ligne dans la liste pour sélectionner l'image correspondante.
 it: Seleziona l'immagine di background.
+pt: Selecione a image de fundo.
 ru: Выбор фонового изображения.
 sk: Označ obrázok na pozadí.
 sq: kliko rreshtin ne liste qe te zgjedhesh imazhin qe pershtatet.
@@ -1510,8 +1823,10 @@ cz: Vložení nového podkladového obrázku.
 de: Neues Hintergrundbild einfügen.
 el: Εισαγωγή νέας εικόνας φόντου (π.χ. αρχείο .xvi ή ψηφιακό σχέδιο)
 en: Insert new background image (e.g., .xvi image or scanned sketch).
-es: Insertar nueva imagen de fondo (p. ej: un croquis escaneado de la libreta topo).
+es: Insertar nueva imagen de fondo (p. ej: .xvi o  un croquis escaneado de la libreta topo).
+fr: Insérer une nouvelle image de fond (e.g., image .xvi ou croquis scanné).
 it: Inserisci una nuova immagine di background.
+pt: Insira uma nova imagem de fundo.
 ru: Вставить новое фоновое изображение.
 sk: Vloženie nového podkladového obrázku.
 sq: fute imazhin e ri ne prapavije (p.sh., . xvi imazhin apo vizatimin e skanuar).
@@ -1524,7 +1839,9 @@ de: Entferne
 el: Διαγραφή
 en: Remove
 es: Eliminar
+fr: Effacer
 it: Rimuovi
+pt: Remover
 ru: Убрать
 sk: Odstrániť
 sq: hiqe
@@ -1537,7 +1854,9 @@ de: Entferne ausgewähltes Bild.
 el: Διαγραφή επιλεγμένης εικόνας
 en: Remove selected image.
 es: Eliminar imagen seleccionada.
+fr: Effacer l'objet sélectionné.
 it: Rimuovi l'immagine selezionata.
+pt: Remover a imagem selecionada.
 ru: Убрать вырбанное изображение.
 sk: Odstráni označený obrázok.
 sq: hiqe imazhin e zgjedhur.
@@ -1550,7 +1869,9 @@ de: Sichtbarkeit
 el: ορατότητα
 en: visibility
 es: visibilidad
+fr: visibilité
 it: visibilità
+pt: visibilidade
 ru: показать
 sk: viditeľnosť
 sq: shiqueshmeria-vizibiliteti
@@ -1563,7 +1884,9 @@ de: Bildsichtbarkeit umschalten.
 el: Αλλαγή ορατότητας εικόνας
 en: Switch image visibility.
 es: Cambiar visibilidad de la imagen.
+fr: Changer la visibilité de l'image
 it: Cambia la visibilità dell'immagine.
+pt: Alternar visibilidade da imagem.
 ru: Показать/спрятать изображение.
 sk: Prepínač viditeľnosti obrázku.
 sq: lesho shiqueshmerine-vizibilitetin e imazhit.
@@ -1576,7 +1899,9 @@ de: Gammawert einstellen.
 el: Ρυθμίσεις τιμών gamma.
 en: Control gamma value.
 es: Controlar el valor gamma.
+fr: Control de la valeur du gamma.
 it: Controlla il valore di gamma.
+pt: Valor gamma de referência.
 ru: Управление гаммой.
 sk: Nastavenie gamma korekcie obrázku (farebného podania).
 sq: kontrollo vleren-gamma
@@ -1589,7 +1914,9 @@ de: Zurücksetzen
 el: Επαναφορά
 en: Reset
 es: Reajustar
+fr: Reset
 it: Ripristina
+pt: Restaurar
 ru: Сброс
 sk: Reset
 sq: reseto
@@ -1601,8 +1928,10 @@ cz: Resetuje nastavenou hodnotu gamma.
 de: Gammawert zurücksetzen.
 el: Επαναφορά τιμής gamma της εικόνας.
 en: Click here to go back to original gamma value.
-es: Click aquí para volver a los ajustes de gamma iniciales.
+es: Clicar aquí para volver a los ajustes de gamma iniciales.
+fr: Cliquer ici pour revenir à la valeur de gamma originale.
 it: Ripristina il valore di gamma dell'immagine.
+pt: Restaurar valor gamma original para a imagem.
 ru: Сбросить значение гаммы для изображения.
 sk: Resetuje nastavenú gamma korekciu obrázku.
 sq: kliko ketu qe te kthehesh prapa tek vlera origjinale-gamma.
@@ -1615,7 +1944,9 @@ de: Setze Gammawert.
 el: Ορισμός τιμής gamma της εικόνας.
 en: Set image gamma value.
 es: Ajustar valor gamma de la imagen.
+fr: Ajuster la valeur de gamma de l'image.
 it: Imposta il valore di gamma dell'immagine.
+pt: Definir valor gamma para a imagem.
 ru: Установить гамму для изображения.
 sk: Nastavuje gamma korekciu obrázku.
 sq: vendos vleren gamma te imazhit.
@@ -1627,8 +1958,10 @@ cz: Současná pozice vybraného obrázku.
 de: Gegenwärtige Position des ausgewählten Bildes.
 el: Τρέχουσα θέση επιλεγμένης εικόνας
 en: Current position of selected image (pixels from canvas lower left corner).
-es: Posición actual de la imagen seleccionada (medida en pixels desde la esquina inf. izq del lienzo).
+es: Posición actual de la imagen seleccionada (pixels desde la esquina inferior izquierda del lienzo).
+fr: Position actuelle de l'image sélectionnée (en pixel depuis le coin inférieur droit du canevas).
 it: Posizione dell'immagine selezionata.
+pt: Posição atual da imagem selecionada.
 ru: Текущая позиция выбранного изображения.
 sk: Súčasná pozícia obrázku.
 sq: pozicioni momental I imazhit te zgjedhur(pikat apo pikselat prej pelhures kendi I poshtem I majte).
@@ -1641,7 +1974,9 @@ de: Verschiebe nach
 el: Μετακίνηση προς
 en: Move to
 es: Mover a
+fr: Déplacer vers
 it: Sposta a
+pt: Mover para
 ru: Переместить
 sk: Presuň na
 sq: levize tek
@@ -1653,8 +1988,10 @@ cz: Přesune obrázek na zadanou pozici.
 de: Verschiebe Bild an angegebene Position.
 el: Μετακίνηση εικόνας στην προσδιορισμένη θέση (η πάνω αριστερά γωνία θα είναι στο δεδομένο πίξελ)
 en: Move image to given position (image's upper left corner will be on given pixel).
-es: Mover imagen a la posición indicada (la esquina sup. izda de la imagen aparecerá en ese pixel).
+es: Mover imagen a la posición indicada (la esquina superior izquierda de la imagen aparecerá en ese pixel).
+fr: Déplacer l'image à la position indiquée (le coin supérieur gauche de l'image sera au pixel choisi).
 it: Sposta l'immagine nella posizione specificata.
+pt: Mover imagem para posição indicada.
 ru: Переместить изображение к указанной позиции.
 sk: Presunie obrázok na zadanú pozíciu.
 sq: levize imazhin ne poziten e dhene(kendi I eperm I majte I imazhit do te jete ne pikselin e japur).
@@ -1667,7 +2004,9 @@ de: Neue X-Koordinate des Bildes.
 el: Νέα συντεταγμένη Χ εικόνας
 en: New X coordinate of image.
 es: Nueva coordenada X de la imagen.
+fr: Nouvelle coordonnée X de l'image.
 it: Nuova coordinata X dell'immagine.
+pt: Nova coordenada X da imagem.
 ru: Новая координата X.
 sk: Nová X súradnica obrázku.
 sq: X-koordinata e re e imazhit
@@ -1679,8 +2018,10 @@ cz: Nová souřadnice Y obrázku.
 de: Neue Y-Koordinate des Bildes.
 el: Νέα συντεταγμένη Υ εικόνας
 en: New Y coordinate of image.
+fr: Nouvelle Coordonnée Y de l'image.
 es: Nueva coordenada Y de la imagen.
 it: Nuova coordinata Y dell'immagine.
+pt: Nova coordenada Y da imagem.
 ru: Новая координата Y.
 sk: Nový Y súradnica obrázku.
 sq: koordinata Y e re e imazhit.
@@ -1693,7 +2034,9 @@ de: Nach vorne verschieben
 el: Μετακίνηση προς τα μπρος
 en: Move front
 es: Delante
+fr: Déplacer en avant
 it: Davanti
+pt: Frente
 ru: Поверх всех
 sk: Navrch
 sq: levize perpara
@@ -1705,8 +2048,10 @@ cz: Přesune obrázek nad všechny ostatní.
 de: Bild ganz nach vorne verschieben.
 el: Μετακίνηση εικόνας στην κορυφή
 en: Move image in front of all images.
-es: Trae la imagen al frente de todas las imágenes.
+es: Traer la imagen al frente de todas las imágenes.
+fr: Déplacer l'image à l'avant de toutes les autres images.
 it: Sposta l'immagine davanti a tutte le immagini.
+pt: Mover imagem para a frente de todas as imagens.
 ru: Вывести изображение поверх всех остальных.
 sk: Presunie obrázok nad všetky ostatné.
 sq: levize imazhin para te gjitha imazheve.
@@ -1719,7 +2064,9 @@ de: Nach hinten verschieben
 el: Μετακίνηση προς τα πίσω
 en: Move back
 es: Detrás
+fr: Déplacer en arrière
 it: Dietro
+pt: Fundo
 ru: Под всеми
 sk: Naspodok
 sq: levize prapa
@@ -1732,7 +2079,9 @@ de: Bild ganz nach hinten verschieben.
 el: Μετακίνηση της εικόνας στο φόντο
 en: Move image behind all images.
 es: Enviar la imagen detrás de todas las demás.
+fr: Déplacer l'image au dernier plan.
 it: Sposta l'immagine davanti a tutte le immagini.
+pt: Mover imagem para trás de todas as imagens.
 ru: Вывести изображение за всеми остальными.
 sk: Presunie obrázok pod všetky ostatné.
 sq: levize imazhin prapa te gjitha imazheve.
@@ -1744,8 +2093,10 @@ cz: nahrávám zobrazovací modul ...
 de: Lade Vorschaumodul ...
 el: Φορτίζεται η ενότητα προεπισκόπισης...
 en: loading preview module ...
-es: ver comandos ...
+es: cargando modulo de vista previa...
+fr: Chargement du module de vue préliminaire...
 it: modulo anteprima ...
+pt: carregando módulo de visualização...
 ru: загрузка модуля предпросмотра...
 sk: nahrávam náhľadový modul ...
 sq: duke lexuar modulin e perkohshem…
@@ -1758,7 +2109,9 @@ de: Kommando aktualisieren
 el: Ανανέωση
 en: Update command
 es: Actualizar
+fr: Actualiser
 it: Aggiorna comando
+pt: Atualizar
 ru: Обновить команду
 sk: Aktualizovať
 sq: urdheri-komanda e aktualizimit
@@ -1771,7 +2124,9 @@ de: Drücke diesen Knopf, falls du etwas geändert hast und die Änderungen nich
 el: Πατήστε εδώ αν αλλάξατε κάτι και δεν εμφανίζονται εδώ οι αλλαγές.
 en: Press this button, if you have changed something and you can not see your changes here.
 es: Clicar aquí si has cambiado algo y no ves aquí los resultados del cambio
+fr: Cliquer ici si vous avez modifier quelque chose que vous ne pouvez pas voir à l'écran.
 it: Premi questo bottone se hai fatto modifiche che non sono visualizzate.
+pt: Pressione este botão se você alterou algo mas essas mudanças não aparecem aqui.
 ru: Нажмите эту кнопку, если вы что-то изменили, но не увидели здесь своих изменений.
 sk: Stlačte toto tlačítko, ak ste niečo zmenili a zmeny nie su v tomto okne viditeľné.
 sq: shtype kete buton, nese ke ndryshuar diqka te cilin ndryshim nuk mund ta shohesh ketu.
@@ -1783,8 +2138,10 @@ cz: Náhled příkazu.
 de: Kommando Vorschau.
 el: Εδώ βλέπετε ολοκληρωμένες εντολές με εφαρμογή επιλογών.
 en: Here you can see complete commands with options applied.
-es: Aquí se pueden ver los comandos completos, opciones incluídas.
+es: Aquí se pueden ver los comandos completos con las opciones incluídas.
+fr: Vous pouvez voir ici la totalité des commandes avec les options choisies.
 it: Anteprima comando.
+pt: Visualização do elemento.
 ru: Просмотр команды.
 sk: Náhľad príkazu.
 sq: ketu mund te shohesh komandat komplete me opcionet e vendosura.
@@ -1796,8 +2153,10 @@ cz: nahrávám scrap modul ...
 de: Lade Skizzenmodul ...
 el: φορτίζεται η ενότητα των σκραπ...
 en: loading scrap module ...
-es: croquis ...
+es: cargando modulo de trozos...
+fr: Chargement du module de scraps
 it: modulo scrap ...
+pt: carregando módulo de trechos...
 ru: загрузка скрап-модуля...
 sk: nahrávam scrap modul ...
 sq: duke lexuar modulin e deponise…
@@ -1809,8 +2168,10 @@ cz: Název scrapu.
 de: Skizzenname.
 el: Όνομα σκραπ
 en: Scrap name.
-es: Nombre del croquis.
+es: Nombre del trozo.
+fr: Nom du scrap
 it: Nome dello scrap.
+pt: Nome do trecho.
 ru: Имя скрапа.
 sk: Identifikátor (meno) scrapu.
 sq: emri I deponise.
@@ -1823,7 +2184,9 @@ de: Projektion
 el: προβολή
 en: projection
 es: proyección
+fr: Projection
 it: proiezione
+pt: projeção
 ru: проекция
 sk: projekcia
 sq: projekcioni
@@ -1835,8 +2198,10 @@ cz: Projekce scrapu.
 de: Skizzenprojektion
 el: Προβολή σκραπ (κλικ στο τρίγωνο για μενού)
 en: Scrap projection (click on triangle to see menu).
-es: Proyección del croquis (Clic en triángulo para ver el menú).
+es: Proyección del trozo (Clicar en el triángulo para ver el menú).
+fr: Projection du scrap (cliquer sur le triangle pour afficher le menu)
 it: Proiezione dello scrap.
+pt: Projeção do trecho.
 ru: Проекция скрапа.
 sk: Projekcia scrapu.
 sq: projeksioni I deponise (kliko ne trekendesh te shohesh menyne).
@@ -1847,9 +2212,11 @@ bg: Други опции на скрапа.
 cz: Další volby pro scrap.
 de: Andere Skizzenoptionen.
 el: Άλλες επιλογές των σκραπ - βλέπετε το thbook.pdf
-en: Other scrap options (more on this on thbook.pdf)
-es: Otras opciones del croquis. Consultar thbook.pdf
+en: Other scrap options (more on this in thbook.pdf)
+es: Otras opciones del trozo (mas en el thbook.pdf)
+fr: Autres options du scrap (voir les options dans le thbook.pdf)
 it: Altre opzioni dello scrap
+pt: Outras opções do trecho.
 ru: Другие опции скрапа.
 sk: Ostatné možnosti scrapu.
 sq: opcionet tjera te deponise (me shume per kete ne librin e therion-it.pdf)
@@ -1860,7 +2227,10 @@ bg: Мащаб
 cz: Měřítko
 de: Maßstab
 el: Κλίμακας
+es: Escalar
+fr: Mise à l'échelle
 it: Scala
+pt: Escala
 ru: Масштаб
 sk: Mierka
 sq: matesi
@@ -1871,7 +2241,10 @@ bg: Мащабиране на скрапа - натиснете този бут�
 cz: Škálování scrapu - stiskni pro výběr kalibračních bodů obrázku.
 de: Skizze skalieren - drücken um Bildeinstellungspunkte zu klicken.
 el: Καλιπράρισμα σκραπ - κάντε κλικ για να επιλέξετε τα σημεία για καλιμπράρισμα.
+es: Escalado del trozo - apretar para seleccionar los puntos de calibración.
+fr: Echelle du scrap - Tirer pour sélectionner les points de calibration de l'image.
 it: Rescalamento - premi per selezionare i punti di calibrazione.
+pt: Defina a escala do trecho clicando nos pontos de calibração da imagem.
 ru: Масштабирование скрапа - нажимте эту кнопку и выставите точки масштабирования мышью
 sk: Škálovanie scrapu - po stlačení klikni na škálovacie body.
 sq: matja e deponise-shtyp te klikosh pikat kalibruese te fotos.
@@ -1884,7 +2257,9 @@ de: Skizze aktualisieren
 el: Ενημέρωση σκραπ
 en: Update scrap
 es: Actualizar
+fr: Actualiser le scrap
 it: Aggiorna scrap
+pt: Atualizar
 ru: Обновить скрап
 sk: Aktualizuj scrap
 sq: aktualizo deponine
@@ -1895,9 +2270,11 @@ bg: Натиснете този бутон за да приложите пром
 cz: Stiskněte toto tlačítko po uplatnění změn aktuálního scrapu.
 de: Drücke diesen Knopf, um deine Änderungen auf diese Skizze anzuwenden.
 el: Πατήστε εδώ για να γίνει εφαρμογή των αλλαγών σας στο τρέχον σκραπ.
-en: Press this button to apply your changes to current scrap.
-es: Clicar aquí tras modificar las propiedades del croquis.
+en: Press this button to apply your changes to the current scrap.
+es: Clicar aquí tras modificar las propiedades del trozo.
+fr: Cliquer ici pour modifier les propriétés du scrap
 it: Premi questo bottone per applicare le tue modifiche allo scrap.
+pt: Aplicar as mudanças ao trecho atual.
 ru: Нажмите эту кнопку для введения в действие ваших изменений для текущего скрапа
 sk: Stlačte tento gombík, aby sa vaše zmeny v scrape uložili.
 sq: shtype kete buton qe te besh ndrimet ne deponine momentale.
@@ -1909,8 +2286,10 @@ cz: body měřítka (obrázek)
 de: Bildskalierungspunkte
 el: σημεία για καλιμπράρισμα (πίξελ)
 en: picture scale points (pixels)
-es: puntos de escala (pixels)
+es: puntos de escala de la imagen (pixels)
+fr: Points de mise à l'échelle (pixels)
 it: punti nella scala del disegno
+pt: pontos escala imagem
 ru: масштабирующие точки для картинки
 sk: kalibračné body (obrazovka)
 sq: pikat matese te fotos-pikselat
@@ -1923,7 +2302,9 @@ de: Kalibrierungspunkte auf dem Bild (X1:Y1 - X2:Y2).
 el: Σημεία καλιμπραρίσματος στην εικόνα (Χ1:Υ1 - Χ2:Υ2).
 en: Calibration points on the picture (X1:Y1 - X2:Y2).
 es: Puntos de calibración en la imagen (X1:Y1 - X2:Y2).
+fr: Points de calibration de l'image (X1:Y1 - X2:Y2).
 it: Punti di calibrazione sul disegno (X1:Y1 - X2:Y2).
+pt: Pontos limite de calibração na imagem (X1:Y1 - X2:Y2).
 ru: Калибровочные точки на картинке (X1:Y1 - X2:Y2).
 sk: Súradnice kalibračných bodov na obrazovke (X1:Y1 - X2:Y2)
 sq: pikat e kalibrimit ne foto (X1:Y1 - X2:Y2)
@@ -1935,8 +2316,10 @@ cz: X1 obrázek.
 de: X1 Bild.
 el: Χ1 εικόνας
 en: X1 picture.
-es: Punto de escala X1 en la imagen.
+es: X1 en la imagen.
+fr: X1 de l'image.
 it: X1 del disegno.
+pt: X1 na imagem.
 ru: X1 картинки.
 sk: X1 na obrázku.
 sq: x1 fotoja
@@ -1948,8 +2331,10 @@ cz: Y1 obrázek.
 de: Y1 Bild.
 el: Υ1 εικόνας
 en: Y1 picture.
-es: Punto de escala Y1 en la imagen.
+es: Y1 en la imagen.
+fr: Y1 de l'image.
 it: Y1 del disegno.
+pt: Y1 na imagem.
 ru: Y1 картинки.
 sk: Y1 na obrázku.
 sq: Y1 fotoja
@@ -1961,8 +2346,10 @@ cz: X2 obrázek.
 de: X2 Bild.
 el: Χ2 εικόνας
 en: X2 picture.
-es: Punto de escala X2 en la imagen.
+es: X2 en la imagen.
+fr: X2 de l'image.
 it: X2 del disegno.
+pt: X2 na imagem.
 ru: X2 картинки.
 sk: X2 na obrázku.
 sq: X2 fotoja
@@ -1974,8 +2361,10 @@ cz: Y2 obrázek.
 de: Y2 Bild.
 el: Υ2 εικόνας
 en: Y2 picture.
-es: Punto de escala Y2 en la imagen.
+es: Y2 en la imagen.
+fr: Y2 de l'image.
 it: Y2 del disegno.
+pt: Y2 na imagem.
 ru: Y2 картинки.
 sk: Y2 na obrázku.
 sq: Y2 fotoja
@@ -1988,7 +2377,9 @@ de: Punkte für Realmaßstab
 el: πραγματικά σημεία για καλιμπράρισμα
 en: real scale points
 es: puntos de escala (reales)
+fr: Points de mise à l'échelle (réels)
 it: punti nella scala effettiva
+pt: pontos escala real
 ru: реальные масштабирующие точки
 sk: kalibračné body (skutočné)
 sq: pikat reale te matjes
@@ -2001,7 +2392,9 @@ de: Realkoordinaten der Kalibrierungspunkte (X1:Y1 - X2:Y2).
 el: Πραγματικές συντεταγμένες σημείων καλιμπραρίσματος (Χ1:Υ1 - Χ2:Υ2)
 en: Real coordinates of calibration points (X1:Y1 - X2:Y2).
 es: Coordenadas reales de los puntos de calibración (X1:Y1 - X2:Y2).
+fr: Coordonnées réelles des points de calibration (X1:Y1 - X2:Y2).
 it: Coordinate reali dei punti di calibrazione (x1:y1 - x2:y2).
+pt: Pontos limite de calibração tamanho real (X1:Y1 - X2:Y2).
 ru: Реальные координаты калибровочных точек (X1:Y1 - X2:Y2).
 sk: Skutočné súradnice kalibračných bodov (X1:Y1 - X2:Y2).
 sq: koordinatat reale te pikave te kalibrimit (X1:Y1 - X2:Y2).
@@ -2010,10 +2403,13 @@ zh_CN: 校正点的实际坐标(X1:Y1 - X2:Y2)
 therion: X1 real.
 bg: X1 реално.
 cz: X1 skutečný.
+de: X1 real.
 el: Πραγματικό Χ1.
 en: X1 real.
-es: X1 real
+es: X1 real.
+fr: X1 réel.
 it: x1 reale.
+pt: X1 real.
 ru: X1 реальное.
 sk: X1 skutočný
 sq: X1 I vertet-real
@@ -2022,10 +2418,13 @@ zh_CN: X1值
 therion: Y1 real.
 bg: Y1 реално.
 cz: Y1 skutečný.
+de: Y1 real.
 el: Πραγματικό Υ1.
 en: Y1 real.
-es: Y1 real
+es: Y1 real.
+fr: Y1 réel.
 it: y1 reale.
+pt: Y1 real.
 ru: Y1 реальное.
 sk: Y1 skutočný
 sq: Y1 I vertet-real
@@ -2034,10 +2433,13 @@ zh_CN: Y1值
 therion: X2 real.
 bg: X2 реално.
 cz: X2 skutečný.
+de: X2 real.
 el: Πραγματικό Χ1.
 en: X2 real.
-es: X2 real
+es: X2 real.
+fr: X2 réel.
 it: x2 reale.
+pt: X2 real.
 ru: X2 реальное.
 sk: X2 skutočný
 sq: X2 I vertet-real
@@ -2046,10 +2448,13 @@ zh_CN: X2值
 therion: Y2 real.
 bg: Y2 реално.
 cz: Y2 skutečný.
+de: Y2 real.
 el: Πραγματικό Υ2
 en: Y2 real.
 es: Y2 real
+fr: Y2 réel.
 it: y2 reale.
+pt: Y2 real.
 ru: Y2 реальное.
 sk: Y2 skutočný
 sq: Y2 I vertet-real
@@ -2062,7 +2467,9 @@ de: Einheiten
 el: μονάδες
 en: units
 es: unidades
+fr: unités
 it: unità
+pt: unidade
 ru: единицы
 sk: jednotky
 sq: njesite
@@ -2075,7 +2482,9 @@ de: Einheiten der Realkoordinaten.
 el: Μονάδες πραγματικών συντεταγμένων.
 en: Units of real coordinates.
 es: Unidades de las coordenadas reales.
+fr: Unités des coordonnées réelles.
 it: Unità delle coordinate reali.
+pt: Unidade das medidas reais.
 ru: Единицы измерения реальных координат.
 sk: Jednotky reálnych súradníc.
 sq: njesite e koordinatave te verteta.
@@ -2086,7 +2495,10 @@ bg: Фонова скица.
 cz: náčrtky na pozadí
 de: Hintergrundskizzen
 el: Σχέδια του φόντου
+es: Croquis de fondo
+fr: Croquis en arrière plan
 it: Immagini di background
+pt: croquis de fundo
 ru: Фоновые изображения
 sk: náčrtky na pozadí.
 sq: skicat e prapavise.
@@ -2097,7 +2509,10 @@ bg: Списък на графични файлове, използвани за
 cz: Seznam obrázků použitých jako pozadí scrapu
 de: Liste der als Hintergrund verwendeten Bilder.
 el: Κατάλογος αρχείων εικόνων που χρησιμοποιούνται ως φόντο του σκραπ
+es: Lista de archivos de imagenes usados como croquis de fondo
+fr: Liste des fichiers d'images utilisés comme croquis d'arrière plan
 it: Files usati come background dello scrap
+pt: Lista de imagens de croquis usadas como fundo neste trecho.
 ru: Список графических файлов, используемых в качестве фоновых изображений скрапа
 sk: Zoznam obrázkov použitých ako pozadie.
 sq: lista e foto-arkivit te perdorura si prapavije e deponise.
@@ -2108,7 +2523,10 @@ bg: Натиснете този бутон, за да вмъкнете скиц�
 cz: Stiskněte toto tlačítko a výběrem náčrtku myší jej vložte do scrapu.
 de: Diesen Knopf drücken um Skizze einzufügen.
 el: Πατήστε εδώ για εισαγωγή σχεδίου με ποντίκι
+es: Apretar este boton para insertar el croquis clicando en el.
+fr: Appuyer sur le bouton pour insérer un croquis d'arrière plan en cliquant dessus.
 it: Premi per inserire il disegno che scegli col mouse
+pt: Inserir neste trecho o próximo croqui clicado.
 ru: Эта кнопка вставляет фон скрапа в список
 sk: Po stlačení klikni na náčrtok, ktorý treba vložiť do scrapu.
 sq: shtype kete buton te fusesh skicen duke klikuar ne te.
@@ -2119,7 +2537,10 @@ bg: Изтрий скица от скрапа.
 cz: Odstranit náčrtek ze scrapu
 de: Lösche Skizze.
 el: Διαγραφή σχεδίου από σκραπ
+es: Borrar el croquis del trozo.
+fr: Effacer le croquis du scrap.
 it: Rimuovi un disegno dallo scrap
+pt: Remover croqui deste trecho.
 ru: Эта кнопка удаляет фон скрапа из списка
 sk: Odstráň náčrtok zo scrapu.
 sq: fshije skicen nga deponia
@@ -2131,8 +2552,10 @@ cz: nahrávám point modul ...
 de: Lade Punktmodul ...
 el: φόρτιση ενότητας σημείων…
 en: loading point module ...
-es: puntos ...
+es: cargando el modulo de puntos ...
+fr: Chargement du module de point...
 it: modolo punti ...
+pt: carregando módulo de pontos...
 ru: загрузка модуля точек...
 sk: nahrávam editor bodov ...
 sq: duke lexuar modulin e pikes…
@@ -2144,8 +2567,10 @@ cz: Aktualizovat
 de: Punkt aktualisieren
 el: Ενημέρωση σημείου
 en: Update point
-es: Actualizar
+es: Actualizar punto
+fr: Actualiser le point
 it: Aggiorna punto
+pt: Atualizar
 ru: Обновить точку
 sk: Akualizuj bod
 sq: pika e aktualizimit
@@ -2157,8 +2582,10 @@ cz: Aktualizuje data týkající se bodu.
 de: Klicke diesen Knopf, um Änderungen am Punkt anzuwenden.
 el: Κάντε κλικ για να γίνει εφαρμογή των αλλαγών που κάνατε στα σημεία
 en: Click this button to apply point changes.
-es: Clicar aquí tras modificar las propiedades del punto.
+es: Clicar aquí para aplicar los cambios al punto.
+fr: Cliquer ici pour appliquer les changements au point.
 it: Premi il bottone per fare modifiche al punto.
+pt: Aplicar as mudanças ao ponto atual.
 ru: Нажмите эту кнопку для применения изменений точки.
 sk: Stlačte aby sa aktualizovali zmenené údaje bodu.
 sq: kliko kete buton te aktualizosh nderrimet e pikes.
@@ -2170,8 +2597,10 @@ cz: Typ bodu.
 de: Punkttyp.
 el: Είδος σημείου
 en: Point type (click on triangle to see menu).
-es: Tipo de punto. Clic en triángulo para ver menú
+es: Tipo de punto. Clicar en el triángulo para ver menú
+fr: Type de point. Cliquer sur le triangle pour afficher le menu.
 it: Tipo di punto
+pt: Tipo de ponto.
 ru: Тип точки.
 sk: Typ bodu.
 sq: lloji I pikave (kliko ne trekendesh te shohesh menun).
@@ -2183,8 +2612,10 @@ cz: Identifikátor bodu.
 de: Punktbezeichner.
 el: ID σημείου
 en: Point identifier.
-es: Nombre (ID) del punto.
+es: Identificador del punto.
+fr: Identifiant du point.
 it: Identificatore del punto.
+pt: Identificador do ponto.
 ru: Идентификатор точки.
 sk: Identifikátor bodu.
 sq: identifikuesi I pikes.
@@ -2197,7 +2628,9 @@ de: Andere Punktoptionen.
 el: Άλλες επιλογές για σημεία
 en: Options allow giving special characteristics to points.
 es: Las opciones permiten dar características especiales a los puntos.
+fr: Autres options donnant des caractéristiques particulières aux points
 it: Altre opzioni del punto.
+pt: Outras opções do ponto.
 ru: Другие опции точки.
 sk: Ostatné špecifikácie bodu.
 sq: opcionet tjera te pikes.
@@ -2208,9 +2641,11 @@ bg: Например, ако типът на точката е label (етике
 cz: Příklad: pokud type je label, zadejte: -text \042this will be displayed (P100)\042
 de: d.h., wenn der Typ Beschriftung ist, schreibe hier: -text \042das wird hier angezeigt (P100)\042
 el: Δηλαδή, αν το είδος είναι ταμπέλα, εδώ γράφετε: -text \042αυτό εμφανίζεται (P100)\042
-en: I.e, if type is label, write here: -text \042this will be displayed (P100)\042
+en: E.g, if type is label, write here: -text \042this will be displayed (P100)\042
 es: P.ej, si el tipo es label, escribe: -text \042lo que se verá (P100)\042.
+fr: I.e., si le type est libellé, écrit ici : -text \042ce sera affiché (P100à\042
 it: Cioé, se il tipo è etichetta, scrivi: -text \042questo sarà visualizzato (P100)\042
+pt: Exemplo: se for do tipo 'informação' escreva aqui -text \042texto no mapa (B3)\042
 ru: Например, если тип точки label, здесь можно набрать: -text \042это напечатается (P100)\042
 sk: Príklad: ak je typ label, zadajte: -text \042tento text bude zobrazený\042
 sq: p.sh. nese lloji eshte etikete, shkruaj ketu: -teksti \042 kjo do te lajmerohet (P100)\042
@@ -2222,8 +2657,10 @@ cz: Zadejte orientaci bodu.
 de: Winkel der Symbolausrichtung angeben.
 el: Εισαγωγή γωνίας προσανατολισμού σύμβολου.
 en: Enter symbol orientation angle.
-es: Introducir dirección en que debe apuntar el símbolo.
+es: Introducir angulo de orientación del símbolo.
+fr: Entrer un angle d'orientation du texte.
 it: Scrivi l'angolo di orientazione del simbolo.
+pt: Defina o ângulo de orientação deste símbolo.
 ru: Введите ориентацию символа.
 sk: Zadajte orientáciu bodu.
 sq: fute simbolin e kendit te orientimit.
@@ -2234,9 +2671,11 @@ bg: Някои типове символи трябва да бъдат орие
 cz: Jsou symboly, kterým musíte specifikovat orientaci (např. gradient). Zaklikněte tuto volbu a nastavte jim orientaci myší nebo z klávesnice.
 de: Es gibt Symbole, die eine Ausrichtung haben müssen (z.B. Gefälle). Klicke hier, um sie mit der Maus oder der Tastatur auszurichten.
 el: Κάποια είδη συμβόλων πρέπει να προσανατολιστούν (π.χ. κλίσεις). Κάντε κλικ εδώ να ορισθεί ο προσανατολισμός είτε από το πληκτρολόγιο είτε με το ποντίκι.
-en: Some symbol types must be orientated (i.e: gradients). Click here to orientate them using mouse or keyboard.
-es: Hay tipos de símbolo que deben ser orientados (p.ej, pendientes). Haz clic aquí para orientarlos con ratón o teclado.
+en: Some symbol types must be orientated (e.g: gradients). Click here to orientate them using mouse or keyboard.
+es: Algunos símbolo que deben estar orientados (p.ej, pendientes). Haz clic aquí para orientarlos con el ratón o el teclado.
+fr: Certains symboles doivent être orientés (i.e. gradients). Cliquer ici permettra l'orientation des symboles avec la souris ou le clavier.
 it: Ci sono tipi di simboli che sono orientati (per es. gradiente). Premi qui per orientarli col mouse o la tastiera
+pt: Há tipos de símbolos que devem ser orientados (exemplo: declividade da galeria). Você poderá definir a orientação com o mouse ou digitando um valor.
 ru: Некоторые типы символов должны быть ориентированы (например gradient). Нажмите здесь для придания им ориентации с помощью мыши или клавиатуры.
 sk: Sú symboly, ktorým treba zadať orientáciu (napr. gradiet). Označte túto voľbu a nastavte orientáciu myšou alebo z klávesnice.
 sq: disa lloje te simboleve duhet te orientohen (p.sh.:gradienti). Kliko ketu qe ti orientosh me mi apo tastature.
@@ -2249,7 +2688,9 @@ de: x-Größe
 el: μέγεθος x
 en: x-size
 es: tamaño-x
+fr: dimension-x
 it: dim. x
+pt: tamanho x
 ru: x-size
 sk: veľkosť-x
 sq: madhesia-X
@@ -2262,7 +2703,9 @@ de: Setze Punktgröße in Hauptrichtung.
 el: Ορισμός πλευρικού μεγέθους σημείου
 en: Set point size in main direction.
 es: Ajustar tamaño del punto en dirección principal.
+fr: Ajuster la taille du point dans la direction principale.
 it: Imposta la dimensione del punto nella direzione principale.
+pt: Defina o tamamho do ponto na direção principal.
 ru: Установить размер точки в главном направлении.
 sk: Nastavte veľkosť bodu v hlavnom (X) smere.
 sq: vene madhesine e pikes ne drejtimin kryesor.
@@ -2275,7 +2718,9 @@ de: Punktgröße in Hauptrichtung eingeben.
 el: Εισαγωγή πλευρικού μεγέθους σημείου
 en: Enter point size in main direction.
 es: Introducir tamaño del punto en dirección principal.
+fr: Entrer la taille du point dans la direction principale.
 it: Scrivi la dimensione del punto nella direzione principale.
+pt: Entre o tamanho do ponto na direção principal.
 ru: Введите размер точки в главном направлении.
 sk: Zadajte veľkosť bodu v hlavnom (X) smere.
 sq: fute madhesine e pikes ne drejtimin kryesor.
@@ -2288,7 +2733,9 @@ de: y-Größe
 el: μέγεθος y
 en: y-size
 es: tamaño-y
+fr: dimension-y
 it: dim. y
+pt: tamanho y
 ru: y-size
 sk: veľkosť-y
 sq: madhesia-Y
@@ -2301,7 +2748,9 @@ de: Setze Punktgröße in seitlicher Richtung.
 el: Ορισμός πλευρικού μεγέθους σημείου
 en: Set point size in side direction.
 es: Ajustar tamaño del punto en dirección lateral.
+fr: Définit la taille du point dans la direction latérale.
 it: Imposta la dimensione del punto nella direzione trasversale.
+pt: Defina o tamamho do ponto na direção lateral.
 ru: Установить размер точки в боковом направлении.
 sk: Nastavte veľkosť bodu vo vedľajšom smere.
 sq: vene madhesine e pikes ne drejtim anesore.
@@ -2314,7 +2763,9 @@ de: Punktgröße in seitlicher Richtung eingeben.
 el: Εισαγωγή πλευρικού μεγέθους σημείου
 en: Enter point size in side direction.
 es: Introducir tamaño del punto en dirección lateral.
+fr: Entrer la taille du point dans la direction latérale.
 it: Scrivi la dimensione del punto nella direzione trasversale.
+pt: Entre o tamanho do ponto na direção lateral.
 ru: Введите размер точки в боковом направлении.
 sk: Zadajte veľkosť bodu vo vedľajšom smere.
 sq: fute madhesine e pikes ne drejtim anesore.
@@ -2326,8 +2777,10 @@ cz: nahrávám křivkový modul ...
 de: Lade Linienmodul ...
 el: φόρτιση ενότητας γραμμών...
 en: loading line module ...
-es: líneas ...
+es: cargando modulo de líneas ...
+fr: Chargement du module de lignes...
 it: modulo linee ...
+pt: carregando módulo de linhas...
 ru: загрузка модуля линий ...
 sk: nahrávam modul kriviek ...
 sq: duke lexuar modulin e rrjeshtit…
@@ -2339,8 +2792,10 @@ cz: Typ křivky.
 de: Linientyp.
 el: Είδος γραμμής
 en: Line type (click on triangle to see menu).
-es: Tipo de línea. Clic en triángulo para ver el menú.
+es: Tipo de línea (clicar en el triángulo para ver el menú).
+fr: Type de ligne (cliquer sur le triangle pour afficher le menu).
 it: Tipo di linea.
+pt: Tipo de linha.
 ru: Тип линии.
 sk: Typ krivky.
 sq: lloji I rrjeshtit.
@@ -2353,8 +2808,10 @@ de: id
 el: ID
 en: id
 es: ID
+fr: ID
 it: Identificativo
-ru: Ид
+pt: id
+ru: id - индетификатор
 sk: id
 sq: ID-identifikimi
 zh_CN: ID
@@ -2365,8 +2822,10 @@ cz: Identifikátor křivky.
 de: Linienbezeichner.
 el: ID γραμμής.
 en: Line identifier.
-es: Nombre (ID) de la línea.
+es: Identificador de la línea.
+fr: Indentifiant de la ligne.
 it: Identificativo della linea.
+pt: Identificador da linha.
 ru: Идентификатор линии
 sk: Identifikátor krivky.
 sq: identifikimi I rrjeshtit.
@@ -2377,9 +2836,11 @@ bg: Други опции на линията
 cz: Další volby pro křivku.
 de: Andere Linienoptionen.
 el: Άλλες επιλογές γραμμής. Δηλαδή για μη-εμφάνιση γραμμής γράφετε εδώ: -subtype invisible. Βλέπετε το thbook.pdf
-en: Other line options. I.e., to make line invisible, write here: -subtype invisible. See thbook.pdf
+en: Other line options. E.g., to make line invisible, write here: -subtype invisible. See thbook.pdf
 es: Otras opciones de línea. P. ej: para hacerla invisible, escribe: -subtype invisible (consultar thbook.pdf)
+fr: Autres options de ligne. I.e., pour afficher une ligne invisible, écrire ici : -subtype invisible. Se référer au thbook.pdf pour les autres options.
 it: Altre opzioni della linea.
+pt: Outras opções da linha.
 ru: Прочие опции линии
 sk: Ďalšie možnosti pre krivku.
 sq: opcionet tjera te rrjeshtit.
@@ -2390,9 +2851,11 @@ bg: Обърни линията
 cz: Obrátit křivku.
 de: Linie umkehren.
 el: Αναστροφή γραμμής. Σε περίπτωση που τα σημαδάκια είναι ανάποδα, κάντε κλικ εδώ.
-en: Reverse line. If symbol's ticks are on bad side, click here.
-es: Invertir línea. Si p.ej el símbolo de resalte aparece al revés, haz clic aquí.
+en: Reverse line. If symbol's ticks are on the wrong side, click here.
+es: Invertir línea. Si la marca de sentido del simbolo esta en el lado erroneo, haz clic aquí.
+fr: Inverser le sens de la ligne. Si la marque du sens est du mauvais côté, cliquer ici.
 it: Inverti la linea.
+pt: Inverter linha.
 ru: Задать обратное направление для линии.
 sk: Otočiť krivku.
 sq: rrjeshti I pasem-I kthyer
@@ -2404,8 +2867,10 @@ cz: Uzavřít křivku.
 de: Linie schließen.
 el: Κλείσιμο γραμμής
 en: Close line.
-es: Cerrar línea (o sea, unir último punto con el primero para definir un espacio cerrado).
+es: Cerrar línea.
+fr: Fermer la ligne.
 it: Chiudi la linea.
+pt: Fechar a linha.
 ru: Замкнуть линию на её же начало.
 sk: Uzavrieť krivku.
 sq: mbylle rrjeshtin.
@@ -2417,8 +2882,10 @@ cz: Vložení/smazání bodu křivky. Rozdělení křivky.
 de: Punkt auf Linie eingeben/löschen. Linie teilen.
 el: Εισαγωγή και διαγραφή σημείων γραμμής. Διαίρεση γραμμής.
 en: Insert/delete line point. Split line.
-es: Permite añadir o borrar puntos de la línea, o cortar la línea en dos.
+es: Añadir/borrar puntos de la línea. Dividir la línea en dos.
+fr: Insérer/Effacer le point de ligne. Diviser la ligne.
 it: Inserisci/rimuovi un punto della linea. Dividi la linea.
+pt: Inserir/apagar ponto da linha. Quebrar linha.
 ru: Вставка/удаление точки, разделение линии.
 sk: Vloženie/odstránenie bodu krivky. Rozdelenie krivky.
 sq: fute/fshije piken e rrjeshtit. Ndaje rrjeshtin.
@@ -2430,18 +2897,14 @@ cz: Aktualizuje křivku.
 de: Klicke diesen Knopf, um Linienänderungen anzuwenden.
 el: Κάντε κλικ για να γίνει εφαρμογή των αλλαγών στην γραμμή.
 en: Click this button to apply line changes.
-es: Clicar aquí tras modificar las propiedades de la línea.
+es: Clicar este botton para aplicar los cambios a la línea.
+fr: Cliquer ici pour appliquer les changements sur la ligne.
 it: Primi questo bottone per fare modifiche alla linea.
+pt: Aplicar as mudanças à linha atual.
 ru: Нажмите эту кнопку для применения изменений линии.
 sk: Aktualizuje krivku.
 sq: kliko kete buton te aktualizosh nderrimet e rrjeshtit.
 zh_CN: 点此按钮，应用线改动。
-
-therion: Trace line
-cz: Trasovat linii
-
-therion: Convert to curve
-cz: Přeměnit na křivku
 
 therion: Select line point.
 bg: Избери една от точките на линията.
@@ -2449,8 +2912,10 @@ cz: Výběr bodu křivky.
 de: Punkt auf Linie auswählen.
 el: Αυτά είναι τα επιλεγμένα σημεία γραμμών. Κάντε κλικ σε όποιο σας ενδιαφέρει για να εμφανιστεί ως επιλεγμένο στον καμβά.
 en: These are selected line points. Click on any to get it selected on canvas.
-es: Lista de puntos que forman esta línea. Clic para resaltar el punto en la topo.
+es: Estos son los puntos selecionados de la linea. Clicar en uno para seleccionarlo en el lienzo.
+fr: Ce sont les points de lignes sélectionnés. Cliquer sur l'un d'entre eu pour le sélectionner sur la topographie.
 it: Seleziona un punto della linea.
+pt: Selecione ponto da linha.
 ru: Выбрать одну из точек линии.
 sk: Výber bodu krivky.
 sq: selekto piken e rrjeshtit.
@@ -2462,8 +2927,10 @@ cz: nahrávám modul pro body křivky ...
 de: Lade Linienpunktmodul ...
 el: φόρτιση ενότητας σημείων γραμμών...
 en: loading line point module ...
-es: puntos de línea ...
+es: cargando modulo de puntos de línea ...
+fr: Chargement du module des points de ligne...
 it: caricando il modulo dei punti di linea ...
+pt: carregando módulo de pontos de linha...
 ru: загрузка модуля точек линии ...
 sk: nahrávam modul pre body krivky ...
 sq: duke lexuar modulin e pikes se rrjeshtit.
@@ -2476,7 +2943,9 @@ de: Position
 el: θέση
 en: position
 es: posición
+fr: position
 it: posizione
+pt: posição
 ru: позиция
 sk: poloha
 sq: pozicioni
@@ -2489,7 +2958,9 @@ de: Punktposition.
 el: Θέση σημείου
 en: Point position.
 es: Posición del punto.
+fr: Position du point.
 it: Posizione del punto.
+pt: Posição do ponto.
 ru: Позиция точки.
 sk: Poloha bodu.
 sq: pozicioni I pikes.
@@ -2502,7 +2973,9 @@ de: Punkt X-Koordinate.
 el: Συντεταγμένη Χ σημείου
 en: Point X coordinate.
 es: Coordenada X del punto.
+fr: Coordonnées Z du point.
 it: Coordinata X del punto.
+pt: Coordenada X do ponto.
 ru: X координата точки.
 sk: X súradnica bodu.
 sq: pika X e koordinates.
@@ -2514,8 +2987,10 @@ cz: souřadnice Y bodu.
 de: Punkt Y-Koordinate.
 el: Συντεταγμένη Υ σημείου
 en: Point Y coordinate.
-es: coordenada Y del punto.
+es: Coordenada Y del punto.
+fr: Coordonnées Y du point.
 it: Coordinata Y del punto.
+pt: Coordenada Y do ponto.
 ru: Y координата точки.
 sk: Y súradnica bodu.
 sq: pika Y e koordinates.
@@ -2528,7 +3003,9 @@ de: Vorherige X-Koordinate eines Kontrollpunkts.
 el: Συντεταγμένη Χ προηγούμενου σημείου ελέγχου
 en: Previous control point X coordinate.
 es: Coordenada X del punto de control anterior.
+fr: Coordonnée X du point de controle précédent.
 it: Coordinata X del punto di controllo precedente.
+pt: Coordenada X do ponto de controle anterior.
 ru: X координата предыдущей управляющей точки.
 sk: X súradnica predchádzajúceho kontrolného bodu.
 sq: pika e kontrollit te meparshem te koordinates X
@@ -2541,7 +3018,9 @@ de: Vorherige Y-Koordinate eines Kontrollpunkts.
 el: Συντεταγμένη Υ προηγούμενου σημείου ελέγχου
 en: Previous control point Y coordinate.
 es: Coordenada Y del punto de control anterior.
+fr: Coordonnée Y du point de controle précédent.
 it: Coordinata Y del punto di controllo precedente.
+pt: Coordenada Y do ponto de controle anterior.
 ru: Y координата предыдущей управляющей точки.
 sk: Y súradnica predchádzajúceho kontrolného bodu.
 sq: pika e kontrollit te meparshem te koordinates-Y
@@ -2554,7 +3033,9 @@ de: Nächste X-Koordinate eines Kontrollpunkts.
 el: Συντεταγμένη Χ επόμενου σημείου ελέγχου
 en: Next control point X coordinate.
 es: Coordenada X del siguiente punto de control.
+fr: Coordonnée Y du point de controle suivant
 it: Coordinata X del prossimo punto.
+pt: Coordenada X do ponto de controle posterior.
 ru: X координата следующей управляющей точки.
 sk: X súradnica nasledujúceho kontrolného bodu.
 sq: pika e ardhshme kontrollit te coordinates X
@@ -2567,7 +3048,9 @@ de: Nächste Y-Koordinate eines Kontrollpunkts.
 el: Συντεταγμένη Υ επόμενου σημείου ελέγχου
 en: Next control point Y coordinate.
 es: Coordenada Y del siguiente punto de control.
+fr: Coordonnée Y du point de controle suivant.
 it: Coordinata Y del prossimo punto.
+pt: Coordenada y do ponto de controle posterior.
 ru: Y координата следующей управляющей точки.
 sk: Y súradnica nasledujúceho kontrolného bodu.
 sq: pika e ardhshme kontrollit te coordinates Y
@@ -2580,7 +3063,9 @@ de: Auswahl, ob vorheriger Kontrollpunkt benutzt wird.
 el: Επιλογή για χρήση προηγούμενου σημείου ελέγχου
 en: Checkbox whether to use previous control point.
 es: Usar punto de control anterior.
+fr: Utiliser le point de controle précédent.
 it: Checkbox per usare il punto di controllo precedente.
+pt: Habilitar ponto de controle anterior.
 ru: Поставьте галочку для использования предыдущей управляющей точки.
 sk: Použi predchádzajúci kontrolný bod.
 sq: kutia-kontrollit a duhet te perdoret pika e kontrollit e meparshme
@@ -2591,9 +3076,11 @@ bg: Установете за изглаждане на линията в дад
 cz: Nastaví hladkou křivku v daném bodě.
 de: Setze Linie auf geglättet am gegebenen Punkt.
 el: Ορισμός απαλής καμπύλης στο επόμενο σημείο της γραμμής
-en: Set line to be smooth in given point.
+en: Set line to be smooth at given point.
 es: Suavizar la línea en el punto seleccionado.
+fr: Arrondi la ligne au point sélectionné.
 it: Imposta la linea ad essere regolare nelpunto specificato.
+pt: Forçar que a linha seja suave.
 ru: Установите для сглаживания линии в данной точке.
 sk: Nastaví kontrolné body tak, aby krivka bola v danom bode hladká.
 sq: vene rrjeshtin per te qene I bute ne piken e dhanun
@@ -2606,7 +3093,9 @@ de: Auswahl, ob nächster Kontrollpunkt benutzt wird.
 el: Επιλογή για χρήση επόμενου σημείου ελέγχου
 en: Checkbox whether to use next control point.
 es: Usar siguiente punto de control.
+fr: Utiliser le point de controle suivant.
 it: Checkbox per usare il prossimo punto di controllo.
+pt: Habilitar ponto de controle posterior.
 ru: Поставьте галочку для использования следующей управляющей точки.
 sk: Použi nasledujúci kontrolný bod.
 sq: kutia-kontrollit a duhet te perdoret pika e kontrollit e ardhshme
@@ -2618,8 +3107,10 @@ cz: Nastaví orientaci bodu.
 de: Setze Ausrichtung des Linienpunkts.
 el: Ορισμός προσανατολισμού σημείου γραμμής
 en: Set line point orientation.
-es: Ajustar dirección en que apunta un punto de la línea (p.ej una pendiente).
+es: Ajustar orientación del punto de la línea (p.ej una pendiente).
+fr: Ajuster l'orientation du point de la ligne (e.g. une pente).
 it: Imposta l'orientazione del punto della linea.
+pt: Definir uma orientação para este ponto da linha.
 ru: Установите ориентацию точки линии.
 sk: Nastaví orientáciu symbolov v bode krivky.
 sq: vene orientimin e pikes se rrjeshtit
@@ -2631,8 +3122,10 @@ cz: Zadejte orientaci bodu.
 de: Ausrichtung des Linienpunkts eingeben.
 el: Εισαγωγή προσανατολισμού σημείου γραμμής
 en: Enter line point orientation.
-es: Introducir dirección señalada por el punto.
+es: Introducir la orientación del punto de la linea.
+fr: Entrer l'orientation du point de ligne
 it: Scrivi l'orientazione del punto della linea.
+pt: Entre um ângulo (orientação) para este ponto da linha.
 ru: Введите ориентацию точки линии.
 sk: Zadaj orientáciu symbolov v bode krivky.
 sq: fute orientimin e pikes se rrjeshtit
@@ -2645,7 +3138,9 @@ de: r-Größe
 el: διάσταση (δ)
 en: r-size
 es: anchura-dcha
+fr: dimension-r
 it: dim. destra
+pt: tam. dir.
 ru: r-size
 sk: rozmer-p
 sq: r-madhesia
@@ -2658,7 +3153,9 @@ de: Setze Liniengröße nach rechts.
 el: Ορισμός διάστασης γραμμής προς τα δεξιά
 en: Set line size in right direction.
 es: Ajustar anchura de línea (lado derecho de la línea).
+fr: Ajuster l'épaisseur de la ligne (du côté droit de la ligne)
 it: Imposta la dimensione della linea a destra.
+pt: Definir o tamanho da linha na direção direita.
 ru: Установите размер линии в правом направлении.
 sk: Nastaví veľkosť symbolov napravo od krivky.
 sq: cakto madhesine e rrjeshtit ne drejtim te djathte
@@ -2671,7 +3168,9 @@ de: Liniengröße nach rechts eingeben.
 el: Εισαγωγή διάσταση γραμμής προς τα δεξιά
 en: Enter line size in right direction.
 es: Introducir anchura de línea (lado derecho de la línea).
+fr: Entrer la dimension du côté droit de la ligne.
 it: Scrivi la dimensione della linea a destra.
+pt: Entre o tamanho da linha na direção direita.
 ru: Введите размер линии в правом направлении.
 sk: Zadaj veľkosť symbolov napravo od krivky.
 sq: fute madhesine e rjeshtit ne drejtim te djathte
@@ -2684,7 +3183,9 @@ de: Setze Liniengröße nach links.
 el: Ορισμός διάστασης γραμμής προς τα αριστερά
 en: Set line size in left direction.
 es: Ajustar anchura de línea (lado izquierdo de la línea). El tipo slope necesita este valor.
+fr: Ajuster la taille de la ligne (gauche de la ligne). Le type \"pente\" nécessite cette valeur.
 it: Imposta la dimensione della linea a sinistra.
+pt: Definir o tamanho da linha na direção esqierda.
 ru: Установите размер линии в левом направлении.
 sk: Nastaví veľkosť symbolov naľavo od krivky.
 sq: cakto madhesine e rjeshtit ne drejtim te majte
@@ -2697,7 +3198,9 @@ de: Liniengröße nach links eingeben.
 el: Εισαγωγή διάσταση γραμμής προς τα αριστερά
 en: Enter line size in left direction.
 es: Introducir anchura de línea (lado izquierdo de la línea). El tipo slope necesita este valor.
+fr: Entrer la dimension gauche de la ligne. Le type \"pente\" nécessite cette valeur.
 it: Scrivi la dimensione della linea a sinistra.
+pt: Entre o tamanho da linha na direção esquerda.
 ru: Введите размер линии в левом направлении.
 sk: Zadaj veľkosť symbolov naľavo od krivky.
 sq: fute madhesine e rjeshtit ne drejtim te majte
@@ -2709,8 +3212,10 @@ cz: Volby bodu křivky.
 de: Linienpunktoptionen bearbeiten.
 el: Επεξεργαστής επιλογών σημείων γραμμών
 en: Line point options editor.
-es: Editor de puntos pertenecientes a la línea seleccionada. Consultar thbook.pdf
+es: Editor de opciones de puntos de linea. (Consultar thbook.pdf).
+fr: Editeur des options des points de ligne (voir le thbook.pdf).
 it: Editor delle opzioni del punto della linea.
+pt: Editor de opções de ponto de linha.
 ru: Редактор опций точки линии.
 sk: Editor ďalších možností bodu krivky.
 sq: opcioni I editimit te pikes se rjeshtit
@@ -2722,8 +3227,10 @@ cz: Aktualizovat bod křivky.
 de: Klicke diesen Knopf, um Änderungen am Linienpunkt anzuwenden.
 el: Πατήστε εδώ για να γίνει εφαρμογή των αλλαγών στο σημείο της γραμμής.
 en: Click this button to apply line point changes.
-es: Clicar tras modificar las propiedades de los puntos de una línea.
+es: Clicar para aplicar los cambios a los puntos de línea.
+fr: Cliquer ici pour appliquer les changements des points de ligne.
 it: Premi questo bottone per fare modifiche ai punti della linea.
+pt: Aplicar as mudanças ao ponto de linha atual.
 ru: Нажмите эту кнопку для применения изменений точки линии.
 sk: Aktializácia bodu krivky.
 sq: kliko kete buton per te bere ndrimet e pikes se rjeshtit
@@ -2735,8 +3242,10 @@ cz: Editor voleb bodu křivky.
 de: Edditor für Linienpunktoptionen.
 el: Εδώ μπορείτε να εισάγετε επιλογές για τα σημεία των γραμμών.
 en: Here you can enter options that will apply to line points.
-es: Aquí se pueden meter opciones que afectarán a los puntos de esta línea.
+es: Aquí se pueden entrar opciones que afectarán a los puntos de esta línea.
+fr: Ici sont entrées les options qui vont s'appliquer aux points de ligne.
 it: Editor delle opzioni del punto della linea.
+pt: Editor de opções de ponto de linha.
 ru: Редактор опций точки линии.
 sk: Editor ďalších možností bodu krivky.
 sq: ketu mund te futni opcionet te cilat do te vlejne per pikat e rrjeshtit
@@ -2748,8 +3257,10 @@ cz: nahrávám modul pro oblasti ...
 de: Lade Flächenmodul ...
 el: φορτίζεται η ενότητα επιφανειών...
 en: loading area module ...
-es: áreas...
+es: cargando el modulo de áreas...
+fr: chargement du module des aires...
 it: modulo aree ...
+pt: carregando módulo de área...
 ru: загрузка модуля областей ...
 sk: nahrávam modul pre plochy ...
 sq: duke lexuar modulin e fushes…
@@ -2759,8 +3270,11 @@ therion: Actual symbol theme.
 bg: Актуален набир на символи
 cz: Aktuální téma symbolů.
 de: Aktueller Symbolsatz.
-el: Σύμβολο
+el: Σύμβολο.
+es: Conjunto actual de símbolos.
+fr: thème actuel des symboles.
 it: Simboli.
+pt: Conjunto de símbolos atual.
 ru: Фильтр группы символов.
 sk: Aktuálna téma symbolov.
 sq: tema aktuale e simbolit.
@@ -2772,8 +3286,10 @@ cz: Typ oblasti.
 de: Flächentyp.
 el: Είδος επιφάνειας
 en: Area type (click on triangle to see menu).
-es: Tipo de área. Clic en triángulo para ver el menú.
+es: Tipo de área (clicar en triángulo para ver el menú).
+fr: Type d'aire (cliquer sur le triangle pour afficher le menu).
 it: Tipo dell'area
+pt: Tipo de área.
 ru: Тип области.
 sk: Typ plochy.
 sq: lloji I fushes.
@@ -2786,7 +3302,9 @@ de: Optionen
 el: επιλογές
 en: options
 es: opciones
+fr: options
 it: opzioni
+pt: opções
 ru: опции
 sk: možnosti
 sq: opcionet
@@ -2798,8 +3316,10 @@ cz: Další volby pro oblast.
 de: Andere Flächenoptionen.
 el: Άλλες επιλογές επιφανειών. Βλ. thbook.pdf
 en: Other area options. See thbook.pdf
-es: Otras opciones de área. Consultar thbook.pdf
+es: Otras opciones de área. (Consultar thbook.pdf).
+fr: Autres options des aires 'Consulter le thbook.pdf).
 it: Altre opzioni dell'area.
+pt: Outras opções de área.
 ru: Другие опции области.
 sk: Ďalšie možnosti plochy.
 sq: opcionet tjera te fushes.
@@ -2811,8 +3331,10 @@ cz: Vyber křivky
 de: Linien auswählen
 el: Επιλογή γραμμών
 en: Select lines
-es: Seleccionar
+es: Seleccionar líneas
+fr: Sélectionner les lignes
 it: Selezione linee
+pt: Selecione linhas
 ru: Выбор линий.
 sk: Vyber krivky
 sq: selekto rjeshtat
@@ -2821,10 +3343,13 @@ zh_CN: 选择线
 therion: Switch to insert line into area mode.
 bg: Превключи в режим поставяне на линии-граници в областта.
 cz: Výběr ohraničujících křivek oblasti.
+de: Linienselektion für Flächenauswahl umschalten.
 el: Αφού πατήστε εδώ, επιλέγετε με το ποντίκι τις γραμμές ορίων της επιφάνειας (πρέπει να τέμνονται)
-en: After clicking here, select by mouse this area border lines (they must intersect).
-es: Tras clicar aquí, con el ratón puedes seleccionar líneas que limiten un área (deben cortarse entre sí).
+en: After clicking here, select border lines for this area using the mouse (they must intersect).
+es: Tras clicar aquí, seleccionar con el ratón las líneas que limiten un área (deben cortarse entre sí).
+fr: Après avoir cliquer ici, sélectionnez à la souris les lignes qui vont délimiter l'aire. Elles doivent s'intercepter.
 it: Cambia per inserire linee nell'area.
+pt: Ative o modo de inserção de linhas
 ru: Переключится в режим вставки линий-границ в область.
 sk: Po stlačení môžete začať vkladať krivky ohraničujúce plochu.
 sq: pasi te klikoni ketu, selekto me mi rjeshtat e kufirit te fushes (ato duhet te nderlidhen)
@@ -2837,8 +3362,10 @@ de: Lösche ID aus Fläche.
 el: Διαγραφή ID από επιφάνεια
 en: Delete selected line from list (will not be part of area borders)
 es: Borrar la línea seleccionada de la lista (dejará de limitar este área).
+fr: Effacer de la liste la ligne sélectionnée (elle ne fera plus partie de la limite de l'aire).
 it: Rimuovi identificativo dall'area.
-ru: Удалить линию по ИД из области.
+pt: Remova ID da área.
+ru: Удалить линию по ID из области.
 sk: Odstrániť krivku z daným ID z plochy.
 sq: fshije ID prej fushes
 zh_CN: 从列表中删除给定的线（不属于区边界的部分）
@@ -2850,8 +3377,10 @@ de: ID einfügen
 el: Εισαγωγή ID
 en: Insert ID
 es: Insertar ID
+fr: Insérer ID
 it: Identificativo
-ru: Вставить по ИД
+pt: Inserir ID
+ru: Вставить по ID
 sk: Vlož ID
 sq: fute ID-ne
 zh_CN: 插入ID
@@ -2862,9 +3391,11 @@ cz: Vloží objekt s daným ID.
 de: Angegebene ID einfügen.
 el: Εισαγωγή ID άλλο από το προκαθορισμένο του Xtherion
 en: Insert given id instead of Xtherion default.
-es: Insertar nombre (ID) indicado, no el nombre que therion crea automáticamente
+es: Insertar un ID, en lugar del nombre que therion crea automáticamente
+fr: Insérer un ID au lieu de la valeur par défaut d'Xtherion.
 it: Inserisci l'identificativo specificato
-ru: Вставить линию-границу по заданному ИД.
+pt: Insira o id indicado.
+ru: Вставить линию-границу по заданному ID.
 sk: Vložiť ID krivky do zoznamu kriviek ohraničujúcich plochu.
 sq: fute ID-n e dhene ne vend te X-therion
 zh_CN: 插入指定的ID
@@ -2875,9 +3406,11 @@ cz: ID objektu ke vložení.
 de: einzufügende ID.
 el: Εισαγωγή ID.
 en: ID to insert.
-es: Escribir el nombre (ID) a insertar.
+es: ID a insertar.
+fr: ID à insérer.
 it: Identificativo da inserire.
-ru: ИД линии для вставки
+pt: ID a ser inserido.
+ru: ID линии для вставки
 sk: ID na vloženie.
 sq: ID-ja per tu futur.
 zh_CN: 插入的ID
@@ -2889,7 +3422,9 @@ de: Aktualisieren
 el: Εμημέρωση
 en: Update
 es: Actualizar
+fr: Actualiser
 it: Aggiorna
+pt: Atualizar
 ru: Обновить
 sk: Aktualizovať
 sq: aktualizo
@@ -2901,8 +3436,10 @@ cz: Aktualizace oblasti.
 de: Klicke diesen Knopf, um Änderungen an einer Fläche anzuwenden.
 el: Κάντε κλικ να γίνει εφαρμογή των αλλαγών που κάνατε στην επιφάνεια.
 en: Click this button to apply changes you made to area.
-es: Clicar aquí después de modificar las propiedades de un área.
+es: Clicar este boton para aplicar los cambios realizados al área.
+fr: Cliquer ici pour appliquer les modifications à l'aire.
 it: Premi questo bottone per fare modifiche all'area.
+pt: Aplicar as mudanças à área atual.
 ru: Нажмите эту кнопку для применения изменений сделанных для области.
 sk: Aktualizovať plochu.
 sq: kliko kete buton te aktualizosh ndrimet te cilat I ke bere ne fushe
@@ -2915,7 +3452,9 @@ de: Zeige
 el: Εμφάνιση
 en: Show
 es: Mostrar
+fr: Afficher
 it: Mostra
+pt: Mostrar
 ru: Показать
 sk: Zobraziť
 sq: trego
@@ -2928,7 +3467,9 @@ de: Zeige Flächenbegrenzungen.
 el: Εμφάνιση γραμμών ορίων επιφάνειας
 en: Show area border lines.
 es: Mostrar líneas límite de área.
+fr: Afficher les lignes limitant l'aire.
 it: Mostra le linee del bordo dell'area.
+pt: Mostrar as linhas limítrofes da área.
 ru: Показать линии-границы для области.
 sk: Zobraz hranice plochy.
 sq: trego kufirin e vijave te fushes.
@@ -2940,8 +3481,10 @@ cz: Výběr křivky ohraničující oblast
 de: Wähle Linie in Fläche.
 el: Κάντε κλικ σε οποιαδήποτε γραμμή του καταλόγου για να επιλεχθεί η αντίστοιχη γραμμή ορίου επιφάνειας στον καμβά.
 en: Click on any list line to get corresponding area border line selected on canvas.
-es: Cada renglón de la lista corresponde a una línea que limita esta área
+es: Clicar en cada renglón de la lista para seleccionar en el lienzo la línea de limite correspondiente.
+fr: Cliquer que n'importe quelle ligne listée pour sélectionner sur le canevas l'aire correspondante.
 it: Seleziona una linea nell'area.
+pt: Selecionar linha da área.
 ru: Выбор линии.
 sk: Vyber hraničnú krivku.
 sq: kliko ne cilindo rrjesht te listes qe te kesh rrjeshtin kufizues te fushes pershtatese, I zgjedhur ne pelhure
@@ -2953,11 +3496,13 @@ cz: nahrávám hlavní menu ...
 de: Lade Hauptmenü ...
 el: φόρτιση κύριου μενού
 en: loading main menu ...
-es: menú principal ...
+es: cargando el menú principal ...
+fr: chargement du menu principal...
 it: menù principale ...
+pt: carregando menu principal...
 ru: загрузка главного меню ...
 sk: nahrávam hlavné menu ...
-sq: duke lexuar menyn kryesore…
+sq: duke lexuar menyn kryesore...
 zh_CN: 主菜单载入中 ...
 
 therion: Open (no pics)
@@ -2967,7 +3512,9 @@ de: Öffne (keine Bilder)
 el: Άνοιγμα (χωρίς εικόνες)
 en: Open (no pics)
 es: Abrir (sin imágenes)
+fr: Ouvrir (sans images)
 it: Apri (no pics)
+pt: Abrir (menos imagens)
 ru: Открыть (без картинок)
 sk: Otvoriť (bez obrázkov)
 sq: hape (pa foto)
@@ -2980,10 +3527,12 @@ de: Einfügen ...
 el: Εισαγωγή...
 en: Insert ...
 es: Insertar ...
+fr: Insérer...
 it: Inserisci ...
-ru: Вставка
+pt: Inserir...
+ru: Вставка...
 sk: Vložiť ...
-sq: fute…
+sq: fute...
 zh_CN: 插入 ...
 
 therion: point
@@ -2993,7 +3542,9 @@ de: Punkt
 el: σημείο
 en: point
 es: punto
+fr: point
 it: punto
+pt: ponto
 ru: точка
 sk: bod
 sq: pika
@@ -3006,7 +3557,9 @@ de: Linie
 el: γραμμή
 en: line
 es: línea
+fr: ligne
 it: linea
+pt: linha
 ru: линия
 sk: krivku
 sq: vija apo rjeshti
@@ -3019,37 +3572,13 @@ de: Fläche
 el: επιφάνεια
 en: area
 es: área
+fr: aire
 it: area
+pt: área
 ru: область
 sk: plochu
 sq: fusha
 zh_CN: 区
-
-therion: scrap
-bg: скрап
-cz: scrap
-de: Skizze
-el: σκραπ
-en: scrap
-es: croquis
-it: scrap
-ru: скрап
-sk: scrap
-sq: deponia
-zh_CN: 草图
-
-therion: text
-bg: текст
-cz: text
-de: Text
-el: κείμενο
-en: text
-es: texto
-it: testo
-ru: текст
-sk: text
-sq: teksti
-zh_CN: 文本
 
 therion: Auto adjust area
 bg: Автоматична настройка на област
@@ -3057,8 +3586,10 @@ cz: Přizpůsobit plochu
 de: Fläche automatisch anpassen
 el: Αυτόματη ρύθμιση επιφάνειας
 en: Auto adjust area
-es: Autoajustar área
+es: Auto-ajustar área
+fr: Ajustement auto de l'aire
 it: Auto-ridimensiona area
+pt: Ajuste automático de área
 ru: Автоподгонка границ зоны рисования.
 sk: Prispôsob plochu
 sq: fusha automatikisht e pershtatur
@@ -3071,7 +3602,9 @@ de: Bild einfügen
 el: Εισαγωγή εικόνας
 en: Insert image
 es: Insertar imagen
+fr: insérer une image
 it: Inserisci immagine
+pt: Inserir imagem
 ru: Вставить изображение
 sk: Vložiť obrázok
 sq: fute imazhin
@@ -3079,14 +3612,23 @@ zh_CN: 插入图像
 
 therion: Hide inactive scraps
 cz: Skrýt neaktivní scrapy
+de: Inaktive Skizzen ausblenden
+es: Esconder trozos inactivos
+fr: Cacher les scraps inactifs
+pt: Esconder trechos inativos
+ru: Скрыть неактивные скрапы
+sk: Skryť neaktívne scrapy
 
 therion: Zoom 100 %
 bg: Мащаб 100%
 cz: Zoom 100 %
+de: Zoom 100%
 el: Μεγέθυνση 100%
 en: Zoom 100 %
 es: Zoom 100%
+fr: Zoom 100%
 it: Zoom 100 %
+pt: Zoom 100%
 ru: Масштаб 100 %
 sk: Zoom 100%
 sq: zmadho 100%
@@ -3099,7 +3641,9 @@ de: Mausmodus.
 el: Λειτουργία ποντικιού.
 en: Mouse mode.
 es: Modo ratón.
+fr: Mode souris.
 it: Modalità del mouse.
+pt: Modo do mouse.
 ru: Режим мыши.
 sk: Mód myši.
 sq: miu ne funkcion
@@ -3112,7 +3656,9 @@ de: Aktuelle Mausposition.
 el: Τρέχουσα θέση ποντικιού.
 en: Current mouse position.
 es: Posición actual del ratón.
+fr: Position actuelle de la souris.
 it: Posizione del mouse.
+pt: Posição atual do mouse.
 ru: Текущая позиция указателя мыши.
 sk: Aktuálna poloha myši.
 sq: pozicioni aktual I miut.
@@ -3121,23 +3667,28 @@ zh_CN: 当前鼠标位置
 therion: loading line procs ...
 bg: зареждане на процедурите за линия ...
 cz: zpracovávám křivky ...
+de: Lade Linienprozeduren ...
 el: φόρτιση γραμμικών διαδικασιών...
 en: loading line procs ...
-es: procesos de línea ...
+es: cargando procesos de línea ...
+fr: chargement des processus de ligne...
 it: procedure di linea ...
+pt: carregando procedimentos relacionados a linhas...
 ru: загрузка процедур для линий ...
 sk: načitavam modul kriviek ...
-sq: duke lexuar proceduren rjeshtit…
+sq: duke lexuar proceduren rjeshtit...
 zh_CN: 线程序载入中 ...
 
 therion: Map editor is not active. To activate it, open existing file or create new one.
 bg: Редактора на карти не е активен. За активиране отворете съществуващ файл или създайте нов.
 cz: Mapový editor není aktivní. Pro jeho aktivaci otevřete existující soubor nebo vytvořte nový.
-de: Karteneditor ist nicht aktiv. Um ihn zu aktivieren, lade eine existierende Datei oder lege eine neue an.
+de: Der Karteneditor ist nicht aktiv. Um ihn zu aktivieren, öffne eine bestehende Datei oder erzeuge eine neue.
 el: Ο επεξεργαστής σχεδίου δεν είναι ενεργός. Για να τον ενεργοποιήσετε, ανοίξτε ένα αρχείο ή δημιουργήστε νέο.
-en: Map editor is not active. To activate it, open existing file or create new one.
+en: Map editor is not active. To activate it, open an existing file or create a new one.
 es: El editor de mapas está inactivo. Para activarlo, abre un archivo existente o crea uno nuevo.
+fr: L'éditeur de cartes est inactif. Pour l'activer, ouvrez un fichier existant ou créez-en un nouveau.
 it: L'editor di mappa non è attivo. Per attivarlo apri un file o creane uno.
+pt: O editor de mapas não está ativo. Para ativá-lo, abra um arquivo existente ou crie um novo.
 ru: Редактор карты не активен. Для активации откройте существующий файл или создайте новый.
 sk: Mapový editor nie je aktívny. Otvorte existujúci súbor alebo vytvorte nový.
 sq: permiresuesi I hartes nuk eshte aktiv. Qe ta aktivizosh, hape fajlin egzistues ose krijo nje te ri
@@ -3150,7 +3701,9 @@ de: Linie einfügen
 el: Εισαγωγή γραμμής
 en: Insert line
 es: Insertar línea
+fr: Insérer une ligne
 it: Inserisci linea
+pt: Inserir linha
 ru: Вставить линию
 sk: Vložiť krivku
 sq: fute rjeshtin-vijen
@@ -3162,8 +3715,10 @@ cz: Vložit scrap
 de: Skizze einfügen
 el: Εισαγωγή σκραπ
 en: Insert scrap
-es: Insertar croquis
+es: Insertar trozo
+fr: Insérer un scrap
 it: Inserisci scrap
+pt: Inserir trecho
 ru: Вставить скрап
 sk: Vložiť scrap
 sq: fute deponin
@@ -3176,7 +3731,9 @@ de: Text einfügen
 el: Εισαγωγή κειμένου
 en: Insert text
 es: Insertar texto
+fr: Insérer du texte
 it: Inserisci testo
+pt: Inserir texto
 ru: Вставить текст
 sk: Vložiť text
 sq: fute tekstin
@@ -3189,7 +3746,9 @@ de: Fläche einfügen
 el: Εισαγωγή επιφάνειας
 en: Insert area
 es: Insertar área
+fr: Insérer une aire
 it: Inserisci area
+pt: Inserir área
 ru: Вставить область
 sk: Vložiť plochu
 sq: fute fushen
@@ -3202,7 +3761,9 @@ de: Lösche
 el: Διαγραφή
 en: Delete
 es: Borrar
+fr: Effacer
 it: Rimuovi
+pt: Apagar
 ru: Удалить
 sk: Odstrániť
 sq: fshije
@@ -3215,7 +3776,9 @@ de: lösche
 el: διαγραφή
 en: deleting
 es: borrando
+fr: effacement
 it: rimuovendo
+pt: apagando
 ru: удаление
 sk: mazanie
 sq: duke fshire
@@ -3227,8 +3790,10 @@ cz: přesun příkazu
 de: Verschiebebefehl
 el: εντολή μετακίνησης
 en: moving command
-es: desplazando comando
+es: commando de desplazamiento
+fr: commande de déplacement
 it: comando di spostamento
+pt: movendo elemento
 ru: перемещение команд
 sk: presun príkazu
 sq: komanda e levizjes
@@ -3240,9 +3805,11 @@ cz: vytvoření konce scrapu
 de: Erzeuge Skizzenende
 el: δημιουργία τέλους σκραπ (endscrap)
 en: creating endscrap
-es: creando línea final de croquis (endscrap)
+es: creando línea final de trozo (endscrap)
+fr: création de la ligne endscrap
 it: creazione endscrap
-ru: создание конца скрапа
+pt: criando endscrap (marca de fim de trecho)
+ru: создание окончания скрапа
 sk: vytvorenie konca scrapu
 sq: duke kriju fundin e deponise
 zh_CN: 创建草图收尾
@@ -3253,8 +3820,10 @@ cz: změna parametrů scrapu
 de: Skizzenänderung
 el: αλλαγές σκραπ
 en: scrap changes
-es: cambios del croquis (scrap)
+es: cambios del trozo (scrap)
+fr: modifications du scrap
 it: modifiche dello scrap
+pt: alterações no trecho
 ru: изменение скрапа
 sk: zmena parametrov scrapu
 sq: ndryshimet ne deponi
@@ -3266,8 +3835,10 @@ cz: vytvoření scrapu
 de: Erzeuge Skizze
 el: δημιουργία σκραπ
 en: creating scrap
-es: creando croquis (scrap)
+es: creando trozo (scrap)
+fr: création d'un scrap
 it: creazione scrap
+pt: criando trecho
 ru: создание скрапа
 sk: vytvorenie scrapu
 sq: duke kriju deponin
@@ -3280,7 +3851,9 @@ de: Erzeuge Text
 el: δημιουργία δοκιμής
 en: creating text
 es: creando texto
+fr: création du texte
 it: creazione testo
+pt: criando texto
 ru: создание текста
 sk: vytvorenie textu
 sq: duke kriju tekstin
@@ -3293,7 +3866,9 @@ de: Textänderungen
 el: αλλαγές κειμένου
 en: text changes
 es: cambios de texto
+fr: modification du texte
 it: modifiche del testo
+pt: alterações no texto
 ru: изменение текста
 sk: zmena textu
 sq: ndrimet e tekstit
@@ -3305,8 +3880,10 @@ cz: konec vkládání bodů
 de: Endpunkt eingefügt
 el: εισαγωγή τελικού σημείου
 en: end point insertion
-es: final de inserción de punto
+es: inserción de punto final
+fr: insertion du point final
 it: inserimento punto finale
+pt: inserção de ponto final
 ru: вставка конечной точки
 sk: koniec vkladania bodov
 sq: perfundo futjet e pikave
@@ -3317,7 +3894,10 @@ bg: избор на обект
 cz: označ objekt
 de: Objekt auswählen
 el: επιλογή αντικειμένου
+es: seleccionar objeto
+fr: sélectionner un objet
 it: seleziona oggetto
+pt: selecione objeto
 ru: выбор объекта
 sk: označ objekt
 sq: selekto objektin
@@ -3330,7 +3910,9 @@ de: Einfügen
 el: Εισαγωγή
 en: Insert
 es: Insertar
+fr: Insérer
 it: Inserisci
+pt: Inserir
 ru: Вставка
 sk: Vložiť
 sq: fute
@@ -3341,7 +3923,10 @@ bg: вмъкни точка
 cz: vlož bod
 de: Punkt einfügen
 el: εισαγωγή σημείου
+es: punto de inserción
+fr: point d'insertion
 it: inserisci punto
+pt: insira ponto
 ru: вставка точки
 sk: vlož bod
 sq: fute piken
@@ -3352,7 +3937,10 @@ bg: вмъкни точка от линия
 cz: vlož bod křivky
 de: Linienpunkt einfügen
 el: εισαγωγή σημείου γραμμής
+es: insertar punto de linea
+fr: Insérer un point de ligne
 it: inserisci punto di linea
+pt: insira ponto de linha
 ru: вставка точки линии
 sk: vlož bod krivky
 sq: fute piken e rjeshtit
@@ -3363,7 +3951,10 @@ bg: вмъкни граница на област
 cz: vlož hranici plochy
 de: Flächenrand einfügen
 el: εισαγωγή ορίων επιφάνειας
+es: insertar limite de área
+fr: insérer une limite d'aire
 it: inserisci bordo dell'area
+pt: insira limite de área
 ru: вставка границы области
 sk: vlož okraj plochy
 sq: fute kufirin e fushes
@@ -3376,7 +3967,9 @@ de: Auswählen
 el: Επιλογή
 en: Select
 es: Seleccionar
+fr: Sélectionner
 it: Seleziona
+pt: Selecione
 ru: Выбор
 sk: Vybrať
 sq: selekto
@@ -3387,7 +3980,10 @@ bg: мащабиране на скрап
 cz: měřítko scrapu
 de: Skizze skalieren
 el: αλλαγή κλίμακα σκραπ
+es: dimensionar el trozo
+fr: redimensionner le scrap
 it: riscala lo scrap
+pt: dimensionar trecho
 ru: масштабирование скрапа
 sk: mierka scrapu
 sq: deponia e matjeve
@@ -3398,7 +3994,10 @@ bg: вмъкване на скица
 cz: vlož náčrtek
 de: Skizze einfügen
 el: εισαγωγή σχεδίου
+es: insertar croquis
+fr: insérer un croquis
 it: inserisci disegno
+pt: insira croqui
 ru: вставка фона
 sk: vlož náčrtok
 sq: fute skicen
@@ -3411,7 +4010,9 @@ de: Punkt erzeugen
 el: δημιουργία σημείου
 en: creating point
 es: creando punto
+fr: création d'un point
 it: creazione punto
+pt: criando ponto
 ru: создание точки
 sk: vytvorenie bodu
 sq: duke kriju piken
@@ -3424,7 +4025,9 @@ de: Flächenänderungen
 el: αλλαγές επιφανειών
 en: area changes
 es: cambios de área
+fr: modification de l'aire
 it: modifiche di area
+pt: alterações na área
 ru: изменение области
 sk: zmena parametrov plochy
 sq: ndrimet e fushes
@@ -3437,7 +4040,9 @@ de: Punktänderungen
 el: αλλαγές σημείων
 en: point changes
 es: cambios de punto
+fr: modification du point
 it: modifiche di punto
+pt: alterações no ponto
 ru: изменение точки
 sk: zmena parametrov bodu
 sq: ndrimet e pikes
@@ -3448,7 +4053,10 @@ bg: Не е вмъкната скица в скрапа.
 cz: Náčrtek nebyl vložen.
 de: Skizze nicht eingefügt.
 el: δεν εισήχθη σχέδιο σκραπ
+es: Croquis de trozo no insertado
+fr: Croquis du scrap non inséré.
 it: Disegno non inerito.
+pt: Croqui não foi inserido no trecho.
 ru: Фон скрапа не вставлен.
 sk: Náčrtok nebol vložený.
 sq: skica e deponise nuk eshte futur
@@ -3459,7 +4067,9 @@ bg: вмъкване на скица в скрапа
 cz: vkládám náčrtek
 de: Füge Skizze ein
 el: εισαγωγή σχεδίου σκραπ
+es: insertando croquis de trozo
 it: inserimento disegno
+pt: inserindo croqui no trecho
 ru: вставка фона скрапа
 sk: vloženie náčrtku
 sq: duke future skicen e deponise
@@ -3470,41 +4080,102 @@ bg: изтриване на скица от скрапа
 cz: odstraňuji náčrtek
 de: Lösche Skizze
 el: διαγραφή σχεδίου σκραπ
+es: borrando croquis de trozo
+fr: effacement du croquis de scrap
 it: rimozione disegno
+pt: apagando croqui do trecho
 ru: удаление фона скрапа
 sk: odstránenie náčrtku
 sq: duke fshire skicen e deponise
 zh_CN: 删除草图素描
 
-therion: on"] -variable xth(me,ctrl,ctx,clip) -value "on
+therion: on
+de: an
+es: on
+fr: on
+pt: sim
+ru: вкл
+sk: on
 
-therion: off"] -variable xth(me,ctrl,ctx,clip) -value "off
+therion: off
+de: aus
+es: off
+fr: off
+pt: não
+ru: выкл
+sk: off
 
-therion: on"] -variable xth(me,ctrl,ctx,visibility) -value "on
+therion: tiny (xs)
+de: winzig (xs)
+es: diminuto (xs)
+fr: minuscule (xs)
+pt: ínfimo (pp)
+ru: оч.маленький (xs)
+sk: XS
 
-therion: off"] -variable xth(me,ctrl,ctx,visibility) -value "off
+therion: small (s)
+de: klein (s)
+es: pequeño (s)
+fr: petit (s)
+pt: pequeno (p)
+ru: маленький (s)
+sk: S
 
-therion: top"] -variable xth(me,ctrl,ctx,place) -value "top
+therion: normal (m)
+de: normal (m)
+es: normal (m)
+fr: normal (m)
+pt: normal (m)
+ru: нормальный (m)
+sk: M
 
-therion: bottom"] -variable xth(me,ctrl,ctx,place) -value "bottom
+therion: large (l)
+de: groß (l)
+es: grande (l)
+fr: grand (l)
+pt: grande (g)
+ru: большой (l)
+sk: L
 
-therion: tiny (xs)"] -variable xth(me,ctrl,ctx,scale) -value "xs
+therion: huge (xl)
+de: riesig (xl)
+es: enorme (xl)
+fr: énorme (xl)
+pt: enorme (xl)
+ru: оч.большой (xl)
+sk: XL
 
-therion: small (s)"] -variable xth(me,ctrl,ctx,scale) -value "s
+therion: out
+de: außen
+es: fuera
+fr: a l'extérieur
+pt: fora
+ru: наружный
+sk: vonkajší
 
-therion: normal (m)"] -variable xth(me,ctrl,ctx,scale) -value "m
+therion: in
+de: innen
+es: dentro
+fr: à l'intérieur
+pt: dentro
+ru: внутренний
+sk: vnútorný
 
-therion: large (l)"] -variable xth(me,ctrl,ctx,scale) -value "l
-
-therion: huge (xl)"] -variable xth(me,ctrl,ctx,scale) -value "xl
-
-therion: out"] -variable xth(me,ctrl,ctx,outline) -value "out
-
-therion: in"] -variable xth(me,ctrl,ctx,outline) -value "in
-
-therion: none"] -variable xth(me,ctrl,ctx,outline) -value "none
+therion: none
+de: kein
+es: ninguno
+fr: aucun
+pt: nenhum
+ru: нет
+sk: žiadny
 
 therion: <<
+de: <<
+es: <<
+fr: <<
+pt: <<
+ru: <<
+sk: <<
 
 therion: smooth
 bg: изглаждане
@@ -3513,15 +4184,54 @@ de: geglättet
 el: απαλή
 en: smooth
 es: suavizar
+fr: arrondir
 it: regolarizza
+pt: suave
 ru: сгладить
 sk: vyhladiť
 sq: e bute
 zh_CN: 平滑
 
 therion: >>
+de: >>
+es: >>
+fr: >>
+pt: >>
+ru: >>
+sk: >>
 
-therion: auto"] -variable xth(me,ctrl,ctx,altitude) -value ".
+therion: Trace line
+bg: Проследяване от картината
+cz: Trasovat linii
+de: Linie verfolgen
+en: Trace line
+es: Trazar línea
+fr: Tracer la ligne
+pt: Traçar linha
+ru: Проследить линию
+sk: Oklikať čiaru
+
+therion: Convert to curve
+bg: Конвертиране в Безие
+cz: Konvertovat na křivku
+de: In Kurve umwandeln
+en: Convert to curve
+es: Convertir a curva
+fr: Convertir la ligne en courbes
+pt: Converter em curva
+ru: Конвертировать в кривую
+sk: Konvertovať na krivku
+
+therion: Simplify line
+bg: Опростяване на линия
+cz: Zjednodušit linii
+de: Line vereinfachen
+en: Simplify line
+es: Simplicar línea
+fr: Simplifier la ligne
+pt: Simplificar
+ru: Упростить линию
+sk: Zjednodušiť
 
 therion: edit
 bg: редактиране
@@ -3530,7 +4240,9 @@ de: bearbeiten
 el: διόρθωση
 en: edit
 es: editar
+fr: editer
 it: edita
+pt: editar
 ru: редактировать
 sk: upraviť
 sq: permireso
@@ -3543,7 +4255,9 @@ de: Höhe
 el: Υψόμετρο
 en: Altitude
 es: Altitud
+fr: Altitude
 it: Quota
+pt: Altitude
 ru: Высота
 sk: Nadmorská výška
 zh_CN: 海拔
@@ -3555,7 +4269,9 @@ de: OK
 el: ΟΚ
 en: OK
 es: OK
+fr: OK
 it: OK
+pt: OK
 ru: УСПЕХ
 sk: OK
 sq: ne rregull-O.K.
@@ -3563,25 +4279,205 @@ zh_CN: 成功
 
 therion: Cancel
 cz: Zrušit
+de: Abbruch
+es: Cancelar
+fr: Annuler
+pt: Cancelar
+ru: Отмена
+sk: Zrušiť
 
-therion: painted"] -variable xth(me,ctrl,ctx,subtype) -value "painted
+therion: painted
+de: gefärbt
+es: pintada
+fr: Paint
+pt: pintada
+ru: нарисованный
+sk: namaľovaný
 
-therion: natural"] -variable xth(me,ctrl,ctx,subtype) -value "natural
+therion: natural
+de: natürlich
+es: natural
+fr: naturel
+pt: natural
+ru: естественный
+sk: prírodný
 
-therion: fixed"] -variable xth(me,ctrl,ctx,subtype) -value "fixed
+therion: fixed
+de: fixiert
+es: fija
+fr: fixe
+pt: fixa
+ru: репер
+sk: fixovaný
 
-therion: winter"] -variable xth(me,ctrl,ctx,subtype) -value "winter
+therion: winter
+de: Winter
+es: invierno
+fr: hiver
+pt: inverno
+ru: зима
+sk: zimný
 
-therion: summer"] -variable xth(me,ctrl,ctx,subtype) -value "summer
+therion: summer
+de: Sommer
+es: verano
+fr: été
+pt: verão
+ru: лето
+sk: letný
 
-therion: undefined"] -variable xth(me,ctrl,ctx,subtype) -value "undefined
+therion: undefined
+de: undefiniert
+es: indefinido
+fr: indéfini
+pt: indefinido
+ru: не определено
+sk: nedefinovaný
 
-therion: paleo"] -variable xth(me,ctrl,ctx,subtype) -value "paleo
+therion: paleo
+de: paleo
+es: paleo
+fr: paléo
+pt: paleo
+ru: палео
+sk: paleo
+
+therion: top
+de: oben
+es: superior
+fr: supérieur (top)
+pt: topo
+ru: сверху
+sk: hore
+
+therion: top-right
+de: oben rechts
+es: superior derecha
+fr: supérieur-droit (top-right)
+pt: topo-direita
+ru: сверху-справа
+sk: vpravo-hore
+
+therion: top-left
+de: oben links
+es: superior izquierda
+fr: supérieur-gauche (top-left)
+pt: topo-esquerda
+ru: сверху-слева
+sk: vľavo-hore
+
+therion: bottom
+de: unten
+es: inferior
+fr: inférieur (bottom)
+pt: fundo
+ru: снизу
+sk: dole
+
+therion: bottom-right
+de: unten rechts
+es: inferior derecha
+fr: inférieur-droit (bottom-right)
+pt: fundo-direita
+ru: снизу-справа
+sk: vpravo-dole
+
+therion: bottom-left
+de: unten links
+es: inferior izquierda
+fr: inférieur gauche (bottom-left)
+pt: fundo-esquerda
+ru: снизу-слева
+sk: vľavo-dole
+
+therion: center
+de: mitte
+en_GB: centre
+es: centro
+fr: centre
+pt: centro
+ru: по центру
+sk: stred
+
+therion: right
+de: rechts
+es: derecha
+fr: droit
+pt: direita
+ru: справа
+sk: vpravo
+
+therion: left
+de: links
+es: izquierda
+fr: gauche
+pt: esquerda
+ru: слева
+sk: vľavo
+
+therion: auto
+de: automatisch
+es: auto
+fr: auto
+pt: auto
+ru: авто
+sk: automaticky
+
+therion: align
+de: Anordnung
+es: alinear
+fr: aligner
+pt: alinhar
+ru: выровнить
+sk: zarovnanie
+
+therion: name
+de: Name
+es: nombre
+fr: nom
+pt: nome
+ru: номер
+sk: meno
 
 therion: Station name
 cz: Název bodu
+de: Messpunktname
+es: nombre de estación
+fr: nom de la station topo
+pt: Nome da base
+ru: Номер пикета
+sk: Meno bodu
+
+therion: scrap
+bg: скрап
+cz: scrap
+de: Skizze
+el: σκραπ
+en: scrap
+es: trozo
+fr: scrap
+it: scrap
+pt: trecho
+ru: скрап
+sk: scrap
+sq: deponia
+zh_CN: 草图
 
 therion: Scrap reference
+de: Skizzenreferenz
+es: Referencia del trozo
+fr: Référence du scrap
+pt: Referência do trecho
+ru: Привязка скрапа
+sk: Odkaz na scrap
+
+therion: value
+de: Wert
+es: valor
+fr: valeur
+pt: valor
+ru: значение
+sk: hodnota
 
 therion: type
 bg: тип
@@ -3590,57 +4486,205 @@ de: Typ
 el: είδος
 en: type
 es: tipo
+fr: type
 it: tipo
+pt: tipo
 ru: тип
 sk: typ
 sq: lloji
 zh_CN: 类型
 
-therion: bedrock"] -variable xth(me,ctrl,ctx,subtype) -value "bedrock
+therion: bedrock
+de: Fels
+es: roca madre
+fr: roche
+pt: rocha matriz
+ru: коренная порода
+sk: masív
 
-therion: underlying"] -variable xth(me,ctrl,ctx,subtype) -value "underlying
+therion: underlying
+de: Unterlagernd
+es: inferior
+fr: inférieur
+pt: inferior
+ru: нижележащий
+sk: ležiaci pod
 
-therion: overlying"] -variable xth(me,ctrl,ctx,subtype) -value "overlying
+therion: overlying
+de: Überlagernd
+es: superior
+fr: superieur
+pt: superior
+ru: вышележащий
+sk: ležiaci nad
 
-therion: unsurveyed"] -variable xth(me,ctrl,ctx,subtype) -value "unsurveyed
+therion: unsurveyed
+de: Unvermessen
+es: no topografiada
+fr: non topographié
+pt: não explorado
+ru: неотснято
+sk: nezameraný
 
-therion: pit"] -variable xth(me,ctrl,ctx,subtype) -value "pit
+therion: pit
+de: Schacht
+es: pozo
+fr: puits
+pt: poço
+ru: колодец
+sk: priepasť
 
-therion: sand"] -variable xth(me,ctrl,ctx,subtype) -value "sand
+therion: sand
+de: Sand
+es: arena
+fr: sable
+pt: areia
+ru: песок
+sk: piesok
 
-therion: clay"] -variable xth(me,ctrl,ctx,subtype) -value "clay
+therion: clay
+de: Lehm
+es: arcilla
+fr: argille
+pt: lama/argila
+ru: глина
+sk: blato
 
-therion: pebbles"] -variable xth(me,ctrl,ctx,subtype) -value "pebbles
+therion: pebbles
+de: Kies
+es: cantos rodados
+fr: galets
+pt: seixos
+ru: галька
+sk: okrúhliaky
 
-therion: debris"] -variable xth(me,ctrl,ctx,subtype) -value "debris
+therion: debris
+de: Schutt
+es: derrubios
+fr: débris
+pt: escombros
+ru: щебень
+sk: štrk
 
-therion: blocks"] -variable xth(me,ctrl,ctx,subtype) -value "blocks
+therion: blocks
+de: Blöcke
+es: bloques
+fr: blocs
+pt: blocos
+ru: глыбы
+sk: bloky
 
-therion: ice"] -variable xth(me,ctrl,ctx,subtype) -value "ice
+therion: ice
+de: Eis
+es: hielo
+fr: glace
+pt: gelo
+ru: лед
+sk: ľad
 
-therion: flowstone"] -variable xth(me,ctrl,ctx,subtype) -value "flowstone
+therion: flowstone
+de: Sinter
+es: colada
+fr: coulée de calcite
+pt: escorrimento
+ru: натеки
+sk: sinter
 
-therion: moonmilk"] -variable xth(me,ctrl,ctx,subtype) -value "moonmilk
+therion: moonmilk
+de: Bergmilch
+es: mondmilch
+fr: mondmilch
+pt: leite de lua
+ru: лунное молоко
+sk: mäkký sinter
 
-therion: visible"] -variable xth(me,ctrl,ctx,subtype) -value "visible
+therion: visible
+de: sichtbar
+es: visible
+fr: visible
+pt: visível
+ru: видимый
+sk: viditeľný
 
-therion: invisible"] -variable xth(me,ctrl,ctx,subtype) -value "invisible
+therion: invisible
+de: unsichtbar
+es: invisible
+fr: invisible
+pt: invisível
+ru: невидимый
+sk: neviditeľný
 
-therion: temporary"] -variable xth(me,ctrl,ctx,subtype) -value "temporary
+therion: temporary
+de: temporär
+es: temporal
+fr: temporaire
+pt: temporária
+ru: временный
+sk: dočasný
 
-therion: presumed"] -variable xth(me,ctrl,ctx,subtype) -value "presumed
+therion: presumed
+de: vermutet
+es: presunta
+fr: présumé
+pt: presumida
+ru: предпологаемый
+sk: predpokladaný
 
-therion: permanent"] -variable xth(me,ctrl,ctx,subtype) -value "permanent
+therion: permanent
+de: dauerhaft
+es: permanente
+fr: permanent
+pt: permanente
+ru: постоянный
+sk: permanentný
 
-therion: intermittent"] -variable xth(me,ctrl,ctx,subtype) -value "intermittent
+therion: intermittent
+de: zeitweise
+es: intermitente
+fr: intermittent
+pt: intermitente
+ru: периодический
+sk: občasný
 
-therion: conjectural"] -variable xth(me,ctrl,ctx,subtype) -value "conjectural
+therion: conjectural
+de: mutmaßlich
+es: supuesto
+fr: suposé
+pt: suposta
+ru: предпологаемый
+sk: predpokladaný
 
-therion: cave"] -variable xth(me,ctrl,ctx,subtype) -value "cave
+therion: cave
+de: Höhle
+es: subterránea
+fr: grotte
+pt: subterrânea
+ru: пещера
+sk: jaskyňa
 
-therion: surface"] -variable xth(me,ctrl,ctx,subtype) -value "surface
+therion: surface
+de: Oberfläche
+es: superficie
+fr: superficie
+pt: superfície
+ru: поверхность
+sk: povrch
+
+therion: subtype
+de: Subtyp
+es: subtipo
+fr: sous-type
+pt: subtipo
+ru: подтип
+sk: podtyp
 
 therion: control points
+de: Kontrollpunkte
+es: puntos de control
+fr: point de controle
+pt: pontos de controle
+ru: контрольные точки
+sk: kontrolné body
 
 therion: orientation
 bg: ориентация
@@ -3649,7 +4693,9 @@ de: Ausrichtung
 el: προσανατολισμός
 en: orientation
 es: orientación
+fr: orientation
 it: orientazione
+pt: orientação
 ru: ориентация
 sk: orientácia
 sq: orientimi
@@ -3662,18 +4708,89 @@ de: l-Größe
 el: διάσταση (α)
 en: l-size
 es: anchura-izda
+fr: dimension gauche (l-size)
 it: dim. sinistra
+pt: tam. esq.
 ru: l-size
 sk: rozmer-ľ
 sq: madhesia-l
 zh_CN: l-大小
 
 therion: segment subtype
+de: Segment Subtyp
+es: subtipo de segmento
+fr: sous-type de segment
+pt: subtipo do segmento
+ru: подтип сегмента
+sk: podtyp segmentu
+
+therion: altitude
+de: Höhe
+es: altitud
+fr: altitude
+pt: altitude
+ru: альтитуда
 
 therion: altitude label
+de: Höhenmarkierung
+es: etiqueta de altitud
+fr: étiquette d'altitude
+pt: indicador de altitude
+ru: отметка высоты
+sk: nadmorská výška
+
+therion: outline
+de: Umriss
+es: contorno
+fr: contour
+pt: contorno
+ru: контур
+sk: obrys
+
+therion: text
+bg: текст
+cz: text
+de: Text
+el: κείμενο
+en: text
+es: texto
+fr: texte
+it: testo
+pt: texto
+ru: текст
+sk: text
+sq: teksti
+zh_CN: 文本
+
+therion: clip
+de: Beschneiden
+es: enmascarar
+fr: clip
+pt: mascarar
+ru: обрезка
+sk: orezanie
 
 therion: other options
 cz: další možnosti
+de: weitere Optionen
+es: otras opciones
+fr: autres options
+pt: outras opções
+ru: другие опции
+sk: ostatné možnosti
+
+therion: place
+de: Platzierung
+es: posición
+fr: position
+pt: local
+ru: местопложение
+
+therion: scale
+de: Maßstab
+es: escalar
+pt: tamanho
+ru: размер
 
 therion: Edit line
 bg: Редактирай линия
@@ -3681,8 +4798,10 @@ cz: Editovat
 de: Linie bearbeiten
 el: Επεξεργασία γραμμής
 en: Edit line
-es: Editar
+es: Editar línea
+fr: Editer la ligne
 it: Edita
+pt: Editar linha
 ru: Править линию
 sk: Upraviť
 sq: permireso rrjeshtin
@@ -3695,7 +4814,9 @@ de: schließen
 el: κλείσιμο
 en: close
 es: cerrar
+fr: fermer
 it: chiudi
+pt: fechar
 ru: замкнуть
 sk: zavrieť
 sq: mbylle
@@ -3708,16 +4829,30 @@ de: Umkehren
 el: αναστροφή
 en: reverse
 es: invertir
+fr: inverser
 it: inverti
+pt: inverter
 ru: обратная
 sk: otočiť
 sq: ktheje pas
 zh_CN: 反向
 
 therion: Select underlying point
+de: Unterlagernden Punkt auswählen
+es: Seleccionar punto inferior
+fr: Sélectionner le point inférieur
+pt: Selecionar o ponto inferior
+ru: Выбрать нижележащую точку
+sk: Vyber bod ležiaci pod
 
 therion: Delete symbol
 cz: Smazat symbol
+de: Symbol entfernen
+es: Borrar símbolo
+fr: Effacer le symbole
+pt: Apagar símbolo
+ru: Удалить символ
+sk: Odstráň symbol
 
 therion: toggle image visibility
 bg: превключване на видимостта на изображение
@@ -3726,7 +4861,9 @@ de: Bildsichtbarkeit umschalten
 el: αλλαγή ορατότητας εικόνας
 en: toggle image visibility
 es: Cambiar visibilidad de la imagen
+fr: Modifier la visibilité de l'image
 it: cambia visibilità immagine
+pt: inverter visibilidade da imagem
 ru: переключение видимости изображения
 sk: prepni viditeľnosť obrázku
 sq: shikueshmeria e toggle-imazhit
@@ -3739,7 +4876,9 @@ de: Gitterweite - %s
 el: πλέγμα - μέγεθος %s
 en: grid - spacing %s
 es: anchura cuadrícula %s
+fr: grille - espacement %s
 it: reticolato - passo %s
+pt: grade - espaçamento %s
 ru: сетка - шаг %s
 sk: sieť - rozostupy %s
 sq: %s hapesira e katroreve
@@ -3752,7 +4891,9 @@ de: Messpunkt - %s
 el: σημείο χαρτογράφησης - %s
 en: station - %s
 es: estación %s
+fr: station topo - %s
 it: caposaldo - %s
+pt: base - %s
 ru: пикет - %s
 sk: měračský bod - %s
 sq: stacioni - %s
@@ -3765,11 +4906,18 @@ de: Neue *.th2-Datei muss gespeichert werden, bevor ein Hintergrundbild eingefü
 el: Το νέο αρχείο *.th2 πρέπει να αποθηκευτεί πριν εισαχθεί εικόνα φόντου. Αποθήκευση τώρα;
 en: New *.th2 file needs to be saved before inserting background image. Save it now?
 es: Hay que guardar el nuevo archivo .th2 antes de cargar una imagen de fondo. ¿Guardar ahora?
+fr: Un nouveau fichier *.th2 soit être enregistré avant de pouvoir charger une image de fond. L'enregistrer maintenant ?
 it: Il nuovo file *.th2 deve essere salvato prima di inserire immagini di background. Salvala ora?
+pt: Novo arquivo *.th2 precisa ser salvo antes que possa receber uma imagem de fundo. Salvá-lo agora?
 ru: Новый *.th2 файл нуждается в сохранении перед вставкой фонового изображения. Записать сейчас?
 sk: Pred vložením obrázku musíte nový *.th2 súbor uložiť. Chcete tak urobiť?
 sq: arkivi I ri *.th2 duhet te ruhet para se te futet imazhi I prapavise.Te ruhet tani?
 zh_CN: 插入底图前，须存储新的*.th2文件。要存储吗？
+
+therion: Unable to load image file.\n(Progressive JPEG encoding?)
+es: Imposible cargar el archivo de imagen. \n(JPEG con codificación progresiva?)
+fr: Impossible de charger l'image.\n(JPEG avec un encodage progressif ?)
+pt: Erro ao ler arquivo de imagem.\n(JPEG com codificação progressiva?)
 
 therion: inserting image
 bg: вмъкване на изображение
@@ -3778,7 +4926,9 @@ de: Bild einfügen
 el: εισαγωγή εικόνας
 en: inserting image
 es: insertando imagen
+fr: insertion de l'image
 it: inserimento immagine
+pt: inserindo imagem
 ru: вставка изображения
 sk: vkladám obrázok
 sq: duke futur imazhin
@@ -3791,7 +4941,9 @@ de: Bild entfernen
 el: διαγραφή εικόνας
 en: removing image
 es: eliminando imagen
+fr: enlèvement de l'image
 it: rimozione immagine
+pt: removendo imagem
 ru: удаление изображения
 sk: odstránenie obrázku
 sq: duke hequr imazhin
@@ -3804,7 +4956,9 @@ de: Bild verschieben
 el: μετακίνηση εικόνας
 en: moving image
 es: moviendo imagen
+fr: déplacement de l'image
 it: spostamento immagine
+pt: movendo imagem
 ru: перемещение изображения
 sk: posun obrázku
 sq: duke levizur imazhin
@@ -3816,8 +4970,10 @@ cz: gamma korekce
 de: Gammakorrektur
 el: gamma correction
 en: gamma correction
-es: corección gamma
+es: corrección gamma
+fr: correction gamma
 it: gamma
+pt: correção gamma
 ru: коррекция гаммы
 sk: gamma korekcia
 sq: korekcioni gamma
@@ -3830,7 +4986,9 @@ de: Punkt einfügen
 el: Εισαγωγή σημείου
 en: Insert point
 es: Insertar punto
+fr: Insérer un point
 it: Inserisci punto
+pt: Inserir ponto
 ru: Вставить точку
 sk: Vložiť bod
 sq: fute piken
@@ -3843,7 +5001,9 @@ de: Punkt löschen
 el: Διαγραφή σημείου
 en: Delete point
 es: Borrar punto
+fr: Effacer un point
 it: Rimuovi
+pt: Apagar ponto
 ru: Удалить точку
 sk: Odstrániť bod
 sq: fshije piken
@@ -3856,26 +5016,13 @@ de: Linie teilen
 el: Διαίρεση γραμμής
 en: Split line
 es: Cortar línea
+fr: Couper une ligne
 it: Dividi
+pt: Quebrar linha
 ru: Разделить линию
 sk: Rozdeliť krivku
 sq: ndaje rjeshtin-vijen
 zh_CN: 分割点
-
-therion: Trace line
-bg: Проследяване от картината
-cz: Trasovat linii
-en: Trace line
-
-therion: Convert to curve
-bg: Конвертиране в Безие
-cz: Konvertovat na křivku
-en: Convert to curve
-
-therion: Simplify line
-bg: Опростяване на линия
-cz: Zjednodušit linii
-en: Simplify line
 
 therion: deleting line point
 bg: Изтрий точка от линията
@@ -3884,7 +5031,9 @@ de: Linienpunkt löschen
 el: διαγραφή σημείου γραμμής
 en: deleting line point
 es: borrando punto de línea
+fr: Effacer le point de ligne
 it: rimozione punto di linea
+pt: apagando ponto de linha
 ru: Удалить точку линии
 sk: mazanie bodu na čiare
 sq: duke fshire piken e rjeshtit-vijes
@@ -3897,7 +5046,9 @@ de: Flächenrand einfügen
 el: εισαγωγή ορίου επιφάνειας
 en: inserting area border
 es: insertando límite de área
+fr: insérer une limite d'aire
 it: inserimento bordo area
+pt: inserindo limite de área
 ru: вставка границы области
 sk: vloženie okraja plochy
 sq: duke future kufirin e fushes
@@ -3910,7 +5061,9 @@ de: Flächenrand löschen
 el: όριο επιφάνειας
 en: deleting area border
 es: borrando límite de área
+fr: effacer une limite d'aire
 it: rimozione bordo area
+pt: apagando limite de área
 ru: удаление границы области
 sk: mazanie okraja plochy
 sq: duke fshire kufirin e fushes
@@ -3923,7 +5076,9 @@ de: Fläche erzeugen
 el: δημιουργία επιφάνειας
 en: creating area
 es: creando área
+fr: création d'une aire
 it: creazione area
+pt: criando área
 ru: создание области
 sk: vytvorenie plochy
 sq: duke kriju fushen
@@ -3936,7 +5091,9 @@ de: Linie erzeugen
 el: δημιουργία γραμμής
 en: creating line
 es: creando línea
+fr: création d'une ligne
 it: creazione linea
+pt: criando linha
 ru: создание линии
 sk: vytvorenie krivky
 sq: duke kriju vijen apo rrjeshtin
@@ -3949,7 +5106,9 @@ de: Linienänderung
 el: αλλαγές γραμμής
 en: line changes
 es: cambios de línea
+fr: modifications de ligne
 it: modifiche di linea
+pt: alterações na linha
 ru: изменение линии
 sk: zmena parametrov krivky
 sq: ndrimet e vijes
@@ -3962,7 +5121,9 @@ de: Linie schließen
 el: κλείσιμο γραμμής
 en: line closing
 es: cerrando línea
+fr: fermer la ligne
 it: chiusura linea
+pt: fechamento de linha
 ru: замыкание линии
 sk: uzavretie krivky
 sq: mbyllja e vijes-rjeshtit
@@ -3975,7 +5136,9 @@ de: Linie öffnen
 el: άνοιγμα γραμμής
 en: line opening
 es: abriendo línea
+fr: ouvrir la ligne
 it: apertura linea
+pt: abertura de linha
 ru: размыкание линии
 sk: otvorenie krivky
 sq: hapja e vijes-rjeshtit
@@ -3988,7 +5151,9 @@ de: Linienpunkt einfügen
 el: εισαγωγή σημείο γραμμής
 en: inserting line point
 es: insertando punto en la línea
+fr: insérer un point sur la ligne
 it: inserimento punto di linea
+pt: inserção de ponto de linha
 ru: вставка точки в линию
 sk: vloženie bodu krivky
 sq: duke futur piken e vijes
@@ -4001,7 +5166,9 @@ de: Linienende
 el: τέλος γραμμής
 en: line ending
 es: finalizando línea
+fr: finaliser la ligne
 it: fine linea
+pt: finalização de limha
 ru: завершение линии
 sk: ukončenie krivky
 sq: rjeshti ne perfundim
@@ -4014,7 +5181,9 @@ de: Verschiebe Kontrollpunkt
 el: μεταβαλλόμενο σημείο ελέγχου
 en: moving control point
 es: moviendo punto de control
+fr: déplacement du point de controle
 it: spostamento punto di controllo
+pt: movimentação de ponto de controle
 ru: перемещение управляющей точки
 sk: posun kontrolného bodu
 sq: duke levize piken e kontrollit
@@ -4027,7 +5196,9 @@ de: Linie teilen
 el: διαίρεση γραμμής
 en: split line
 es: cortar línea
+fr: couper la ligne
 it: dividi la linea
+pt: quebra de linha
 ru: разделение линии
 sk: rozdelenie čiary
 sq: ndarja e pikes-rjeshtit
@@ -4035,9 +5206,26 @@ zh_CN: 分割线
 
 therion: Stop tracing
 cz: Ukončit trasování
+de: Verfolgung anhalten
+es: Parar trazado
+fr: arrêt du dessin
+pt: Parar tracejo
+ru: Прекратить трассировку
+sk: Zastaviť digitalizáciu
 
 therion: Continue tracing
 cz: Pokračovat v trasování
+de: Verfolgung fortsetzen
+es: Continuar trazado
+fr: continuer le dessin
+pt: Seguir tracejo
+ru: Продолжить трассировку
+sk: Pokračovať digitalizácii
+
+therion: shift object
+es: desplazar objeto
+fr: déplacer un objet
+pt: deslocar objeto
 
 therion: loading text editor ...
 bg: зареждане на текстовия редактор ...
@@ -4045,11 +5233,13 @@ cz: nahrávám text editor ...
 de: Lade Texteditor ...
 el: Άνοιγμα επεξεργαστή κειμένου...
 en: loading text editor ...
-es: editor de texto ...
+es: cargando editor de texto ...
+fr: chargement de l'éditeur de texte...
 it: editor di testo ...
+pt: carregando editor de texto...
 ru: загрузка текстового редактора ...
 sk: načítavam textový editor
-sq: duke lexuar editorin e tekstit…
+sq: duke lexuar editorin e tekstit...
 zh_CN: 文本编辑器载入中 ...
 
 therion: Text Editor
@@ -4059,7 +5249,9 @@ de: Texteditor
 el: Επεξεργαστής κειμένου
 en: Text Editor
 es: Editor de texto
+fr: Editeur de texte
 it: Editor di testo
+pt: Editor de texto
 ru: Текстовой редактор
 sk: Textový editor
 sq: editori I tekstit
@@ -4072,7 +5264,9 @@ de: Dateien
 el: Αρχεία
 en: Files
 es: Archivos
+fr: Fichier
 it: File
+pt: Arquivos
 ru: Файлы
 sk: Súbory
 sq: fajlat-arkivi
@@ -4085,7 +5279,9 @@ de: Datentabelle
 el: Πίνακας δεδομένων
 en: Data table
 es: Tabla de datos
+fr: Tableau de données
 it: Tabella dei dati
+pt: Tabela de dados
 ru: Таблица данных
 sk: Dátová tabuľka
 sq: tabela e te dhenave
@@ -4097,8 +5293,10 @@ cz: Najít & Nahradit
 de: Suchen & ersetzen
 el: Αναζήτηση και αντικατάσταση
 en: Search & Replace
-es: Buscar y cambiar
+es: Buscar y Sustituir
+fr: Chercher et Remplacer
 it: Cerca e sostituisci
+pt: Buscar & Substituir
 ru: Поиск и Замена
 sk: Nájdi a Nahraď
 sq: kerko dhe ndero vendin
@@ -4111,7 +5309,9 @@ de: Geöffnete Dateien wechseln.
 el: Η λίστα δείχνει τα ανοικτά αρχεία. Επιλέξετε αυτό που σας ενδιαφέρει.
 en: This list shows open files. Click on the one you are interested in.
 es: Esta lista muestra los archivos abiertos. Haz clic en el que te interese.
+fr: Cette liste montre les fichiers ouverts. Cliquer sur celui qui vous intéresse.
 it: Cambia tra i file aperti.
+pt: Trocar arquivo aberto
 ru: Поменять открытый файл.
 sk: Prepínač medzi otvorenými súbormi.
 sq: kjo liste tregon fajlat e hapura. Kliko ne ate te cilen je I interesuar.
@@ -4124,7 +5324,9 @@ de: Zeichenkodierung
 el: Κωδικοσελίδα
 en: Encoding
 es: Codificación
+fr: Encodage
 it: Encoding
+pt: Codificando
 ru: Кодировка
 sk: Kódovanie
 sq: de-kodimi
@@ -4137,7 +5339,9 @@ de: Ändern in
 el: Αλλαγή σε
 en: Change to
 es: Cambiar a
+fr: Modifier par
 it: Cambia a
+pt: Mudar para
 ru: Изменить на
 sk: Zmeniť na
 sq: ndero ne
@@ -4150,7 +5354,9 @@ de: Um Zeichenkodierung zu ändern, gebe den Namen der Kodierung ein und drücke
 el: Για ρύθμιση κωδικοσελίδας, εισάγετε όνομα και πατήστε το κουμπί <Αλλαγή>
 en: To set file encoding, type encoding name and press <Change> button.
 es: Para ajustar la codificación, escoje la que quieras y pulsa <Cambiar a>.
+fr: Pour modifier l'encodage, entrer le nom de l'encodage et appuyer sur le bouton <Modifier>
 it: Per impostare l'encoding, scrivi il nome dell'encoding e premi il bottone <Cambia>
+pt: Para definir codificação do arquivo, digite o nome da codificação e pressione o botão <Mudar para>.
 ru: Для задания кодировки файла введите имя кодировки и нажмите кнопку <Изменить>.
 sk: Na nastavenie kódovania, vložte identifikátor kódovania a stlačte <Zmeniť>.
 sq: per te vendos fajlin per dekodim, shtype emrin per dekodim dhe kliko butonin <ndroje>
@@ -4163,7 +5369,9 @@ de: Datenformat einlesen
 el: Έλεγχος μορφής δεδομένων
 en: Scan data format
 es: Escanear formato de datos
+fr: Scanner le format de données
 it: Imposta formato dati
+pt: Analisar formato dos dados
 ru: Определить формат данных
 sk: Nájdi formát dát
 sq: skano formatin e shenimeve
@@ -4176,7 +5384,9 @@ de: Datenformat einlesen und Messdateneditor anpassen.
 el: Ελέγχει την σειρά των δεδομένων και ξανασυντάσσει αυτόματα τα textbox για εισαγωγή δεδομένων.
 en: Scans data order and rebuilds data insertion textboxes accordingly.
 es: Ajusta las casillas al orden en que has tomado tus datos.
+fr: Scanne l'ordre des données et reconstruit l'outil d'insertion des données de centerline.
 it: Imposta il formato dati e ricostruisci la tabella inserimento dati.
+pt: Analisar formato dos dados e reconstruir a ferramenta de inserção de dados da linha de trena.
 ru: Автоматически определить формат данных и перестроить поля ввода.
 sk: Načíta formát dát z predchádzajúcich riadkov a príslušne zmení panel na vkladanie dát.
 sq: skanon formatin e shenimeve dhe rinderton tekst-katroret per futjen e shenimeve net e njejten kohe
@@ -4189,7 +5399,9 @@ de: Messpunktnamen eingeben
 el: Εισαγωγή ονομάτων σημείων χαρτογράφησης
 en: Enter station names
 es: Nombrar estaciones
+fr: Entrer les noms des stations topos
 it: Scrivi nomi capisaldi
+pt: Entrar nomes das bases
 ru: Ввод номера следующего пикета
 sk: Zadávanie názvov bodov
 sq: futi emrat e stacioneve
@@ -4202,8 +5414,10 @@ de: Ankreuzen, wenn du Messpunktnamen für jede Strecke eingeben willst.
 el: Επιλέξτε για εισαγωγή των ονομάτων των σημείων χαρτογράφησης για το κάθε διάνυσμα.
 en: Check if you want to insert station names for each shot.
 en_GB: Check if you want to insert station names for each leg.
-es: Marcar si se quiere dar un nombre a cada tirada topo.
+es: Marcar si se quiere dar un nombre a cada visual.
+fr: Marquer si nous voulons insérer un nom de station topo pour chaque visée.
 it: Attiva per inserire i nomi dei capisaldi per ogni tratta.
+pt: Se quiser inserir nomes de bases para cada medida.
 ru: Установите отметку, если хотите, чтобы происходил автоматический ввод номера следующего пикета.
 sk: Zaškrtnite pokiaľ chcete vkladať aj mená bodov pre každú zámeru.
 sq: kontrollo nese deshiron ti fusesh emrat e stacioneve per secilin foto
@@ -4216,7 +5430,9 @@ de: Auswahl formatieren
 el: Αυτόματη μορφοποίηση επιλογής
 en: Auto format selection
 es: Autoformatear selección
+fr: Sélection auto du format
 it: Selezione formato automatico.
+pt: Auto formatar seleção
 ru: Перестроить выделенные данные
 sk: Naformátuj výber
 sq: zgjedhja automatike e formatit
@@ -4229,7 +5445,9 @@ de: Formatiere Auswahl zur gegebenen Tabelle.
 el: Μορφοποίηση επιλογής σύμφωνα με το δεδομένο πίνακα.
 en: Format selection to given table.
 es: Formatea la seleccion (ajusta tabuladores, etc).
+fr: Formater le sélection à un tableau donné.
 it: Imposta selezione alla tabella specificata.
+pt: Formatar seleção para tabela definida.
 ru: Привести выделенные данные к заданному формату.
 sk: Naformátuje výber do dátovej tabuľky.
 sq: zgjedhja e formatit per tabelen e dhene
@@ -4242,7 +5460,9 @@ de: Suche
 el: αναζήτηση
 en: search
 es: buscar
+fr: rechercher
 it: cerca
+pt: buscar
 ru: поиск
 sk: hľadaj
 sq: kerko
@@ -4255,7 +5475,9 @@ de: Suche Muster.
 el: Πληκτρολογήσετε τις λέξεις για αναζήτηση.
 en: Enter word(s) to search for.
 es: Introducir palabra(s) a buscar.
+fr: Rechercher l'expression.
 it: Testo da cercare.
+pt: Expressão de busca
 ru: Выражение поиска.
 sk: Hľadaný výraz.
 sq: shkruaje fjalen per tu kerkuar
@@ -4267,8 +5489,10 @@ cz: nahradit
 de: Ersetze
 el: Αντικατάσταση
 en: replace
-es: cambiar
+es: sustituir
+fr: remplacer
 it: sostituisci
+pt: substituir
 ru: замена
 sk: nahradiť
 sq: ndero vendin
@@ -4277,10 +5501,13 @@ zh_CN: 替换
 therion: Check whether to replace found expression.
 bg: Сложете отбелязка, ако искате да се извърши замяна.
 cz: Zaškrtněte pokud chcete nahradit nalezené výrazy.
+de: Ankreuzen, wenn die Fundstelle ersetzt werden soll.
 el: Επιλέξτε για αντικατάσταση της ευρεθείσας περίπτωσης.
 en: Check whether to replace found expression.
-es: Marcar para cambiar los lo encontrado por lo que se escriba aquí.
+es: Marcar para sustituir lo encontrado por lo que se escriba aquí.
+fr: Marquer pour remplacer l'expression trouvée.
 it: Attiva per sostituire il testo trovato.
+pt: Para substituir a expressão encontrada.
 ru: Установите отметку, если хотите произвести замену.
 sk: Zaškrtnúť pokiaľ sa má nájdený výraz nahradiť iným.
 sq: kontrollo a duhet te ndrohet fjalia e gjetur
@@ -4292,8 +5519,10 @@ cz: Řetězec, kterým bude výraz nahrazen.
 de: Ersetze Muster.
 el: Τα αποτελέσματα αναζήτησης θα αντικατασταθούν από το συγκεκριμένο κείμενο.
 en: Search results will be replaced by the string entered here.
-es: Los resultados de la búsqueda serán cambiados por lo que escribas aquí.
+es: Los resultados de la búsqueda serán sustituidos por lo que escribas aquí.
+fr: Les résultats trouvés seront remplacés par le texte entré ici.
 it: Sostituisci testo.
+pt: Expressão de substituição
 ru: Выражение замены.
 sk: Výraz na nahradenie.
 sq: rezultatet e gjetura do te ndrohen nga fjalia e future ketu
@@ -4305,8 +5534,10 @@ cz: rozlišovat velikost písmen
 de: Groß- und Kleinschreibung bei Suche berücksichtigen
 el: case sensitive αναζήτηση
 en: case sensitive search
-es: sensible a mayúsculas
+es: búsqueda sensible a mayúsculas/minúsculas
+fr: Recherche dépendamment de la casse
 it: ricerca case-sensitive
+pt: busca diferencia MAIÚSCULAS/minúsculas
 ru: учитывать регистр
 sk: rozlišovať malé a veľké
 sq: kerkimi -rast sensitiv
@@ -4319,7 +5550,9 @@ de: Ankreuzen, wenn Suche Groß- und Kleinschreibung berücksichtigen soll.
 el: Επιλέξετε αν η αναζήτηση πρέπει να είναι case sensitive.
 en: Check if search should be case sensitive.
 es: Marcar para que la búsqueda distinga entre mayúsculas y minúsculas.
+fr: Marquer pour que la recherche distingue majuscules et minuscules.
 it: Attiva se la ricerca deve essere case-sensitive.
+pt: Faz com que a busca diferencie letras MAIÚSCULAS e minúsculas.
 ru: Установите отметку, чтобы поиск происходил с учетом регистра.
 sk: Zaškrtnite pokiaľ pri hľadaní chcete rozlišovať malé a veľké písmená.
 sq: kontrollo nese kerkimi do te jete rast-sensitiv
@@ -4331,8 +5564,10 @@ cz: regulární výrazy
 de: Regulärer Ausdruck.
 el: κανονικό συντακτικό (χρήση μπαλαντέρ αναζήτησης)
 en: regular expressions
-es: patrón regular
+es: comodines
+fr: expression régulières
 it: esperssioni regolari
+pt: expressões regulares
 ru: регулярные выражения
 sk: regulárny výraz
 sq: shprehje te rregullta
@@ -4345,7 +5580,9 @@ de: Ankreuzen, ob Suchen und Ersetzen regulären Ausdruck nutzen soll.
 el: Επιλέξτε για αναζήτηση με κανονικό συντακτικό(χρήση μπαλαντέρ αναζήτησης)
 en: Check whether to search using regular expressions.
 es: Búsqueda usando comodines.
+fr: Rechercher/Remplacer en utilisant les expressions régulières.
 it: Attiva per ricerca e sostituzione con espressioni regolari.
+pt: Fazer com que a busca trate as expressões de busca e de substituição como expressões regulares.
 ru: Установите отметку, чтобы обрабатывать регулярные выражения при поиске и замене.
 sk: Zaškrtnite ak sa má hľadanie a nahradenie vykonávať v móde regulárnych výrazov.
 sq: kontrollo a do te kerkosh duke perdor shprehje te zakonta-rregullta
@@ -4357,8 +5594,10 @@ cz: pouze ve vybraném textu
 de: Nur in Auwahl suchen
 el: αναζήτηση μόνο σε επιλογή
 en: search selection only
-es: selección solo
+es: búsqueda solo en la selección
+fr: rechercher uniquement dans la sélection
 it: cerca solo nella selezione
+pt: buscar somente na seleção
 ru: искать в выделенном
 sk: iba vo vybratom texte
 sq: kerko vetem selekcionet
@@ -4371,7 +5610,9 @@ de: Ankreuzen, wenn nur im ausgewählten Text gesucht werden soll.
 el: Επιλέξετε για να γίνει η αναζήτηση μόνο στο επιλεγμένο κείμενο.
 en: Check whether to search only in selected text.
 es: Marcar para buscar solo dentro del texto seleccionado.
+fr: Marquer pour rechercher seulement dans le texte sélectionné.
 it: Attiva per cercare solo nel testo selezionato.
+pt: Faz com que a busca atue somente no texto selecionado.
 ru: Установите отметку, чтобы искать только в выделенном тексте.
 sk: Zaškrtnite pokiaľ hladanie má prebehnúť len v označenom texte.
 sq: kontrollo a do te perdoresh kerkimin vetem ne tekstin e selekcionuar
@@ -4383,8 +5624,10 @@ cz: První
 de: Erstes
 el: Πρώτο
 en: First
-es: Buscar
+es: Primero
+fr: Premier
 it: Primo
+pt: Primeira
 ru: Первый
 sk: Prvý
 sq: e para
@@ -4396,8 +5639,10 @@ cz: Najde nebo nahradí první výraz v souboru.
 de: Suche oder ersetze erstes Muster in der Datei.
 el: Αναζήτηση ή αντικατάσταση πρώτης περίπτωσης στο αρχείο.
 en: Search or replace first expression in the file.
-es: Buscar o reemplazar el primer resultado.
+es: Buscar o sustituir el primer resultado.
+fr: Rechercher et remplacer le premier résultat.
 it: Cerca o sostituisci la prima istanza del testo nel file.
+pt: Buscar ou substituir a primeira ocorrência da expressão no arquivo.
 ru: Поиск или замена первого вхождения в файле.
 sk: Nájte poprípade nahradí prvý výskyt hľadaného výrazu v súbore.
 sq: kerko ose ndro shprehjet e para ne fajlla
@@ -4409,8 +5654,10 @@ cz: Najde nebo nahradí následující výraz v souboru.
 de: Suche oder ersetze nächstes Muster nach dem Cursor in der Datei.
 el: Αναζήτηση ή αντικατάσταση επόμενης περίπτωσης μετά τον κούρσορα.
 en: Search or replace next expression after the cursor in the file.
-es: Buscar o reemplazar el siguiente resultado.
+es: Buscar o sustituir el siguiente resultado.
+fr: Rechercher et remplacer le résultat suivant.
 it: Cerca o sostituisci la prossima istanza del testo nel file dopo il cursore.
+pt: Buscar ou substituir a próxima ocorrência da expressão no arquivo.
 ru: Поиск или замена следующего после курсора вхождения в файле.
 sk: Nájdi alebo nahraď nasledujúci výraz v súbore.
 sq: kerko ose ndroje shprehjen e ardhshme pas kursorit ne fajll
@@ -4423,7 +5670,9 @@ de: Alles
 el: Όλα
 en: All
 es: Todo
+fr: Tout
 it: Tutti
+pt: Todas
 ru: Все
 sk: Všetko
 sq: te gjithat
@@ -4435,8 +5684,10 @@ cz: Najde nebo nahradí všechny výrazy v souboru.
 de: Suche oder ersetze alle Muster in der Datei.
 el: Αναζήτηση ή αντικατάσταση όλων των περιπτώσεων στο αρχείο.
 en: Search or replace all expressions in the file.
-es: Buscar o reemplazar todos los resultados.
+es: Buscar o sustituir todos los resultados.
+fr: Rechercher/remplacer tous les résultats.
 it: Cerca o sostituisci tuute le frasi nel file.
+pt: Buscar ou substituir todas as ocorrência da expressão no arquivo.
 ru: Поиск или замена всех вхождений в файле.
 sk: Nájdi alebo nahraď všetky výrazy v súbore.
 sq: kerko ose ndroji te gjitha shprehjet ne fajlla
@@ -4449,7 +5700,9 @@ de: Löschen
 el: Αναίρεση
 en: Clear
 es: Deseleccionar
+fr: Vider/Clear
 it: Cancella
+pt: Limpar
 ru: Очистка
 sk: Vyčisti
 sq: e paster
@@ -4462,7 +5715,9 @@ de: Lösche alle Hervorhebungen in der Datei.
 el: Αναίρεση όλων των τονισθέντων.
 en: Clear all highlights in the file.
 es: Deseleccionar todo lo seleccionado.
+fr: Désélectionné toute la sélection
 it: Cancella tutte le evidenziazioni nel file.
+pt: Remover todos os destaques no arquivo.
 ru: Очистка всех подсвеченных участков текста.
 sk: Zruší zvýraznenie nájdených výrazov v súbore.
 sq: fshij te gjitha selekcionimet apo hijezimet ne fajlla
@@ -4475,10 +5730,12 @@ de: Öffne %s ...
 el: Άνοιγμα του %s ...
 en: Opening %s ...
 es: Abriendo %s ...
+fr: Ouverture de %s ...
 it: Apertura %s ...
+pt: Abrindo %s...
 ru: Открытие %s ...
 sk: Oteváram %s ...
-sq: duke hap %s …
+sq: duke hap %s ...
 zh_CN: 打开%s ...
 
 therion: File %s is not saved. Save it now?
@@ -4488,7 +5745,9 @@ de: datei %s nicht gespeichert. Speichere jetzt?
 el: Το αρχείο %s δεν έχει αποθηκευτεί. Αποθήκευση τώρα;
 en: File %s is not saved. Save it now?
 es: El archivo %s no ha sido guardado. ¿Guardar ahora?
+fr: Le fichier %s n'est pas enregistrer. L'enregistrer maintenant ?
 it: Il file %s non è salvato. Salva ora?
+pt: Arqivo %s não está salvo. Salvar agora?
 ru: Файл %s не сохранен. Сохранить его сейчас?
 sk: Súbor %s nie je uložený. Uložiť teraz?
 sq: fajlli %s nuk eshte I ruajtur. Ta ruajm tani?
@@ -4496,15 +5755,17 @@ zh_CN: 文件 %s没有存储. 要存储吗?
 
 therion: File %s was modified outside xtherion. Save it anyway?
 bg: Файлът %s е изменен от друго приложение. Да го съхраня въпреки това?
-cz: Soubor %s byl modifikován mimo xtherion. Přesto uložit?
+cz: Soubor %s byl modifikován mimo Xtherion. Přesto uložit?
 de: Datei %s wurde außerhalb von Xtherion geändert. Trotzdem speichern?
-el: Το αρχείο %s τροποποιήθηκε εκτός xtherion. Να αποθηκευτεί όπως και να'ναι;
+el: Το αρχείο %s τροποποιήθηκε εκτός Xtherion. Να αποθηκευτεί όπως και να'ναι;
 en: File %s was modified outside xtherion. Save it anyway?
-es: El archivo %s ha sido modificado fuera de xtherion. ¿Guardar de todos modos?
-it: Il file %s è stato modificato fuori da xtherion. Salva comunque?
+es: El archivo %s ha sido modificado fuera de Xtherion. ¿Guardar de todos modos?
+fr: Le fichier %s a été modifié en dehors de Xtherion. L'enregistrer quand même ?
+it: Il file %s è stato modificato fuori da Xtherion. Salva comunque?
+pt: Arquivo %s foi modificado fora do Xtherion. Ainda assim quer salvá-lo?
 ru: Файл %s был изменен другим приложением. Сохранить не смотря на это?
 sk: Súbor %s bol modifikovaný mimo programu. Uložiť aj tak?
-sq: fajlli %s eshte ndryshuar jashte x therion-it. Ta ruajm sido qe te jete?
+sq: fajlli %s eshte ndryshuar jashte X therion-it. Ta ruajm sido qe te jete?
 zh_CN: 文件 %s 被修改，除xtherion外. 要存储吗?
 
 therion: Saving %s ...
@@ -4514,10 +5775,12 @@ de: Speichere %s ...
 el: Αποθήκευση του %s ...
 en: Saving %s ...
 es: Guardando %s ...
+fr: Enregistrement de %s ...
 it: Salvataggio %s ...
+pt: Salvando %s ...
 ru: Сохранение %s ...
 sk: Ukladám %s ...
-sq: duke ruajtur %s. . .
+sq: duke ruajtur %s ...
 zh_CN: 存储 %s ...
 
 therion: New
@@ -4527,7 +5790,9 @@ de: Neu
 el: Νέο
 en: New
 es: Nuevo
+fr: Nouveau
 it: Nuovo
+pt: Novo
 ru: Новый
 sk: Nový
 sq: e re
@@ -4539,8 +5804,10 @@ cz: Otevřít...
 de: Öffnen
 el: Άνοιγμα
 en: Open
+fr: Ouvrir
 es: Abrir
 it: Apri
+pt: Abrir
 ru: Открыть
 sk: Otvoriť
 sq: hape
@@ -4553,7 +5820,9 @@ de: Speichern
 el: Αποθήκευση
 en: Save
 es: Guardar
+fr: Enregistrer
 it: Salva
+pt: Salvar
 ru: Сохранить
 sk: Uložiť
 sq: ruaje
@@ -4566,7 +5835,9 @@ de: Speichern als
 el: Αποθήκευση ως...
 en: Save as
 es: Guardar como
+fr: Enregistrer sous
 it: Salva come
+pt: Salvar como
 ru: Сохранить как
 sk: Uložiť ako
 sq: ruaje si
@@ -4579,7 +5850,9 @@ de: Speichere alles
 el: Αποθήκευση όλων
 en: Save all
 es: Guardar todo
+fr: Enregistrer tout
 it: Salva tutti
+pt: Salvar todos
 ru: Сохранить всё
 sk: Uložiť všetko
 sq: ruaji te gjitha
@@ -4592,7 +5865,9 @@ de: Automatisch speichern
 el: Αυτόματη αποθήκευση
 en: Auto save
 es: Autoguardar
+fr: Enregistrer auto
 it: Auto salva
+pt: SAlvamento automático
 ru: Автосохранение
 sk: Ukladať automaticky
 sq: ruajtja automatike
@@ -4603,7 +5878,10 @@ bg: Внасяне
 cz: Import
 de: Importieren
 el: Εισαγωγή...
+es: Importar
+fr: Importer
 it: Importa
+pt: Importar
 ru: Импорт
 sk: Import
 sq: importi
@@ -4616,7 +5894,9 @@ de: Nächstes
 el: Επόμενο
 en: Next
 es: Siguiente
+fr: Suivant
 it: Prossima
+pt: Próximo
 ru: Следующий
 sk: Nasledujúci
 sq: tjetra
@@ -4629,7 +5909,9 @@ de: Vorheriges
 el: Προηγούμενο
 en: Previous
 es: Anterior
+fr: Précédent
 it: Precedente
+pt: Anterior
 ru: Предыдущий
 sk: Predchádzajúci
 sq: e perparmja
@@ -4642,7 +5924,9 @@ de: Bearbeiten
 el: Διόρθωση
 en: Edit
 es: Editar
+fr: Editer
 it: Edita
+pt: Editar
 ru: Редактировать
 sk: Upraviť
 sq: permireso
@@ -4655,7 +5939,9 @@ de: Ausschneiden
 el: Αποκοπή
 en: Cut
 es: Cortar
+fr: Couper
 it: Taglia
+pt: Cortar
 ru: Вырезать
 sk: Vystrihnúť
 sq: preje
@@ -4668,7 +5954,9 @@ de: Kopieren
 el: Αντιγραφή
 en: Copy
 es: Copiar
+fr: Copier
 it: Copia
+pt: Copiar
 ru: Копировать
 sk: Kopírovať
 sq: kopjo
@@ -4681,7 +5969,9 @@ de: Einfügen
 el: Επικόλληση
 en: Paste
 es: Pegar
+fr: Coller
 it: Incolla
+pt: Colar
 ru: Вставить
 sk: Vložiť
 sq: vendose-paste
@@ -4694,7 +5984,9 @@ de: Alles auswählen
 el: Επιλογή όλων
 en: Select all
 es: Seleccionar todo
+fr: Tout sélectionner
 it: Seleziona tutto
+pt: Selecionar tudo
 ru: Выделить всё
 sk: Vyber všetko
 sq: zghedhi-selekciono te gjitha
@@ -4706,8 +5998,10 @@ cz: Automaticky odsazovat
 de: Automatisch einrücken
 el: Αυτόματη παραγραφοποίηση
 en: Auto indent
-es: Autoindentar
+fr: Indentation auto
+es: Auto-indentar
 it: Indentazione automatica
+pt: Indentação automática
 ru: Автоотступ
 sk: Automatické odsadenie
 sq: indenti automatik
@@ -4720,10 +6014,12 @@ de: Verarbeite Zeile %s ...
 el: Επεξεργασία γραμμής %s ...
 en: Processing line %s ...
 es: Procesando línea %s ...
+fr: Processing ligne %s ...
 it: Elaborazione linea %s ...
+pt: Processando linha %s...
 ru: Обработка строки %s ...
 sk: Spracúvam riadok %s ...
-sq: rrjeshti %s ne proces…
+sq: rrjeshti %s ne proces...
 zh_CN: 运行线 %s ...
 
 therion: Text editor is not active. To activate it, open existing file or create new one.
@@ -4731,9 +6027,11 @@ bg: Текстовият редактор не е активен. За акти�
 cz: Textový editor není aktivní. Pro jeho aktivaci otevřete existující soubor nebo vytvořte nový.
 de: Texteditor ist nicht aktiv. Um ihn zu aktivieren, öffne eine existierende Datei oder lege eine neue an.
 el: Ο επεξεργαστής κειμένου δεν είναι ενεργός. Για να τον ενεργοποιήσετε, ανοίξτε αρχείο, ή δημιουργήστε νέο.
-en: Text editor is not active. To activate it, open existing file or create new one.
+en: Text editor is not active. To activate it, open an existing file or create a new one.
 es: El editor de texto está inactivo. Para activarlo, abre un archivo existente o crea uno nuevo.
+fr: L'éditeur de texte est inactif. Pour l'activer, ouvrez un fichier existant ou créez-un un nouveau.
 it: L'editor di testo non è attivo. Per attivarlo apri un file o creane uno.
+pt: O editor de texto não está ativo. Para ativá-lo, abra um arquivo existente ou crie um novo arquivo.
 ru: Текстовый редактор неактивен. Для активации откройте существующий файл или создайте новый.
 sk: Textový editor nie je aktívny. Otvorte existujúci súbor alebo vytvorte nový.
 sq: editori I tekstit nuk eshte aktiv. Qe ta aktivizosh, hape fajllin egzistues ose krijo nje tjeter.
@@ -4745,11 +6043,13 @@ cz: Ovládání...
 de: Kontrollfeld...
 el: Έλεγχος...
 en: Control...
-es: Control
+es: Control...
+fr: Controle...
 it: Controlli ...
+pt: Controle...
 ru: Управление...
 sk: Ovládanie...
-sq: kontrolli. . .
+sq: kontrolli ...
 zh_CN: 控制中...
 
 therion: BAC calculator...
@@ -4758,8 +6058,10 @@ cz: Alkohol tester...
 de: Blutalkoholrechner
 el: Αλκοτέστ...
 en: BAC calculator...
-es: Borrachímetro
+es: Calculador Test Alcoholemia...
+fr: Calculateur d'alcoolémie...
 it: Calcolatore BAC ...
+pt: Calculadora TAS...
 ru: Калькулятор алкоголя...
 sk: Alkohol tester...
 sq: matesi I alkoolit-BAC
@@ -4769,7 +6071,12 @@ therion: Calibrate bitmap...
 bg: Калибриране на изображение ...
 cz: Kalibrovat bitmapu ...
 de: Bild kalibrieren...
+es: Calibrar imagen raster...
+fr: Calibrer une image Raster...
 it: Mappa georeferenziata...
+pt: Calibrar imagem...
+ru: Привязать изображение
+sk: Kalibrovať obrázok...
 zh_CN: 校准图片...
 
 therion: About...
@@ -4779,7 +6086,9 @@ de: Über...
 el: Σχετικά...
 en: About...
 es: Acerca de...
+fr: A propos de...
 it: Versione ...
+pt: Sobre...
 ru: О программе...
 sk: O programe...
 sq: per programin…
@@ -4792,7 +6101,9 @@ de: Suche
 el: Αναζήτηση
 en: Search
 es: Buscar
+fr: Rechercher
 it: Cerca
+pt: Buscar
 ru: Поиск
 sk: Hľadať
 sq: kerko
@@ -4805,7 +6116,9 @@ de: Schließen
 el: Κλείσιμο
 en: Close
 es: Cerrar
+fr: Fermer
 it: Chiudi
+pt: Fechar
 ru: Закрыть
 sk: Zavrieť
 sq: mbyll
@@ -4816,7 +6129,10 @@ bg: всички символи
 cz: všechny symboly
 de: Alle Zeichen
 el: όλα
+es: todos los símbolos
+fr: Tout les symboles
 it: tutti
+pt: todos os símbolos
 ru: все
 sk: všetky symboly
 sq: tematizo te gjitha simbolet-shenjat
@@ -4827,7 +6143,11 @@ bg: Нов файл
 cz: Nový soubor
 de: Neue Datei
 el: Νέο αρχείο
+es: Archivo Nuevo
+fr: Nouveau fichier
 it: Nuovo
+pt: Novo arquivo
+ru: Новый файл
 sk: Nový súbor
 sq: arkivi-fajlli I ri
 zh_CN: 新文件
@@ -4837,7 +6157,11 @@ bg: Отвори файл
 cz: Otevřít soubor
 de: Datei öffnen
 el: Άνοιγμα
+es: Abrir archivo
+fr: Ouvrir le fichier
 it: Apri
+pt: Abrir arquivo
+ru: Открыть файл
 sk: Otvoriť súbor
 sq: hape fajllin
 zh_CN: 打开文件
@@ -4847,7 +6171,11 @@ bg: Запиши файл
 cz: Uložit soubor
 de: Datei speichern
 el: Αποθήκευση
+es: Guardar archivo
+fr: Enregistrer le fichier
 it: Salva
+pt: Salvar arquivo
+ru: Сохранить файл
 sk: Uložiť súbor
 sq: ruaje fajllin
 zh_CN: 存储文件
@@ -4857,7 +6185,11 @@ bg: Запиши файл като
 cz: Uložit soubor jako
 de: Datei speichern als
 el: Αποθήκευση ως
+es: Guardar archivo como
+fr: Enregistrer sous
 it: Salva come
+pt: Salvar arquivo como
+ru: Сохранить файл как
 sk: Uložiť súbor ako
 sq: ruaje fajllin si
 zh_CN: 文件存储为
@@ -4867,7 +6199,11 @@ bg: Затвори файл
 cz: Zavřít soubor
 de: Datei schließen
 el: Κλείσιμο αρχείου
+es: Cerrar archivo
+fr: Fermer le fichier
 it: Chiudi
+pt: Fechar arquivo
+ru: Закрыть файл
 sk: Zatvoriť súbor
 sq: mbylle fajllin
 zh_CN: 关闭文件
@@ -4879,7 +6215,9 @@ de: Rückgängig
 el: Αναίρεση
 en: Undo
 es: Deshacer
+fr: Défaire
 it: Indietro
+pt: Desfazer
 ru: Отменить
 sk: Späť
 sq: prishe-undo
@@ -4892,7 +6230,9 @@ de: Wiederholen
 el: Επανάληψη
 en: Redo
 es: Rehacer
+fr: Refaire
 it: Rifai
+pt: Refazer
 ru: Вернуть
 sk: Opakovať
 sq: beje prape-redo
@@ -4903,7 +6243,11 @@ bg: Превключи на текстов редактор
 cz: Přepnout na textový editor
 de: Zum Texteditor wechseln
 el: Μετάβαση σε επεξεργαστή κειμένου
+es: Cambiar al editor de texto
+fr: Basculer sur l'éditeur de texte
 it: Editor di testi
+pt: Mudar para editor de texto
+ru: Переключится в текстовый редактор
 sk: Prepnúť na textový editor
 sq: kalo tek editori i tekstit
 zh_CN: 文本编辑器开关
@@ -4913,7 +6257,11 @@ bg: Превключи на редактор на карти
 cz: Přepnout na mapový editor
 de: Zum Karteneditor wechseln
 el: Μετάβαση σε επεξεργαστή σχεδίου
+es: Cambiar al editor de mapas
+fr: Basculer sur l'éditeur de cartes
 it: Editor di mappe
+pt: Mudar para editor de mapa
+ru: Переключится в редактор карт
 sk: Prepnúť na mapový editor
 sq: kalo tek editori I hartes
 zh_CN: 地图编辑器开关
@@ -4923,7 +6271,11 @@ bg: Превключи на компилатор
 cz: Přepnout na kompilátor
 de: Zum Compiler wechseln
 el: Μετάβαση σε συντάκτη
+es: Cambiar al compilador
+fr: Basculer sur le compilateur
 it: Compilatore
+pt: Mudar para compilador
+ru: Переключится в компилятор
 sk: Prepnúť na kompilátor
 sq: kalo tek kompilatori
 zh_CN: 程序编译开关
@@ -4935,7 +6287,9 @@ de: Compilieren
 el: Σύνταξη
 en: Compile
 es: Compilar
+fr: Compiler
 it: Compila
+pt: Compilar
 ru: Компилировать
 sk: Kompilovať
 sq: kompilo
@@ -4946,7 +6300,11 @@ bg: Превключи на режим 'Избиране'
 cz: Přepnout do módu na výběr objektu
 de: In Auswahlmodus wechseln
 el: Μετάβαση σε λειτουργία επιλογής
+es: Cambiar al modo selección
+fr: Basculer en mode sélection
 it: Modalità di selezione
+pt: Mudar para modo de seleção
+ru: Переключится в режим выбора
 sk: Prepnúť do módu na výber objektu
 sq: kalo tek moduli per selekcionim
 zh_CN: 模块选择开关
@@ -4956,7 +6314,11 @@ bg: Избери следващият скрап
 cz: Vyber následující scrap
 de: Nächste Skizze auswählen
 el: Επιλογή επόμενου σκραπ
+es: Seleccionar el siguiente trozo
+fr: Sélectionner le scrap suivant
 it: Seleziona il prossimo scrap
+pt: Selecionar próximo trecho
+ru: Выбрать слеующий скрап
 sk: Vyber nasledujúci scrap
 sq: zgjedhe deponin e ardhshme
 zh_CN: 选定下一个草图
@@ -4966,7 +6328,11 @@ bg: Избери следващата област
 cz: Vyber následující plochu
 de: Nächste Fläche auswählen
 el: Επιλογή επόμενης επιφάνειας
+es: Seleccionar la siguiente área
+fr: Sélectionner l'aire suivante
 it: Seleziona la prossima area
+pt: Selecionar próxima área
+ru: Выбрать слеующую область
 sk: Vyber nasledujúcu plochu
 sq: zgjedhe-selekto fushen e ardhshme
 zh_CN: 选择下一个区
@@ -4976,7 +6342,11 @@ bg: Приближи
 cz: Zvětšit
 de: Vergrößern
 el: Μεγέθυνση
+es: Zoom in
+fr: Zoom in
 it: Zoom in
+pt: Fechar zoom
+ru: Увеличить
 sk: Zväčšiť
 sq: zmadho
 zh_CN: 放大
@@ -4986,7 +6356,11 @@ bg: Отдалечи
 cz: Zmenšit
 de: Verkleinern
 el: Σμίκρυνση
+es: Zoom out
+fr: Zoom out
 it: Zoom out
+pt: Abrir zoom
+ru: Уменьшить
 sk: Zmenšiť
 sq: zvogelo
 zh_CN: 缩小
@@ -4996,7 +6370,11 @@ bg: Вмъкни нов скрап
 cz: Vložit nový scrap
 de: Neue Skizze einfügen
 el: Εισαγωγή νέου σκραπ
+es: Insertar nuevo trozo
 it: Inserisci un nuovo scrap
+fr: Insérer un nouveau scrap
+pt: Inserir novo trecho
+ru: Вставить новый скрап
 sk: Vložiť nový scrap
 sq: fute deponin e re
 zh_CN: 插入新的草图
@@ -5006,7 +6384,11 @@ bg: Вмъкни нова точка
 cz: Vložit nový bod
 de: Neuen Punkt einfügen
 el: Εισαγωγή νέου σημείου
+es: Insertar punto nuevo
+fr: Insérer un nouveau point
 it: Inserisci un nuovo punto
+pt: Inserir novo ponto
+ru: Вставить новую точку
 sk: Vložiť nový bod
 sq: fute piken e re
 zh_CN: 插入新的点
@@ -5016,7 +6398,11 @@ bg: Вмъкни нова линия
 cz: Vložit novou křivku
 de: Neue Linie einfügen
 el: Εισαγωγή νέας γραμμής
+es: Insertar linea nueva
+fr: Insérer une nouvelle ligne
 it: Inserisci una nuova linea
+pt: Inserir nova linha
+ru: Вставить новую линию
 sk: Vložiť novú krivku
 sq: fute rrjeshtin e ri
 zh_CN: 插入新的线
@@ -5026,7 +6412,11 @@ bg: Вмъкни нова област
 cz: Vložit novou plochu
 de: Neue Fläche einfügen
 el: Εισαγωγή νέας επιφάνειας
+es: Insertar área nueva
+fr: Insérer une nouvelle aire
 it: Inserisci una nuova area
+pt: Inserir nova área
+ru: Вставить новую область
 sk: Vložiť novú plochu
 sq: fute fushen e re
 zh_CN: 插入新的区
@@ -5036,7 +6426,11 @@ bg: Изтрий избраният обект
 cz: Smaž označené objekty
 de: Ausgewähltes Objekt löschen
 el: διαγραφή επιλεγμένου
+es: Borrar objeto seleccionado
+fr: Effacer l'objet sélectionné
 it: Rimuovi l'oggetto selezionato
+pt: Apagar objeto selecionado
+ru: Удалить выбранный объект
 sk: Zmaž označené objekty
 sq: fshije objektin e selektuar
 zh_CN: 删除选定对象
@@ -5046,7 +6440,10 @@ bg: основни символи
 cz: základní symboly
 de: Grundsymbole
 el: βασικά σύμβολα
+es: símbolos básicos
+fr: symboles basiques
 it: base
+pt: símbolos básicos
 ru: основные
 sk: základné symboly
 sq: tema simbolet-baze
@@ -5057,7 +6454,10 @@ bg: релеф на галерията
 cz: výplň
 de: Gangfüllungen
 el: γέμισμα στοών
+es: rellenos
+fr: remplissages du passage
 it: riempimenti
+pt: passagens
 ru: рельеф хода
 sk: výplň
 sq: tema mbushjet e kalimeve
@@ -5068,7 +6468,10 @@ bg: спелеоформи
 cz: výzdoba
 de: Sinter
 el: σπηλαιοθέματα
+es: espeleotemas
+fr: spéléothèmes
 it: speleotemi
+pt: espeleotemas
 ru: спелео-формы
 sk: výzdoba
 sq: speleo-tema
@@ -5080,9 +6483,20 @@ cz: vystrojení
 de: Ausrüstung
 el: εξοπλισμός
 en: theme equipment
+es: equipamiento
+fr: équipement
 it: armo
+pt: equipamento
 ru: оборудование
 sk: vystrojenie
 sq: tema pajisjet
 zh_CN: 主要装备
+
+therion: line arrow
+de: Pfeil
+es: flecha
+fr: flèche
+pt: seta
+ru: стрелка
+sk: šípka
 

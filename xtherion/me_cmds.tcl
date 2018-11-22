@@ -172,11 +172,27 @@ proc xth_me_cmds_update_buttons {} {
 	$ccbox.md configure -state normal
 	$ccbox.mt configure -state normal
 	$ccbox.tt configure -state normal
-     } else {
+	$ccbox.shf configure -state normal
+	$ccbox.sht configure -state normal
+        $ccbox.shfx configure -state normal
+        $ccbox.shfy configure -state normal
+        $ccbox.shtx configure -state normal
+        $ccbox.shty configure -state normal
+        $ccbox.shswap configure -state normal
+        $ccbox.shift configure -state normal
+      } else {
 	$ccbox.mu configure -state disabled
 	$ccbox.md configure -state disabled
 	$ccbox.mt configure -state disabled
 	$ccbox.tt configure -state disabled
+	$ccbox.shf configure -state disabled
+	$ccbox.sht configure -state disabled
+	$ccbox.shfx configure -state disabled
+	$ccbox.shfy configure -state disabled
+	$ccbox.shtx configure -state disabled
+	$ccbox.shty configure -state disabled
+	$ccbox.shswap configure -state disabled
+	$ccbox.shift configure -state disabled
       }
       $ccbox.cfg.m entryconfigure [mc "Delete"] -state normal
       $xth(me,menu,edit) entryconfigure [mc "Delete"] -state normal
@@ -2205,8 +2221,9 @@ proc xth_me_cmds_end_point_drag {id x y dragto} {
 proc xth_me_cmds_configure_point_fill_xctrl {id sid} {
   global xth
   if {[string length $id] > 0} {
-    ## DISABLED
-    # $xth(me,can) itemconfigure $xth(me,canid,point,fx) -state normal
+    if $xth(gui,me,pointsizectrl) {
+        $xth(me,can) itemconfigure $xth(me,canid,point,fx) -state normal
+    }
     $xth(me,can) bind $xth(me,canid,point,fx) <1> \
       "xth_me_cmds_start_point_fdrag $xth(me,canid,point,fx) $id x %x %y"
     $xth(me,can) bind $xth(me,canid,point,fx) <Enter> \
@@ -2318,10 +2335,10 @@ proc xth_me_cmds_move_point_fill_xctrl {id rot sx sy} {
   $xth(me,can) coords $xth(me,canid,point,fx) $x $y [expr $x + $xvx] [expr $y + $xvy]
   set xth(me,canid,point,fx_tox) [expr $x + $xvx]
   set xth(me,canid,point,fx_toy) [expr $y + $xvy]
-  #$xth(me,can) coords $xth(me,canid,point,fxc) [expr $x + $xvx - $xth(gui,me,point,cpsize)] [expr $y + $xvy - $xth(gui,me,point,cpsize)] [expr $x + $xvx + $xth(gui,me,point,cpsize)] [expr $y + $xvy + $xth(gui,me,point,cpsize)]
   $xth(me,can) coords $xth(me,canid,point,fy) $x $y [expr $x + $yvx] [expr $y + $yvy]
   set xth(me,canid,point,fy_tox) [expr $x + $yvx]
   set xth(me,canid,point,fy_toy) [expr $y + $yvy]
+  #$xth(me,can) coords $xth(me,canid,point,fxc) [expr $x + $xvx - $xth(gui,me,point,cpsize)] [expr $y + $xvy - $xth(gui,me,point,cpsize)] [expr $x + $xvx + $xth(gui,me,point,cpsize)] [expr $y + $xvy + $xth(gui,me,point,cpsize)]
   #$xth(me,can) coords $xth(me,canid,point,fyc) [expr $x + $yvx - $xth(gui,me,point,cpsize)] [expr $y + $yvy - $xth(gui,me,point,cpsize)] [expr $x + $yvx + $xth(gui,me,point,cpsize)] [expr $y + $yvy + $xth(gui,me,point,cpsize)]
   $xth(me,can) coords $xth(me,canid,point,fill) [expr $x + $fxvx + $fyvx] [expr $y + $fxvy + $fyvy] \
     [expr $x + $fxvx - $fyvx] [expr $y + $fxvy - $fyvy] [expr $x - $fxvx - $fyvx] [expr $y - $fxvy - $fyvy] \
@@ -2486,9 +2503,9 @@ proc xth_me_cmds_drag_point_config_xctrl {id} {
   $xth(me,can) itemconfigure $xth(me,canid,point,selector) -state hidden
   set xth(me,point,drag_stfx) [$xth(me,can) itemcget $xth(me,canid,point,fx) -state]
   $xth(me,can) itemconfigure $xth(me,canid,point,fx) -width 1 -arrow none
-  #$xth(me,can) itemconfigure $xth(me,canid,point,fxc) -state hidden
   set xth(me,point,drag_stfy) [$xth(me,can) itemcget $xth(me,canid,point,fy) -state]
   $xth(me,can) itemconfigure $xth(me,canid,point,fy) -width 1 -arrow none
+  #$xth(me,can) itemconfigure $xth(me,canid,point,fxc) -state hidden
   #$xth(me,can) itemconfigure $xth(me,canid,point,fyc) -state hidden
   $xth(me,can) itemconfigure $xth(me,canid,point,fill) -fill {} -outline red
 }
@@ -2498,8 +2515,8 @@ proc xth_me_cmds_end_drag_point_config_xctrl {id} {
   global xth
   $xth(me,can) itemconfigure $xth(me,canid,point,selector) -state $xth(me,point,drag_stsel)
   $xth(me,can) itemconfigure $xth(me,canid,point,fx) -width 5 -arrow last
-  #$xth(me,can) itemconfigure $xth(me,canid,point,fxc) -state $xth(me,point,drag_stfx)
   $xth(me,can) itemconfigure $xth(me,canid,point,fy) -width 5 -arrow last
+  #$xth(me,can) itemconfigure $xth(me,canid,point,fxc) -state $xth(me,point,drag_stfx)
   #$xth(me,can) itemconfigure $xth(me,canid,point,fyc) -state $xth(me,point,drag_stfy)
   $xth(me,can) itemconfigure $xth(me,canid,point,fill) -fill red -outline {}
 }
@@ -2821,6 +2838,18 @@ $xth(me,ctxmenu).cps add checkbutton -label [mc "<<"] -variable xth(ctrl,me,line
 $xth(me,ctxmenu).cps add checkbutton -label [mc "smooth"] -variable xth(ctrl,me,linept,smooth) -command xth_me_cmds_toggle_linept
 $xth(me,ctxmenu).cps add checkbutton -label [mc ">>"] -variable xth(ctrl,me,linept,idn) -command xth_me_cmds_toggle_linept
 
+proc xth_me_create_line_point_edit_menu { lpem_father {state normal} } {
+    upvar $lpem_father f
+    global xth
+    
+    catch {menu $f.m -tearoff 0 -font $xth(gui,lfont)}
+    $f.m add command -label [mc "Insert point"] -command {xth_me_cmds_start_linept_insert} -state $state
+    $f.m add command -label [mc "Delete point"] -command {xth_me_cmds_delete_linept {} {}} -state $state
+    $f.m add command -label [mc "Split line"] -command {xth_me_cmds_line_split} -state $state
+    $f.m add command -label [mc "Trace line"] -command {xth_me_cmds_line_trace_start}
+    $f.m add command -label [mc "Convert to curve"] -command {xth_me_cmds_line_poly2bezier}
+    $f.m add command -label [mc "Simplify line"] -command {xth_me_cmds_line_simplify}    
+}
 
 catch {menu $xth(me,ctxmenu).subtype -tearoff 0}
 catch {menu $xth(me,ctxmenu).segsubtype -tearoff 0}
@@ -2831,6 +2860,7 @@ $xth(me,ctxmenu).altitude add radiobutton -label [mc "auto"] -variable xth(me,ct
 $xth(me,ctxmenu).altitude add command -label [mc "edit"] -command {xth_me_ctx_change_text altitude [mc "Altitude"]}
 
 catch {menu $xth(me,ctxmenu).others -tearoff 0}
+xth_me_create_line_point_edit_menu xth(me,ctxmenu)
 
 # return point option
 proc xth_me_get_option_value {key optkey} {
@@ -3135,38 +3165,49 @@ proc xth_me_show_context_menu {id x y} {
     	# set variable
     	switch -nocase [lindex $optalign 0] {
     	  t - top {
+          #DON'T REMOVE - for translation. [mc "top"]
     	    set xth(me,ctrl,ctx,align) "top"
     	  }
     	  tr - top-right {
+          #DON'T REMOVE - for translation. [mc "top-right"]
     	    set xth(me,ctrl,ctx,align) "top-right"
     	  }
     	  tl - top-left {
+          #DON'T REMOVE - for translation. [mc "top-left"]
     	    set xth(me,ctrl,ctx,align) "top-left"
     	  }
     	  b - bottom {
+          #DON'T REMOVE - for translation. [mc "bottom"]
     	    set xth(me,ctrl,ctx,align) "bottom"
     	  }
     	  br - bottom-right {
+          #DON'T REMOVE - for translation. [mc "bottom-right"]
     	    set xth(me,ctrl,ctx,align) "bottom-right"
     	  }
     	  bl - bottom-left {
+          #DON'T REMOVE - for translation. [mc "bottom-left"]
     	    set xth(me,ctrl,ctx,align) "bottom-left"
     	  }
     	  c - centre - center {
+          #DON'T REMOVE - for translation. [mc "center"]
     	    set xth(me,ctrl,ctx,align) "center"
     	  }
     	  r - right {
+          #DON'T REMOVE - for translation. [mc "right"]
     	    set xth(me,ctrl,ctx,align) "right"
     	  }
     	  l - left {
+          #DON'T REMOVE - for translation. [mc "left"]
     	    set xth(me,ctrl,ctx,align) "left"
     	  }
     	  default {
+          #DON'T REMOVE - for translation. [mc "auto"]
     	    set xth(me,ctrl,ctx,align) "auto"
     	  }
     	}
     	# set options
-    	set xth(me,ctrl,ctxopt,align) [lindex $optalign 1] 
+      set xth(me,ctrl,ctxopt,align) [lindex $optalign 1]
+      #DON'T REMOVE - for translation. [mc "align"]
       $xth(me,ctxmenu) add cascade -label [xth_me_optlabel align] -menu $xth(me,ctxmenu).align
     }
 	  	  
@@ -3175,6 +3216,7 @@ proc xth_me_show_context_menu {id x y} {
       set optname [xth_me_get_option_value "name" $opts]
       set xth(me,ctrl,ctx,name) [lindex $optname 0]
       set xth(me,ctrl,ctxopt,name) [lindex $optname 1] 
+      #DON'T REMOVE - for translation. [mc "name"]
       $xth(me,ctxmenu) add command -label [xth_me_optlabel name] -command {xth_me_ctx_change_text name [mc "Station name"]}
     }
     # scrap
@@ -3182,6 +3224,7 @@ proc xth_me_show_context_menu {id x y} {
       set optscrap [xth_me_get_option_value "scrap" $opts]
       set xth(me,ctrl,ctx,scrap) [lindex $optscrap 0]
       set xth(me,ctrl,ctxopt,scrap) [lindex $optscrap 1] 
+      #DON'T REMOVE - for translation. [mc "scrap"]
       $xth(me,ctxmenu) add command -label [xth_me_optlabel scrap] -command {xth_me_ctx_change_text scrap [mc "Scrap reference"]}
     }
     # text
@@ -3189,6 +3232,7 @@ proc xth_me_show_context_menu {id x y} {
       set opttext [xth_me_get_option_value "text" $opts]
       set xth(me,ctrl,ctx,text) [lindex $opttext 0]
       set xth(me,ctrl,ctxopt,text) [lindex $opttext 1]
+      #DON'T REMOVE - for translation. [mc "text"]
       $xth(me,ctxmenu) add command -label [xth_me_optlabel text] -command {xth_me_ctx_change_text text}
     }
     # value
@@ -3196,6 +3240,7 @@ proc xth_me_show_context_menu {id x y} {
       set optvalue [xth_me_get_option_value "value" $opts]
       set xth(me,ctrl,ctx,value) [lindex $optvalue 0]
       set xth(me,ctrl,ctxopt,value) [lindex $optvalue 1] 
+      #DON'T REMOVE - for translation. [mc "value"]
       $xth(me,ctxmenu) add command -label [xth_me_optlabel value] -command {xth_me_ctx_change_text value}
     }
     # toggle orientation
@@ -3251,6 +3296,7 @@ proc xth_me_show_context_menu {id x y} {
         }
       }
       set xth(me,ctrl,ctxopt,subtype) [lindex $optsubtype 1] 
+      #DON'T REMOVE - for translation. [mc "subtype"]
       $xth(me,ctxmenu) add cascade -label [xth_me_optlabel subtype] -menu $xth(me,ctxmenu).subtype
     }    
 
@@ -3279,6 +3325,7 @@ proc xth_me_show_context_menu {id x y} {
     
     # wall altitude
     if {[lsearch -exact {wall} $xth(me,cmds,$id,type)] > -1} {
+      #DON'T REMOVE - for translation. [mc "altitude"]
       set optalt [xth_me_get_optionline_value "altitude"]
       set xth(me,ctrl,ctx,altitude) [lindex $optalt 0]
       if {[lsearch -exact {- nan NaN NAN} xth(me,ctrl,ctx,altitude)] > -1} {
@@ -3308,6 +3355,7 @@ proc xth_me_show_context_menu {id x y} {
     }
     # set options
     set xth(me,ctrl,ctxopt,outline) [lindex $optoutline 1] 
+    #DON'T REMOVE - for translation. [mc "outline"]
     $xth(me,ctxmenu).others add cascade -label [xth_me_optlabel outline] -menu $xth(me,ctxmenu).outline
       
     # text for label
@@ -3315,6 +3363,7 @@ proc xth_me_show_context_menu {id x y} {
       set opttext [xth_me_get_option_value "text" $opts]
       set xth(me,ctrl,ctx,text) [lindex $opttext 0]
       set xth(me,ctrl,ctxopt,text) [lindex $opttext 1]
+      #DON'T REMOVE - for translation. [mc "text"]
       $xth(me,ctxmenu) add command -label [xth_me_optlabel text] -command {xth_me_ctx_change_text text}
     }
   }
@@ -3339,6 +3388,7 @@ proc xth_me_show_context_menu {id x y} {
   }
   # set options
   set xth(me,ctrl,ctxopt,clip) [lindex $optclip 1] 
+  #DON'T REMOVE - for translation. [mc "clip"]
   $xth(me,ctxmenu).others add cascade -label [xth_me_optlabel clip] -menu $xth(me,ctxmenu).clip
 
   $xth(me,ctxmenu) add cascade -label [mc "other options"] -menu $xth(me,ctxmenu).others
@@ -3360,6 +3410,7 @@ proc xth_me_show_context_menu {id x y} {
   }
   # set options
   set xth(me,ctrl,ctxopt,place) [lindex $optplace 1] 
+  #DON'T REMOVE - for translation. [mc "place"]
   $xth(me,ctxmenu).others add cascade -label [xth_me_optlabel place] -menu $xth(me,ctxmenu).place
   
   
@@ -3388,6 +3439,7 @@ proc xth_me_show_context_menu {id x y} {
   }
   # set options
   set xth(me,ctrl,ctxopt,scale) [lindex $optscale 1] 
+  #DON'T REMOVE - for translation. [mc "scale"]
   $xth(me,ctxmenu).others add cascade -label [xth_me_optlabel scale] -menu $xth(me,ctxmenu).scale
   
   
@@ -3411,7 +3463,7 @@ proc xth_me_show_context_menu {id x y} {
       
   $xth(me,ctxmenu) add separator
   if {$xth(me,cmds,$id,ct) == 3} {
-    $xth(me,ctxmenu) add cascade -label [mc "Edit line"] -menu $xth(ctrl,me,line).lpa.m
+    $xth(me,ctxmenu) add cascade -label [mc "Edit line"] -menu $xth(me,ctxmenu).m
     $xth(me,ctxmenu).others add checkbutton -label [mc "close"] -variable xth(ctrl,me,line,close) -command xth_me_cmds_toggle_line_close
     $xth(me,ctxmenu).others add checkbutton -label [mc "reverse"] -variable xth(ctrl,me,line,reverse) -command xth_me_cmds_toggle_line_reverse
   }
@@ -3427,5 +3479,44 @@ proc xth_me_show_context_menu {id x y} {
     }
   }
   tk_popup $xth(me,ctxmenu) [expr $x + [winfo rootx $xth(me,can)]] [expr $y + [winfo rooty $xth(me,can)]]
+}
+
+
+proc xth_me_mousewheel_up {} {
+  global xth
+  switch $xth(app,active) {
+    me {
+      if {[expr [clock seconds] - $xth(me,wheel,clk)] < 2.0} {
+        incr xth(me,wheel,position) 1
+      } else {
+        set xth(me,wheel,position) 1
+      }
+      set xth(me,wheel,clk) [clock seconds]
+      if {$xth(me,wheel,position) > $xth(me,wheel,sensitivity)} {
+        set xth(me,wheel,position) 0
+        if {$xth(me,zoom) > 200} return;
+        xth_me_area_zoom_to [expr 2*$xth(me,zoom)]
+      }
+    }
+  }
+}
+
+proc xth_me_mousewheel_down {} {
+  global xth
+  switch $xth(app,active) {
+    me {
+      if {[expr [clock seconds] - $xth(me,wheel,clk)] < 2.0} {
+        incr xth(me,wheel,position) -1
+      } else {
+        set xth(me,wheel,position) -1
+      }
+      set xth(me,wheel,clk) [clock seconds]
+      if {$xth(me,wheel,position) < -$xth(me,wheel,sensitivity)} {
+        set xth(me,wheel,position) 0
+        if {$xth(me,zoom) < 50} return;
+        xth_me_area_zoom_to [expr $xth(me,zoom) / 2]
+      }
+    }
+  }
 }
 

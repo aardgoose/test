@@ -29,7 +29,7 @@ describe other page layouts.
 %(See the section `layout' where to put \TeX\ commands.) 
 This approach has the advantage that the user has 
 direct access to the advanced typesetting engine without making the language of 
-Therion overcomplex.
+Therion overly complex.
 
 Therion uses pdf\TeX\ with the {\it plain} format for typesetting. So you 
 should be familiar with the plain \TeX\ if you wish to define new layouts.
@@ -267,7 +267,7 @@ before or after the |\insertmaps| macro):
 * \NEW{5.4}|\cavemaxz|, |\caveminz| = altitude max/min value
 * \NEW{5.4}|\thversion| = current therion version
 * \NEW{5.4}|\currentdate| = current date
-* \NEW{5.4}|\outcscode|, |\outcsname| = output coordinat system code and name
+* \NEW{5.4}|\outcscode|, |\outcsname| = output coordinate system code and name
 * \NEW{5.4}|\northdir| = `true' or `grid'
 * \NEW{5.4}|\magdecl| = magnetic declination in degrees
 * \NEW{5.4}|\gridconv| = grid meridian convergence in degrees
@@ -376,22 +376,8 @@ dimen register to positive value, e.g. |0.5mm|.
 
 \subchapter Customizing text labels.
 
-There is a preliminary interface to changing font sizes for labels via the \MP\ 
-macro
-
-|fonts_setup(<tinysize>,<smallsize>,<normalsize>,<largesize>,<hugesize>);|
-
-which may be used inside of the |code metapost| section of the |layout| 
-command. |<normalsize>| applies to point label, |<smallsize>| applies to 
-remark and all other point labels. Each of them may apply to line label 
-according to its |-size| option.
-
-Example:
-
-|code metapost
-  fonts_setup(6,8,10,14,20);  
-      % default values depend on scale; for 1:200 they are 7,8,10,12,14|
-  
+Starting with the release 5.4.1 you can use |fonts-setup| layout option
+instead of the \MP\ macro |fonts_setup()|.
 
 \subchapter New map symbols.
 
